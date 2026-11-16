@@ -1,0 +1,9 @@
+# Python 3.12: offline experiments and optional Ollama collection/live-check CLI.
+# Streamlit is in requirements.txt. Ollama HTTP uses the standard library;
+# install and run Ollama separately only when executing real LLM calls.
+numpy==2.3.5
+pandas==2.2.3
+scikit-learn==1.8.0
+joblib==1.5.3
+matplotlib==3.10.8
+pyarrow==24.0.0

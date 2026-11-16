@@ -1,0 +1,29 @@
+{
+  "baseline": "Original shipped v0.1; never overwritten by v0.2 runs",
+  "sha256": {
+    "data/raw/commonsenseqa.parquet": "3c482953ba568a6c0897d865d9ccb678dea5f08a64eba83cd723b0f6224f473e",
+    "data/raw/DATASET_CARD.md": "7b984d97e86ce235259c02b30da0323400ea193faf39b11f0ea0471b02da72e5",
+    "data/raw/download_metadata.json": "c831b25119f6532c1373c1f1d9ebbd08102ce4ee81173c65513ec13b3c9eb198",
+    "data/raw/gsm8k.parquet": "24d00be06386d4b97d2ecad4d6607f119eea2891a0dc3a1f889f057a704350ec",
+    "data/raw/math500.parquet": "12d2a7b9ccfece28f6e4a2975467a672a2ccd4e6c833fe49a99a92b033c963b4",
+    "data/raw/release_manifest.json": "95f6f59ce9f3dd8604e4da21899d16b341056ae5575942846115ecd63682d9b4",
+    "data/raw/train.parquet": "5d0ccc29507ce93c4501968b3c27c9a77914d91b1ea5c2e784405863a86a5dc3",
+    "data/prepared/source_development.parquet": "f02186703faeee1b51d9d7efd0112d0435ff3dd25ab819cb5d5f5bec07b8368a",
+    "data/prepared/source_test.parquet": "cffad211e2c7ea8ab357f3b5f907958655c29891db37c3bf1fbc410574c2c2d8",
+    "data/prepared/source_train.parquet": "0cc05e2cae5024cb8f886a47917c41ad790f07de247d72ea1fbeb8a31679dfd1",
+    "data/prepared/target_adaptation_pool.parquet": "25094965e5e1f912d3c89f935d8350c85240a3b9e1117634cc203565303477ff",
+    "data/prepared/target_test.parquet": "21177930311e244ce9489bc9c68c6581e0384e30312bec10bdb2d43810c3a811",
+    "models/source_gate.joblib": "96522cbff6d6e0393eca867a1f9132a96255ffa946174f9af71772dc6ceec077",
+    "reports/adaptation_curve.png": "382213a386a71a28336eb293023ab1f38b7b999c5ab9d3571d2922e5228125ff",
+    "reports/adaptation_runs.csv": "1561d67646e8173d7841449b5714d26d862b0bebc2ea2d6c0cc047cae10df4b2",
+    "reports/adaptation_summary.csv": "e6990a1617d82375922ce5128b9b9655c67242b74a81ee0b395920e0147e7818",
+    "reports/experiment_metadata.json": "56b3d65a3b0b4c6f11faa96b2f329feda615a14dac4c5976000f87d7b5bd1df1",
+    "reports/GUIDE_PROGRESS.md": "74a6ca46618ba4b97b563100a7cdc5eecfae4158b527112aa961d4353ebe6003",
+    "reports/policy_accuracy.png": "eef5ea9cf36872e96be2ccf7cb0ef00d37e49a79249a9ed67942cff9562346be",
+    "reports/policy_results.csv": "6eb9361c628352bdcc85f8766988b43a5e0b53fbe133fef1d0462227b1043579",
+    "reports/Progress_Report.html": "56e71e5483309f7e3d74ca610aec7084214b85a07aaf155e27134cb68c963f65",
+    "reports/split_manifest.json": "893722e7ccc552839d40fbd6e1cf70fd218ce4fc165660d0e444f0213b5ee953",
+    "reports/target_predictions.csv": "2fda56975769cafb7693f02516ff21f05e9609a6960d44fda3bbcb01624891af",
+    "reports/TEST_RESULTS.txt": "679e7dd6839c720a95d3f61661eee1e25d8fad51442144b3f15bdde982588082"
+  }
+}

@@ -1,0 +1,30 @@
+﻿RecheckLab v0.2
+
+In PowerShell from this folder (Python 3.12):
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m streamlit run app.py
+
+Open http://localhost:8501. The default Recorded examples demo works offline
+without a GPU, API key, or Ollama. Attempt 1/2 are two saved rechecks sharing
+one initial answer; selecting them does not generate new LLM responses.
+
+Optional Live question mode needs Ollama for Windows running locally:
+https://ollama.com/download/windows
+ollama pull qwen3:4b
+Use ollama serve in another terminal only if its service is not already running.
+Check status without inference:
+.\.venv\Scripts\python.exe scripts\check_live_backend.py
+
+Live use of the public gate is experimental: its released full prompts and
+checkpoint digest are unavailable, and live generation settings differ.
+The exact qwen3:4b model and an actual installed digest are required.
+Another installed model, including Gemma, does not use this predictor.
+Repeated requests for the same question/settings reuse the browser-session
+job, including failures. Changing input hides the previous answer.
+
+See README.md for live checks with separate trusted keys, duplicate handling,
+the generation settings, replay rerunning, and optional research collection.
+See GUIDE_PROGRESS.md for the actual result and current research limits.
+Offline report: outputs/v0.2/reports/Progress_Report.html
+Original models/reports/data remain the v0.1 baseline.

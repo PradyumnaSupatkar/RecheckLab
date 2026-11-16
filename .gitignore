@@ -1,0 +1,58 @@
+﻿# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Local datasets and generated data
+data/raw/
+data/prepared/
+*.parquet
+*.feather
+*.arrow
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Model weights and local model stores
+models/
+**/models/
+
+# Experiment outputs, logs, and generated reports/artifacts
+outputs/
+reports/
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Archives and OS/editor noise
+*.zip
+*.7z
+.DS_Store
+Thumbs.db
+
+# Evaluation-only trusted keys must remain separate from inference inputs
+data/*_keys.jsonl
+
+
+# All locally stored benchmark and evaluation data
+data/
+!data/.gitkeep
+
