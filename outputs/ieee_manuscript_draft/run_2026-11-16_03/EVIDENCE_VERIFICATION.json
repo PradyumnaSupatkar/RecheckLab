@@ -1,0 +1,147 @@
+{
+  "math_source": {
+    "selection_count": 60,
+    "unique_ids": 60,
+    "source_checks_passed": 60,
+    "source_check_failures": [],
+    "difficulty_counts": {
+      "Level 4": 29,
+      "Level 5": 31
+    },
+    "topic_counts": {
+      "intermediate_algebra": 13,
+      "geometry": 3,
+      "prealgebra": 18,
+      "number_theory": 8,
+      "precalculus": 5,
+      "algebra": 11,
+      "counting_and_probability": 2
+    },
+    "source_partition_hashes": {
+      "algebra/test-00000-of-00001.parquet": {
+        "actual": "0e04a850dac9cfc758eac0c80afd2d0cc65e29ea72f916c8ac1045b12af937f5",
+        "expected": "0e04a850dac9cfc758eac0c80afd2d0cc65e29ea72f916c8ac1045b12af937f5",
+        "match": true
+      },
+      "counting_and_probability/test-00000-of-00001.parquet": {
+        "actual": "c324818949c75a6227c0328a8499d58023cbbf6757cfc1736f5ab24cc8d87966",
+        "expected": "c324818949c75a6227c0328a8499d58023cbbf6757cfc1736f5ab24cc8d87966",
+        "match": true
+      },
+      "geometry/test-00000-of-00001.parquet": {
+        "actual": "98720f3a8134ad9784fd8951195245264495df03ffc5c9485a9a54ff5ae2431a",
+        "expected": "98720f3a8134ad9784fd8951195245264495df03ffc5c9485a9a54ff5ae2431a",
+        "match": true
+      },
+      "intermediate_algebra/test-00000-of-00001.parquet": {
+        "actual": "e859f72486c951c2017da880541ca729940eaa986b0364eb23e238983df9bfeb",
+        "expected": "e859f72486c951c2017da880541ca729940eaa986b0364eb23e238983df9bfeb",
+        "match": true
+      },
+      "number_theory/test-00000-of-00001.parquet": {
+        "actual": "ba156c9c9fa2040836ba12135fd964e6e67d6bccd8c469ec4a3ad941f8f6fbe9",
+        "expected": "ba156c9c9fa2040836ba12135fd964e6e67d6bccd8c469ec4a3ad941f8f6fbe9",
+        "match": true
+      },
+      "prealgebra/test-00000-of-00001.parquet": {
+        "actual": "301e5d8ade5c7b5038032532e498bdc9dca799e7f1061a63f2e7d980803240cc",
+        "expected": "301e5d8ade5c7b5038032532e498bdc9dca799e7f1061a63f2e7d980803240cc",
+        "match": true
+      },
+      "precalculus/test-00000-of-00001.parquet": {
+        "actual": "da37474ba3761ae5727af3844a7ba963a735bd6a14c65e6137593669a4fe3b9c",
+        "expected": "da37474ba3761ae5727af3844a7ba963a735bd6a14c65e6137593669a4fe3b9c",
+        "match": true
+      }
+    },
+    "selected_keys_count": 60,
+    "completed_call_count": 86,
+    "independent_answer_checks": {
+      "parseable": 86,
+      "matches_saved_parseability": 86,
+      "correctness_matches_saved": 86,
+      "mismatches": []
+    },
+    "selection_summary": {
+      "attempted_questions": 47,
+      "complete_pairs": 43,
+      "incomplete_initial_calls": 4,
+      "incomplete_revision_calls": 0,
+      "unattempted_of_60": 13
+    }
+  },
+  "prompt_key_separation": {
+    "math_initial_records": 90,
+    "math_prompt_checks_pass": 90,
+    "gsm_calls": 80,
+    "gsm_prompt_checks_pass": 80,
+    "gate_decisions": {
+      "rows": 43,
+      "all_scored_before_revision": true,
+      "no_revision_or_gold_fields": true
+    }
+  },
+  "math_accounting": {
+    "pairs": 43,
+    "transitions": {
+      "NO_CHANGE": 42,
+      "HELP": 1
+    },
+    "gate_rechecks": 0,
+    "completion_rechecks": 0,
+    "initial_tokens": 53292,
+    "revision_tokens": 78384,
+    "initial_latency_seconds": 2900.0259999999944,
+    "revision_latency_seconds": 1828.4370000000054,
+    "policy_rows": 172
+  },
+  "gsm_accounting": {
+    "pairs": 40,
+    "transitions": {
+      "NO_CHANGE": 39,
+      "HELP": 1
+    },
+    "gate_rechecks": 0,
+    "completion_rechecks": 0,
+    "calls": 80,
+    "successful": 80,
+    "parse_failures": 0,
+    "tokens": 20007,
+    "wall_seconds": 419.5914977000102,
+    "policy_rows": 4
+  },
+  "independent_manual_examples": [
+    "geometry/100: ratio of arc lengths 1/16",
+    "prealgebra/870: Euclidean algorithm gcd=14",
+    "number_theory/68: modular inverse/power gives 2",
+    "algebra/903: compound-interest value rounds to 1160",
+    "counting_and_probability/423: combinations product 10800",
+    "precalculus/318: trigonometric identity yields 1/4",
+    "algebra/625: cone volume equality yields height 216; HELP is a parseable semantic answer change",
+    "prealgebra/131: direct enumeration gives 19; initial 18 and revision 36 are both mathematically wrong"
+  ],
+  "runs": {
+    "math_status": {
+      "status": "STOPPED_USER",
+      "started_utc": "2026-11-16T16:05:49.233Z",
+      "completed_questions": 43,
+      "completed_calls": 86,
+      "retry_incomplete_enabled": false,
+      "retry_question_id": null,
+      "runtime_timeout_seconds": 420,
+      "runtime_amendment": "RUNTIME_AMENDMENT_420S.json",
+      "active_call_id": null,
+      "stop_reason": "user_authorized_stop_no_more_inference",
+      "updated_utc": "2026-11-16T16:09:15Z"
+    },
+    "gsm_status": {
+      "status": "COMPLETE",
+      "evaluation_complete": true,
+      "questions": 40,
+      "calls": 80,
+      "frozen_gate_ood": true,
+      "artifact_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+      "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0"
+    }
+  }
+}

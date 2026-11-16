@@ -1,0 +1,21 @@
+{
+  "best_classifier": "hgb_full_baseline",
+  "best_rule": "length_or_missing",
+  "primary_policy_kind": "rule",
+  "primary_policy_name": "length_or_missing",
+  "thresholds_from_source_training_OOF_only": {
+    "hgb_full_baseline": -0.04560480597941055,
+    "hgb_full_plus_log_visible_token_ratio": -0.006476347559701868
+  },
+  "feature_configuration": {
+    "id": "hgb_full_plus_log_visible_token_ratio",
+    "family": "hgb",
+    "balance_power": 1.0,
+    "C": null
+  },
+  "development_loaded": false,
+  "source_test_loaded": false,
+  "target_test_loaded": false,
+  "selection_rule": "Pooled question-equal HELP-HURT utility, then fewer extra tokens, then declared order",
+  "optimism": "Configuration/rule winner selection is optimistic; final pooled OOF thresholds are tuning statistics. Development is previously inspected descriptive confirmation, not fresh independent evidence."
+}

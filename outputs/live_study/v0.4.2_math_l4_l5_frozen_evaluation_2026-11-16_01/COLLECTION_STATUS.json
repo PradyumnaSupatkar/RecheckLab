@@ -1,0 +1,14 @@
+{
+  "phase": "untouched_frozen_evaluation",
+  "status": "STOPPED_WATCHDOG",
+  "calls_completed": 0,
+  "pairs_completed": 0,
+  "questions_attempted": 1,
+  "incomplete_initial_calls": 1,
+  "resource_samples": [],
+  "gate_scored_before_revision": true,
+  "gate_protocol_status": "OOD_DIAGNOSTIC",
+  "stop_reason": "First selected question's uncapped initial response did not complete within approximately 15 minutes; interrupted as an unusually long/runaway call. No further evaluation calls launched.",
+  "partial_response_persisted": false,
+  "evaluation_complete": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "STOPPED_USER",
+  "started_utc": "2026-11-16T16:05:49.233Z",
+  "completed_questions": 43,
+  "completed_calls": 86,
+  "retry_incomplete_enabled": false,
+  "retry_question_id": null,
+  "runtime_timeout_seconds": 420,
+  "runtime_amendment": "RUNTIME_AMENDMENT_420S.json",
+  "active_call_id": null,
+  "stop_reason": "user_authorized_stop_no_more_inference",
+  "updated_utc": "2026-11-16T16:09:15Z"
+}

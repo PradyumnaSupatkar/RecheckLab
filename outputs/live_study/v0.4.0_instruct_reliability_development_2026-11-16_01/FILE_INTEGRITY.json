@@ -1,0 +1,10 @@
+{
+  "selection_hash_semantics": "SHA-256 over canonical UTF-8 JSONL with LF line endings",
+  "windows_text_file_line_endings": "CRLF; normalized to LF only for manifest comparison",
+  "question_selection_sha256_canonical": "7728f2d2afaa2bda890f066f2590b20dcf99ea888794ef93acdd6e6377c61781",
+  "question_selection_sha256_raw_file": "d2c17a3bb7ef9085226affe633e8ab5995f521c8353777c88b4f88aca5b0fab3",
+  "question_selection_matches_frozen_manifest": true,
+  "trusted_keys_sha256_canonical": "1839dcbb11fbd655b5ec6af48f358a355185a4b1b6bb29dcfafc243ed644b546",
+  "trusted_keys_sha256_raw_file": "c2ac6e913609e8efc78871320aed2696fc4d92118ecfedf50b6f052685aed853",
+  "trusted_keys_match_frozen_manifest": true
+}

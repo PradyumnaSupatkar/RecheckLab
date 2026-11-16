@@ -1,0 +1,180 @@
+4/1500 pairs | gsm8k:train:6919 | initial
+4/1500 pairs | gsm8k:train:6919 | recheck
+Saved gsm8k:train:6919: NO_CHANGE; actual tokens 947 + 1464
+5/1500 pairs | gsm8k:test:416 | initial
+5/1500 pairs | gsm8k:test:416 | recheck
+Saved gsm8k:test:416: NO_CHANGE; actual tokens 982 + 1541
+6/1500 pairs | commonsenseqa:validation:9e5ce2b7d9eb404cdf8c7317dd0b5a59 | initial
+6/1500 pairs | commonsenseqa:validation:9e5ce2b7d9eb404cdf8c7317dd0b5a59 | recheck
+Saved commonsenseqa:validation:9e5ce2b7d9eb404cdf8c7317dd0b5a59: HELP; actual tokens 1115 + 1599
+7/1500 pairs | gsm8k:train:3903 | initial
+7/1500 pairs | gsm8k:train:3903 | recheck
+Saved gsm8k:train:3903: NO_CHANGE; actual tokens 1053 + 1566
+8/1500 pairs | gsm8k:test:573 | initial
+8/1500 pairs | gsm8k:test:573 | recheck
+Saved gsm8k:test:573: NO_CHANGE; actual tokens 446 + 825
+9/1500 pairs | commonsenseqa:validation:410f907f817dd7aa8e73291a918d3d86 | initial
+9/1500 pairs | commonsenseqa:validation:410f907f817dd7aa8e73291a918d3d86 | recheck
+Saved commonsenseqa:validation:410f907f817dd7aa8e73291a918d3d86: HELP; actual tokens 1108 + 1845
+10/1500 pairs | gsm8k:train:5897 | initial
+10/1500 pairs | gsm8k:train:5897 | recheck
+Saved gsm8k:train:5897: HELP; actual tokens 1162 + 2077
+11/1500 pairs | gsm8k:train:5216 | initial
+11/1500 pairs | gsm8k:train:5216 | recheck
+Saved gsm8k:train:5216: NO_CHANGE; actual tokens 852 + 1223
+12/1500 pairs | commonsenseqa:train:efba4407850c4fd1b60e17fdce2874ac | initial
+12/1500 pairs | commonsenseqa:train:efba4407850c4fd1b60e17fdce2874ac | recheck
+Saved commonsenseqa:train:efba4407850c4fd1b60e17fdce2874ac: HELP; actual tokens 1116 + 1687
+13/1500 pairs | gsm8k:test:459 | initial
+13/1500 pairs | gsm8k:test:459 | recheck
+Saved gsm8k:test:459: HELP; actual tokens 1204 + 1690
+14/1500 pairs | commonsenseqa:validation:cf8e30dd6956d03e3f0f0397112a8696 | initial
+14/1500 pairs | commonsenseqa:validation:cf8e30dd6956d03e3f0f0397112a8696 | recheck
+Saved commonsenseqa:validation:cf8e30dd6956d03e3f0f0397112a8696: HELP; actual tokens 1108 + 1659
+15/1500 pairs | gsm8k:train:2437 | initial
+15/1500 pairs | gsm8k:train:2437 | recheck
+Saved gsm8k:train:2437: NO_CHANGE; actual tokens 971 + 1572
+16/1500 pairs | gsm8k:train:3674 | initial
+16/1500 pairs | gsm8k:train:3674 | recheck
+Saved gsm8k:train:3674: NO_CHANGE; actual tokens 683 + 1133
+17/1500 pairs | commonsenseqa:train:3f94f50cad2fa28335167d1403301d8f | initial
+17/1500 pairs | commonsenseqa:train:3f94f50cad2fa28335167d1403301d8f | recheck
+Saved commonsenseqa:train:3f94f50cad2fa28335167d1403301d8f: HELP; actual tokens 1115 + 1707
+18/1500 pairs | gsm8k:test:925 | initial
+18/1500 pairs | gsm8k:test:925 | recheck
+Saved gsm8k:test:925: NO_CHANGE; actual tokens 884 + 1381
+19/1500 pairs | commonsenseqa:validation:91f512273a2da7ae796919069b20d6cf | initial
+19/1500 pairs | commonsenseqa:validation:91f512273a2da7ae796919069b20d6cf | recheck
+Saved commonsenseqa:validation:91f512273a2da7ae796919069b20d6cf: HELP; actual tokens 1126 + 1738
+20/1500 pairs | gsm8k:train:6330 | initial
+20/1500 pairs | gsm8k:train:6330 | recheck
+Saved gsm8k:train:6330: NO_CHANGE; actual tokens 824 + 1371
+21/1500 pairs | gsm8k:train:6827 | initial
+21/1500 pairs | gsm8k:train:6827 | recheck
+Saved gsm8k:train:6827: NO_CHANGE; actual tokens 649 + 1198
+22/1500 pairs | commonsenseqa:train:59c6e6ace105241ecb8c32596612e589 | initial
+22/1500 pairs | commonsenseqa:train:59c6e6ace105241ecb8c32596612e589 | recheck
+Saved commonsenseqa:train:59c6e6ace105241ecb8c32596612e589: HELP; actual tokens 1115 + 1636
+23/1500 pairs | gsm8k:test:55 | initial
+23/1500 pairs | gsm8k:test:55 | recheck
+Saved gsm8k:test:55: NO_CHANGE; actual tokens 452 + 787
+24/1500 pairs | commonsenseqa:validation:ac6f0e24dd6203cda43e1089dcf081d6 | initial
+24/1500 pairs | commonsenseqa:validation:ac6f0e24dd6203cda43e1089dcf081d6 | recheck
+Saved commonsenseqa:validation:ac6f0e24dd6203cda43e1089dcf081d6: HELP; actual tokens 1127 + 1749
+25/1500 pairs | gsm8k:train:819 | initial
+25/1500 pairs | gsm8k:train:819 | recheck
+Saved gsm8k:train:819: NO_CHANGE; actual tokens 1157 + 1698
+26/1500 pairs | gsm8k:train:6890 | initial
+26/1500 pairs | gsm8k:train:6890 | recheck
+Saved gsm8k:train:6890: NO_CHANGE; actual tokens 557 + 1008
+27/1500 pairs | commonsenseqa:train:06954af7da609462a6e8137b0a128994 | initial
+27/1500 pairs | commonsenseqa:train:06954af7da609462a6e8137b0a128994 | recheck
+Saved commonsenseqa:train:06954af7da609462a6e8137b0a128994: HELP; actual tokens 1110 + 1882
+28/1500 pairs | gsm8k:test:551 | initial
+28/1500 pairs | gsm8k:test:551 | recheck
+Saved gsm8k:test:551: NO_CHANGE; actual tokens 766 + 1222
+29/1500 pairs | commonsenseqa:validation:2ef2ae21a2d3a9ecbd5c45ff378d10e3 | initial
+29/1500 pairs | commonsenseqa:validation:2ef2ae21a2d3a9ecbd5c45ff378d10e3 | recheck
+Saved commonsenseqa:validation:2ef2ae21a2d3a9ecbd5c45ff378d10e3: NO_CHANGE; actual tokens 1108 + 2188
+30/1500 pairs | gsm8k:train:3812 | initial
+30/1500 pairs | gsm8k:train:3812 | recheck
+Saved gsm8k:train:3812: NO_CHANGE; actual tokens 365 + 665
+31/1500 pairs | gsm8k:train:3749 | initial
+31/1500 pairs | gsm8k:train:3749 | recheck
+Saved gsm8k:train:3749: NO_CHANGE; actual tokens 698 + 1228
+32/1500 pairs | commonsenseqa:train:6b4b36b3103c978164c04dd6971aa793 | initial
+32/1500 pairs | commonsenseqa:train:6b4b36b3103c978164c04dd6971aa793 | recheck
+Saved commonsenseqa:train:6b4b36b3103c978164c04dd6971aa793: NO_CHANGE; actual tokens 1098 + 1632
+33/1500 pairs | gsm8k:test:1271 | initial
+33/1500 pairs | gsm8k:test:1271 | recheck
+Saved gsm8k:test:1271: HELP; actual tokens 1115 + 1445
+34/1500 pairs | commonsenseqa:validation:bd4e80fa6642a76c064d0bc924411fb0 | initial
+34/1500 pairs | commonsenseqa:validation:bd4e80fa6642a76c064d0bc924411fb0 | recheck
+Saved commonsenseqa:validation:bd4e80fa6642a76c064d0bc924411fb0: NO_CHANGE; actual tokens 1115 + 2195
+35/1500 pairs | gsm8k:train:5878 | initial
+35/1500 pairs | gsm8k:train:5878 | recheck
+Saved gsm8k:train:5878: NO_CHANGE; actual tokens 795 + 1237
+36/1500 pairs | gsm8k:train:2742 | initial
+36/1500 pairs | gsm8k:train:2742 | recheck
+Saved gsm8k:train:2742: NO_CHANGE; actual tokens 447 + 1039
+37/1500 pairs | commonsenseqa:train:edbf0cdd74dfbe0fda09f4283483a063 | initial
+37/1500 pairs | commonsenseqa:train:edbf0cdd74dfbe0fda09f4283483a063 | recheck
+Saved commonsenseqa:train:edbf0cdd74dfbe0fda09f4283483a063: NO_CHANGE; actual tokens 1023 + 1476
+38/1500 pairs | gsm8k:test:641 | initial
+38/1500 pairs | gsm8k:test:641 | recheck
+Saved gsm8k:test:641: NO_CHANGE; actual tokens 1111 + 2191
+39/1500 pairs | commonsenseqa:validation:de54d03e69d9765872f95ff06ed21499 | initial
+39/1500 pairs | commonsenseqa:validation:de54d03e69d9765872f95ff06ed21499 | recheck
+Saved commonsenseqa:validation:de54d03e69d9765872f95ff06ed21499: HELP; actual tokens 1112 + 1593
+40/1500 pairs | gsm8k:train:5302 | initial
+40/1500 pairs | gsm8k:train:5302 | recheck
+Saved gsm8k:train:5302: NO_CHANGE; actual tokens 455 + 861
+41/1500 pairs | gsm8k:train:7148 | initial
+41/1500 pairs | gsm8k:train:7148 | recheck
+Saved gsm8k:train:7148: HELP; actual tokens 1149 + 1696
+42/1500 pairs | commonsenseqa:train:a0a04f00470f1b2ffa616d88d9de4d00 | initial
+42/1500 pairs | commonsenseqa:train:a0a04f00470f1b2ffa616d88d9de4d00 | recheck
+Saved commonsenseqa:train:a0a04f00470f1b2ffa616d88d9de4d00: HELP; actual tokens 1117 + 2001
+43/1500 pairs | gsm8k:test:286 | initial
+43/1500 pairs | gsm8k:test:286 | recheck
+Saved gsm8k:test:286: NO_CHANGE; actual tokens 439 + 868
+44/1500 pairs | commonsenseqa:validation:055817d8d703d3c2802545e3fccdcde3 | initial
+44/1500 pairs | commonsenseqa:validation:055817d8d703d3c2802545e3fccdcde3 | recheck
+Saved commonsenseqa:validation:055817d8d703d3c2802545e3fccdcde3: HELP; actual tokens 1105 + 1695
+45/1500 pairs | gsm8k:train:5876 | initial
+45/1500 pairs | gsm8k:train:5876 | recheck
+Saved gsm8k:train:5876: NO_CHANGE; actual tokens 1144 + 2176
+46/1500 pairs | gsm8k:train:3730 | initial
+46/1500 pairs | gsm8k:train:3730 | recheck
+Saved gsm8k:train:3730: HELP; actual tokens 1113 + 1903
+47/1500 pairs | commonsenseqa:train:069cdcaa0a071cfd3556c98f075a6e11 | initial
+47/1500 pairs | commonsenseqa:train:069cdcaa0a071cfd3556c98f075a6e11 | recheck
+Saved commonsenseqa:train:069cdcaa0a071cfd3556c98f075a6e11: HELP; actual tokens 1116 + 1609
+48/1500 pairs | gsm8k:test:256 | initial
+48/1500 pairs | gsm8k:test:256 | recheck
+Saved gsm8k:test:256: NO_CHANGE; actual tokens 719 + 1127
+49/1500 pairs | commonsenseqa:validation:4a4f6408fae400ce0beb5bea0f9913e9 | initial
+49/1500 pairs | commonsenseqa:validation:4a4f6408fae400ce0beb5bea0f9913e9 | recheck
+Saved commonsenseqa:validation:4a4f6408fae400ce0beb5bea0f9913e9: HELP; actual tokens 1105 + 1764
+50/1500 pairs | gsm8k:train:5308 | initial
+50/1500 pairs | gsm8k:train:5308 | recheck
+Saved gsm8k:train:5308: HELP; actual tokens 1116 + 1607
+51/1500 pairs | gsm8k:train:5164 | initial
+51/1500 pairs | gsm8k:train:5164 | recheck
+Saved gsm8k:train:5164: NO_CHANGE; actual tokens 436 + 682
+52/1500 pairs | commonsenseqa:train:155c0ce6a35e192d5a2491611296b6b0 | initial
+{
+  "status": "PARTIAL",
+  "phase": "collection",
+  "session_id": "cc2c161ad78545ae9a91e2e830a446e5",
+  "started_at": "2026-10-12T14:17:15.751174+00:00",
+  "ended_at": "2026-10-12T15:11:06.524200+00:00",
+  "minutes_budget": 55.415116666666684,
+  "protocol_hash": "f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+  "errors": [],
+  "planned_unique_questions": 1500,
+  "command": "scripts/collect_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1 --minutes 55.415116666666684",
+  "elapsed_seconds": 3230.780999999999,
+  "completed_pairs": 52,
+  "completed_unique_questions": 52,
+  "completed_by_partition": {
+    "source_train": 11,
+    "target_adaptation_pool": 10,
+    "source_development": 11,
+    "source_test": 10,
+    "target_test": 10
+  },
+  "class_counts": {
+    "NO_CHANGE": 32,
+    "HELP": 20
+  },
+  "call_events": 210,
+  "successful_calls": 105,
+  "failed_calls": 0,
+  "parse_failures": 28,
+  "remaining_questions": 1448,
+  "measured_pairs_per_hour": 53.72117542705838,
+  "estimated_remaining_hours": 26.953989529995816,
+  "eta_basis": "sum of measured successful call wall times; includes first-call cold load; cache/backend overhead not controlled",
+  "stop_reason": "insufficient session budget for one full bounded call; no request started"
+}

@@ -1,0 +1,11 @@
+# OOD feature and protocol compatibility
+
+**Feature status: compatible. Protocol status: OOD / cross-protocol diagnostic only.**
+
+All eight records contain the six required initial-only inputs: `query`, `base_response`, `base_answer`, `base_actual_tokens`, `base_done_reason`, and `base_finalizer_used`. Values passed the canonical `validate_initial_record` checks. The actual token count is Ollama prompt plus generated tokens as recorded by the collector; completion is the actual `stop` or `length` reason; finalizer use is explicitly false. No missing fields were imputed. The other 13 features are deterministic derivatives of those initial inputs.
+
+The v0.2 source-training distribution converts published empty completion status to the explicit `unknown` category, as documented in `rechecklab.data.public_frames`; this normalization is applied only to the reference training data, never to live initial records. Count normalized: 2. The exact frozen feature order is: `question_log_chars, question_log_words, question_numbers, question_math_symbols, question_marks, initial_log_chars, initial_log_words, initial_unique_word_ratio, initial_uncertainty_per_100_words, initial_backtracking_per_100_words, initial_checking_per_100_words, initial_number_count, initial_paragraph_count, initial_question_marks, initial_log_actual_tokens, initial_finalizer_used, initial_budget_exhausted, initial_answer_present, initial_completion_unknown`. The canonical schema is `pre-recheck-v2` with fingerprint `9e09eba8571dd2b31fb70fe83cb12191ba0051d620324037cc18cf3cae22e4ca`.
+
+The gate artifact is v0.2, threshold `0.25968145276947807`, harm weight `1.0`, class order `['HELP', 'NO_CHANGE', 'HURT']`. It was evaluated through the original fitted estimator, original feature extractor/order, original probability-column mapping, `revision_score`, and `decide_recheck`. This separate script intentionally skips only the production live-protocol compatibility comparison; it does not alter or falsify protocol metadata.
+
+The artifact expects SEVRA `active_verify`, while these responses use the separately frozen `live-study` recheck protocol. SEVRA full prompts and checkpoint digest are unavailable, and generation/finalizer settings differ. Consequently every gate score/action here is an **OOD transfer diagnostic**, not a protocol-validated deployment prediction.

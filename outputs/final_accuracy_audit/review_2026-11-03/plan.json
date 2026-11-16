@@ -1,0 +1,29 @@
+{
+  "new_feature": "initial_log_chars minus initial_log_actual_tokens; initial-only interaction",
+  "feature_estimator": "balanced HGB, unchanged prior hyperparameters",
+  "outer_inner_folds": [
+    5,
+    3
+  ],
+  "feature_cv_seeds": [
+    42,
+    142,
+    143,
+    144,
+    145,
+    146
+  ],
+  "rules": [
+    "completion",
+    "finalizer",
+    "length_or_missing",
+    "length_or_finalizer",
+    "keep",
+    "always"
+  ],
+  "adaptation_split_seed": 46,
+  "adaptation_split": "sorted groups then seeded shuffle, first half tune",
+  "test_access": "Existing-policy verification only, after source/adaptation selection; no new-policy test scoring",
+  "prior_cache_sha256": "aa3f98f70beaddf15b1e60cafa9d8c7274a3bd5dc87cc74ca47c4adf97d5a99e",
+  "script_sha256": "88cae23d25ce72f748efec40ff045ca266d8ca7aaa925a05ed6b1fae2448b25f"
+}

@@ -1,0 +1,46 @@
+cohort,true,predicted,raw_rollout_count,question_equivalent_count
+MATH source development,HELP,HELP,43,43.0
+MATH source development,HELP,NO_CHANGE,4,4.0
+MATH source development,HELP,HURT,0,0.0
+MATH source development,NO_CHANGE,HELP,39,39.0
+MATH source development,NO_CHANGE,NO_CHANGE,297,296.0
+MATH source development,NO_CHANGE,HURT,12,12.0
+MATH source development,HURT,HELP,1,1.0
+MATH source development,HURT,NO_CHANGE,4,4.0
+MATH source development,HURT,HURT,1,1.0
+MATH source test,HELP,HELP,60,60.0
+MATH source test,HELP,NO_CHANGE,5,5.0
+MATH source test,HELP,HURT,0,0.0
+MATH source test,NO_CHANGE,HELP,41,41.0
+MATH source test,NO_CHANGE,NO_CHANGE,281,281.0
+MATH source test,NO_CHANGE,HURT,10,10.0
+MATH source test,HURT,HELP,1,1.0
+MATH source test,HURT,NO_CHANGE,2,2.0
+MATH source test,HURT,HURT,0,0.0
+CommonsenseQA target test,HELP,HELP,8,4.0
+CommonsenseQA target test,HELP,NO_CHANGE,13,6.5
+CommonsenseQA target test,HELP,HURT,0,0.0
+CommonsenseQA target test,NO_CHANGE,HELP,42,21.0
+CommonsenseQA target test,NO_CHANGE,NO_CHANGE,1334,667.0
+CommonsenseQA target test,NO_CHANGE,HURT,0,0.0
+CommonsenseQA target test,HURT,HELP,0,0.0
+CommonsenseQA target test,HURT,NO_CHANGE,69,34.5
+CommonsenseQA target test,HURT,HURT,0,0.0
+MATH500,HELP,HELP,171,85.5
+MATH500,HELP,NO_CHANGE,13,6.5
+MATH500,HELP,HURT,3,1.5
+MATH500,NO_CHANGE,HELP,227,113.5
+MATH500,NO_CHANGE,NO_CHANGE,530,265.0
+MATH500,NO_CHANGE,HURT,34,17.0
+MATH500,HURT,HELP,12,6.0
+MATH500,HURT,NO_CHANGE,9,4.5
+MATH500,HURT,HURT,1,0.5
+GSM8K,HELP,HELP,20,10.0
+GSM8K,HELP,NO_CHANGE,13,6.5
+GSM8K,HELP,HURT,0,0.0
+GSM8K,NO_CHANGE,HELP,34,17.0
+GSM8K,NO_CHANGE,NO_CHANGE,2467,1233.5
+GSM8K,NO_CHANGE,HURT,71,35.5
+GSM8K,HURT,HELP,0,0.0
+GSM8K,HURT,NO_CHANGE,30,15.0
+GSM8K,HURT,HURT,3,1.5

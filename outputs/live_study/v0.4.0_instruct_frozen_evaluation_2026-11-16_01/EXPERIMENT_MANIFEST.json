@@ -1,0 +1,141 @@
+{
+  "study": "RecheckLab independent Instruct-model validation",
+  "model": {
+    "model": "qwen3:4b-instruct",
+    "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+    "ollama_version": "ollama version is 0.40.16",
+    "family": "qwen3",
+    "parameter_size": "4.0B",
+    "quantization": "Q4_K_M",
+    "fine_tune": "Instruct",
+    "model_version": "2507",
+    "capabilities": [
+      "tools",
+      "thinking",
+      "completion"
+    ]
+  },
+  "protocol": {
+    "id": "live-study-v0.4.0-qwen3-4b-instruct-2507",
+    "prompts": {
+      "initial": "Solve this arithmetic word problem. Use at most three short calculation lines. End with exactly one final line in this form: FINAL: <number>. Do not write anything after that line.",
+      "revision": "Check the saved answer against the original problem. Keep it if correct; otherwise correct it. Use at most three short calculation lines. End with exactly one final line in this form: FINAL: <number>. Do not write anything after that line."
+    },
+    "generation": {
+      "initial_num_predict": 512,
+      "revision_num_predict": 512,
+      "context_window": 4096,
+      "num_predict": 512,
+      "temperature": 0.0,
+      "top_k": 1,
+      "top_p": 1.0,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "stop": [
+        "<|im_start|>",
+        "<|im_end|>"
+      ],
+      "stream": false,
+      "think_field": "omitted; use installed Instruct checkpoint's default template",
+      "timeout_seconds": 180,
+      "retries": 0,
+      "initial_seed": "40000 + source question id",
+      "revision_seed": "50000 + source question id"
+    },
+    "prompt_sha256": {
+      "initial": "bb686ea99531f548c115886f295fd8fc250fddd98a69d2f0385abeb27c4f52df",
+      "revision": "bf630b1485eeb243b097d50a4ea63f6caa74790e0279cacc38e753d3167db8cf"
+    },
+    "parser": "strict-final-line-numeric-v1; last nonempty line must be FINAL: finite decimal/fraction-free numeric literal",
+    "grader": "GSM8K published #### numeric key; exact Decimal equality after comma normalization; no tolerance",
+    "answers_and_gold_excluded_from_gate_features": true,
+    "feature_schema": "pre-recheck-v2",
+    "feature_count": 19,
+    "gate_artifact_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+    "gate_threshold": 0.25968145276947807,
+    "gate_score": "p_HELP - p_HURT",
+    "gate_rule": "score > threshold",
+    "gate_status": "cross-model/cross-protocol OOD transfer policy; not protocol-validated"
+  },
+  "dataset": {
+    "repository": "openai/gsm8k",
+    "revision": "740312add88f781978c0658806c59bc2815b9866",
+    "split": "main/train",
+    "source_file": "outputs\\live_study\\v0.3.0\\raw\\gsm8k\\740312add88f781978c0658806c59bc2815b9866\\train.parquet",
+    "source_sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+    "selection_seed": 20261116,
+    "source_candidates": 7473,
+    "excluded_canonical_groups": 4732,
+    "eligible_count": 6661,
+    "selection_rule": "Uniform seeded sample from canonical-unique eligible GSM8K train questions after excluding all local v0.2 prepared partitions and all complete v0.3 question, response, prediction, and selection records; question text/hash only; no answer, difficulty, outcomes, or gate predictions used."
+  },
+  "resource_guard": {
+    "sequential": true,
+    "minimum_free_ram_gib": 2.0,
+    "minimum_free_vram_mib": 512,
+    "timeout_seconds": 180,
+    "retries": 0,
+    "stop_on_any_failure_or_guard_breach": true,
+    "never_terminate_other_processes": true
+  },
+  "policies": [
+    "never recheck",
+    "always recheck",
+    "completion heuristic",
+    "frozen v0.2 ML gate (cross-model/cross-protocol OOD)"
+  ],
+  "analysis": {
+    "unit": "question",
+    "accuracy_intervals": "Wilson 95%",
+    "paired_differences": "question bootstrap percentile 95%, 20,000 resamples, fixed seed 20261117",
+    "no_significance_or_generalization_claim_from_small_development_set": true
+  },
+  "selection_frozen_before_any_new_inference": true,
+  "phase": "untouched_frozen_evaluation",
+  "sample_size": 40,
+  "expected_calls": 80,
+  "question_selection_sha256": "7f2241d8f72a16f1917a79c11f93264b0a937db4332e34890267668c3ea1265e",
+  "trusted_key_sha256": "902512b6e3625530fd8b0be04593a2bf42ec4f5267dc7b53978a68228afd1a1c",
+  "question_ids": [
+    "gsm8k:train:5841",
+    "gsm8k:train:4323",
+    "gsm8k:train:4722",
+    "gsm8k:train:980",
+    "gsm8k:train:5733",
+    "gsm8k:train:3484",
+    "gsm8k:train:275",
+    "gsm8k:train:7358",
+    "gsm8k:train:4135",
+    "gsm8k:train:6948",
+    "gsm8k:train:4600",
+    "gsm8k:train:2675",
+    "gsm8k:train:4301",
+    "gsm8k:train:396",
+    "gsm8k:train:6591",
+    "gsm8k:train:5021",
+    "gsm8k:train:4885",
+    "gsm8k:train:4108",
+    "gsm8k:train:1817",
+    "gsm8k:train:4240",
+    "gsm8k:train:533",
+    "gsm8k:train:985",
+    "gsm8k:train:3013",
+    "gsm8k:train:1736",
+    "gsm8k:train:2241",
+    "gsm8k:train:5802",
+    "gsm8k:train:3353",
+    "gsm8k:train:5722",
+    "gsm8k:train:6108",
+    "gsm8k:train:1219",
+    "gsm8k:train:3480",
+    "gsm8k:train:6714",
+    "gsm8k:train:1129",
+    "gsm8k:train:1506",
+    "gsm8k:train:5712",
+    "gsm8k:train:5388",
+    "gsm8k:train:2050",
+    "gsm8k:train:1663",
+    "gsm8k:train:4353",
+    "gsm8k:train:2405"
+  ]
+}

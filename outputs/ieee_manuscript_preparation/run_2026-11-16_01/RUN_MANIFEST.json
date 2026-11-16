@@ -1,0 +1,53 @@
+{
+  "run": "2026-11-16_01",
+  "artifact_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "artifact_protocol": {
+    "model": "qwen3:4b",
+    "recheck_protocol": "sevra:10411137fcaa02b3bd549a2285b43ffe315417f6:active_verify",
+    "action": "active_verify",
+    "action_description_sha256": "4287d7497331d675de415d1540fabdd67a61ea526457506a8b7856ef5d726dd9",
+    "published_generation_settings": {
+      "dataset_revision": "10411137fcaa02b3bd549a2285b43ffe315417f6",
+      "base_generation_limit": 4096,
+      "finalizer_max_tokens": 512,
+      "finalizer": "non-reasoning final answer when needed",
+      "protocol_evidence": "Pinned public dataset card; complete prompts/checkpoint digest not released"
+    },
+    "identity_validation_limit": "Public release identifies model family and action, but omits the checkpoint digest and full prompts."
+  },
+  "threshold": 0.25968145276947807,
+  "harm_weight": 1.0,
+  "seed": 20261116,
+  "bootstrap_replicates": 10000,
+  "tests_used_for_selection": false,
+  "model_training_run": false,
+  "new_llm_inference_run": false,
+  "existing_frozen_gate_scored_external_records": true,
+  "primary_cohort_predictions": "reused from saved analysis_predictions.csv and checked against frozen artifact",
+  "cohorts": {
+    "MATH source development": {
+      "rows": 401,
+      "questions": 400
+    },
+    "MATH source test": {
+      "rows": 400,
+      "questions": 400
+    },
+    "CommonsenseQA target test": {
+      "rows": 1466,
+      "questions": 733
+    },
+    "MATH500": {
+      "rows": 1000,
+      "questions": 500
+    },
+    "GSM8K": {
+      "rows": 2638,
+      "questions": 1319
+    }
+  },
+  "policy_definition": "completion = base_done_reason == length; ML uses frozen v0.2 probability and saved threshold/harm weight; oracle selects HELP rows hindsight only",
+  "aggregation": "each question contributes weight one; rollout rows averaged within canonical question hash",
+  "external_protocol_limit": "SEVRA card and pinned release establish model family/action and settings; exact prompts/checkpoint digest absent",
+  "analysis_script_sha256": "3dc7d8e09e2b179c6eaa56039a65ff454a238fc881cf8b5fd6d6f3286272ae08"
+}

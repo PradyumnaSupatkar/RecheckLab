@@ -1,0 +1,848 @@
+{
+  "phase": "development_reliability_gate",
+  "status": "COMPLETE",
+  "calls_completed": 20,
+  "pairs_completed": 10,
+  "resource_samples": [
+    {
+      "example_id": "math:test:intermediate_algebra:intermediate_algebra/362",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794830790.3216534,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 5.828,
+        "ram_used_percent": 62.2,
+        "swap_percent": 3.7,
+        "swap_used_gib": 0.634,
+        "cpu_utilization_percent": 6.9,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 269,
+          "free_mib": 3694,
+          "utilization_percent": 0,
+          "temperature_c": 54
+        },
+        "ollama_ps": "NAME    ID    SIZE    PROCESSOR    CONTEXT    RUNNER    UNTIL \n"
+      },
+      "after": {
+        "timestamp_unix": 1794830822.534998,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.776,
+        "ram_used_percent": 75.5,
+        "swap_percent": 3.7,
+        "swap_used_gib": 0.634,
+        "cpu_utilization_percent": 6.5,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2517,
+          "free_mib": 1446,
+          "utilization_percent": 0,
+          "temperature_c": 63
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:intermediate_algebra:intermediate_algebra/362",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794830824.3311465,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.78,
+        "ram_used_percent": 75.5,
+        "swap_percent": 3.7,
+        "swap_used_gib": 0.634,
+        "cpu_utilization_percent": 12.8,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2514,
+          "free_mib": 1449,
+          "utilization_percent": 0,
+          "temperature_c": 62
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794830851.6857579,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.786,
+        "ram_used_percent": 75.4,
+        "swap_percent": 3.7,
+        "swap_used_gib": 0.634,
+        "cpu_utilization_percent": 5.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2511,
+          "free_mib": 1452,
+          "utilization_percent": 11,
+          "temperature_c": 68
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:counting_and_probability:counting_and_probability/130",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794830851.8849883,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.784,
+        "ram_used_percent": 75.5,
+        "swap_percent": 3.7,
+        "swap_used_gib": 0.634,
+        "cpu_utilization_percent": 4.9,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2511,
+          "free_mib": 1452,
+          "utilization_percent": 11,
+          "temperature_c": 68
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794830931.1185458,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.69,
+        "ram_used_percent": 76.1,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.603,
+        "cpu_utilization_percent": 5.2,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2511,
+          "free_mib": 1452,
+          "utilization_percent": 0,
+          "temperature_c": 72
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:counting_and_probability:counting_and_probability/130",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794830931.3238432,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.698,
+        "ram_used_percent": 76.0,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.603,
+        "cpu_utilization_percent": 7.7,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2511,
+          "free_mib": 1452,
+          "utilization_percent": 0,
+          "temperature_c": 72
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794830965.087182,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.586,
+        "ram_used_percent": 76.7,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.602,
+        "cpu_utilization_percent": 12.7,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2572,
+          "free_mib": 1391,
+          "utilization_percent": 0,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:algebra:algebra/837",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794830965.2896683,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.597,
+        "ram_used_percent": 76.7,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.602,
+        "cpu_utilization_percent": 21.7,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2572,
+          "free_mib": 1391,
+          "utilization_percent": 0,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794830992.1578016,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.773,
+        "ram_used_percent": 75.5,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.602,
+        "cpu_utilization_percent": 6.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2571,
+          "free_mib": 1392,
+          "utilization_percent": 11,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:algebra:algebra/837",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794830992.3629026,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.78,
+        "ram_used_percent": 75.5,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.602,
+        "cpu_utilization_percent": 6.5,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2571,
+          "free_mib": 1392,
+          "utilization_percent": 11,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831006.7266333,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.769,
+        "ram_used_percent": 75.6,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.602,
+        "cpu_utilization_percent": 5.9,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2571,
+          "free_mib": 1392,
+          "utilization_percent": 22,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:prealgebra:prealgebra/708",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794831006.9150295,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.769,
+        "ram_used_percent": 75.6,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.602,
+        "cpu_utilization_percent": 4.5,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2571,
+          "free_mib": 1392,
+          "utilization_percent": 22,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831018.1654584,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.688,
+        "ram_used_percent": 76.1,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.602,
+        "cpu_utilization_percent": 7.5,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2571,
+          "free_mib": 1392,
+          "utilization_percent": 11,
+          "temperature_c": 69
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:prealgebra:prealgebra/708",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794831018.3665159,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.689,
+        "ram_used_percent": 76.1,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.602,
+        "cpu_utilization_percent": 10.0,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2571,
+          "free_mib": 1392,
+          "utilization_percent": 11,
+          "temperature_c": 69
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831025.7396634,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.681,
+        "ram_used_percent": 76.1,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.602,
+        "cpu_utilization_percent": 5.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2571,
+          "free_mib": 1392,
+          "utilization_percent": 22,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:intermediate_algebra:intermediate_algebra/195",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794831025.94127,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.681,
+        "ram_used_percent": 76.1,
+        "swap_percent": 3.5,
+        "swap_used_gib": 0.602,
+        "cpu_utilization_percent": 5.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2571,
+          "free_mib": 1392,
+          "utilization_percent": 22,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831210.8897378,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.035,
+        "ram_used_percent": 86.8,
+        "swap_percent": 6.4,
+        "swap_used_gib": 1.094,
+        "cpu_utilization_percent": 21.6,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2582,
+          "free_mib": 1381,
+          "utilization_percent": 12,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:intermediate_algebra:intermediate_algebra/195",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794831211.1188385,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.017,
+        "ram_used_percent": 86.9,
+        "swap_percent": 6.4,
+        "swap_used_gib": 1.094,
+        "cpu_utilization_percent": 13.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2582,
+          "free_mib": 1381,
+          "utilization_percent": 0,
+          "temperature_c": 69
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831244.1626468,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.938,
+        "ram_used_percent": 87.4,
+        "swap_percent": 6.4,
+        "swap_used_gib": 1.094,
+        "cpu_utilization_percent": 7.8,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2592,
+          "free_mib": 1371,
+          "utilization_percent": 0,
+          "temperature_c": 69
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:intermediate_algebra:intermediate_algebra/453",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794831244.362319,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.938,
+        "ram_used_percent": 87.4,
+        "swap_percent": 6.4,
+        "swap_used_gib": 1.094,
+        "cpu_utilization_percent": 9.7,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2592,
+          "free_mib": 1371,
+          "utilization_percent": 0,
+          "temperature_c": 69
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831294.2261112,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.686,
+        "ram_used_percent": 89.1,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.094,
+        "cpu_utilization_percent": 6.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2560,
+          "free_mib": 1403,
+          "utilization_percent": 0,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:intermediate_algebra:intermediate_algebra/453",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794831294.4317245,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.685,
+        "ram_used_percent": 89.1,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.094,
+        "cpu_utilization_percent": 16.8,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2560,
+          "free_mib": 1403,
+          "utilization_percent": 0,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831329.2507043,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.593,
+        "ram_used_percent": 89.7,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.093,
+        "cpu_utilization_percent": 5.2,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2560,
+          "free_mib": 1403,
+          "utilization_percent": 11,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:prealgebra:prealgebra/288",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794831329.4522822,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.602,
+        "ram_used_percent": 89.6,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.093,
+        "cpu_utilization_percent": 5.2,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2560,
+          "free_mib": 1403,
+          "utilization_percent": 11,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831349.0997481,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.39,
+        "ram_used_percent": 91.0,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.093,
+        "cpu_utilization_percent": 4.9,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2562,
+          "free_mib": 1401,
+          "utilization_percent": 20,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:prealgebra:prealgebra/288",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794831349.302897,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.388,
+        "ram_used_percent": 91.0,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.093,
+        "cpu_utilization_percent": 16.2,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2562,
+          "free_mib": 1401,
+          "utilization_percent": 0,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831361.8016322,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.443,
+        "ram_used_percent": 90.6,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.093,
+        "cpu_utilization_percent": 6.0,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2576,
+          "free_mib": 1387,
+          "utilization_percent": 21,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:number_theory:number_theory/222",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794831361.9915082,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.449,
+        "ram_used_percent": 90.6,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.093,
+        "cpu_utilization_percent": 5.0,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2576,
+          "free_mib": 1387,
+          "utilization_percent": 21,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831413.3929982,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.1,
+        "ram_used_percent": 86.4,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.093,
+        "cpu_utilization_percent": 5.2,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2552,
+          "free_mib": 1411,
+          "utilization_percent": 15,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:number_theory:number_theory/222",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794831413.6090312,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.1,
+        "ram_used_percent": 86.4,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.093,
+        "cpu_utilization_percent": 2.1,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2552,
+          "free_mib": 1411,
+          "utilization_percent": 15,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831432.6378531,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.124,
+        "ram_used_percent": 86.2,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.093,
+        "cpu_utilization_percent": 14.7,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2552,
+          "free_mib": 1411,
+          "utilization_percent": 13,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:precalculus:precalculus/189",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794831432.8435333,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.123,
+        "ram_used_percent": 86.2,
+        "swap_percent": 6.3,
+        "swap_used_gib": 1.093,
+        "cpu_utilization_percent": 12.2,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2552,
+          "free_mib": 1411,
+          "utilization_percent": 0,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831536.9498327,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.749,
+        "ram_used_percent": 88.7,
+        "swap_percent": 6.5,
+        "swap_used_gib": 1.118,
+        "cpu_utilization_percent": 33.7,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2556,
+          "free_mib": 1407,
+          "utilization_percent": 23,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:precalculus:precalculus/189",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794831537.165263,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.757,
+        "ram_used_percent": 88.6,
+        "swap_percent": 6.5,
+        "swap_used_gib": 1.118,
+        "cpu_utilization_percent": 22.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2556,
+          "free_mib": 1407,
+          "utilization_percent": 23,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831584.9554417,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.238,
+        "ram_used_percent": 85.5,
+        "swap_percent": 6.5,
+        "swap_used_gib": 1.118,
+        "cpu_utilization_percent": 6.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2568,
+          "free_mib": 1395,
+          "utilization_percent": 24,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:intermediate_algebra:intermediate_algebra/870",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794831585.1623979,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.238,
+        "ram_used_percent": 85.5,
+        "swap_percent": 6.5,
+        "swap_used_gib": 1.118,
+        "cpu_utilization_percent": 5.9,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2568,
+          "free_mib": 1395,
+          "utilization_percent": 24,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831728.3019154,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.851,
+        "ram_used_percent": 88.0,
+        "swap_percent": 6.5,
+        "swap_used_gib": 1.118,
+        "cpu_utilization_percent": 7.1,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2589,
+          "free_mib": 1374,
+          "utilization_percent": 12,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    },
+    {
+      "example_id": "math:test:intermediate_algebra:intermediate_algebra/870",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794831728.5029547,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.86,
+        "ram_used_percent": 87.9,
+        "swap_percent": 6.5,
+        "swap_used_gib": 1.118,
+        "cpu_utilization_percent": 11.5,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2589,
+          "free_mib": 1374,
+          "utilization_percent": 12,
+          "temperature_c": 71
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      },
+      "after": {
+        "timestamp_unix": 1794831798.392121,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 1.825,
+        "ram_used_percent": 88.2,
+        "swap_percent": 6.0,
+        "swap_used_gib": 1.029,
+        "cpu_utilization_percent": 9.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2573,
+          "free_mib": 1390,
+          "utilization_percent": 12,
+          "temperature_c": 70
+        },
+        "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+      }
+    }
+  ],
+  "gate_scored_before_revision": true,
+  "gate_protocol_status": "OOD_DIAGNOSTIC",
+  "last_call": {
+    "example_id": "math:test:intermediate_algebra:intermediate_algebra/870",
+    "phase": "revision",
+    "completion_reason": "stop",
+    "parse_status": "parseable",
+    "failure_type": "none",
+    "tokens": {
+      "prompt_tokens": 2711,
+      "output_tokens": 847,
+      "total_tokens": 3558
+    },
+    "wall_clock_seconds": 69.70381479999924
+  },
+  "gate_predictions_written_before_revision": 10,
+  "last_pair": {
+    "example_id": "math:test:intermediate_algebra:intermediate_algebra/870",
+    "initial_parse_valid": true,
+    "revision_parse_valid": true,
+    "outcome": "NO_CHANGE"
+  },
+  "final_resource": {
+    "timestamp_unix": 1794831798.5869133,
+    "total_ram_gib": 15.42,
+    "free_ram_gib": 1.826,
+    "ram_used_percent": 88.2,
+    "swap_percent": 6.0,
+    "swap_used_gib": 1.029,
+    "cpu_utilization_percent": 2.7,
+    "gpu": {
+      "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "total_mib": 4096,
+      "used_mib": 2573,
+      "free_mib": 1390,
+      "utilization_percent": 12,
+      "temperature_c": 70
+    },
+    "ollama_ps": "NAME                 ID              SIZE      PROCESSOR          CONTEXT    RUNNER      UNTIL              \nqwen3:4b-instruct    0edcdef34593    4.2 GB    45%/55% CPU/GPU    8192       llamacpp    4 minutes from now    \n"
+  }
+}

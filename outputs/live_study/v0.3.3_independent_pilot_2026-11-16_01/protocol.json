@@ -1,0 +1,153 @@
+{
+  "protocol_version": "live-study-v0.3.2",
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "backend": {
+    "ollama_version": "0.40.16",
+    "installed_model": {
+      "name": "qwen3:4b",
+      "model": "qwen3:4b",
+      "modified_at": "2026-10-04T22:16:58.0498628+05:30",
+      "size": 2497293931,
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "4.0B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 2560,
+        "runner": "ggml"
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    },
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen3",
+      "families": [
+        "qwen3"
+      ],
+      "parameter_size": "4.0B",
+      "quantization_level": "Q4_K_M"
+    },
+    "model_info": {
+      "general.architecture": "qwen3",
+      "general.basename": "Qwen3",
+      "general.file_type": 15,
+      "general.finetune": "Thinking",
+      "general.license": "apache-2.0",
+      "general.license.link": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/main/LICENSE",
+      "general.parameter_count": 4022468096,
+      "general.quantization_version": 2,
+      "general.size_label": "4B",
+      "general.tags": [
+        "text-generation"
+      ],
+      "general.type": "model",
+      "general.version": "2507",
+      "qwen3.attention.head_count": 32,
+      "qwen3.attention.head_count_kv": 8,
+      "qwen3.attention.key_length": 128,
+      "qwen3.attention.layer_norm_rms_epsilon": 1e-06,
+      "qwen3.attention.value_length": 128,
+      "qwen3.block_count": 36,
+      "qwen3.context_length": 262144,
+      "qwen3.embedding_length": 2560,
+      "qwen3.feed_forward_length": 9728,
+      "qwen3.rope.freq_base": 5000000,
+      "tokenizer.ggml.add_bos_token": false,
+      "tokenizer.ggml.bos_token_id": 151643,
+      "tokenizer.ggml.eos_token_id": 151645,
+      "tokenizer.ggml.merges": [],
+      "tokenizer.ggml.model": "gpt2",
+      "tokenizer.ggml.padding_token_id": 151643,
+      "tokenizer.ggml.pre": "qwen2",
+      "tokenizer.ggml.token_type": [],
+      "tokenizer.ggml.tokens": []
+    },
+    "supported_thinking": {
+      "values": [
+        true
+      ],
+      "default": true
+    },
+    "template": "{{- $lastUserIdx := -1 -}}\n{{- range $idx, $msg := .Messages -}}\n{{- if eq $msg.Role \"user\" }}{{ $lastUserIdx = $idx }}{{ end -}}\n{{- end }}\n{{- if or .System .Tools }}<|im_start|>system\n{{ if .System }}{{ .System }}\n\n{{ end }}\n{{- if .Tools }}# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end -}}\n<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if (and $.IsThinkSet (and .Thinking (or $last (gt $i $lastUserIdx)))) -}}\n<think>{{ .Thinking }}</think>\n{{ end -}}\n{{ if .Content }}{{ .Content }}{{ end }}\n{{- if .ToolCalls }}\n{{- range .ToolCalls }}\n<tool_call>\n{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n</tool_call>\n{{- end }}\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n<think>\n{{ end }}\n{{- end }}",
+    "parameters": "top_p                          0.95\nrepeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20",
+    "capabilities": [
+      "completion",
+      "tools",
+      "thinking"
+    ]
+  },
+  "prompts": {
+    "initial": "Solve the question independently. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or the option letter, as appropriate.",
+    "recheck": "Recheck the saved initial response against the same original question. Keep its answer if justified; change it only if you identify an error. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or option letter.",
+    "initial_messages": "one user: initial prompt + two newlines + original question",
+    "recheck_messages": "same initial user; assistant: full saved initial response; user: recheck prompt"
+  },
+  "generation": {
+    "initial_token_budget": 1024,
+    "recheck_token_budget": 1024,
+    "context_window": 4096,
+    "thinking": true,
+    "temperature": 0.0,
+    "initial_seed": 42,
+    "recheck_seed": 43,
+    "top_k": 1,
+    "top_p": 1.0,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "stop": [
+      "<|im_start|>",
+      "<|im_end|>"
+    ],
+    "stream": false
+  },
+  "finalizer": {
+    "enabled": false,
+    "calls": 0
+  },
+  "parser": {
+    "version": "explicit-final-v1",
+    "numeric": "explicit FINAL marker; finite decimal/fraction; comma/currency normalization",
+    "choice": "explicit FINAL marker; single A-E option letter; optional parentheses/punctuation",
+    "open": "explicit FINAL marker only",
+    "unparseable": "record parsing failure; completed call scored incorrect offline"
+  },
+  "grader": {
+    "version": "decimal-exact-choice-v1",
+    "numeric": "exact Decimal equality; no floating tolerance",
+    "choice": "exact normalized letter equality",
+    "keys": "separate offline file; never in call or feature inputs"
+  },
+  "transport": {
+    "timeout_seconds": 120,
+    "automatic_retries": 0,
+    "explicit_retry_limit": 2,
+    "ambiguous_started_calls": "block resume until operator resolves; never silently repeat",
+    "session_budget": "do not start calls after deadline; bound each call by remaining time"
+  },
+  "sampling": "one initial call and one separate recheck per question; offline recheck EVERY question",
+  "runtime_treatment": "no warm-up call; first-call cold load included; backend caching uncontrolled and actual durations logged",
+  "historical_comparison": {
+    "sevra_checkpoint_digest": "unknown",
+    "sevra_prompts": "unknown",
+    "sevra_context": "unknown",
+    "sevra_initial_budget": 4096,
+    "sevra_finalizer_max_tokens": 512,
+    "difference": "new pinned Thinking-2507 local checkpoint, explicit prompts/decoding, 1024-token calls, no finalizer; independent study"
+  },
+  "references": [
+    "https://github.com/ollama/ollama/blob/main/docs/api.md",
+    "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507"
+  ]
+}

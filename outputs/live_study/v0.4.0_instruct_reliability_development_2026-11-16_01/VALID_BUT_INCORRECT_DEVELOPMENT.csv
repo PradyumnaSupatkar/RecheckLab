@@ -1,0 +1,3 @@
+﻿example_id,phase,model_answer,parseable,correct,done_reason
+gsm8k:train:3744,initial,18,True,False,stop
+gsm8k:train:3744,revision,18,True,False,stop

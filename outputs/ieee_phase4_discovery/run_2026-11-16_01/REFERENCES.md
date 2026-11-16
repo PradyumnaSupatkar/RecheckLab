@@ -1,0 +1,66 @@
+# Verified references and search boundary
+
+Search date and cutoff: **16 November 2026**. Primary records were checked through arXiv, ACL Anthology, PMLR, NeurIPS/MLSys proceedings and official conference sites. IEEE Xplore and ACM-oriented searches were also made; some full texts/pages were blocked or unavailable. No exhaustive systematic-review or confirmed-absence claim is made. Publication status below distinguishes proceedings from author-reported acceptance and unreviewed preprints. Dates are submission dates for arXiv and proceedings month/year when a precise publication day was not established.
+
+## Direct antecedents
+
+**R01.** Sajib Acharjee Dip, Dawei Zhou, Liqing Zhang. *Think Again or Think Longer? Selective Verification for Budget-Aware Reasoning.* 18 June 2026; arXiv v1 preprint. [Record](https://arxiv.org/abs/2606.19808), [full text](https://arxiv.org/html/2606.19808v1). Inspected formulation, cost accounting, intervention/completion analyses and appendices. Selective verification, longer initial budgets, alternative recovery actions and harmful changes are already studied. RecheckLab's public replay is derivative evidence, not an independent replication. Relevant to D1–D7.
+
+**R02.** Mingguang Chen, Bo Qu, Licheng Wang. *The Calibration Floor: Format Repair Can Masquerade as Self-Correction at Small-to-Mid Scale.* 5 August 2026; arXiv v1 preprint. [Record](https://arxiv.org/abs/2608.04355), [full text](https://arxiv.org/html/2608.04355v1). Inspected decomposition, forced-continuation/constrained-output controls and limitations. Direct overlap with general format-versus-content recovery; its intervention is not a proof of unchanged internal reasoning. Relevant to D5 and the rejected Phase 3 broad claim.
+
+**R03.** Tianzhu Zhang. *When Should LLMs Trust Their Own Revisions? A Risk-Aware Study of Intrinsic Self-Correction.* 23 September 2026; arXiv v1 preprint. [Record](https://arxiv.org/abs/2609.35832), [full text](https://arxiv.org/html/2609.35832v1). Inspected transition/policy definitions and parsing audit. Recovery/harm accounting and runtime revision policies already exist; applied decisions and generated candidates must be distinguished. Relevant to D1, D3, D4 and D7.
+
+**R04.** Mobina Kashaniyan, Ali Jannesari. *ATEST: Adaptive Resource-Aware Test-Time Scaling for LLM Inference.* 18 October 2026; arXiv v1 preprint. [Record](https://arxiv.org/abs/2610.25519), [full text](https://arxiv.org/html/2610.25519v1). Inspected online/calibrated modes, transfer and discussion. Joint answer-sampling and live resource-cost control is already studied; importantly, deferrals count against service accuracy. D2 cannot claim novelty merely by including failures or replacing a datacenter GPU with a laptop.
+
+## Evaluation, sampling and uncertainty
+
+**R05.** Jannik Kossen, Sebastian Farquhar, Yarin Gal, Tom Rainforth. *Active Testing: Sample-Efficient Model Evaluation.* ICML, 18–24 July 2021; peer-reviewed proceedings, PMLR 139:5753–5763. [Primary proceedings](https://proceedings.mlr.press/v139/kossen21a.html). Inspected abstract and paper introduction: selection-aware evaluation and bias correction are established. D1 must beat a strong active-testing baseline, not uniform sampling alone.
+
+**R06.** Chia-Yu Hsu, Shubhanshu Shekhar. *Efficient Sequential Evaluation of Large Language Models.* 19 July 2026; preliminary arXiv v1 preprint. [Record](https://arxiv.org/abs/2607.17409), [full text](https://arxiv.org/html/2607.17409v1). Inspected setting, related work and querying constructions. Active queries with confidence sequences and prediction-mismatch analysis already exist; uniform querying can win. Relevant to D1; substituting a policy-difference outcome into a known estimator is not automatically a new contribution.
+
+**R07.** Qianli Shen, Xiang Li, Ruomeng Ding, Yanxi Chen, Daoyuan Chen, Yaliang Li. *Speculative Evaluation of Stochastic LLMs.* 23 September 2026; arXiv v1. [Paper](https://arxiv.org/abs/2609.28560), [methods/limitations](https://arxiv.org/html/2609.28560v1), [authors' repository](https://github.com/ShenQianli/SpecEval). Repository reports short-paper acceptance at a NeurIPS 2026 workshop; this is not NeurIPS main-track acceptance. Inspected fixed-budget allocation, replay/timing boundary and limitations. Repetition allocation is established; correlated outcomes and heterogeneous costs are explicitly listed as extensions. Those are plausible D1 openings, not proof they are unstudied elsewhere.
+
+**R08.** Nikos Karampatziakis, Paul Mineiro, Aaditya Ramdas. *Off-Policy Confidence Sequences.* ICML, 18–24 July 2021; peer-reviewed proceedings, PMLR 139:5301–5310. [Primary proceedings](https://proceedings.mlr.press/v139/karampatziakis21a.html). Time-uniform off-policy bounds and gated deployment are established. D1 should reuse this statistical foundation with explicit assumptions, not claim to invent safe policy comparison.
+
+**R09.** Robert E. Blackwell, Jon Barry, Anthony G. Cohn. *Towards Reproducible LLM Evaluation: Quantifying Uncertainty in LLM Benchmark Scores.* 4 October 2024; arXiv record, venue not verified here. [Primary record](https://arxiv.org/abs/2410.03492). Abstract-level inspection only. Repeated-run uncertainty is already recognized; relevant to D4/D8. No detailed method novelty judgment relies solely on this abstract.
+
+## Runtime resources and reproducibility
+
+**R10.** Teng Mei, Chengxuan Pei, Weijun Wang, Jie Wu, Marco Canini, Yunming Xiao. *EdgePace: Deadline- and Freshness-Aware LLM Scheduling on Unified-Memory Platforms.* 27 October 2026; arXiv v1 preprint. [Record](https://arxiv.org/abs/2610.37307), [full text](https://arxiv.org/html/2610.37307v1). Inspected goals and interruption/memory-pressure design. Safe suspension, deadline protection and memory-aware scheduling already exist. D2's possible distinction is answer-delivery semantics across a revision transaction; unified-memory results do not directly characterize this discrete-GPU Windows laptop.
+
+**R11.** Jiayi Yuan, Hao Li, Xinheng Ding, Wenya Xie, Yu-Jhe Li, Wentian Zhao, Kun Wan, Jing Shi, Xia Hu, Zirui Liu. *Understanding and Mitigating Numerical Sources of Nondeterminism in LLM Inference.* NeurIPS 2025; peer-reviewed main proceedings. [Official record](https://proceedings.neurips.cc/paper_files/paper/2025/hash/f80094a824ba5912d4a2de169c404a40-Abstract-Conference.html). System configuration and numerical precision can alter outputs. D3/D8 must distinguish protocol interventions from random-seed and numerical effects; “fixed seed guarantees identical output” is indefensible.
+
+**R12.** Arnold Olympio, Juan Manuel Servera Bondroit, Wael Abdelmalek, Guang Lu, João Carvalho. *Reproducible LLM Inference Benchmarking: A Sequential Isolation Protocol for Regression Testing.* 7 October 2026; arXiv v1 preprint. [Primary record](https://arxiv.org/abs/2610.09778). Abstract-level inspection: controlled state and repeated benchmarking directly overlap D8. A different laptop alone is not a new benchmarking method.
+
+**R13.** In Gim, Guojun Chen, Seung-seob Lee, Nikhil Sarda, Anurag Khandelwal, Lin Zhong. *Prompt Cache: Modular Attention Reuse for Low-Latency Inference.* MLSys 2024; peer-reviewed proceedings, volume 6. [Official record](https://proceedings.mlsys.org/paper_files/paper/2024/hash/a66caa1703fe34705a4368c3014c1966-Abstract-Conference.html). Reusing attention states across prompts is established. D8 investigates evaluation order, not a new cache mechanism.
+
+## Shift, risk monitoring and protocol variation
+
+**R14.** Aleksandr Podkopaev, Aaditya Ramdas. *Tracking the Risk of a Deployed Model and Detecting Harmful Distribution Shifts.* ICLR 2022; peer-reviewed conference paper. [Primary conference PDF](https://openreview.net/pdf/f763a5271b61d98bca4127ab14ce483150d152c4.pdf). Risk monitoring distinguishes harmful from benign shift. Relevant D3 baseline; a drift alarm is not a correctness certificate.
+
+**R15.** Guangyi Zhang, Yunlong Cai, Guanding Yu, Osvaldo Simeone. *Prediction-Powered Risk Monitoring of Deployed Models for Detecting Harmful Distribution Shifts.* 2 February 2026; v2 10 June 2026; primary record states accepted at ICML 2026. [Record](https://arxiv.org/abs/2602.02229), [full text](https://arxiv.org/html/2602.02229v2). Combines limited true labels and predictions for anytime risk monitoring. D3 cannot claim novelty merely by using a small sentinel label budget.
+
+**R16.** Muhammad Atif Saeed, Azka Atiq, Adarsh Kumar, Akhtar Jamil, Uzair Iqbal, Roland Aydin. *SHIFT-JEV: Certified Abstention and Gain-Gated Continual Adaptation for LLM-Based Decision Models under Distribution Shift.* 25 October 2026; arXiv v1 preprint. [Record](https://arxiv.org/abs/2610.34329), [full text](https://arxiv.org/html/2610.34329v1). Monitoring, abstention and update acceptance under shift substantially overlap generic D3 wrappers. Our narrow sentinel-transfer question remains unverified, not a confirmed gap.
+
+**R17.** Norah Alzahrani, Hisham Alyahya, Yazeed Alnumay, Sultan AlRashed, Shaykhah Alsubaie, Yousef Almushayqih, Faisal Mirza, Nouf Alotaibi, Nora Al-Twairesh, Areeb Alowisheq, M Saiful Bari, Haidar Khan. *When Benchmarks are Targets: Revealing the Sensitivity of Large Language Model Leaderboards.* ACL, August 2024; peer-reviewed long paper. [Official record](https://aclanthology.org/2024.acl-long.744/). Evaluation-protocol/ranking sensitivity is established; relevant D3/D8.
+
+**R18.** Jingming Zhuo, Songyang Zhang, Xinyu Fang, Haodong Duan, Dahua Lin, Kai Chen. *ProSA: Assessing and Understanding the Prompt Sensitivity of LLMs.* Findings of EMNLP, November 2024; peer-reviewed Findings paper. [Official record](https://aclanthology.org/2024.findings-emnlp.108/). Prompt robustness is established as a research topic. A generic prompt-sensitivity table would be a replication, not an original D3 result.
+
+## Alternative actions and evidence
+
+**R19.** Saibo Geng, Martin Josifoski, Maxime Peyrard, Robert West. *Grammar-Constrained Decoding for Structured NLP Tasks without Finetuning.* EMNLP, December 2023; peer-reviewed main proceedings. [Official record](https://aclanthology.org/2023.emnlp-main.674/). Grammar compliance is established; syntax constraints do not establish preserved answer meaning. Relevant D5.
+
+**R20.** Luyu Gao, Aman Madaan, Shuyan Zhou, Uri Alon, Pengfei Liu, Yiming Yang, Jamie Callan, Graham Neubig. *PAL: Program-aided Language Models.* ICML, 23–29 July 2023; peer-reviewed proceedings, PMLR 202:10764–10799. [Official record](https://proceedings.mlr.press/v202/gao23f.html). Executable arithmetic offloading is established. Relevant D6: checking an extracted calculation does not verify translation from the original problem.
+
+**R21.** Zhenyu Wu, Qingkai Zeng, Zhihan Zhang, Zhaoxuan Tan, Chao Shen, Meng Jiang. *Large Language Models Can Self-Correct with Key Condition Verification.* EMNLP, November 2024; peer-reviewed main proceedings. [Official record](https://aclanthology.org/2024.emnlp-main.714/). Candidate-specific condition verification is established. Relevant D6 and D7.
+
+**R22.** Shehzaad Dhuliawala, Mojtaba Komeili, Jing Xu, Roberta Raileanu, Xian Li, Asli Celikyilmaz, Jason Weston. *Chain-of-Verification Reduces Hallucination in Large Language Models.* Findings of ACL, August 2024; peer-reviewed Findings paper. [Official record](https://aclanthology.org/2024.findings-acl.212/). Independent verification questions already address response anchoring. Relevant D7; repeating a blind-versus-conditioned prompt comparison is unlikely to suffice.
+
+## Official venue sources (not research evidence)
+
+- **V1 ICDM 2026:** [research CFP](https://icdm2026.neu.edu.cn/calls/list.htm). Scope, review, regular/short designations and IEEE Computer Society Press proceedings verified. All research submissions are full papers; short designation follows acceptance.
+- **V2 IEEE Big Data 2026:** [official CFP](https://bigdataieee.org/BigData2026/calls/papers/), [camera-ready guidance](https://bigdataieee.org/BigData2026/calls/camera-ready-guideline/). Benchmark/evaluation scope and research-paper instructions verified; precise workshop proceedings conditions require the chosen workshop's CFP.
+- **V3 ACM/IEEE SEC 2026:** [research/position CFP](https://acm-ieee-sec.org/2026/call_for_papers.php), [poster/demo CFP](https://acm-ieee-sec.org/2026/postersession.php). Research and separately judged position papers; poster/demo extended abstracts explicitly listed for ACM Digital Library/IEEE Xplore proceedings. An archival demo is not equivalent to a full research paper.
+- **V4 IEEE BigComp 2026:** [official site](https://www.bigcomputing.org/), [official CFP](https://www.bigcomputing.org/assets/call4paper.pdf). Regular/short research papers and IEEE Xplore proceedings stated in the CFP. Broader smart-computing scope; no acceptance-rate inference made.
+
+These are verified **2026 examples**, not promises of an open submission opportunity. Their calls/deadlines are past as of this audit; future editions and track publication rules must be rechecked. Student forums may have degree/eligibility restrictions; a Master's applicant should not assume eligibility for a PhD forum. No acceptance probability is estimated.

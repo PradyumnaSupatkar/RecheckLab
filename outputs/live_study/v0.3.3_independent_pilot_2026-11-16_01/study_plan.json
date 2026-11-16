@@ -1,0 +1,16 @@
+{
+  "status": "PREPARED_PILOT",
+  "planned_questions_by_partition": {
+    "source_train": 8
+  },
+  "selected_questions_by_partition": {
+    "source_train": 8
+  },
+  "manifest_sha256": {
+    "questions.jsonl": "7b3c8716723293521fdb37d12af31ecac80afca25067dafeed5840f19ac8ed01",
+    "trusted_keys.jsonl": "b60084764541515031205c5d65201905175509ac8b80a3c8f6b7c5c9cee0b33a"
+  },
+  "selection_seed": 20261116,
+  "dataset_revision": "740312add88f781978c0658806c59bc2815b9866",
+  "raw_dataset_sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d"
+}

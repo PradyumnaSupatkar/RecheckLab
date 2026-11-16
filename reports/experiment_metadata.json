@@ -1,0 +1,113 @@
+{
+  "seed": 42,
+  "repeats": 5,
+  "harm_weight": 1.0,
+  "public_replay": true,
+  "source_dataset": "SEVRA_MATH_train",
+  "target_dataset": "SEVRA_CommonsenseQA",
+  "provenance": "Real public Qwen3-4B outcome logs from SEVRA; secondary analysis, not newly generated runs.",
+  "model": "hist_gradient_boosting",
+  "source_threshold": 0.19767251204502215,
+  "adaptation_method": "threshold-only adaptation; source classifier and its probabilities are frozen",
+  "features": [
+    "question_log_chars",
+    "question_log_words",
+    "question_numbers",
+    "question_math_symbols",
+    "question_marks",
+    "initial_log_chars",
+    "initial_log_words",
+    "initial_unique_word_ratio",
+    "initial_uncertainty_per_100_words",
+    "initial_backtracking_per_100_words",
+    "initial_checking_per_100_words",
+    "initial_number_count",
+    "initial_paragraph_count",
+    "initial_question_marks",
+    "initial_log_actual_tokens",
+    "initial_finalizer_used",
+    "initial_budget_exhausted",
+    "initial_answer_present"
+  ],
+  "model_selection": [
+    {
+      "model": "logistic_regression",
+      "source_dev_log_loss": 0.247345946987748
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "source_dev_log_loss": 0.24112713261370278
+    }
+  ],
+  "source_predictor_metrics": {
+    "macro_f1": 0.5455452751326325,
+    "confusion_matrix": [
+      [
+        47,
+        18,
+        0
+      ],
+      [
+        22,
+        310,
+        0
+      ],
+      [
+        0,
+        3,
+        0
+      ]
+    ],
+    "label_order": [
+      "HELP",
+      "NO_CHANGE",
+      "HURT"
+    ],
+    "class_counts": {
+      "NO_CHANGE": 332,
+      "HELP": 65,
+      "HURT": 3
+    }
+  },
+  "target_predictor_metrics": {
+    "macro_f1": 0.3227773868167957,
+    "confusion_matrix": [
+      [
+        0,
+        21,
+        0
+      ],
+      [
+        0,
+        1376,
+        0
+      ],
+      [
+        0,
+        69,
+        0
+      ]
+    ],
+    "label_order": [
+      "HELP",
+      "NO_CHANGE",
+      "HURT"
+    ],
+    "class_counts": {
+      "NO_CHANGE": 1376,
+      "HURT": 69,
+      "HELP": 21
+    }
+  },
+  "runtime_seconds": 1.5174128639998798,
+  "token_accounting": "Released realized prompt-plus-generation model tokens. Gate CPU time is separate; replay, not live latency.",
+  "limitations": [
+    "One solver (Qwen3-4B), one source-to-target direction, one partition seed.",
+    "Public correctness labels were inherited, not independently rescored; gold answers are absent in the release.",
+    "Threshold-only adaptation is not full probability calibration or LLM fine-tuning.",
+    "Five repetitions vary adaptation samples; their standard deviations are not confidence intervals.",
+    "Target adaptation uses a reserved portion of a formerly published evaluation split under a new protocol; not a reproduction of SEVRA scores.",
+    "Future correctness and revision responses are never predictor features.",
+    "No claim of novel method or guaranteed accuracy gains; negative transfer is a valid pilot outcome."
+  ]
+}

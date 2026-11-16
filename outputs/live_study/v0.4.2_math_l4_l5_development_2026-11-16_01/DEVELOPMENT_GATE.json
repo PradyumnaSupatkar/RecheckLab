@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "questions": 10,
+  "calls": 20,
+  "initial_parseable": 10,
+  "revision_parseable": 10,
+  "valid_but_incorrect_initial": 1,
+  "valid_but_incorrect_revision": 1,
+  "HELP": 0,
+  "HURT": 0,
+  "NO_CHANGE": 10,
+  "gate_feature_compatible": 10,
+  "call_failures": 0,
+  "resource_safety_passed": true,
+  "minimum_free_ram_gib": 1.388,
+  "minimum_free_vram_mib": 1371,
+  "evaluation_started": true
+}

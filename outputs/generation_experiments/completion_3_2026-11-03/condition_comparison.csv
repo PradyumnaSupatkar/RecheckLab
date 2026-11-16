@@ -1,0 +1,4 @@
+condition,sample_questions,planned_questions,source,valid_FINAL_answers,correct_answers_diagnostic,length_completions,generated_tokens_total,actual_tokens_total,average_generated_tokens,average_actual_tokens,average_latency_seconds,ram_observation_method,lowest_available_ram_gib
+A,3,3,"archived reference, Ollama 0.40.13",1,1,2,5641,5914,1880.3333333333333,1971.3333333333333,98.04902490000192,archived post-call snapshots,1.2849044799804688
+B,3,3,"new, Ollama frozen in protocol",1,1,2,5609,5873,1869.6666666666667,1957.6666666666667,86.3741054000008,0.5-second monitoring during inference,4.286708831787109
+C,3,3,"new, Ollama frozen in protocol",3,2,0,6418,6682,2139.3333333333335,2227.3333333333335,95.43901020000096,0.5-second monitoring during inference,4.101490020751953

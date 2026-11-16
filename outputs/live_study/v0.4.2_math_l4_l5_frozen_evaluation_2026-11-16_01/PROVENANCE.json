@@ -1,0 +1,19 @@
+{
+  "phase": "untouched_frozen_evaluation",
+  "protocol_id": "live-study-v0.4.2-qwen3-4b-instruct-math-numeric",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "gate_artifact_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "question_selection_sha256": "8ad6954a982108fe1cb6d797f12a1e8f007145a8bf298833d45a19f67797b923",
+  "trusted_key_sha256": "a60c87b409e5b8475430bd21746b69ad8e2fd82f0d9783807fb349da07350650",
+  "generated_at_local": "2026-11-16T18:12:22+05:30",
+  "files_sha256": {
+    "COLLECTION_STATUS.json": "d6c10459adbe353a0481ee47fd03f28bb7123fe71174cc595e67d2c8d17f269f",
+    "EVALUATION_STOP_REPORT.md": "029677cd5cd26d5362331045c4eba53b00ad6c7dd35a71d6abb4d0fc069867e9",
+    "EXPERIMENT_MANIFEST.json": "ad67a04ae2b8797f4a0e983289ecec23f4df59a561b1aa6f7474c0cb500ca888",
+    "FINAL_STATUS.json": "a97a88a8b32ee7006f94f68d047707505a9318dbef6c78cf3ed80b3401b4a654",
+    "INTERRUPTED_CALL.json": "352fa63f5fd5b0a25bac037fef28bd37b79abd168df1dae60c7e35ab78cdfb28",
+    "PRESERVATION_CHECK.json": "d33dae54f056c8fe5bafb21c6a603245e820abdbc300b317cf0d3b7f383f6fc4",
+    "QUESTION_SELECTION.jsonl": "8ad6954a982108fe1cb6d797f12a1e8f007145a8bf298833d45a19f67797b923",
+    "TRUSTED_KEYS.jsonl": "a60c87b409e5b8475430bd21746b69ad8e2fd82f0d9783807fb349da07350650"
+  }
+}

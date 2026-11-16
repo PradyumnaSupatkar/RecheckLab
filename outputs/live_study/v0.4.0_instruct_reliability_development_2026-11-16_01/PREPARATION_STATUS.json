@@ -1,0 +1,32 @@
+{
+  "status": "FROZEN_BEFORE_INFERENCE",
+  "development_questions": 10,
+  "evaluation_questions": 40,
+  "inference_started": false,
+  "all_50_questions_selected_before_development_outcomes": true,
+  "question_pool_sha256": "25f66713de8a09f0c8627e31d72faceed050ea3b233a6c3f0f505f8f8b1e875c",
+  "trusted_keys_pool_sha256": "1643f5f81366540f5a58cff5b6a19257969796d9e6112d2d9413364256a97071",
+  "model": {
+    "model": "qwen3:4b-instruct",
+    "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+    "ollama_version": "ollama version is 0.40.16",
+    "family": "qwen3",
+    "parameter_size": "4.0B",
+    "quantization": "Q4_K_M",
+    "fine_tune": "Instruct",
+    "model_version": "2507",
+    "capabilities": [
+      "tools",
+      "thinking",
+      "completion"
+    ]
+  },
+  "available_ram_gib_at_freeze": 5.893,
+  "available_gpu": {
+    "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "total_mib": 4096,
+    "used_mib": 271,
+    "free_mib": 3825,
+    "utilization_percent": 0
+  }
+}

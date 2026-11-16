@@ -1,0 +1,25 @@
+{
+  "original_files_unchanged": 320,
+  "changed": [],
+  "new_outside_phase2": [],
+  "files": {
+    "feasibility.py": "fe3534a2e3c54f712343a076b6ec6d2b4fe32fb30f30e9cdeae6aeb4588433f9",
+    "verify_feasibility.py": "8278255d56aa65a24252a2b8bffca8e093732bb2c4c7738ffa0d2304f0640ddb",
+    "run_2026-11-16_01\\analysis_plan.json": "621c66144b5194ed8b70560709be621005c62c60c2e04b94d0e0e47d2214fab8",
+    "run_2026-11-16_01\\development_predictions.csv": "fbf104b6ad76727434cef392313cdb296884358670f373f89f8113ac2a75ec47",
+    "run_2026-11-16_01\\FEASIBILITY_VERDICT.md": "a090eb24789a12c564e23f908bf71e08843cd0f81d718e54c2bef7c020054916",
+    "run_2026-11-16_01\\feature_associations.csv": "05b456db3644b19a28d1983a3d1ede778ef151f0ba8809723e9a4503ea419207",
+    "run_2026-11-16_01\\folds.json": "a65da7df6e491de88b2f7743f7be13f364531cfb39b2ebe14bfa10fa3229e3d3",
+    "run_2026-11-16_01\\frozen_candidate.json": "b6297f3135689d282b37b0881def739051c8558f8a60783f53938cc9d4418262",
+    "run_2026-11-16_01\\integrity.json": "b445c2d91507e11a2ec46c94b13afcd075791c12652996855b87f8337a08abd4",
+    "run_2026-11-16_01\\NOVELTY_ASSESSMENT.md": "60b5c786013bfbad68d625f01183f4cce22668165a1cd7d96ce6cb3a93e4ab93",
+    "run_2026-11-16_01\\OPPORTUNITY.csv": "afa488d5b21d668b075eeb518b07739c5e606db2eada1718f4349c172f489c33",
+    "run_2026-11-16_01\\original_files_before.json": "6b7515777dbf1d1181d415e743a8235fc824339b149c1c62852980e7544315ed",
+    "run_2026-11-16_01\\OVERRIDE_OPPORTUNITY.md": "b506422ab9b506c00e347f5a94f3dd328e6446cd4c341b4a34a2e297cfcdb2bb",
+    "run_2026-11-16_01\\POLICY_COMPARISON.csv": "283d7d21c07a8c5ac5eee88142e364dbe078a6ac04a54e7c2dca4c3ff178d3a0",
+    "run_2026-11-16_01\\training_completed_HELP_evidence.json": "0de3bfe42347070a3abdac186c25bd8e245615b469a189dbda1c3f6e18d54db1",
+    "run_2026-11-16_01\\training_oof_predictions.csv": "04402c2df88a723f93a7cbc498a45c8fb64928ff22852e4831a81b6b13a3e254",
+    "run_2026-11-16_01\\TRAINING_OPPORTUNITY.csv": "9f7ade6e45f01b65bacdb040c8abfffebabf6dadef8b578c3639dc41af15080c",
+    "run_2026-11-16_01\\verification.json": "3ebaf027f686b25ac0c122d905f7082f1bc7709d74a249ea301ac046778cb12d"
+  }
+}

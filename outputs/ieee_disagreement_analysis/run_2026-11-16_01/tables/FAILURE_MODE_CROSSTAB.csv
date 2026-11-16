@@ -1,0 +1,7 @@
+cohort,decision_direction,initial_completion_status,initial_extracted_answer_present,initial_correct,transition_label,effect_on_correctness_vs_completion,disagreement_rollouts,disagreement_question_groups,mean_action_tokens_per_rollout,signed_incremental_tokens_raw_rollout_sum
+GSM8K,ML_SKIP_COMPLETION_RECHECK,length,True,False,HELP,ML_HARMED_ACCURACY,3,2,3482.666667,-10448
+GSM8K,ML_SKIP_COMPLETION_RECHECK,length,True,False,NO_CHANGE,NO_ACCURACY_DIFFERENCE,5,3,5798,-28990
+GSM8K,ML_SKIP_COMPLETION_RECHECK,length,True,True,NO_CHANGE,NO_ACCURACY_DIFFERENCE,2,1,4368.5,-8737
+MATH source test,ML_RECHECK_COMPLETION_SKIP,stop,True,True,NO_CHANGE,NO_ACCURACY_DIFFERENCE,2,2,2081,4162
+MATH500,ML_SKIP_COMPLETION_RECHECK,length,True,False,HELP,ML_HARMED_ACCURACY,4,3,4453.25,-17813
+MATH500,ML_SKIP_COMPLETION_RECHECK,length,True,False,NO_CHANGE,NO_ACCURACY_DIFFERENCE,14,8,7958.214286,-111415

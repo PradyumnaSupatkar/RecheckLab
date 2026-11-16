@@ -1,0 +1,88 @@
+{
+  "archive_calls_sha256": "9f4a3e1213f9b0b2a65e49995a262fef04bd3340a7b56e2a2b3783db917f4999",
+  "invalid_count": 7,
+  "failures": [
+    {
+      "call_id": "03_initial",
+      "question_id": "7bd956e1cc5d9c6443092e7f1353338e",
+      "configuration": "initial",
+      "completion_reason": "length",
+      "generated_tokens": 2048,
+      "thinking_chars": 8475,
+      "visible_chars": 0,
+      "parser_result_unchanged": null,
+      "diagnosis": "output cap before any visible answer; consistent with still thinking"
+    },
+    {
+      "call_id": "03_A",
+      "question_id": "7bd956e1cc5d9c6443092e7f1353338e",
+      "configuration": "A",
+      "completion_reason": "length",
+      "generated_tokens": 2048,
+      "thinking_chars": 8696,
+      "visible_chars": 0,
+      "parser_result_unchanged": null,
+      "diagnosis": "output cap before any visible answer; consistent with still thinking"
+    },
+    {
+      "call_id": "03_B",
+      "question_id": "7bd956e1cc5d9c6443092e7f1353338e",
+      "configuration": "B",
+      "completion_reason": "length",
+      "generated_tokens": 2048,
+      "thinking_chars": 8530,
+      "visible_chars": 0,
+      "parser_result_unchanged": null,
+      "diagnosis": "output cap before any visible answer; consistent with still thinking"
+    },
+    {
+      "call_id": "03_C",
+      "question_id": "7bd956e1cc5d9c6443092e7f1353338e",
+      "configuration": "C",
+      "completion_reason": "length",
+      "generated_tokens": 2048,
+      "thinking_chars": 8287,
+      "visible_chars": 389,
+      "parser_result_unchanged": null,
+      "diagnosis": "visible option analysis truncated before FINAL; had left thinking channel"
+    },
+    {
+      "call_id": "05_initial",
+      "question_id": "c7c882f1e2c36b665a323b7287648628",
+      "configuration": "initial",
+      "completion_reason": "length",
+      "generated_tokens": 2048,
+      "thinking_chars": 9144,
+      "visible_chars": 0,
+      "parser_result_unchanged": null,
+      "diagnosis": "output cap before any visible answer; consistent with still thinking"
+    },
+    {
+      "call_id": "05_B",
+      "question_id": "c7c882f1e2c36b665a323b7287648628",
+      "configuration": "B",
+      "completion_reason": "length",
+      "generated_tokens": 2048,
+      "thinking_chars": 9368,
+      "visible_chars": 0,
+      "parser_result_unchanged": null,
+      "diagnosis": "output cap before any visible answer; consistent with still thinking"
+    },
+    {
+      "call_id": "05_C",
+      "question_id": "c7c882f1e2c36b665a323b7287648628",
+      "configuration": "C",
+      "completion_reason": "length",
+      "generated_tokens": 2048,
+      "thinking_chars": 9158,
+      "visible_chars": 0,
+      "parser_result_unchanged": null,
+      "diagnosis": "output cap before any visible answer; consistent with still thinking"
+    }
+  ],
+  "complete_visible_FINAL_rejected": 0,
+  "caveat": "Old nonstream responses cannot prove the exact final channel token. 03_C includes an answer-like preference inside partial analysis, not a declared FINAL; do not regrade.",
+  "valid_length_case": "04_initial contains FINAL: C, correctly parsed C and graded incorrect.",
+  "stop_sequences": "Configured <|im_start|> and <|im_end|> equal model defaults. All seven invalid responses report length, not stop; no evidence of direct stop-string termination.",
+  "historical_results_changed": false
+}

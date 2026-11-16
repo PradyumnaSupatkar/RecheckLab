@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "phase": "development_only_real_inference",
+  "question_id": "math:test:intermediate_algebra:intermediate_algebra/362",
+  "call_id": "v043-dev-real-validation|math:test:intermediate_algebra:intermediate_algebra/362|attempt-1",
+  "attempt_number": 1,
+  "model": {
+    "name": "qwen3:4b-instruct",
+    "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+    "size_bytes": 2497293803,
+    "family": "qwen3",
+    "fine_tune": "Instruct",
+    "version": "2507",
+    "quantization": "Q4_K_M",
+    "ollama_version": "ollama version is 0.40.16",
+    "thinking_request_field": "omitted"
+  },
+  "protocol": {
+    "num_ctx": 8192,
+    "num_predict": -1,
+    "temperature": 0.0,
+    "stream": true,
+    "watchdog_seconds": 2700
+  },
+  "completion_reason": "stop",
+  "parse_status": "parseable",
+  "parsed_answer": "-3",
+  "prompt_tokens": 160,
+  "output_tokens": 521,
+  "wall_seconds": 40.06199999999808,
+  "first_chunk_seconds": 9.53099999999904,
+  "chunks_durably_written": 521,
+  "content_chars": 1356,
+  "thinking_chars": 0,
+  "reconstruction_exact": true,
+  "completion_metadata_exact": true,
+  "chunk_diagnostics_present": true,
+  "stream_journal_sha256": "d0e1d8b64cc6444333ce4af8d2242513e0e49e3d6adacc02297122401296a849",
+  "evaluation_questions_touched": false,
+  "started_utc": "2026-11-16T13:17:11.960Z",
+  "finished_utc": "2026-11-16T13:17:52.046Z"
+}

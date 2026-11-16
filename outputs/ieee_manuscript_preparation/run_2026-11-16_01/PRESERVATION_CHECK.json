@@ -1,0 +1,16 @@
+{
+  "task_baseline_file_count": 364,
+  "task_end_changed_or_missing": [
+    "README.md"
+  ],
+  "task_integrity_pass": false,
+  "evaluated_input_hash_drift": [],
+  "evaluated_inputs_unchanged": true,
+  "older_phase3_snapshot_differences": [
+    "GUIDE_PROGRESS.md",
+    "README.md"
+  ],
+  "required_prior_reports_missing": [],
+  "script_syntax_valid": true,
+  "scope_note": "Only the newly authorized run directory was intentionally written. The current README.md differs from its task-start hash; it was left untouched to avoid replacing possible concurrent user edits. All frozen model, data, prediction, code, and prior report inputs used in the analysis match their recorded hashes."
+}

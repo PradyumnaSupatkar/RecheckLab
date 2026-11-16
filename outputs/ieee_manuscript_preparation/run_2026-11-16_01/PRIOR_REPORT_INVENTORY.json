@@ -1,0 +1,22 @@
+{
+  "required_prior_reports": {
+    "IEEE_RESEARCH_AUDIT.md": true,
+    "outputs/ieee_phase2_feasibility/run_2026-11-16_01/FEASIBILITY_VERDICT.md": true,
+    "outputs/ieee_phase2_feasibility/run_2026-11-16_01/NOVELTY_ASSESSMENT.md": true,
+    "outputs/ieee_phase2_feasibility/run_2026-11-16_01/OVERRIDE_OPPORTUNITY.md": true,
+    "outputs/ieee_phase2_feasibility/run_2026-11-16_01/POLICY_COMPARISON.csv": true,
+    "outputs/ieee_phase3_measurement/run_2026-11-16_01/IEEE_PHASE3_VERDICT.md": true,
+    "outputs/ieee_phase3_measurement/run_2026-11-16_01/MEASUREMENT_AUDIT.md": true,
+    "outputs/ieee_phase3_measurement/run_2026-11-16_01/METRIC_SENSITIVITY.md": true,
+    "outputs/ieee_phase3_measurement/run_2026-11-16_01/NOVELTY_REVIEW.md": true,
+    "outputs/ieee_phase4_discovery/run_2026-11-16_01/RESEARCH_LANDSCAPE.md": true,
+    "outputs/ieee_phase4_discovery/run_2026-11-16_01/EIGHT_CANDIDATES.md": true,
+    "outputs/ieee_phase4_discovery/run_2026-11-16_01/CANDIDATE_RANKING.csv": true,
+    "outputs/ieee_phase4_discovery/run_2026-11-16_01/TOP_THREE_BLUEPRINTS.md": true,
+    "outputs/ieee_phase4_discovery/run_2026-11-16_01/FINAL_RESEARCH_DIRECTION.md": true,
+    "outputs/ieee_phase4_discovery/run_2026-11-16_01/REFERENCES.md": true,
+    "outputs/ml_efficiency_evaluation/evaluation_2026-11-03/TECHNICAL_REPORT.md": true,
+    "outputs/ml_efficiency_evaluation/evaluation_2026-11-03/PROFESSOR_SUMMARY.md": true
+  },
+  "missing": []
+}

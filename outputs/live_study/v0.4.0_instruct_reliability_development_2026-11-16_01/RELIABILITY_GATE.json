@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "development_questions": 10,
+  "initial_parseable": 10,
+  "revision_parseable": 10,
+  "initial_requirement": "at least 9/10",
+  "revision_requirement": "at least 9/10",
+  "resource_requirement_met": true,
+  "minimum_free_ram_gib": 4.11,
+  "minimum_free_vram_mib": 1487,
+  "call_failure_count": 0,
+  "valid_but_incorrect_initial": 1,
+  "valid_but_incorrect_revision": 1,
+  "failure_categories": {
+    "none": 20
+  },
+  "evaluation_may_start": true
+}

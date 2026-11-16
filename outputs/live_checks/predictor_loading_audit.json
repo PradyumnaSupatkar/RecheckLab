@@ -1,0 +1,160 @@
+{
+  "error_origin": "rechecklab/predictor.py:validate_artifact checks bundle[predictor] with isinstance",
+  "root_cause": "Streamlit resource cache retained old OutcomePredictor class instance across local-module eviction; reproduced in isolated app regression",
+  "canonical_predictor_import": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\rechecklab\\predictor.py",
+  "artifacts": [
+    {
+      "path": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\models\\source_gate.joblib",
+      "sha256": "96522cbff6d6e0393eca867a1f9132a96255ffa946174f9af71772dc6ceec077",
+      "loaded_type": "builtins.dict",
+      "dictionary_keys": [
+        "feature_names",
+        "harm_weight",
+        "predictor",
+        "threshold"
+      ],
+      "predictor_type": "rechecklab.predictor.OutcomePredictor",
+      "feature_count": 18,
+      "feature_order": [
+        "question_log_chars",
+        "question_log_words",
+        "question_numbers",
+        "question_math_symbols",
+        "question_marks",
+        "initial_log_chars",
+        "initial_log_words",
+        "initial_unique_word_ratio",
+        "initial_uncertainty_per_100_words",
+        "initial_backtracking_per_100_words",
+        "initial_checking_per_100_words",
+        "initial_number_count",
+        "initial_paragraph_count",
+        "initial_question_marks",
+        "initial_log_actual_tokens",
+        "initial_finalizer_used",
+        "initial_budget_exhausted",
+        "initial_answer_present"
+      ],
+      "artifact_schema_version": null,
+      "threshold": 0.19767251204502215,
+      "harm_weight": 1.0
+    },
+    {
+      "path": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\v0.2\\models\\source_gate.joblib",
+      "sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+      "loaded_type": "builtins.dict",
+      "dictionary_keys": [
+        "adapted_threshold",
+        "artifact_schema_version",
+        "class_order",
+        "demo_adaptation",
+        "feature_names",
+        "feature_schema_fingerprint",
+        "feature_schema_version",
+        "harm_weight",
+        "predictor",
+        "protocol",
+        "threshold"
+      ],
+      "predictor_type": "rechecklab.predictor.OutcomePredictor",
+      "feature_count": 19,
+      "feature_order": [
+        "question_log_chars",
+        "question_log_words",
+        "question_numbers",
+        "question_math_symbols",
+        "question_marks",
+        "initial_log_chars",
+        "initial_log_words",
+        "initial_unique_word_ratio",
+        "initial_uncertainty_per_100_words",
+        "initial_backtracking_per_100_words",
+        "initial_checking_per_100_words",
+        "initial_number_count",
+        "initial_paragraph_count",
+        "initial_question_marks",
+        "initial_log_actual_tokens",
+        "initial_finalizer_used",
+        "initial_budget_exhausted",
+        "initial_answer_present",
+        "initial_completion_unknown"
+      ],
+      "artifact_schema_version": 2,
+      "threshold": 0.25968145276947807,
+      "harm_weight": 1.0
+    }
+  ],
+  "current_artifact_matches_original_report_sha256": true,
+  "estimator_type": "HistGradientBoostingClassifier",
+  "fitted_iterations": 100,
+  "estimator_class_order": [
+    "HELP",
+    "HURT",
+    "NO_CHANGE"
+  ],
+  "artifact_class_order": [
+    "HELP",
+    "NO_CHANGE",
+    "HURT"
+  ],
+  "backend": {
+    "ready": true,
+    "status": "experimental",
+    "message": "Ollama is ready with qwen3:4b. Experimental live use: the public checkpoint digest and full prompts are unavailable. This collector uses a 768-token output limit, 4096-token context, thinking=False, and no finalizer; its live behavior has not been evaluated by the replay pilot.",
+    "model": "qwen3:4b",
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "experimental": true,
+    "protocol_match": false,
+    "generation_settings": {
+      "protocol_version": "0.2",
+      "budget": 768,
+      "seed": 42,
+      "temperature": 0.0,
+      "thinking": false,
+      "initial_instruction": "Solve the question. Give a brief explanation, then finish with FINAL: followed by your answer.",
+      "recheck_instruction": "Recheck your previous answer against the question. Keep it if justified; change it only if you identify an error. Give a brief explanation, then finish with FINAL: followed by your answer.",
+      "context_window": 4096,
+      "initial_seed": 42,
+      "recheck_seed": 43,
+      "finalizer_used": false,
+      "recheck_protocol": "ollama:2b42bd6926d463dc8fb818600e82ab1446385be684c9b2346f36d951adddb6d9"
+    },
+    "mismatches": [
+      "The released gate does not contain complete generation prompts and settings.",
+      "The live collector protocol fingerprint differs from the saved recheck protocol.",
+      "The saved action is not the collector's explicit recheck action.",
+      "The saved gate does not identify a checkpoint digest.",
+      "Released context-window settings are unavailable; live explicitly uses 4096 tokens.",
+      "Released initial generation limit 4096 differs from live limit 768.",
+      "Released calls may use a 512-token finalizer; live calls execute no finalizer."
+    ],
+    "protocol_fingerprint": "c420788af69b285fb542bf59bea2b72885f396a019349c34c96793cae1062db4",
+    "installed_models": [
+      "gemma4:latest",
+      "qwen3:4b"
+    ],
+    "live_protocol": {
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "recheck_protocol": "ollama:2b42bd6926d463dc8fb818600e82ab1446385be684c9b2346f36d951adddb6d9",
+      "action": "recheck",
+      "generation_settings": {
+        "protocol_version": "0.2",
+        "budget": 768,
+        "seed": 42,
+        "temperature": 0.0,
+        "thinking": false,
+        "initial_instruction": "Solve the question. Give a brief explanation, then finish with FINAL: followed by your answer.",
+        "recheck_instruction": "Recheck your previous answer against the question. Keep it if justified; change it only if you identify an error. Give a brief explanation, then finish with FINAL: followed by your answer.",
+        "context_window": 4096
+      },
+      "initial_seed": 42,
+      "recheck_seed": 43,
+      "finalizer_used": false
+    },
+    "error_stage": null
+  },
+  "real_check_log": "outputs/live/predictor_loader_fix_check.jsonl",
+  "classifier_retrained": false,
+  "qwen_fine_tuned": false
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "example_id": "253",
+    "query": "Simplify: $x(3x^2-2)-5(x^2-2x+7)$. Express your answer in the form $Ax^3+Bx^2+Cx+D.$",
+    "base_answer": "3x\u00b3-5x\u00b2+8x-35",
+    "final_answer": "3x^3-5x^2+8x-35",
+    "base_response": "To simplify the expression $ x(3x^2 - 2) - 5(x^2 - 2x + 7) $ and express it in the form $ Ax^3 + Bx^2 + Cx + D $, we proceed as follows:\n\n---\n\n### Step 1: Expand each part\n\n**First term:**  \n$$\nx(3x^2 - 2) = 3x^3 - 2x\n$$\n\n**Second term:**  \n$$\n-5(x^2 - 2x + 7) = -5x^2 + 10x - 35\n$$\n\n---\n\n### Step 2: Combine all terms\n\nNow add both expanded parts:\n\n$$\n(3x^3 - 2x) + (-5x^2 + 10x - 35)\n$$\n\nGroup like terms:\n\n- $ x^3 $: $ 3x^3 $\n- $ x^2 $: $ -5x^2 $\n- $ x $: $ -2x + 10x = 8x $\n- Constant: $ -35 $\n\nSo the simplified expression is:\n\n$$\n3x^3 - 5x^2 + 8x - 35\n$$\n\n---\n\n### Final Answer\n\nFinal answer: 3x\u00b3 - 5x\u00b2 + 8x - 35",
+    "label": "HELP"
+  },
+  {
+    "example_id": "572",
+    "query": "If $\\log_9 (x-2)=\\frac{1}{2}$, find $\\log_{625} x$.",
+    "base_answer": "",
+    "final_answer": "frac(1,4)",
+    "base_response": "To solve the problem:\n\nGiven:  \n$$\n\\log_9 (x - 2) = \\frac{1}{2}\n$$\n\nWe begin by converting the logarithmic equation into its exponential form. Recall that:\n$$\n\\log_b(a) = c \\quad \\text{is equivalent to} \\quad b^c = a\n$$\n\nSo,\n$$\n9^{1/2} = x - 2\n$$\n\nSince $ 9^{1/2} = \\sqrt{9} = 3 $, we have:\n$$\nx - 2 = 3 \\quad \\Rightarrow \\quad x = 5\n$$\n\nNow, substitute $ x = 5 $ into the second logarithm:\n$$\n\\log_{625} x = \\log_{625}(5)\n$$\n\nRecognize that $ 625 = 5^4 $. Using the identity for logarithms with powers:\n$$\n\\log_{b^k}(a) = \\frac{1}{k} \\log_b(a)\n$$\n\nHere, $ b = 5 $, $ k = 4 $, and $ a = 5 $, so:\n$$\n\\log_{625}(5) = \\frac{1}{4} \\log_5(5) = \\frac{1}{4}\n$$\n\n---\n\nFinal answer:  \n$$\n\\frac{1}{4}\n$$",
+    "label": "HELP"
+  },
+  {
+    "example_id": "1203",
+    "query": "What is the ordered pair of integers $(x,y)$ for which $12x + 21y = 15$ and $21x + 12y = 51$?",
+    "base_answer": "<answer>(3-1)</answer>",
+    "final_answer": "(3-1)",
+    "base_response": "To solve the system of equations:\n\n$$\n\\begin{cases}\n12x + 21y = 15 \\quad \\text{(1)} \\\\\n21x + 12y = 51 \\quad \\text{(2)}\n\\end{cases}\n$$\n\nwe proceed by **adding** the two equations to simplify:\n\n$$\n(12x + 21y) + (21x + 12y) = 15 + 51 \\Rightarrow 33x + 33y = 66\n$$\n\nDivide both sides by 33:\n\n$$\nx + y = 2 \\quad \\text{(3)}\n$$\n\nNow substitute $ y = 2 - x $ into equation (1):\n\n$$\n12x + 21(2 - x) = 15 \\Rightarrow 12x + 42 - 21x = 15 \\Rightarrow -9x + 42 = 15\n$$\n\nSolving for $ x $:\n\n$$\n-9x = -27 \\Rightarrow x = 3\n$$\n\nSubstitute $ x = 3 $ into equation (3):\n\n$$\ny = 2 - 3 = -1\n$$\n\n---\n\n**Verification:**\n\nCheck in original equations:\n\n- Equation (1): $ 12(3) + 21(-1) = 36 - 21 = 15 $ \u2705  \n- Equation (2): $ 21(3) + 12(-1) = 63 - 12 = 51 $ \u2705\n\nBoth equations are satisfied.\n\nSince the solution is unique and consists of integers, it is the correct answer.\n\n---\n\nFinal answer: <answer>(3, -1)</answer>",
+    "label": "HELP"
+  },
+  {
+    "example_id": "1226",
+    "query": "Solve the following system of equations: \\begin{align*}\n3x-5y&=-1.5,\\\\\n7x+2y&=4.7.\n\\end{align*}Express your answer as an ordered pair $(x,y)$ of decimals.",
+    "base_answer": "Finalanswer:(0.50.6)",
+    "final_answer": "(0.50.6)",
+    "base_response": "To solve the system of equations:\n\n$$\n\\begin{align*}\n3x - 5y &= -1.5 \\quad \\text{(1)} \\\\\n7x + 2y &= 4.7 \\quad \\text{(2)}\n\\end{align*}\n$$\n\nwe proceed with **substitution**, which is straightforward here due to the simplicity of the coefficients.\n\n---\n\n### Step 1: Solve for $ x $ in terms of $ y $ from Equation (1)\n\n$$\n3x = 5y - 1.5 \\Rightarrow x = \\frac{5y - 1.5}{3}\n$$\n\n---\n\n### Step 2: Substitute into Equation (2)\n\n$$\n7x + 2y = 4.7\n$$\n\nSubstitute $ x = \\frac{5y - 1.5}{3} $:\n\n$$\n7 \\cdot \\left( \\frac{5y - 1.5}{3} \\right) + 2y = 4.7\n$$\n\nSimplify:\n\n$$\n\\frac{35y - 10.5}{3} + 2y = 4.7\n$$\n\nMultiply through by 3 to eliminate the denominator:\n\n$$\n35y - 10.5 + 6y = 14.1\n$$\n\n$$\n41y = 24.6 \\Rightarrow y = \\frac{24.6}{41} = 0.6\n$$\n\n---\n\n### Step 3: Find $ x $\n\n$$\nx = \\frac{5(0.6) - 1.5}{3} = \\frac{3.0 - 1.5}{3} = \\frac{1.5}{3} = 0.5\n$$\n\n---\n\n### Step 4: Verify the solution\n\nPlug $ x = 0.5 $, $ y = 0.6 $ into both original equations:\n\n- First equation: $ 3(0.5) - 5(0.6) = 1.5 - 3.0 = -1.5 $ \u2705\n- Second equation: $ 7(0.5) + 2(0.6) = 3.5 + 1.2 = 4.7 $ \u2705\n\nBoth equations are satisfied.\n\n---\n\nFinal answer:  \nFinal answer: (0.5, 0.6)",
+    "label": "HELP"
+  },
+  {
+    "example_id": "1355",
+    "query": "Expand the product $(9x+2)(4x^2+3)$.",
+    "base_answer": "36x\u00b3+8x\u00b2+27x+6",
+    "final_answer": "36x^3+8x^2+27x+6",
+    "base_response": "Final answer: 36x\u00b3 + 8x\u00b2 + 27x + 6",
+    "label": "HELP"
+  },
+  {
+    "example_id": "1373",
+    "query": "Find the largest value of $c$ such that $1$ is in the range of $f(x)=x^2-5x+c$.",
+    "base_answer": "}frac(29,4)",
+    "final_answer": "frac(29,4)",
+    "base_response": "To determine the largest value of $ c $ such that $ 1 $ is in the range of the function $ f(x) = x^2 - 5x + c $, we analyze when the equation $ f(x) = 1 $ has at least one real solution.\n\n---\n\n### Step 1: Set up the equation\n\nWe want to find values of $ x $ such that:\n\n$$\nx^2 - 5x + c = 1\n$$\n\nRewriting this:\n\n$$\nx^2 - 5x + (c - 1) = 0\n$$\n\nThis is a quadratic equation in $ x $. For there to be **at least one real solution**, the discriminant must be non-negative.\n\n---\n\n### Step 2: Compute the discriminant\n\nFor a general quadratic $ ax^2 + bx + c $, the discriminant is:\n\n$$\nD = b^2 - 4ac\n$$\n\nHere, $ a = 1 $, $ b = -5 $, and the constant term is $ c - 1 $. So:\n\n$$\nD = (-5)^2 - 4(1)(c - 1) = 25 - 4(c - 1) = 25 - 4c + 4 = 29 - 4c\n$$\n\nFor the quadratic to have real solutions, we require:\n\n$$\n29 - 4c \\geq 0 \\quad \\Rightarrow \\quad c \\leq \\frac{29}{4}\n$$\n\n---\n\n### Step 3: Interpret the result\n\nThe condition $ c \\leq \\frac{29}{4} $ ensures that $ f(x) = 1 $ has at least one real solution $ x $, meaning $ 1 $ is in the range of $ f(x) $.\n\nThus, the **largest** value of $ c $ for which $ 1 $ is in the range of $ f(x) $ is:\n\n$$\n\\text{Final answer: } \\frac{29}{4}\n$$",
+    "label": "HELP"
+  },
+  {
+    "example_id": "1494",
+    "query": "Let $f(x)=-3x^2+x-4$, $g(x)=-5x^2+3x-8$, and $h(x)=5x^2+5x+1$. Express $f(x)+g(x)+h(x)$ as a single polynomial, with the terms in order by decreasing degree.",
+    "base_answer": "Finalanswer:-3x^2+9x-11",
+    "final_answer": "-3x^2+9x-11",
+    "base_response": "To solve the problem, we are given three quadratic polynomials:\n\n- $ f(x) = -3x^2 + x - 4 $\n- $ g(x) = -5x^2 + 3x - 8 $\n- $ h(x) = 5x^2 + 5x + 1 $\n\nWe are to compute $ f(x) + g(x) + h(x) $ and express the result as a **single polynomial** with **terms in order by decreasing degree**.\n\n---\n\n### Step 1: Add the coefficients for each degree\n\n#### Degree 2 (x\u00b2 terms):\n$$\n-3 + (-5) + 5 = -3\n$$\n\n#### Degree 1 (x terms):\n$$\n1 + 3 + 5 = 9\n$$\n\n#### Constant terms:\n$$\n-4 + (-8) + 1 = -11\n$$\n\n---\n\n### Step 2: Write the resulting polynomial in standard form\n\nCombining these results, the sum is:\n$$\n-3x^2 + 9x - 11\n$$\n\nThis polynomial is already in **descending order of degree**, as required.\n\n---\n\nFinal answer:  \nFinal answer: -3x^2 + 9x - 11",
+    "label": "HELP"
+  }
+]

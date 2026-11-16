@@ -1,0 +1,16 @@
+cohort,evaluation_status,decision,different_rollout_rows,different_question_clusters,disagreement_label,rows_in_disagreement_class,question_clusters_in_disagreement_class,decision_agreement_pct_rows
+MATH source development,previously inspected development; descriptive confirmation,Frozen ML vs completion,3,3,HELP,0,0,99.25187032418953
+MATH source development,previously inspected development; descriptive confirmation,Frozen ML vs completion,3,3,NO_CHANGE,3,3,99.25187032418953
+MATH source development,previously inspected development; descriptive confirmation,Frozen ML vs completion,3,3,HURT,0,0,99.25187032418953
+MATH source test,historical test; repeatedly inspected/exploratory,Frozen ML vs completion,2,2,HELP,0,0,99.5
+MATH source test,historical test; repeatedly inspected/exploratory,Frozen ML vs completion,2,2,NO_CHANGE,2,2,99.5
+MATH source test,historical test; repeatedly inspected/exploratory,Frozen ML vs completion,2,2,HURT,0,0,99.5
+CommonsenseQA target test,historical test; repeatedly inspected/exploratory,Frozen ML vs completion,0,0,HELP,0,0,100.0
+CommonsenseQA target test,historical test; repeatedly inspected/exploratory,Frozen ML vs completion,0,0,NO_CHANGE,0,0,100.0
+CommonsenseQA target test,historical test; repeatedly inspected/exploratory,Frozen ML vs completion,0,0,HURT,0,0,100.0
+MATH500,"published external split; exploratory diagnostic, not untouched confirmation",Frozen ML vs completion,18,9,HELP,4,3,98.2
+MATH500,"published external split; exploratory diagnostic, not untouched confirmation",Frozen ML vs completion,18,9,NO_CHANGE,14,8,98.2
+MATH500,"published external split; exploratory diagnostic, not untouched confirmation",Frozen ML vs completion,18,9,HURT,0,0,98.2
+GSM8K,"published external split; exploratory diagnostic, not untouched confirmation",Frozen ML vs completion,10,5,HELP,3,2,99.62092494313875
+GSM8K,"published external split; exploratory diagnostic, not untouched confirmation",Frozen ML vs completion,10,5,NO_CHANGE,7,4,99.62092494313875
+GSM8K,"published external split; exploratory diagnostic, not untouched confirmation",Frozen ML vs completion,10,5,HURT,0,0,99.62092494313875

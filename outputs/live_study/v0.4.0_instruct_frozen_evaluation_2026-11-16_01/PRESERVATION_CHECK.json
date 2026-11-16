@@ -1,0 +1,14 @@
+{
+  "writes_limited_to": [
+    "outputs\\live_study\\v0.4.0_instruct_reliability_development_2026-11-16_01",
+    "outputs\\live_study\\v0.4.0_instruct_frozen_evaluation_2026-11-16_01"
+  ],
+  "historical_runs_modified": [],
+  "source_code_modified": [],
+  "frozen_artifact_modified": false,
+  "manuscript_modified": false,
+  "public_upload_performed": false,
+  "frozen_artifact_sha256_verified": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "historical_failure_review_sha256": "5d9d12043c952cd046a9278af996f730558ef0061f315191ec303a07fbc0c538",
+  "note": "All new evidence, question keys, and raw calls are in outputs/live_study; no remote upload or push was performed."
+}

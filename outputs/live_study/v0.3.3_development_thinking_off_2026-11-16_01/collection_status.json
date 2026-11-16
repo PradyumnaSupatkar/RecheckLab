@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "planned_questions": 5,
+  "planned_calls": 10,
+  "protocol_hash": "36e714cc6e5dfa4dbf089a30a382ea26c500b8a41694b2d8cb6465e57f2cae67",
+  "started_utc": "2026-11-16T09:28:14.550896+00:00",
+  "failed_calls": 0,
+  "successful_calls": 10,
+  "completed_questions": 5,
+  "ended_utc": "2026-11-16T09:32:00.986931+00:00"
+}

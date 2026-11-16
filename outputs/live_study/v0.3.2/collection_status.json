@@ -1,0 +1,34 @@
+{
+  "status": "PARTIAL",
+  "phase": "collection",
+  "session_id": "d05905e684314605b799a95ede0f0f85",
+  "started_at": "2026-10-21T20:53:58.517154+00:00",
+  "ended_at": null,
+  "minutes_budget": 473.85678333333334,
+  "protocol_hash": "11ebd5c43097e03385c713a10a845d82a9c9453652af0f2610649fe8d0f401b1",
+  "errors": [],
+  "planned_unique_questions": 1500,
+  "command": "scripts/collect_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.2 --minutes 473.85678333333334",
+  "elapsed_seconds": 523.0469999999987,
+  "completed_pairs": 11,
+  "completed_unique_questions": 11,
+  "completed_by_partition": {
+    "source_train": 3,
+    "target_adaptation_pool": 2,
+    "source_development": 2,
+    "source_test": 2,
+    "target_test": 2
+  },
+  "class_counts": {
+    "NO_CHANGE": 7,
+    "HELP": 4
+  },
+  "call_events": 45,
+  "successful_calls": 22,
+  "failed_calls": 0,
+  "parse_failures": 8,
+  "remaining_questions": 1489,
+  "measured_pairs_per_hour": 45.17991562429006,
+  "estimated_remaining_hours": 32.957122195232024,
+  "eta_basis": "sum of measured successful call wall times; includes first-call cold load; cache/backend overhead not controlled"
+}

@@ -1,0 +1,1 @@
+C:\Users\Pradyumna\Downloads\RecheckLab_Prototype_v0.1\recheck_transfer\.venv\Scripts\python.exe -u scripts/collect_live_study.py --study-root C:\Users\Pradyumna\Downloads\RecheckLab_Prototype_v0.1\recheck_transfer\outputs\live_study\v0.3.0 --minutes 55.53463333333323

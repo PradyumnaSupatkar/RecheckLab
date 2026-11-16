@@ -1,0 +1,15 @@
+{
+  "original_files_checked": 210,
+  "changed_or_removed_files": [],
+  "new_files_outside_experiment_directory": [],
+  "all_original_files_unchanged": true,
+  "excluded_directories": [
+    "outputs/accuracy_experiments",
+    ".venv",
+    ".git",
+    "__pycache__",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache"
+  ]
+}

@@ -1,0 +1,8 @@
+claim,status,evidence_file,scope_or_limit
+Selective computation changes replay cost and sometimes accuracy,MEASURED,MAIN_POLICY_COMPARISON.csv,Recorded paired responses only; no live latency
+ML beats completion,NOT SUPPORTED,MAIN_POLICY_COMPARISON.csv; PAIRED_COMPARISONS.csv,CSQA tied; source MATH completion is at least as accurate; tests exposed
+MATH source is official MATH Level 5,FALSE / provenance not established,data/raw/DATASET_CARD.md; v0.2 split manifest,It is a SEVRA MATH-training holdout
+MATH500 and GSM8K frozen gate metrics,NEW EXTERNAL DIAGNOSTICS,MAIN_POLICY_COMPARISON.csv,"Pinned SEVRA records; exploratory, protocol provenance omits exact prompts and checkpoint digest"
+Token savings imply wall-time savings,NOT MEASURED,outputs/ml_efficiency_evaluation/evaluation_2026-11-03/timing_evidence.json,No trustworthy per-call timing fields
+Classification is reliable for rare HURT,NOT ESTABLISHED,CLASSIFIER_METRICS_CONFUSION.csv,Hurt supports are sparse; inspect recall/CI and abstain from safety claim
+Paired rollout outcomes are independent rows,FALSE,"rechecklab/data.py:39,74; rechecklab/metrics.py:9,22",Question clustered and equal weighted

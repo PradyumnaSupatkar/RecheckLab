@@ -1,0 +1,17 @@
+{
+  "status": "FAIL",
+  "questions": 10,
+  "calls": 20,
+  "initial_parseable": 4,
+  "revision_parseable": 5,
+  "valid_but_incorrect_initial": 0,
+  "valid_but_incorrect_revision": 0,
+  "HELP": 1,
+  "HURT": 0,
+  "NO_CHANGE": 9,
+  "gate_feature_compatible": 10,
+  "call_failures": 0,
+  "minimum_free_ram_gib": 3.508,
+  "minimum_free_vram_mib": 1466,
+  "evaluation_started": false
+}

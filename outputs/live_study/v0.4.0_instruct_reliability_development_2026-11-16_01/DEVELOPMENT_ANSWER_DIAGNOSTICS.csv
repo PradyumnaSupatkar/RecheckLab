@@ -1,0 +1,11 @@
+﻿example_id,initial_parseable,revision_parseable,initial_correct,revision_correct,initial_completion_reason,revision_completion_reason,initial_failure_type,revision_failure_type
+gsm8k:train:5246,True,True,True,True,stop,stop,none,none
+gsm8k:train:6613,True,True,True,True,stop,stop,none,none
+gsm8k:train:3744,True,True,False,False,stop,stop,none,none
+gsm8k:train:1809,True,True,True,True,stop,stop,none,none
+gsm8k:train:2906,True,True,True,True,stop,stop,none,none
+gsm8k:train:4243,True,True,True,True,stop,stop,none,none
+gsm8k:train:2432,True,True,True,True,stop,stop,none,none
+gsm8k:train:3467,True,True,True,True,stop,stop,none,none
+gsm8k:train:3746,True,True,True,True,stop,stop,none,none
+gsm8k:train:1328,True,True,True,True,stop,stop,none,none

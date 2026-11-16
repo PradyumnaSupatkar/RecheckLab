@@ -1,0 +1,68 @@
+{
+  "study": "v0.3.3 protocol reliability development (not evaluation)",
+  "dataset": {
+    "repository": "openai/gsm8k",
+    "revision": "740312add88f781978c0658806c59bc2815b9866",
+    "split": "main/train",
+    "source_rows": 7473,
+    "question_selection_seed": 20261118,
+    "selection_rule": "uniform seeded sample from canonical-unique eligible train questions after excluding all local v0.2 prepared cohorts and all saved v0.3 planned/evaluated questions; selection uses question text/hash only, not key, outcome, difficulty, or gate score"
+  },
+  "model": {
+    "name": "qwen3:4b",
+    "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "ollama_version_expected": "0.40.16"
+  },
+  "prompts": {
+    "initial": "Solve the question independently. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or the option letter, as appropriate.",
+    "revision": "Recheck the saved initial response against the same original question. Keep its answer if justified; change it only if you identify an error. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or option letter.",
+    "initial_messages": "one user: initial prompt + two newlines + question",
+    "revision_messages": "same initial user; assistant: full initial response content; user: revision prompt"
+  },
+  "decoding_common": {
+    "context_window": 4096,
+    "temperature": 0.0,
+    "initial_seed": 42,
+    "revision_seed": 43,
+    "top_k": 1,
+    "top_p": 1.0,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "stop": [
+      "<|im_start|>",
+      "<|im_end|>"
+    ],
+    "stream": false,
+    "timeout_seconds": 240,
+    "retries": 0
+  },
+  "candidates": {
+    "A_thinking_off_1024": {
+      "thinking": false,
+      "num_predict": 1024
+    },
+    "B_thinking_on_2048": {
+      "thinking": true,
+      "num_predict": 2048
+    }
+  },
+  "parser": "explicit-final-v1: require FINAL marker and finite numeric answer; no extraction from reasoning text",
+  "grader": "published GSM8K #### key, decimal exact after comma normalization; score offline only",
+  "gate": {
+    "artifact": "outputs/v0.2/models/source_gate.joblib",
+    "threshold": 0.25968145276947807,
+    "score": "p_HELP - p_HURT",
+    "rule": "score > threshold",
+    "role": "OOD transfer diagnostic only; no protocol validation bypass"
+  },
+  "resource_guard": {
+    "sequential_calls": true,
+    "minimum_free_ram_before_each_call_gib": 2.0,
+    "stop_on_call_error": true,
+    "no_process_termination": true
+  },
+  "call_order": "for each frozen question, policy order A then B, initial then revision; sequential only",
+  "outcomes_not_used_for_selection_or_generation": true,
+  "question_manifest_sha256": "9b00689eb957edc520f6273e079f3e488732aaa234ce928709b4ba49c17c4f40",
+  "trusted_keys_sha256": "2daef08448f07efb92df3280dac1d0c48cbee9c0a7ba0a4c817c8744fecf4f0b"
+}

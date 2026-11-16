@@ -1,0 +1,11 @@
+{
+  "status": "INCOMPLETE_STOPPED_WATCHDOG",
+  "evaluation_complete": false,
+  "selected_questions": 60,
+  "questions_attempted": 1,
+  "completed_calls": 0,
+  "incomplete_calls": 1,
+  "completed_pairs": 0,
+  "policy_analysis_performed": false,
+  "reason": "No complete initial/revision pair was produced; response body and completion metadata for the interrupted call were not persisted."
+}

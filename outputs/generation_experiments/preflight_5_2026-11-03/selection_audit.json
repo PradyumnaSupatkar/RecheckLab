@@ -1,0 +1,27 @@
+{
+  "source_path": "outputs/live_study/v0.3.0/raw/commonsenseqa/94630fe30dad47192a8546eb75f094926d47e155/train.parquet",
+  "source_sha256": "b0449767ed986bfc2ca52b1244a46ef12f732756727f3cb0a4ab69ac8b3d282b",
+  "source_revision": "94630fe30dad47192a8546eb75f094926d47e155",
+  "official_split": "train",
+  "selection_seed": 46,
+  "eligible_questions": 9541,
+  "selected_questions": 5,
+  "previous_manifests": [
+    {
+      "path": "outputs/live_study/v0.3.0/questions.jsonl",
+      "sha256": "187138b45b37856272cfbd72d539825211edb973a4b2a2f23b8adde3df28e962"
+    },
+    {
+      "path": "outputs/live_study/v0.3.1/questions.jsonl",
+      "sha256": "187138b45b37856272cfbd72d539825211edb973a4b2a2f23b8adde3df28e962"
+    },
+    {
+      "path": "outputs/live_study/v0.3.2/questions.jsonl",
+      "sha256": "187138b45b37856272cfbd72d539825211edb973a4b2a2f23b8adde3df28e962"
+    }
+  ],
+  "overlap_prior_ids": 0,
+  "overlap_prior_groups": 0,
+  "selection": "Seeded permutation of eligible published IDs sorted lexically; no outcome-based selection.",
+  "future_use": "Operational preflight only; exclude these IDs from future development/evaluation."
+}

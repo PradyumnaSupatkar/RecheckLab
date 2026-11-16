@@ -1,0 +1,10 @@
+{
+  "historical_tree_status": "captured before new inference",
+  "inference_calls_started": 0,
+  "artifact_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "historical_input_dirs": [
+    "v0.3.3_independent_pilot_2026-11-16_01",
+    "v0.3.3_development_thinking_off_2026-11-16_01",
+    "v0.3.3_protocol_reliability_development_2026-11-16_01"
+  ]
+}

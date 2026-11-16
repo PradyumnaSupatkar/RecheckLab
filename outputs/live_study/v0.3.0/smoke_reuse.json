@@ -1,0 +1,5 @@
+{
+  "protocol_hash": "9f3f34ab0d1639c814322c3eee4cd581dd893e98f6d43498d72dd0d2376afcb9",
+  "reused_pairs": 4,
+  "reason": "exact frozen protocol and original training/adaptation partitions; no test smoke"
+}

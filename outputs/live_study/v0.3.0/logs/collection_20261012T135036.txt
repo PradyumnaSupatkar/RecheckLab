@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\Pradyumna\Downloads\RecheckLab_Prototype_v0.1\recheck_transfer\scripts\collect_live_study.py", line 28, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "C:\Users\Pradyumna\Downloads\RecheckLab_Prototype_v0.1\recheck_transfer\scripts\collect_live_study.py", line 20, in main
+    status = collect_study(args.study_root, host=args.host, minutes=args.minutes, smoke=args.smoke,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pradyumna\Downloads\RecheckLab_Prototype_v0.1\recheck_transfer\rechecklab\study_collection.py", line 220, in collect_study
+    descriptor = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: 'C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.0\\collection.lock'

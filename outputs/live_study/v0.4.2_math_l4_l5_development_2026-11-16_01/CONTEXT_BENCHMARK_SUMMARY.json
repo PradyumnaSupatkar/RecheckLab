@@ -1,0 +1,29 @@
+{
+  "context_benchmark": {
+    "8192": {
+      "calls": 4,
+      "parseable": 4,
+      "natural_stop": true,
+      "mean_tokens_per_second": 18.947,
+      "mean_wall_seconds": 42.592,
+      "minimum_free_ram_gib": 4.315,
+      "maximum_gpu_used_mib": 2551
+    },
+    "16384": {
+      "calls": 4,
+      "parseable": 4,
+      "natural_stop": true,
+      "mean_tokens_per_second": 15.826,
+      "mean_wall_seconds": 47.052,
+      "minimum_free_ram_gib": 2.976,
+      "maximum_gpu_used_mib": 2687
+    }
+  },
+  "selection_rule": "Use the smallest tested context that achieved full parse success and higher mean throughput without resource stress; correctness was not used.",
+  "selected_context": 8192,
+  "ollama_ps_observed": {
+    "8192": "45% CPU / 55% GPU; 4.2 GB total runner allocation",
+    "16384": "56% CPU / 44% GPU; 5.4 GB total runner allocation"
+  },
+  "gpu_observed": "RTX 3050 Laptop GPU, 4 GiB; no OOM; peak temperature in context benchmark 70 C"
+}

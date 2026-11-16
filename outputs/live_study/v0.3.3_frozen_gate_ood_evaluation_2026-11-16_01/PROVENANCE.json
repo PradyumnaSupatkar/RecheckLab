@@ -1,0 +1,70 @@
+{
+  "evaluation_type": "research-only OOD/cross-protocol frozen classifier scoring",
+  "new_llm_calls": 0,
+  "questions": 8,
+  "artifact_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "artifact_threshold": 0.25968145276947807,
+  "artifact_harm_weight": 1.0,
+  "feature_schema": "pre-recheck-v2",
+  "feature_schema_fingerprint": "9e09eba8571dd2b31fb70fe83cb12191ba0051d620324037cc18cf3cae22e4ca",
+  "feature_names": [
+    "question_log_chars",
+    "question_log_words",
+    "question_numbers",
+    "question_math_symbols",
+    "question_marks",
+    "initial_log_chars",
+    "initial_log_words",
+    "initial_unique_word_ratio",
+    "initial_uncertainty_per_100_words",
+    "initial_backtracking_per_100_words",
+    "initial_checking_per_100_words",
+    "initial_number_count",
+    "initial_paragraph_count",
+    "initial_question_marks",
+    "initial_log_actual_tokens",
+    "initial_finalizer_used",
+    "initial_budget_exhausted",
+    "initial_answer_present",
+    "initial_completion_unknown"
+  ],
+  "class_order": [
+    "HELP",
+    "NO_CHANGE",
+    "HURT"
+  ],
+  "score_formula": "p_HELP - harm_weight * p_HURT",
+  "decision_rule": "score > threshold",
+  "feature_input_fields": [
+    "query",
+    "base_response",
+    "base_answer",
+    "base_actual_tokens",
+    "base_done_reason",
+    "base_finalizer_used"
+  ],
+  "trusted_key_file_read": false,
+  "revised_response_or_outcome_used_for_features_or_predictions": false,
+  "protocol_hash": "10918ba33eef2eb97f7c10972fe0db1f48e3250684ece28c54e50520fc91462d",
+  "input_sha256": {
+    "outputs\\v0.2\\models\\source_gate.joblib": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+    "outputs\\live_study\\v0.3.3_independent_pilot_2026-11-16_01\\pairs.jsonl": "a07350129323be56ab2d15c472e94a4f7bd83c14b39ca3a7e0f344ec7f128e02",
+    "outputs\\live_study\\v0.3.3_independent_pilot_2026-11-16_01\\calls.jsonl": "26b6d44bc22be84827da22a5fa8ddccf846783c55aced7f8b066c3fa7b58a384",
+    "outputs\\live_study\\v0.3.3_independent_pilot_2026-11-16_01\\questions.jsonl": "7b3c8716723293521fdb37d12af31ecac80afca25067dafeed5840f19ac8ed01",
+    "outputs\\live_study\\v0.3.3_independent_pilot_2026-11-16_01\\protocol.json": "da255cfb24727556f779ce629a14f3520b400537c1aa7d9218a0fc5e4a2ddbe7",
+    "outputs\\live_study\\v0.3.3_independent_pilot_2026-11-16_01\\protocol_hash.txt": "1210cc1764ba3c60fa9dd00dc6ffd487b88bbadb791c1ae7373ca000fb7f8d96",
+    "outputs\\live_study\\v0.3.3_independent_pilot_2026-11-16_01\\EXPERIMENT_MANIFEST.json": "1a2695b82b9a9ec303c4e0483b334eda0238a83c75a1105868ac373a637c3400",
+    "outputs\\live_study\\v0.3.3_independent_pilot_2026-11-16_01\\QUESTION_SELECTION.json": "1b5f7db2861789e712c46bad95a455c29f003592e06c2cdea4fbf83479f13cba",
+    "data\\prepared\\source_train.parquet": "0cc05e2cae5024cb8f886a47917c41ad790f07de247d72ea1fbeb8a31679dfd1"
+  },
+  "output_sha256": {
+    "evaluate_ood_gate.py": "885c51591f269294fb56cf1c20856bd6b0b50aebbc99c207666113fb0315afdf",
+    "FAILURE_ANALYSIS.md": "adf964d28fc04ca01c49b5b483ec78d5eb976c3d4966bd308c98f0a45da8e5ae",
+    "FEATURE_SHIFT.csv": "999fa9766e5819e406270dde1eb801e9676061701f2a822b4b2dbd2f98f53b9e",
+    "ML_PREDICTIONS.csv": "7e73ead58ce3f011adca4f4d84b371c21b501d34d8bad57a36777db8100f8268",
+    "OOD_COMPATIBILITY.md": "5dc968c86e925ddc9135b96ceb439c32fbab3875f257810b9691f364c4ebd302",
+    "OOD_FEATURES.csv": "ea0782db9d827e22e3a7b97e28e894d3b9be7cd3d0e36e902e976dc2ddab9d6a",
+    "POLICY_COMPARISON.csv": "297305d6f7874b8c70dd48f8e18abf9ffe232f543dcaef18274737d1306b3964",
+    "QUESTION_LEVEL.csv": "7e73ead58ce3f011adca4f4d84b371c21b501d34d8bad57a36777db8100f8268"
+  }
+}

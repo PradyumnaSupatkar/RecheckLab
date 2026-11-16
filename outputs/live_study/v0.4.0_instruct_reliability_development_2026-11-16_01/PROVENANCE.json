@@ -1,0 +1,62 @@
+{
+  "run": "development_reliability_gate",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "dataset_sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+  "artifact_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "prompt_sha256": {
+    "initial": "bb686ea99531f548c115886f295fd8fc250fddd98a69d2f0385abeb27c4f52df",
+    "revision": "bf630b1485eeb243b097d50a4ea63f6caa74790e0279cacc38e753d3167db8cf"
+  },
+  "question_selection_sha256": "7728f2d2afaa2bda890f066f2590b20dcf99ea888794ef93acdd6e6377c61781",
+  "trusted_key_sha256": "1839dcbb11fbd655b5ec6af48f358a355185a4b1b6bb29dcfafc243ed644b546",
+  "feature_schema": "pre-recheck-v2",
+  "feature_names": [
+    "question_log_chars",
+    "question_log_words",
+    "question_numbers",
+    "question_math_symbols",
+    "question_marks",
+    "initial_log_chars",
+    "initial_log_words",
+    "initial_unique_word_ratio",
+    "initial_uncertainty_per_100_words",
+    "initial_backtracking_per_100_words",
+    "initial_checking_per_100_words",
+    "initial_number_count",
+    "initial_paragraph_count",
+    "initial_question_marks",
+    "initial_log_actual_tokens",
+    "initial_finalizer_used",
+    "initial_budget_exhausted",
+    "initial_answer_present",
+    "initial_completion_unknown"
+  ],
+  "feature_schema_fingerprint": "9e09eba8571dd2b31fb70fe83cb12191ba0051d620324037cc18cf3cae22e4ca",
+  "class_order": [
+    "HELP",
+    "NO_CHANGE",
+    "HURT"
+  ],
+  "output_sha256": {
+    "COLLECTION_STATUS.json": "c8b75aa94a466153e82ac055c3b7c68dcf8f6e063c64eb921fade55fdbc29f40",
+    "DEVELOPMENT_ANSWER_DIAGNOSTICS.csv": "6d3aa071e1f5ea030adaebd32a92f162a5eb5c3aa53c59219a4071a059283ea0",
+    "DEVELOPMENT_RELIABILITY_RESULTS.md": "76ec3291b8fde11da3efe04667aa9bd5e8f8c633f1aebb5fee7089f567c98ef5",
+    "EXPERIMENT_MANIFEST.json": "82a5c6d5a6a3b6bb8ba73f8ea4f9c7c4ffe70cc8758cc04de12ebbd863986a05",
+    "FILE_INTEGRITY.json": "15da51bb4908e9c411cff4c0d571bace3dcf5b4a96512baab0913e3499014f61",
+    "FINAL_DECISION.json": "fc80e5b643942449933c2fa34210400a45c698801e6c753af1d814b14eb53020",
+    "finalize_audit.py": "167885a9b19516a0909c0d41d562aa107c2c4aa4668b150e9eaa90cbfe7e975d",
+    "HARDWARE_BENCHMARK.md": "2330e2fdfe9faed6e29e5663ba4cf8099324cda27b25f53d341436fea191b911",
+    "HISTORICAL_FAILURE_REVIEW.md": "5d9d12043c952cd046a9278af996f730558ef0061f315191ec303a07fbc0c538",
+    "PAIRS.jsonl": "dec6f76a87161943efd5c122fb54cb87bf1fed3dae351e412b4ccb1ae8ee58c8",
+    "PREPARATION_STATUS.json": "70eb41d237a5a080824dcad1481cb5429afd01879249ade19f33beba877c6458",
+    "PRESERVATION_BASELINE.json": "c101abddaca3f575d7b6d73c60797464d5b25d21af9352284ce11d6feba4a812",
+    "PRESERVATION_CHECK.json": "eff38ad26d146c1a83c460ac0f094aa8d54b25520f34e87796c9a927b9f5a1b3",
+    "QUESTION_SELECTION.jsonl": "d2c17a3bb7ef9085226affe633e8ab5995f521c8353777c88b4f88aca5b0fab3",
+    "RAW_CALLS.jsonl": "19f53e8ad5ab6c92fffeb32c10ef10e30b7157c523fc096289e8534f2cc5785d",
+    "RELIABILITY_GATE.json": "abb865faad5944589a97d5f2c8023ffb8d32b09395a9c5752965303c21fa62ad",
+    "RUN_COMMAND.md": "bac88924d1f41b75184b0522023948672b2e05da18ecbb6b3677282febd1c125",
+    "run_instruct_study.py": "5d949bc4769cb596b9fe5807d890ffcc6ec99e9459932d90341089a647e7dbb3",
+    "TRUSTED_KEYS.jsonl": "c2ac6e913609e8efc78871320aed2696fc4d92118ecfedf50b6f052685aed853",
+    "VALID_BUT_INCORRECT_DEVELOPMENT.csv": "19e3649e154cf562f60e8fd4d56e0f731568dd3945e23ae4e65705d14a4f3c4e"
+  }
+}

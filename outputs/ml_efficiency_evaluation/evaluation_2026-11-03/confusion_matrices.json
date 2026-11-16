@@ -1,0 +1,125 @@
+{
+  "source_development": {
+    "label_order_true_rows_predicted_columns": [
+      "HELP",
+      "NO_CHANGE",
+      "HURT"
+    ],
+    "raw_outcome_row_counts": [
+      [
+        43,
+        4,
+        0
+      ],
+      [
+        39,
+        297,
+        12
+      ],
+      [
+        1,
+        4,
+        1
+      ]
+    ],
+    "question_equivalent_counts": [
+      [
+        43.0,
+        4.0,
+        0.0
+      ],
+      [
+        39.0,
+        296.0,
+        12.0
+      ],
+      [
+        1.0,
+        4.0,
+        1.0
+      ]
+    ]
+  },
+  "source_test": {
+    "label_order_true_rows_predicted_columns": [
+      "HELP",
+      "NO_CHANGE",
+      "HURT"
+    ],
+    "raw_outcome_row_counts": [
+      [
+        60,
+        5,
+        0
+      ],
+      [
+        41,
+        281,
+        10
+      ],
+      [
+        1,
+        2,
+        0
+      ]
+    ],
+    "question_equivalent_counts": [
+      [
+        60.0,
+        5.0,
+        0.0
+      ],
+      [
+        41.0,
+        281.0,
+        10.0
+      ],
+      [
+        1.0,
+        2.0,
+        0.0
+      ]
+    ]
+  },
+  "target_test": {
+    "label_order_true_rows_predicted_columns": [
+      "HELP",
+      "NO_CHANGE",
+      "HURT"
+    ],
+    "raw_outcome_row_counts": [
+      [
+        8,
+        13,
+        0
+      ],
+      [
+        42,
+        1334,
+        0
+      ],
+      [
+        0,
+        69,
+        0
+      ]
+    ],
+    "question_equivalent_counts": [
+      [
+        4.0,
+        6.5,
+        0.0
+      ],
+      [
+        21.0,
+        667.0,
+        0.0
+      ],
+      [
+        0.0,
+        34.5,
+        0.0
+      ]
+    ]
+  }
+}

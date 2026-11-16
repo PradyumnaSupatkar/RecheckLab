@@ -1,0 +1,25 @@
+{
+  "model": "qwen3:4b",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Solve the multiple-choice question. Avoid unnecessary explanation. Finish with exactly FINAL: X, where X is one A-E letter.\n\nA member of the audience was struck in the head by a ball. What sort of building is the audience most likely in?\n\nOptions:\nA. movie theater\nB. stadium\nC. church\nD. show\nE. arena\n\nAnswer with one option letter (A-E)."
+    }
+  ],
+  "stream": true,
+  "think": true,
+  "options": {
+    "num_ctx": 4096,
+    "num_predict": 2048,
+    "seed": 42,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "stop": [
+      "<|im_start|>",
+      "<|im_end|>"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "inputs": {
+    "outputs\\v0.2\\data\\prepared\\source_train.parquet": "d7bdccfd4943093c61a134ab70b2348c8a52665c401d02d905b4554f5d97fab9",
+    "outputs\\v0.2\\data\\prepared\\source_development.parquet": "7330ad8eb29e9d583ba962994c1bc35b2ab1187ff546374e637fd680d5cefa3e",
+    "outputs\\v0.2\\data\\prepared\\source_test.parquet": "0a698dbf818c101adde346d4327a7f8c0fa701a778bebe53490eedb5cf210c2c",
+    "outputs\\v0.2\\data\\prepared\\target_adaptation_pool.parquet": "dabab6c71ccd74bbe2647cd45c9ecd145b5df6ac2e9e36b2697fcd7633d16eab",
+    "outputs\\v0.2\\data\\prepared\\target_test.parquet": "d611eb4374d7937fbce642f015e8a866d20d73dd2561f70fc4f01b0946758809",
+    "data\\raw\\math500.parquet": "12d2a7b9ccfece28f6e4a2975467a672a2ccd4e6c833fe49a99a92b033c963b4",
+    "data\\raw\\gsm8k.parquet": "24d00be06386d4b97d2ecad4d6607f119eea2891a0dc3a1f889f057a704350ec"
+  },
+  "protocol_sha256": "4a2a82544f0168b5ae7a6bed51e32e5aaa0014bd06ea43c14b16fd917f913d7a",
+  "bootstrap_seed": 20261116,
+  "bootstrap_repeats": 2000,
+  "grade_changes": 0,
+  "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3"
+}

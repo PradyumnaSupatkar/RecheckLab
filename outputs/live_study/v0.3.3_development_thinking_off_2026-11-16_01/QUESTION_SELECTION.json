@@ -1,0 +1,32 @@
+{
+  "frozen_before_inference": true,
+  "selection_seed": 20261117,
+  "selection_rule": "Uniform seeded sample from canonical-unique GSM8K main/train groups after excluding prior v0.3.0-v0.3.2 planned manifests, recorded v0.2 cohorts, locally cached prior question groups, and all eight initial-pilot questions. No outcomes or difficulty used.",
+  "source_revision": "740312add88f781978c0658806c59bc2815b9866",
+  "candidate_count": 7473,
+  "eligible_count": 6665,
+  "selected": [
+    {
+      "example_id": "gsm8k:train:1697",
+      "group_id": "19ad863fbbc7314d1c7139853ca47cedc785f0b2df86a38a3bec78d1ca97cc1d"
+    },
+    {
+      "example_id": "gsm8k:train:3283",
+      "group_id": "b5ba65ebd45f937f04aedf4a090b4305a77aa0e3bd6a3124f2df3c75be0a4d70"
+    },
+    {
+      "example_id": "gsm8k:train:696",
+      "group_id": "63d48ed7e8544fdfc02de107c49eb49660f844b99057303b03007f357bbed258"
+    },
+    {
+      "example_id": "gsm8k:train:1011",
+      "group_id": "b05354eb1b85fbd03007a7b8a0e876ef35dd4080738c4656002b6d0c1f8a934e"
+    },
+    {
+      "example_id": "gsm8k:train:3698",
+      "group_id": "fdf2196dfbb44611d1ae148a4fb801bb6b1f82a850ed058125f569e3f79d0860"
+    }
+  ],
+  "question_manifest_sha256": "a9e86d8d29c3ee6653125f1ced8fc0d857aff5a7f4a61c1a26d784a810e3d943",
+  "trusted_key_sha256": "4101cfe2a94b6aec9971e9da52214bf452e8fed29e40b3d8ab36d5f108e95194"
+}

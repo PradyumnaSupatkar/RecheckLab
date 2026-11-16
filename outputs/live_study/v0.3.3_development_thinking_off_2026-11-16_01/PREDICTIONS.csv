@@ -1,0 +1,6 @@
+﻿example_id,source_question_id,group_id,initial_answer,revision_answer,initial_correct,revision_correct,transition,initial_parse_valid,revision_parse_valid,initial_done_reason,revision_done_reason,initial_tokens_prompt_plus_output,revision_tokens_prompt_plus_output,initial_generated_tokens,revision_generated_tokens,initial_wall_seconds,revision_wall_seconds
+gsm8k:train:1697,1697,19ad863fbbc7314d1c7139853ca47cedc785f0b2df86a38a3bec78d1ca97cc1d,12,12,True,True,NO_CHANGE,True,True,stop,stop,458,776,375,263,23.803694899999755,13.678256600000168
+gsm8k:train:3283,3283,b5ba65ebd45f937f04aedf4a090b4305a77aa0e3bd6a3124f2df3c75be0a4d70,1.04E+3,1.04E+3,True,True,NO_CHANGE,True,True,stop,stop,1064,1519,953,400,43.759860399999525,21.0314187999993
+gsm8k:train:696,696,63d48ed7e8544fdfc02de107c49eb49660f844b99057303b03007f357bbed258,45,45,True,True,NO_CHANGE,True,True,stop,stop,604,965,498,307,22.743534199998976,15.881359200000588
+gsm8k:train:1011,1011,b05354eb1b85fbd03007a7b8a0e876ef35dd4080738c4656002b6d0c1f8a934e,8,8,True,True,NO_CHANGE,True,True,stop,stop,654,936,572,228,25.414597499999218,12.264443199999732
+gsm8k:train:3698,3698,fdf2196dfbb44611d1ae148a4fb801bb6b1f82a850ed058125f569e3f79d0860,2E+2,2E+2,True,True,NO_CHANGE,True,True,stop,stop,796,1159,713,308,31.428807500000403,16.36772849999943

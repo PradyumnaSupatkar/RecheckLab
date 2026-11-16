@@ -1,0 +1,10 @@
+{
+  "selection_and_order_match_v042": true,
+  "keys_match_v042": true,
+  "first_v042_attempt_retained_as_incomplete": true,
+  "other_59_questions_unattempted": true,
+  "no_new_evaluation_inference": true,
+  "frozen_gate_checksum_valid": true,
+  "prior_v041_v042_outputs_untouched": true,
+  "git_status": "## main...origin/main"
+}

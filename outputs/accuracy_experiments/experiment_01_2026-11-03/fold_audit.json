@@ -1,0 +1,82 @@
+[
+  {
+    "outer_fold": 0,
+    "fit_questions": 959,
+    "validation_questions": 240,
+    "fit_class_counts": {
+      "NO_CHANGE": 818,
+      "HELP": 129,
+      "HURT": 12
+    },
+    "validation_class_counts": {
+      "NO_CHANGE": 204,
+      "HELP": 33,
+      "HURT": 3
+    },
+    "inner_folds": 3
+  },
+  {
+    "outer_fold": 1,
+    "fit_questions": 959,
+    "validation_questions": 240,
+    "fit_class_counts": {
+      "NO_CHANGE": 818,
+      "HELP": 129,
+      "HURT": 12
+    },
+    "validation_class_counts": {
+      "NO_CHANGE": 204,
+      "HELP": 33,
+      "HURT": 3
+    },
+    "inner_folds": 3
+  },
+  {
+    "outer_fold": 2,
+    "fit_questions": 959,
+    "validation_questions": 240,
+    "fit_class_counts": {
+      "NO_CHANGE": 817,
+      "HELP": 130,
+      "HURT": 12
+    },
+    "validation_class_counts": {
+      "NO_CHANGE": 205,
+      "HELP": 32,
+      "HURT": 3
+    },
+    "inner_folds": 3
+  },
+  {
+    "outer_fold": 3,
+    "fit_questions": 959,
+    "validation_questions": 240,
+    "fit_class_counts": {
+      "NO_CHANGE": 817,
+      "HELP": 130,
+      "HURT": 12
+    },
+    "validation_class_counts": {
+      "NO_CHANGE": 205,
+      "HELP": 32,
+      "HURT": 3
+    },
+    "inner_folds": 3
+  },
+  {
+    "outer_fold": 4,
+    "fit_questions": 960,
+    "validation_questions": 239,
+    "fit_class_counts": {
+      "NO_CHANGE": 818,
+      "HELP": 130,
+      "HURT": 12
+    },
+    "validation_class_counts": {
+      "NO_CHANGE": 204,
+      "HELP": 32,
+      "HURT": 3
+    },
+    "inner_folds": 3
+  }
+]

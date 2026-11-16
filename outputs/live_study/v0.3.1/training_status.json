@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "updated_at_utc": "2026-10-21T20:37:37.462450+00:00",
+  "status": "INCOMPLETE",
+  "training": {
+    "status": "INCOMPLETE",
+    "not_run_reasons": [
+      "Source training HELP support is 2; at least 5 genuine completed pairs required.",
+      "Source training HURT support is 0; at least 5 genuine completed pairs required."
+    ],
+    "inadequate_classes": {
+      "HELP": 2,
+      "HURT": 0
+    },
+    "source_development_class_counts": {
+      "HELP": 2,
+      "NO_CHANGE": 9,
+      "HURT": 0
+    }
+  },
+  "evaluation": {
+    "status": "NOT_RUN",
+    "not_run_reasons": [
+      "Source predictor fitting has not run."
+    ]
+  },
+  "adaptation": {
+    "status": "NOT_RUN",
+    "not_run_reasons": [
+      "No fixed source classifier/threshold exists."
+    ]
+  },
+  "artifact": null,
+  "probabilities": "Uncalibrated three-class classifier outputs, not correctness probabilities.",
+  "limitations": [
+    "Five genuine source-training examples per outcome class is only an eligibility floor, not evidence of research reliability. Class weights create no new rare events.",
+    "Frozen explicit-final-v1 normalization uses Decimal precision 28. Only exact finite decimal values and fractions exactly representable at that precision are accepted as reliable numeric evidence. This validation does not relabel records; precision-preserving grading needs a new version.",
+    "Policy tokens and reconstructed latency use the successful initial/recheck calls of completed pairs. They exclude failed/retried call work and its unknown token usage; collection elapsed time and failure counts must be reported separately. They are not complete collection cost or measured live end-to-end latency."
+  ],
+  "predeclared": {
+    "class_order": [
+      "HELP",
+      "NO_CHANGE",
+      "HURT"
+    ],
+    "minimum_source_train_per_class": 5,
+    "feature_names": [
+      "question_log_chars",
+      "question_log_words",
+      "question_numbers",
+      "question_math_symbols",
+      "question_marks",
+      "initial_log_chars",
+      "initial_log_words",
+      "initial_unique_word_ratio",
+      "initial_uncertainty_per_100_words",
+      "initial_backtracking_per_100_words",
+      "initial_checking_per_100_words",
+      "initial_number_count",
+      "initial_paragraph_count",
+      "initial_question_marks",
+      "initial_log_actual_tokens",
+      "initial_finalizer_used",
+      "initial_budget_exhausted",
+      "initial_answer_present",
+      "initial_completion_unknown"
+    ],
+    "feature_schema_version": "pre-recheck-v2",
+    "feature_schema_fingerprint": "9e09eba8571dd2b31fb70fe83cb12191ba0051d620324037cc18cf3cae22e4ca",
+    "model_selection_rule": "Fit on source training only. Select the highest question-equal source-development macro-F1; ties (12 decimal places) use lower question-equal multiclass log loss, then the fixed candidate order. No target labels are used for model selection.",
+    "threshold_selection_rule": "Question-equal HELP minus HURT utility on source development only; ties use fewer recorded recheck tokens, then the larger threshold. Strict score > threshold.",
+    "harm_weight": 1.0,
+    "token_penalty": 0.0,
+    "adaptation_budgets": [
+      25,
+      50,
+      100,
+      200
+    ],
+    "adaptation_seeds": [
+      142,
+      143,
+      144,
+      145,
+      146
+    ],
+    "source_seed": 42,
+    "bootstrap_repeats": 600
+  },
+  "model_selection_plan": null,
+  "protocol_hash": "f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+  "protocol_contract": {
+    "model": "qwen3:4b",
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "action": "recheck",
+    "recheck_protocol": "live-study:f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+    "study_protocol_hash": "f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+    "live_study_protocol": {
+      "protocol_version": "live-study-v0.3.1",
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "backend": {
+        "ollama_version": "0.40.3",
+        "installed_model": {
+          "name": "qwen3:4b",
+          "model": "qwen3:4b",
+          "modified_at": "2026-10-04T22:16:58.0498628+05:30",
+          "size": 2497293931,
+          "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen3",
+            "families": [
+              "qwen3"
+            ],
+            "parameter_size": "4.0B",
+            "quantization_level": "Q4_K_M",
+            "context_length": 262144,
+            "embedding_length": 2560,
+            "runner": "ggml"
+          },
+          "capabilities": [
+            "completion",
+            "tools",
+            "thinking"
+          ]
+        },
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "4.0B",
+          "quantization_level": "Q4_K_M"
+        },
+        "model_info": {
+          "general.architecture": "qwen3",
+          "general.basename": "Qwen3",
+          "general.file_type": 15,
+          "general.finetune": "Thinking",
+          "general.license": "apache-2.0",
+          "general.license.link": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/main/LICENSE",
+          "general.parameter_count": 4022468096,
+          "general.quantization_version": 2,
+          "general.size_label": "4B",
+          "general.tags": [
+            "text-generation"
+          ],
+          "general.type": "model",
+          "general.version": "2507",
+          "qwen3.attention.head_count": 32,
+          "qwen3.attention.head_count_kv": 8,
+          "qwen3.attention.key_length": 128,
+          "qwen3.attention.layer_norm_rms_epsilon": 1e-06,
+          "qwen3.attention.value_length": 128,
+          "qwen3.block_count": 36,
+          "qwen3.context_length": 262144,
+          "qwen3.embedding_length": 2560,
+          "qwen3.feed_forward_length": 9728,
+          "qwen3.rope.freq_base": 5000000,
+          "tokenizer.ggml.add_bos_token": false,
+          "tokenizer.ggml.bos_token_id": 151643,
+          "tokenizer.ggml.eos_token_id": 151645,
+          "tokenizer.ggml.merges": [],
+          "tokenizer.ggml.model": "gpt2",
+          "tokenizer.ggml.padding_token_id": 151643,
+          "tokenizer.ggml.pre": "qwen2",
+          "tokenizer.ggml.token_type": [],
+          "tokenizer.ggml.tokens": []
+        },
+        "supported_thinking": {
+          "values": [
+            true
+          ],
+          "default": true
+        },
+        "template": "{{- $lastUserIdx := -1 -}}\n{{- range $idx, $msg := .Messages -}}\n{{- if eq $msg.Role \"user\" }}{{ $lastUserIdx = $idx }}{{ end -}}\n{{- end }}\n{{- if or .System .Tools }}<|im_start|>system\n{{ if .System }}{{ .System }}\n\n{{ end }}\n{{- if .Tools }}# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end -}}\n<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if (and $.IsThinkSet (and .Thinking (or $last (gt $i $lastUserIdx)))) -}}\n<think>{{ .Thinking }}</think>\n{{ end -}}\n{{ if .Content }}{{ .Content }}{{ end }}\n{{- if .ToolCalls }}\n{{- range .ToolCalls }}\n<tool_call>\n{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n</tool_call>\n{{- end }}\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n<think>\n{{ end }}\n{{- end }}",
+        "parameters": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95",
+        "capabilities": [
+          "completion",
+          "tools",
+          "thinking"
+        ]
+      },
+      "prompts": {
+        "initial": "Solve the question independently. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or the option letter, as appropriate.",
+        "recheck": "Recheck the saved initial response against the same original question. Keep its answer if justified; change it only if you identify an error. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or option letter.",
+        "initial_messages": "one user: initial prompt + two newlines + original question",
+        "recheck_messages": "same initial user; assistant: full saved initial response; user: recheck prompt"
+      },
+      "generation": {
+        "initial_token_budget": 1024,
+        "recheck_token_budget": 1024,
+        "context_window": 4096,
+        "thinking": true,
+        "temperature": 0.0,
+        "initial_seed": 42,
+        "recheck_seed": 43,
+        "top_k": 1,
+        "top_p": 1.0,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "stop": [
+          "<|im_start|>",
+          "<|im_end|>"
+        ],
+        "stream": false
+      },
+      "finalizer": {
+        "enabled": false,
+        "calls": 0
+      },
+      "parser": {
+        "version": "explicit-final-v1",
+        "numeric": "explicit FINAL marker; finite decimal/fraction; comma/currency normalization",
+        "choice": "explicit FINAL marker; single A-E option letter; optional parentheses/punctuation",
+        "open": "explicit FINAL marker only",
+        "unparseable": "record parsing failure; completed call scored incorrect offline"
+      },
+      "grader": {
+        "version": "decimal-exact-choice-v1",
+        "numeric": "exact Decimal equality; no floating tolerance",
+        "choice": "exact normalized letter equality",
+        "keys": "separate offline file; never in call or feature inputs"
+      },
+      "transport": {
+        "timeout_seconds": 120,
+        "automatic_retries": 0,
+        "explicit_retry_limit": 2,
+        "ambiguous_started_calls": "block resume until operator resolves; never silently repeat",
+        "session_budget": "do not start calls after deadline; bound each call by remaining time"
+      },
+      "sampling": "one initial call and one separate recheck per question; offline recheck EVERY question",
+      "runtime_treatment": "no warm-up call; first-call cold load included; backend caching uncontrolled and actual durations logged",
+      "historical_comparison": {
+        "sevra_checkpoint_digest": "unknown",
+        "sevra_prompts": "unknown",
+        "sevra_context": "unknown",
+        "sevra_initial_budget": 4096,
+        "sevra_finalizer_max_tokens": 512,
+        "difference": "new pinned Thinking-2507 local checkpoint, explicit prompts/decoding, 1024-token calls, no finalizer; independent study"
+      },
+      "references": [
+        "https://github.com/ollama/ollama/blob/main/docs/api.md",
+        "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507"
+      ]
+    }
+  },
+  "study_plan_hash": "f308df5645a6c175ac563182f0c240c716b7c3f558e81fc8477fac324581df40",
+  "planned_questions_by_partition": {
+    "source_train": 600,
+    "source_development": 200,
+    "source_test": 200,
+    "target_adaptation_pool": 200,
+    "target_test": 300
+  },
+  "completed_questions_by_partition": {
+    "source_train": 11,
+    "source_development": 11,
+    "source_test": 10,
+    "target_adaptation_pool": 10,
+    "target_test": 10
+  },
+  "completed_pairs": 52,
+  "planned_pairs": 1500,
+  "source_train_class_counts": {
+    "HELP": 2,
+    "NO_CHANGE": 9,
+    "HURT": 0
+  },
+  "class_counts_by_partition": {
+    "source_train": {
+      "HELP": 2,
+      "NO_CHANGE": 9,
+      "HURT": 0
+    },
+    "source_development": {
+      "HELP": 2,
+      "NO_CHANGE": 9,
+      "HURT": 0
+    },
+    "source_test": {
+      "HELP": 2,
+      "NO_CHANGE": 8,
+      "HURT": 0
+    },
+    "target_adaptation_pool": {
+      "HELP": 6,
+      "NO_CHANGE": 4,
+      "HURT": 0
+    },
+    "target_test": {
+      "HELP": 8,
+      "NO_CHANGE": 2,
+      "HURT": 0
+    }
+  },
+  "questions_manifest_sha256": "187138b45b37856272cfbd72d539825211edb973a4b2a2f23b8adde3df28e962",
+  "completed_pairs_content_sha256": "570417514e57648fd40f7182320d9d27419393192aead25d2976955c5b3daa28",
+  "numeric_precision_audit": {
+    "successful_call_status_counts": {
+      "EXACT": 55,
+      "UNPARSEABLE": 9,
+      "NOT_APPLICABLE": 41
+    },
+    "affected_precision_loss_calls": 0,
+    "limitation": "Frozen explicit-final-v1 normalization uses Decimal precision 28. Only exact finite decimal values and fractions exactly representable at that precision are accepted as reliable numeric evidence. This validation does not relabel records; precision-preserving grading needs a new version.",
+    "scope": "All successful journal responses, including calls not yet forming a completed pair."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "amendment": "Runtime 420-second per-call wall-clock timeout",
+  "issued_utc": "2026-11-16T16:04:02Z",
+  "supersedes_runtime_only": {
+    "original_watchdog_seconds": 2700,
+    "new_watchdog_seconds": 420
+  },
+  "scientific_protocol_unchanged": true,
+  "generation_settings_unchanged": {
+    "num_ctx": 8192,
+    "num_predict": -1,
+    "model": "qwen3:4b-instruct"
+  },
+  "retry_policy": "No automatic retries. Timed-out initial calls skip revision; timed-out revisions leave the initial call intact. Continue with next question in frozen selection order.",
+  "first_question_retry": "Question 1 attempt 2 is explicitly authorized after processing the untouched selection; no other timed-out question is retried.",
+  "target_complete_pairs": 50,
+  "selection": "Original frozen 60-question v0.4.2 selection; no replacements.",
+  "triggering_call": {
+    "call_id": "math:test:number_theory:number_theory/18|initial|attempt-1",
+    "question_id": "math:test:number_theory:number_theory/18",
+    "attempt_number": 1,
+    "timed_out": true,
+    "actual_elapsed_seconds_estimate": 1751.991,
+    "chunks_preserved": 12179,
+    "terminal_metadata_available": false
+  },
+  "original_experiment_manifest_sha256": "e8cfbe50fe2170732c2b03c5d1eb67b5c8bb07b01568caee33d91c7eb79aa83f",
+  "original_manifest_modified": false
+}

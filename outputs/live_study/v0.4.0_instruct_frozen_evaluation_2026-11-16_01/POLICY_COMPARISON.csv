@@ -1,0 +1,5 @@
+﻿policy,questions,correct_count,accuracy,accuracy_wilson_95_low,accuracy_wilson_95_high,rechecks,recheck_rate,HELP_total,HELP_captured,HELP_missed,HURT_total,HURT_revision_accepted,HURT_avoided,NO_CHANGE_rechecks,mean_prompt_plus_output_tokens_per_question,mean_initial_tokens_per_question,mean_selected_revision_tokens_per_question,replayed_latency_seconds_total,replayed_latency_seconds_per_question,paired_accuracy_difference_vs_never,paired_bootstrap_95_low,paired_bootstrap_95_high
+Never recheck,40,37,0.925,0.8013576647568946,0.9741639742254119,0,0.0,1,0,1,0,0,0,0,181.25,181.25,0.0,208.79792999999336,5.219948249999834,0.0,0.0,0.0
+Always recheck,40,38,0.95,0.8349612263085903,0.9861793326138516,40,1.0,1,1,0,0,0,0,39,500.175,181.25,318.925,419.5914977000102,10.489787442500255,0.025,0.0,0.075
+Completion heuristic,40,37,0.925,0.8013576647568946,0.9741639742254119,0,0.0,1,0,1,0,0,0,0,181.25,181.25,0.0,208.79792999999336,5.219948249999834,0.0,0.0,0.0
+Frozen v0.2 ML gate (cross-model/cross-protocol OOD),40,37,0.925,0.8013576647568946,0.9741639742254119,0,0.0,1,0,1,0,0,0,0,181.25,181.25,0.0,208.79792999999336,5.219948249999834,0.0,0.0,0.0

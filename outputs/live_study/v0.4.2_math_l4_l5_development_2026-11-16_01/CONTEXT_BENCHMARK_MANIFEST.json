@@ -1,0 +1,25 @@
+{
+  "experiment": "v0.4.2 development context benchmark",
+  "purpose": "compare 8K and 16K context using uncapped num_predict on two already frozen development questions; no evaluation questions or keys read",
+  "question_ids": [
+    "math:test:intermediate_algebra:intermediate_algebra/362",
+    "math:test:counting_and_probability:counting_and_probability/130"
+  ],
+  "contexts": [
+    8192,
+    16384
+  ],
+  "num_predict": -1,
+  "timeout_seconds": 2700,
+  "idle_read_timeout_seconds": 120,
+  "initial_prompt": "Solve the problem carefully. Provide enough concise reasoning to make the result checkable. End with exactly one final line in this form: FINAL: <integer or exact fraction>. Use an exact fraction instead of a decimal when needed. Do not omit the final line.",
+  "revision_prompt": "Review your previous solution against the problem and correct any mathematical error. Give a concise explanation of your check. End with exactly one final line in this form: FINAL: <integer or exact fraction>. Use an exact fraction instead of a decimal when needed. Do not omit the final line.",
+  "prompt_sha256": {
+    "initial": "86c267f0238d120d96599fbbb6d42415dc08db2efa398bfc74f3ff85779f2e8b",
+    "revision": "60118db661baaa0ac2ac3720215afacc1be4a515a71803400ec9e33ada29cb10"
+  },
+  "request_streaming": true,
+  "stop_override": "omitted; use model natural stop tokens",
+  "no_gold_answers_loaded": true,
+  "started_utc": "2026-11-16T11:53:45Z"
+}

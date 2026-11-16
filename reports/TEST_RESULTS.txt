@@ -1,0 +1,11 @@
+Validation completed on 4 October 2026
+
+9 research safeguard tests passed.
+Python source compilation passed.
+The public-log experiment completed using the recorded dataset revision.
+Streamlit AppTest: initial dashboard load passed.
+Streamlit AppTest: selecting a HURT trace passed.
+Streamlit AppTest: predictor button passed.
+Offline HTML parsed and both embedded figure images verified.
+Real GSM8K and BoolQ question preparation completed (10 questions each).
+Collector protocol and resume behavior tested with a mocked Ollama response; fresh local LLM inference has not been executed.

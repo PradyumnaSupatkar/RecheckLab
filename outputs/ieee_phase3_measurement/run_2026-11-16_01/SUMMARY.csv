@@ -1,0 +1,8 @@
+partition,status,questions,rollout_rows,canonical_groups_with_different_initial_transcripts,initial_accuracy_pct,always_accuracy_pct,gain_pp,gain_ci_low_pp,gain_ci_high_pp,HELP_rows,HELP_question_equivalents,HURT_rows,HURT_question_equivalents,NO_CHANGE_rows,NO_CHANGE_question_equivalents,base_finalizer_used_question_equivalents,finalizer_used_question_equivalents,HELP_length_question_equivalents
+source_train,training descriptive,1199,1199,0,79.56630525437865,91.82652210175146,12.260216847372812,10.258548790658882,14.261884904086738,162,162.0,15,15.0,1022,1022.0,281.0,78.0,154.0
+source_development,exposed/descriptive; not independent confirmation,400,401,1,80.75,91.0,10.25,7.000000000000001,13.750000000000002,47,47.0,6,6.0,348,347.0,91.0,33.0,47.0
+source_test,exposed/descriptive; not independent confirmation,400,400,0,74.75,90.25,15.5,11.75,19.25,65,65.0,3,3.0,332,332.0,107.0,31.0,62.0
+target_adaptation_pool,exposed/descriptive; not independent confirmation,488,976,0,77.04918032786885,71.51639344262296,-5.532786885245901,-7.889344262295082,-3.1762295081967213,22,11.0,76,38.0,878,439.0,25.0,52.0,6.0
+target_test,exposed/descriptive; not independent confirmation,733,1466,0,76.12551159618008,72.8512960436562,-3.2742155525238745,-4.774897680763983,-1.7053206002728514,21,10.5,69,34.5,1376,688.0,27.0,53.0,4.0
+math500_replay,exposed/descriptive; not independent confirmation,500,1000,0,59.0,75.5,16.5,13.0,20.10249999999999,187,93.5,22,11.0,791,395.5,226.0,123.5,89.5
+gsm8k_replay,exposed/descriptive; not independent confirmation,1319,2638,0,93.4040940106141,93.4040940106141,0.0,-0.7202426080363912,0.7581501137225171,33,16.5,33,16.5,2572,1286.0,51.0,37.0,14.0

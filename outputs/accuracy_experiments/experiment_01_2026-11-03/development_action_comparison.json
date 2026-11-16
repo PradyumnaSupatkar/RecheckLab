@@ -1,0 +1,18 @@
+{
+  "Existing frozen gate": {
+    "differing_rows": 222,
+    "differing_questions": 221
+  },
+  "Completion rule": {
+    "differing_rows": 221,
+    "differing_questions": 220
+  },
+  "Always recheck": {
+    "differing_rows": 86,
+    "differing_questions": 86
+  },
+  "Keep initial answer": {
+    "differing_rows": 315,
+    "differing_questions": 314
+  }
+}

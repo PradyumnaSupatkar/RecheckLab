@@ -1,0 +1,105 @@
+{
+  "artifact_fingerprints": {
+    "models/source_gate.joblib": true,
+    "reports/policy_results.csv": true,
+    "reports/target_predictions.csv": true,
+    "reports/target_features.csv": true,
+    "reports/split_manifest.json": true,
+    "reports/adaptation_summary.csv": true,
+    "reports/adaptation_runs.csv": true,
+    "reports/model_comparison.csv": true,
+    "reports/adaptation_curve.png": true
+  },
+  "partitions": {
+    "source_train": {
+      "questions": 1199,
+      "rows": 1199,
+      "row_class_counts": {
+        "NO_CHANGE": 1022,
+        "HELP": 162,
+        "HURT": 15
+      },
+      "pair_oracle_accuracy_pct_DIAGNOSTIC_ONLY": 93.07756463719767,
+      "duplicate_attempt_rollout_rows": 0
+    },
+    "source_development": {
+      "questions": 400,
+      "rows": 401,
+      "row_class_counts": {
+        "NO_CHANGE": 348,
+        "HELP": 47,
+        "HURT": 6
+      },
+      "pair_oracle_accuracy_pct_DIAGNOSTIC_ONLY": 92.5,
+      "duplicate_attempt_rollout_rows": 0
+    },
+    "source_test": {
+      "questions": 400,
+      "rows": 400,
+      "row_class_counts": {
+        "NO_CHANGE": 332,
+        "HELP": 65,
+        "HURT": 3
+      },
+      "pair_oracle_accuracy_pct_DIAGNOSTIC_ONLY": 91.0,
+      "duplicate_attempt_rollout_rows": 0
+    },
+    "target_adaptation_pool": {
+      "questions": 488,
+      "rows": 976,
+      "row_class_counts": {
+        "NO_CHANGE": 878,
+        "HURT": 76,
+        "HELP": 22
+      },
+      "pair_oracle_accuracy_pct_DIAGNOSTIC_ONLY": 79.30327868852459,
+      "duplicate_attempt_rollout_rows": 0,
+      "questions_with_different_rollout_labels": 56
+    },
+    "target_test": {
+      "questions": 733,
+      "rows": 1466,
+      "row_class_counts": {
+        "NO_CHANGE": 1376,
+        "HURT": 69,
+        "HELP": 21
+      },
+      "pair_oracle_accuracy_pct_DIAGNOSTIC_ONLY": 77.55798090040928,
+      "duplicate_attempt_rollout_rows": 0,
+      "questions_with_different_rollout_labels": 60
+    }
+  },
+  "official_key_audit": {
+    "target_adaptation_pool": {
+      "base": {
+        "standard_letter_rows": 932,
+        "exact_key_mismatches": 0,
+        "nonstandard_rows": 44,
+        "nonstandard_rows_graded_correct": 0
+      },
+      "final": {
+        "standard_letter_rows": 875,
+        "exact_key_mismatches": 0,
+        "nonstandard_rows": 101,
+        "nonstandard_rows_graded_correct": 0
+      }
+    },
+    "target_test": {
+      "base": {
+        "standard_letter_rows": 1422,
+        "exact_key_mismatches": 0,
+        "nonstandard_rows": 44,
+        "nonstandard_rows_graded_correct": 0
+      },
+      "final": {
+        "standard_letter_rows": 1361,
+        "exact_key_mismatches": 0,
+        "nonstandard_rows": 105,
+        "nonstandard_rows_graded_correct": 0
+      }
+    }
+  },
+  "new_policies_evaluated_on_tests": false,
+  "parsing": "Public parsed answers/correctness preserved; local FINAL parser is not substituted.",
+  "limitations": "MATH equivalence labels cannot be independently regraded without source keys. Nonstandard answer reinterpretation is a scoring change, not a metric correction."
+}

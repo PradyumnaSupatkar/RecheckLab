@@ -1,0 +1,19 @@
+{
+  "purpose": "Timestamped offline/idempotent verification of the actual prepared frozen manifest; original initial preparation also exited 0 but its exact process start was not recorded.",
+  "command": ".\\.venv\\Scripts\\python.exe scripts\\prepare_live_study.py --output outputs\\live_study\\v0.3.0",
+  "started_utc": "2026-10-04 18:49:53 UTC",
+  "ended_utc": "2026-10-04 18:49:57 UTC",
+  "elapsed_seconds": 3.6713977,
+  "exit_code": 0,
+  "stdout": "{\r\n  \"status\": \"PREPARED\",\r\n  \"planned_total_by_domain\": {\r\n    \"maths\": 1000,\r\n    \"commonsenseqa\": 500\r\n  },\r\n  \"planned_questions_by_partition\": {\r\n    \"source_train\": 600,\r\n    \"source_development\": 200,\r\n    \"source_test\": 200,\r\n    \"target_adaptation_pool\": 200,\r\n    \"target_test\": 300\r\n  },\r\n  \"manifest_sha256\": {\r\n    \"questions.jsonl\": \"187138b45b37856272cfbd72d539825211edb973a4b2a2f23b8adde3df28e962\",\r\n    \"trusted_keys.jsonl\": \"6be57c4dc890e2a8b628da41c300e55352b4f490b81a852f5d26cec8aa41dafb\"\r\n  },\r\n  \"study_plan_hash\": \"f308df5645a6c175ac563182f0c240c716b7c3f558e81fc8477fac324581df40\",\r\n  \"duplicate_overlap_audit\": {\r\n    \"cross_boundary_overlapping_question_groups\": 0,\r\n    \"pools\": {\r\n      \"gsm8k_train\": {\r\n        \"original_rows\": 7473,\r\n        \"retained_unique_questions\": 7473,\r\n        \"removed_within_pool_duplicate_rows\": 0,\r\n        \"excluded_cross_boundary_overlap_rows\": 0\r\n      },\r\n      \"gsm8k_test\": {\r\n        \"original_rows\": 1319,\r\n        \"retained_unique_questions\": 1319,\r\n        \"removed_within_pool_duplicate_rows\": 0,\r\n        \"excluded_cross_boundary_overlap_rows\": 0\r\n      },\r\n      \"commonsenseqa_train\": {\r\n        \"original_rows\": 9741,\r\n        \"retained_unique_questions\": 9741,\r\n        \"removed_within_pool_duplicate_rows\": 0,\r\n        \"excluded_cross_boundary_overlap_rows\": 0\r\n      },\r\n      \"commonsenseqa_validation\": {\r\n        \"original_rows\": 1221,\r\n        \"retained_unique_questions\": 1221,\r\n        \"removed_within_pool_duplicate_rows\": 0,\r\n        \"excluded_cross_boundary_overlap_rows\": 0\r\n      }\r\n    },\r\n    \"exclusion_rule\": \"Exclude every cross-original-split/domain overlapping group; keep first pinned row for within-split duplicates before seeded selection.\"\r\n  }\r\n}\r\nFixed study plan: C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.0\\study_plan.json\r\nNo LLM calls were made; trusted keys are stored separately.\r\n",
+  "llm_calls": 0,
+  "manifest_change": false,
+  "focused_tests": {
+    "command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -p test_study_data.py -v",
+    "exit_code": 0,
+    "tests_passed": 10,
+    "unittest_reported_elapsed_seconds": 0.964,
+    "outcome": "OK; pinning, original-split separation, canonical deduplication/overlap, key separation, outcome-independent selection, frozen hash/provenance checks, offline idempotence, Unicode LF JSONL regression and preserved-public-output guard",
+    "timestamp_note": "Individual test invocation timestamps were not captured."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "protected_files_before": 51,
+  "missing_after": [],
+  "changed_after": [],
+  "frozen_gate_sha256_before": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "frozen_gate_sha256_after": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "all_preexisting_frozen_files_unchanged": true
+}

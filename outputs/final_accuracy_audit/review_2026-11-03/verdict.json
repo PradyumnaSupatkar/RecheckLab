@@ -1,0 +1,8 @@
+{
+  "verdict": "NO VERIFIED IMPROVEMENT",
+  "primary_source_dev_accuracy_pct": 92.0,
+  "existing_source_dev_accuracy_pct": 92.0,
+  "new_target_test_result_claimed": false,
+  "verified_scoring_bug": false,
+  "runtime_seconds": 7.251583299999766
+}

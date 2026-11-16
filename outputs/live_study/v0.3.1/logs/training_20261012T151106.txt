@@ -1,0 +1,32 @@
+{
+  "status": "INCOMPLETE",
+  "training": {
+    "status": "INCOMPLETE",
+    "not_run_reasons": [
+      "Source training HELP support is 2; at least 5 genuine completed pairs required.",
+      "Source training HURT support is 0; at least 5 genuine completed pairs required."
+    ],
+    "inadequate_classes": {
+      "HELP": 2,
+      "HURT": 0
+    },
+    "source_development_class_counts": {
+      "HELP": 2,
+      "NO_CHANGE": 9,
+      "HURT": 0
+    }
+  },
+  "evaluation": {
+    "status": "NOT_RUN",
+    "not_run_reasons": [
+      "Source predictor fitting has not run."
+    ]
+  },
+  "adaptation": {
+    "status": "NOT_RUN",
+    "not_run_reasons": [
+      "No fixed source classifier/threshold exists."
+    ]
+  },
+  "status_file": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\\training_status.json"
+}

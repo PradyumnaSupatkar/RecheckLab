@@ -1,0 +1,16 @@
+question_id,configuration,initial_correct,recheck_correct,initial_valid,recheck_valid,label,oracle_correct_diagnostic,policy_total_tokens
+c91ba540d9b5a72c135516a72d767166,A,True,True,True,True,NO_CHANGE,True,2230
+c91ba540d9b5a72c135516a72d767166,B,True,True,True,True,NO_CHANGE,True,2570
+c91ba540d9b5a72c135516a72d767166,C,True,True,True,True,NO_CHANGE,True,2669
+625777070003f1dcb0b1443ccb06e2a6,A,True,True,True,True,NO_CHANGE,True,2421
+625777070003f1dcb0b1443ccb06e2a6,B,True,True,True,True,NO_CHANGE,True,2608
+625777070003f1dcb0b1443ccb06e2a6,C,True,True,True,True,NO_CHANGE,True,2804
+7bd956e1cc5d9c6443092e7f1353338e,A,False,False,False,False,NO_CHANGE,False,4344
+7bd956e1cc5d9c6443092e7f1353338e,B,False,False,False,False,NO_CHANGE,False,4354
+7bd956e1cc5d9c6443092e7f1353338e,C,False,False,False,False,NO_CHANGE,False,4355
+7f4435b0cf1a9760990b13d9227bbe0a,A,False,False,True,True,NO_CHANGE,False,2904
+7f4435b0cf1a9760990b13d9227bbe0a,B,False,False,True,True,NO_CHANGE,False,3011
+7f4435b0cf1a9760990b13d9227bbe0a,C,False,True,True,True,HELP,True,3226
+c7c882f1e2c36b665a323b7287648628,A,False,False,False,True,NO_CHANGE,False,4167
+c7c882f1e2c36b665a323b7287648628,B,False,False,False,False,NO_CHANGE,False,4348
+c7c882f1e2c36b665a323b7287648628,C,False,False,False,False,NO_CHANGE,False,4349

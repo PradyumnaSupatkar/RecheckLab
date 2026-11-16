@@ -1,0 +1,116 @@
+{
+  "seed": 42,
+  "outer_folds_requested": 5,
+  "inner_folds_requested": 3,
+  "candidates_in_fixed_order": [
+    {
+      "id": "hgb_full_baseline",
+      "family": "hgb",
+      "balance_power": 1.0,
+      "C": null
+    },
+    {
+      "id": "logistic_none_C0.1",
+      "family": "logistic",
+      "balance_power": 0.0,
+      "C": 0.1
+    },
+    {
+      "id": "logistic_none_C0.5",
+      "family": "logistic",
+      "balance_power": 0.0,
+      "C": 0.5
+    },
+    {
+      "id": "logistic_none_C2",
+      "family": "logistic",
+      "balance_power": 0.0,
+      "C": 2.0
+    },
+    {
+      "id": "logistic_sqrt_C0.1",
+      "family": "logistic",
+      "balance_power": 0.5,
+      "C": 0.1
+    },
+    {
+      "id": "logistic_sqrt_C0.5",
+      "family": "logistic",
+      "balance_power": 0.5,
+      "C": 0.5
+    },
+    {
+      "id": "logistic_sqrt_C2",
+      "family": "logistic",
+      "balance_power": 0.5,
+      "C": 2.0
+    },
+    {
+      "id": "logistic_full_C0.1",
+      "family": "logistic",
+      "balance_power": 1.0,
+      "C": 0.1
+    },
+    {
+      "id": "logistic_full_C0.5",
+      "family": "logistic",
+      "balance_power": 1.0,
+      "C": 0.5
+    },
+    {
+      "id": "logistic_full_C2",
+      "family": "logistic",
+      "balance_power": 1.0,
+      "C": 2.0
+    },
+    {
+      "id": "hgb_unbalanced",
+      "family": "hgb",
+      "balance_power": 0.0,
+      "C": null
+    }
+  ],
+  "selection_rule": "Largest pooled outer-held-out question-equal HELP selected minus HURT selected; ties at 12 decimal places use fewer average extra recheck tokens, then fixed candidate order. Macro-F1 and log loss are secondary reports only.",
+  "features": [
+    "question_log_chars",
+    "question_log_words",
+    "question_numbers",
+    "question_math_symbols",
+    "question_marks",
+    "initial_log_chars",
+    "initial_log_words",
+    "initial_unique_word_ratio",
+    "initial_uncertainty_per_100_words",
+    "initial_backtracking_per_100_words",
+    "initial_checking_per_100_words",
+    "initial_number_count",
+    "initial_paragraph_count",
+    "initial_question_marks",
+    "initial_log_actual_tokens",
+    "initial_finalizer_used",
+    "initial_budget_exhausted",
+    "initial_answer_present",
+    "initial_completion_unknown"
+  ],
+  "feature_schema_fingerprint": "9e09eba8571dd2b31fb70fe83cb12191ba0051d620324037cc18cf3cae22e4ca",
+  "allowed_outcome_inputs": [
+    "outputs/v0.2/data/prepared/source_train.parquet",
+    "outputs/v0.2/data/prepared/source_development.parquet (after selection only)"
+  ],
+  "harm_weight": 1.0,
+  "token_penalty": 0.0,
+  "limitations": [
+    "Each outer threshold is selected without its outer validation labels. Selecting the best configuration among these outer CV scores still introduces winner-selection optimism.",
+    "The final threshold is optimized on the selected configuration's source-training OOF predictions. Its optimized training utility is a tuning statistic, not an unbiased estimate.",
+    "Source development was previously inspected, and the existing frozen gate was selected on it historically. This one-pass development comparison is descriptive, not fresh confirmation.",
+    "No source-test or target-test outcomes are loaded for selection or evaluation. Any future evaluation on those previously inspected tests must be labeled exploratory.",
+    "One partition and one CV seed; HURT events are rare; no improvement in target accuracy is established."
+  ],
+  "environment": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "script_sha256": "92495a2217141f21ed0e88cc026efd9b4ffc5740e9d58efbc70bcf6b1dd736b2"
+}

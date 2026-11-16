@@ -1,0 +1,14 @@
+{
+  "dataset_id": "Sajib-006/sevra-recovery-outcomes",
+  "revision": "10411137fcaa02b3bd549a2285b43ffe315417f6",
+  "downloaded_utc": "2026-10-04",
+  "source": "https://huggingface.co/datasets/Sajib-006/sevra-recovery-outcomes",
+  "sha256": {
+    "DATASET_CARD.md": "7b984d97e86ce235259c02b30da0323400ea193faf39b11f0ea0471b02da72e5",
+    "commonsenseqa.parquet": "3c482953ba568a6c0897d865d9ccb678dea5f08a64eba83cd723b0f6224f473e",
+    "gsm8k.parquet": "24d00be06386d4b97d2ecad4d6607f119eea2891a0dc3a1f889f057a704350ec",
+    "math500.parquet": "12d2a7b9ccfece28f6e4a2975467a672a2ccd4e6c833fe49a99a92b033c963b4",
+    "release_manifest.json": "95f6f59ce9f3dd8604e4da21899d16b341056ae5575942846115ecd63682d9b4",
+    "train.parquet": "5d0ccc29507ce93c4501968b3c27c9a77914d91b1ea5c2e784405863a86a5dc3"
+  }
+}

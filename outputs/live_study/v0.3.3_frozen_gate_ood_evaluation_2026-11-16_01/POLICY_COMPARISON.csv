@@ -1,0 +1,5 @@
+﻿policy,questions,correct_count,accuracy,rechecks,recheck_rate,HELP_total,HELP_captured,HELP_missed,HURT_total,HURT_revision_accepted,HURT_avoided,NO_CHANGE_rechecks,mean_prompt_plus_output_tokens_per_question,replayed_latency_seconds_total,replayed_latency_seconds_per_question
+Never recheck,8,2,0.25,0,0.0,4,0,4,0,0,0,0,948.875,316.7619214000006,39.59524017500007
+Always recheck,8,6,0.75,8,1.0,4,4,0,0,0,0,4,2599.0,580.0496752999989,72.50620941249986
+Completion heuristic,8,5,0.625,5,0.625,4,3,1,0,0,0,2,2218.125,531.9002237999975,66.4875279749997
+Frozen ML gate (OOD transfer),8,2,0.25,0,0.0,4,0,4,0,0,0,0,948.875,316.7619214000006,39.59524017500007

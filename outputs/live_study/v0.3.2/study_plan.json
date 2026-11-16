@@ -1,0 +1,184 @@
+{
+  "data_schema_version": "live-study-questions-v1",
+  "status": "PREPARED",
+  "seed": 42,
+  "prepared_utc": "2026-10-04T18:45:32.848971+00:00",
+  "planned_total_by_domain": {
+    "maths": 1000,
+    "commonsenseqa": 500
+  },
+  "planned_questions_by_partition": {
+    "source_train": 600,
+    "source_development": 200,
+    "source_test": 200,
+    "target_adaptation_pool": 200,
+    "target_test": 300
+  },
+  "selected_questions_by_partition": {
+    "source_train": 600,
+    "source_development": 200,
+    "source_test": 200,
+    "target_adaptation_pool": 200,
+    "target_test": 300
+  },
+  "manifest_paths": {
+    "questions": "questions.jsonl",
+    "trusted_keys": "trusted_keys.jsonl"
+  },
+  "manifest_sha256": {
+    "questions.jsonl": "187138b45b37856272cfbd72d539825211edb973a4b2a2f23b8adde3df28e962",
+    "trusted_keys.jsonl": "6be57c4dc890e2a8b628da41c300e55352b4f490b81a852f5d26cec8aa41dafb"
+  },
+  "datasets": {
+    "gsm8k": {
+      "repository": "openai/gsm8k",
+      "revision": "740312add88f781978c0658806c59bc2815b9866",
+      "resolved_utc": "2026-10-04T18:45:09.494754+00:00",
+      "files": {
+        "train": {
+          "path": "raw\\gsm8k\\740312add88f781978c0658806c59bc2815b9866\\train.parquet",
+          "source_file": "main/train-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/train-00000-of-00001.parquet?download=true",
+          "sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+          "bytes": 2306545,
+          "download_attempts": 1
+        },
+        "test": {
+          "path": "raw\\gsm8k\\740312add88f781978c0658806c59bc2815b9866\\test.parquet",
+          "source_file": "main/test-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/test-00000-of-00001.parquet?download=true",
+          "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+          "bytes": 419088,
+          "download_attempts": 1
+        },
+        "dataset_card": {
+          "path": "raw\\gsm8k\\740312add88f781978c0658806c59bc2815b9866\\dataset_card.md",
+          "source_file": "README.md",
+          "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/README.md?download=true",
+          "sha256": "a17e882503578c9e324560630e31017617714ee025c87cf4fea6fd916895f3c1",
+          "bytes": 7935,
+          "download_attempts": 1
+        }
+      },
+      "license": "MIT",
+      "authors": "Cobbe et al. (2021), Training Verifiers to Solve Math Word Problems",
+      "paper": "https://arxiv.org/abs/2110.14168",
+      "homepage": "https://github.com/openai/grade-school-math",
+      "pinned_dataset_card": "https://huggingface.co/datasets/openai/gsm8k/blob/740312add88f781978c0658806c59bc2815b9866/README.md"
+    },
+    "commonsenseqa": {
+      "repository": "tau/commonsense_qa",
+      "revision": "94630fe30dad47192a8546eb75f094926d47e155",
+      "resolved_utc": "2026-10-04T18:45:22.201171+00:00",
+      "files": {
+        "train": {
+          "path": "raw\\commonsenseqa\\94630fe30dad47192a8546eb75f094926d47e155\\train.parquet",
+          "source_file": "data/train-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/tau/commonsense_qa/resolve/94630fe30dad47192a8546eb75f094926d47e155/data/train-00000-of-00001.parquet?download=true",
+          "sha256": "b0449767ed986bfc2ca52b1244a46ef12f732756727f3cb0a4ab69ac8b3d282b",
+          "bytes": 1247103,
+          "download_attempts": 1
+        },
+        "validation": {
+          "path": "raw\\commonsenseqa\\94630fe30dad47192a8546eb75f094926d47e155\\validation.parquet",
+          "source_file": "data/validation-00000-of-00001.parquet",
+          "url": "https://huggingface.co/datasets/tau/commonsense_qa/resolve/94630fe30dad47192a8546eb75f094926d47e155/data/validation-00000-of-00001.parquet?download=true",
+          "sha256": "bdbd9bf9cc4d2349b24901038b2ab2f58e10e4e507ad2fd425dca55cd3cb6660",
+          "bytes": 160240,
+          "download_attempts": 1
+        },
+        "dataset_card": {
+          "path": "raw\\commonsenseqa\\94630fe30dad47192a8546eb75f094926d47e155\\dataset_card.md",
+          "source_file": "README.md",
+          "url": "https://huggingface.co/datasets/tau/commonsense_qa/resolve/94630fe30dad47192a8546eb75f094926d47e155/README.md?download=true",
+          "sha256": "172917e887dcc013fe0f0bd6aa8c810aea1e2be67d3bc7ff63e9b9d92075cc34",
+          "bytes": 7395,
+          "download_attempts": 1
+        }
+      },
+      "license": "MIT",
+      "authors": "Talmor, Herzig, Lourie and Berant (2019), CommonsenseQA",
+      "paper": "https://aclanthology.org/N19-1421/",
+      "homepage": "https://www.tau-nlp.org/commonsenseqa",
+      "pinned_dataset_card": "https://huggingface.co/datasets/tau/commonsense_qa/blob/94630fe30dad47192a8546eb75f094926d47e155/README.md"
+    }
+  },
+  "question_selection_seeds": {
+    "gsm8k_train": 42,
+    "gsm8k_test": 43,
+    "commonsenseqa_train": 44,
+    "commonsenseqa_validation": 45
+  },
+  "duplicate_overlap_audit": {
+    "cross_boundary_overlapping_question_groups": 0,
+    "pools": {
+      "gsm8k_train": {
+        "original_rows": 7473,
+        "retained_unique_questions": 7473,
+        "removed_within_pool_duplicate_rows": 0,
+        "excluded_cross_boundary_overlap_rows": 0
+      },
+      "gsm8k_test": {
+        "original_rows": 1319,
+        "retained_unique_questions": 1319,
+        "removed_within_pool_duplicate_rows": 0,
+        "excluded_cross_boundary_overlap_rows": 0
+      },
+      "commonsenseqa_train": {
+        "original_rows": 9741,
+        "retained_unique_questions": 9741,
+        "removed_within_pool_duplicate_rows": 0,
+        "excluded_cross_boundary_overlap_rows": 0
+      },
+      "commonsenseqa_validation": {
+        "original_rows": 1221,
+        "retained_unique_questions": 1221,
+        "removed_within_pool_duplicate_rows": 0,
+        "excluded_cross_boundary_overlap_rows": 0
+      }
+    },
+    "exclusion_rule": "Exclude every cross-original-split/domain overlapping group; keep first pinned row for within-split duplicates before seeded selection."
+  },
+  "selection_rule": "Select by seeded permutation of independent canonical question groups before any model outcomes; one initial/recheck pair per selected question.",
+  "canonicalization": "Unicode NFKC, casefold, collapse whitespace; SHA256 of full question including all choice options.",
+  "source_question_ids": "GSM8K has no released question ID: pinned Parquet row offset; CommonsenseQA uses its published id.",
+  "rounding_rule": "Floor maths train=3N/5 and development=N/5; remainder test. Floor target adaptation=2N/5; remainder test.",
+  "benchmark_boundaries": {
+    "source_train": "GSM8K main/train",
+    "source_development": "GSM8K main/train",
+    "source_test": "GSM8K main/test",
+    "target_adaptation_pool": "CommonsenseQA/train",
+    "target_test": "CommonsenseQA/validation"
+  },
+  "repartition_notes": [
+    "GSM8K train is repartitioned into study training/development without using outcomes; its original test remains held out.",
+    "CommonsenseQA labeled training questions supply adaptation only. Labeled validation supplies this study's fixed target test; official test answer keys are withheld and that split is not used.",
+    "This is a new fixed-solver self-rechecking experiment, not reproduction of the original benchmark leaderboard or SEVRA outcomes.",
+    "GSM8K replaces the public pilot's MATH source because its public numeric keys support transparent deterministic offline scoring.",
+    "The planned sample sizes are collection targets and do not guarantee enough rare HURT events or statistical reliability."
+  ],
+  "target_adaptation": {
+    "budgets": [
+      25,
+      50,
+      100,
+      200
+    ],
+    "repeats": 5,
+    "subset_seeds": [
+      142,
+      143,
+      144,
+      145,
+      146
+    ]
+  },
+  "smoke_allowed_partitions": [
+    "source_train",
+    "target_adaptation_pool"
+  ],
+  "question_format_version": "GSM8K original question; CommonsenseQA stem plus labeled A-E options and one-letter response instruction-v1",
+  "key_separation": "Question manifest contains no answers/solutions/correctness. Trusted keys are used offline only and are never passed to model prompts or predictor inputs.",
+  "raw_downloads": "Local raw/ snapshots are provenance caches and must be excluded from diagnostic bundles.",
+  "study_plan_hash": "f308df5645a6c175ac563182f0c240c716b7c3f558e81fc8477fac324581df40"
+}

@@ -1,0 +1,1869 @@
+{
+  "version": "0.2",
+  "seed": 42,
+  "repeats": 5,
+  "harm_weight": 1.0,
+  "public_replay": true,
+  "source_dataset": "SEVRA_MATH_train",
+  "target_dataset": "SEVRA_CommonsenseQA",
+  "provenance": "Published Qwen3-4B SEVRA outcomes; secondary replay analysis, no new LLM inference.",
+  "model": "hist_gradient_boosting_balanced",
+  "source_threshold": 0.25968145276947807,
+  "recheck_protocol": {
+    "model": "qwen3:4b",
+    "recheck_protocol": "sevra:10411137fcaa02b3bd549a2285b43ffe315417f6:active_verify",
+    "action": "active_verify",
+    "action_description_sha256": "4287d7497331d675de415d1540fabdd67a61ea526457506a8b7856ef5d726dd9",
+    "published_generation_settings": {
+      "dataset_revision": "10411137fcaa02b3bd549a2285b43ffe315417f6",
+      "base_generation_limit": 4096,
+      "finalizer_max_tokens": 512,
+      "finalizer": "non-reasoning final answer when needed",
+      "protocol_evidence": "Pinned public dataset card; complete prompts/checkpoint digest not released"
+    },
+    "identity_validation_limit": "Public release identifies model family and action, but omits the checkpoint digest and full prompts."
+  },
+  "dataset_signature": "26c3dba490b1056ed4457d3f8f4c99e7881863a397d0551b6f881030898dd28a",
+  "artifact_schema_version": 2,
+  "feature_schema_version": "pre-recheck-v2",
+  "feature_schema_fingerprint": "9e09eba8571dd2b31fb70fe83cb12191ba0051d620324037cc18cf3cae22e4ca",
+  "class_order": [
+    "HELP",
+    "NO_CHANGE",
+    "HURT"
+  ],
+  "features": [
+    "question_log_chars",
+    "question_log_words",
+    "question_numbers",
+    "question_math_symbols",
+    "question_marks",
+    "initial_log_chars",
+    "initial_log_words",
+    "initial_unique_word_ratio",
+    "initial_uncertainty_per_100_words",
+    "initial_backtracking_per_100_words",
+    "initial_checking_per_100_words",
+    "initial_number_count",
+    "initial_paragraph_count",
+    "initial_question_marks",
+    "initial_log_actual_tokens",
+    "initial_finalizer_used",
+    "initial_budget_exhausted",
+    "initial_answer_present",
+    "initial_completion_unknown"
+  ],
+  "adaptation_method": "threshold-only adaptation; classifier and uncalibrated probabilities stay frozen",
+  "model_selection": [
+    {
+      "model": "majority_class",
+      "class_balanced_training": false,
+      "source_dev_macro_f1": 0.30968317715305665,
+      "source_dev_log_loss": 0.4394740339837097,
+      "source_dev_metrics": {
+        "macro_f1": 0.30968317715305665,
+        "log_loss": 0.4394740339837097,
+        "multiclass_log_loss": 0.4394740339837097,
+        "accuracy": 0.8675,
+        "per_class": {
+          "HELP": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 47.0
+          },
+          "NO_CHANGE": {
+            "precision": 0.8675,
+            "recall": 1.0,
+            "f1": 0.92904953145917,
+            "question_weighted_support": 347.0
+          },
+          "HURT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 6.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0.0,
+            47.0,
+            0.0
+          ],
+          [
+            0.0,
+            347.0,
+            0.0
+          ],
+          [
+            0.0,
+            6.0,
+            0.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            0,
+            47,
+            0
+          ],
+          [
+            0,
+            348,
+            0
+          ],
+          [
+            0,
+            6,
+            0
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 348,
+          "HELP": 47,
+          "HURT": 6
+        },
+        "predicted_class_counts": {
+          "HELP": 0,
+          "NO_CHANGE": 401,
+          "HURT": 0
+        },
+        "questions": 400,
+        "rollout_rows": 401,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight."
+      },
+      "selection_rule": "Fit on source training only. Select the highest question-equal source-development macro-F1; ties (12 decimal places) use lower question-equal multiclass log loss, then the fixed candidate order. No target labels are used for model selection.",
+      "selected": false
+    },
+    {
+      "model": "logistic_regression",
+      "class_balanced_training": false,
+      "source_dev_macro_f1": 0.5477443692939574,
+      "source_dev_log_loss": 0.24331368044309934,
+      "source_dev_metrics": {
+        "macro_f1": 0.5477443692939574,
+        "log_loss": 0.24331368044309934,
+        "multiclass_log_loss": 0.24331368044309934,
+        "accuracy": 0.905,
+        "per_class": {
+          "HELP": {
+            "precision": 0.6129032258064516,
+            "recall": 0.8085106382978723,
+            "f1": 0.6972477064220184,
+            "question_weighted_support": 47.0
+          },
+          "NO_CHANGE": {
+            "precision": 0.9585798816568047,
+            "recall": 0.9337175792507204,
+            "f1": 0.945985401459854,
+            "question_weighted_support": 347.0
+          },
+          "HURT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 6.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            38.0,
+            9.0,
+            0.0
+          ],
+          [
+            23.0,
+            324.0,
+            0.0
+          ],
+          [
+            1.0,
+            5.0,
+            0.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            38,
+            9,
+            0
+          ],
+          [
+            23,
+            325,
+            0
+          ],
+          [
+            1,
+            5,
+            0
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 348,
+          "HELP": 47,
+          "HURT": 6
+        },
+        "predicted_class_counts": {
+          "HELP": 62,
+          "NO_CHANGE": 339,
+          "HURT": 0
+        },
+        "questions": 400,
+        "rollout_rows": 401,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight."
+      },
+      "selection_rule": "Fit on source training only. Select the highest question-equal source-development macro-F1; ties (12 decimal places) use lower question-equal multiclass log loss, then the fixed candidate order. No target labels are used for model selection.",
+      "selected": false
+    },
+    {
+      "model": "logistic_regression_balanced",
+      "class_balanced_training": true,
+      "source_dev_macro_f1": 0.5176053077057381,
+      "source_dev_log_loss": 0.6996231164281675,
+      "source_dev_metrics": {
+        "macro_f1": 0.5176053077057381,
+        "log_loss": 0.6996231164281675,
+        "multiclass_log_loss": 0.6996231164281675,
+        "accuracy": 0.69,
+        "per_class": {
+          "HELP": {
+            "precision": 0.5168539325842697,
+            "recall": 0.9787234042553191,
+            "f1": 0.6764705882352942,
+            "question_weighted_support": 47.0
+          },
+          "NO_CHANGE": {
+            "precision": 0.9955947136563876,
+            "recall": 0.6512968299711815,
+            "f1": 0.7874564459930313,
+            "question_weighted_support": 347.0
+          },
+          "HURT": {
+            "precision": 0.047619047619047616,
+            "recall": 0.6666666666666666,
+            "f1": 0.08888888888888889,
+            "question_weighted_support": 6.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            46.0,
+            1.0,
+            0.0
+          ],
+          [
+            41.0,
+            226.0,
+            80.0
+          ],
+          [
+            2.0,
+            0.0,
+            4.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            46,
+            1,
+            0
+          ],
+          [
+            41,
+            227,
+            80
+          ],
+          [
+            2,
+            0,
+            4
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 348,
+          "HELP": 47,
+          "HURT": 6
+        },
+        "predicted_class_counts": {
+          "HELP": 89,
+          "NO_CHANGE": 228,
+          "HURT": 84
+        },
+        "questions": 400,
+        "rollout_rows": 401,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight."
+      },
+      "selection_rule": "Fit on source training only. Select the highest question-equal source-development macro-F1; ties (12 decimal places) use lower question-equal multiclass log loss, then the fixed candidate order. No target labels are used for model selection.",
+      "selected": false
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "class_balanced_training": false,
+      "source_dev_macro_f1": 0.5432638663931181,
+      "source_dev_log_loss": 0.24165523529885027,
+      "source_dev_metrics": {
+        "macro_f1": 0.5432638663931181,
+        "log_loss": 0.24165523529885027,
+        "multiclass_log_loss": 0.24165523529885027,
+        "accuracy": 0.9025,
+        "per_class": {
+          "HELP": {
+            "precision": 0.6065573770491803,
+            "recall": 0.7872340425531915,
+            "f1": 0.6851851851851852,
+            "question_weighted_support": 47.0
+          },
+          "NO_CHANGE": {
+            "precision": 0.9557522123893806,
+            "recall": 0.9337175792507204,
+            "f1": 0.9446064139941691,
+            "question_weighted_support": 347.0
+          },
+          "HURT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 6.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            37.0,
+            10.0,
+            0.0
+          ],
+          [
+            23.0,
+            324.0,
+            0.0
+          ],
+          [
+            1.0,
+            5.0,
+            0.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            37,
+            10,
+            0
+          ],
+          [
+            23,
+            325,
+            0
+          ],
+          [
+            1,
+            5,
+            0
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 348,
+          "HELP": 47,
+          "HURT": 6
+        },
+        "predicted_class_counts": {
+          "HELP": 61,
+          "NO_CHANGE": 340,
+          "HURT": 0
+        },
+        "questions": 400,
+        "rollout_rows": 401,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight."
+      },
+      "selection_rule": "Fit on source training only. Select the highest question-equal source-development macro-F1; ties (12 decimal places) use lower question-equal multiclass log loss, then the fixed candidate order. No target labels are used for model selection.",
+      "selected": false
+    },
+    {
+      "model": "hist_gradient_boosting_balanced",
+      "class_balanced_training": true,
+      "source_dev_macro_f1": 0.5587239397086595,
+      "source_dev_log_loss": 0.39161266791751614,
+      "source_dev_metrics": {
+        "macro_f1": 0.5587239397086595,
+        "log_loss": 0.39161266791751614,
+        "multiclass_log_loss": 0.39161266791751614,
+        "accuracy": 0.85,
+        "per_class": {
+          "HELP": {
+            "precision": 0.5180722891566265,
+            "recall": 0.9148936170212766,
+            "f1": 0.6615384615384615,
+            "question_weighted_support": 47.0
+          },
+          "NO_CHANGE": {
+            "precision": 0.9736842105263158,
+            "recall": 0.8530259365994236,
+            "f1": 0.9093701996927803,
+            "question_weighted_support": 347.0
+          },
+          "HURT": {
+            "precision": 0.07692307692307693,
+            "recall": 0.16666666666666666,
+            "f1": 0.10526315789473684,
+            "question_weighted_support": 6.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            43.0,
+            4.0,
+            0.0
+          ],
+          [
+            39.0,
+            296.0,
+            12.0
+          ],
+          [
+            1.0,
+            4.0,
+            1.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            43,
+            4,
+            0
+          ],
+          [
+            39,
+            297,
+            12
+          ],
+          [
+            1,
+            4,
+            1
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 348,
+          "HELP": 47,
+          "HURT": 6
+        },
+        "predicted_class_counts": {
+          "HELP": 83,
+          "NO_CHANGE": 305,
+          "HURT": 13
+        },
+        "questions": 400,
+        "rollout_rows": 401,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight."
+      },
+      "selection_rule": "Fit on source training only. Select the highest question-equal source-development macro-F1; ties (12 decimal places) use lower question-equal multiclass log loss, then the fixed candidate order. No target labels are used for model selection.",
+      "selected": true
+    }
+  ],
+  "candidate_test_diagnostics": {
+    "majority_class": {
+      "source_test": {
+        "macro_f1": 0.302367941712204,
+        "log_loss": 0.4906994543101558,
+        "multiclass_log_loss": 0.4906994543101558,
+        "accuracy": 0.83,
+        "per_class": {
+          "HELP": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 65.0
+          },
+          "NO_CHANGE": {
+            "precision": 0.83,
+            "recall": 1.0,
+            "f1": 0.907103825136612,
+            "question_weighted_support": 332.0
+          },
+          "HURT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 3.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0.0,
+            65.0,
+            0.0
+          ],
+          [
+            0.0,
+            332.0,
+            0.0
+          ],
+          [
+            0.0,
+            3.0,
+            0.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            0,
+            65,
+            0
+          ],
+          [
+            0,
+            332,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 332,
+          "HELP": 65,
+          "HURT": 3
+        },
+        "predicted_class_counts": {
+          "HELP": 0,
+          "NO_CHANGE": 400,
+          "HURT": 0
+        },
+        "questions": 400,
+        "rollout_rows": 400,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+        "macro_f1_95pct_ci": [
+          0.2947336434398448,
+          0.3092166102599256
+        ],
+        "log_loss_95pct_ci": [
+          0.4142529899748525,
+          0.5638229497794991
+        ],
+        "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+      },
+      "target_test": {
+        "macro_f1": 0.3227773868167957,
+        "log_loss": 0.3848024568783228,
+        "multiclass_log_loss": 0.3848024568783228,
+        "accuracy": 0.9386084583901774,
+        "per_class": {
+          "HELP": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 10.5
+          },
+          "NO_CHANGE": {
+            "precision": 0.9386084583901774,
+            "recall": 1.0,
+            "f1": 0.9683321604503871,
+            "question_weighted_support": 688.0
+          },
+          "HURT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 34.5
+          }
+        },
+        "confusion_matrix": [
+          [
+            0.0,
+            10.5,
+            0.0
+          ],
+          [
+            0.0,
+            688.0,
+            0.0
+          ],
+          [
+            0.0,
+            34.5,
+            0.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            0,
+            21,
+            0
+          ],
+          [
+            0,
+            1376,
+            0
+          ],
+          [
+            0,
+            69,
+            0
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 1376,
+          "HURT": 69,
+          "HELP": 21
+        },
+        "predicted_class_counts": {
+          "HELP": 0,
+          "NO_CHANGE": 1466,
+          "HURT": 0
+        },
+        "questions": 733,
+        "rollout_rows": 1466,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+        "macro_f1_95pct_ci": [
+          0.32021741699161055,
+          0.3251805264383881
+        ],
+        "log_loss_95pct_ci": [
+          0.33407017778002185,
+          0.43953284303691564
+        ],
+        "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+      },
+      "selected_on_source_dev": false
+    },
+    "logistic_regression": {
+      "source_test": {
+        "macro_f1": 0.5307705277356264,
+        "log_loss": 0.25870138405873405,
+        "multiclass_log_loss": 0.25870138405873405,
+        "accuracy": 0.8775,
+        "per_class": {
+          "HELP": {
+            "precision": 0.6301369863013698,
+            "recall": 0.7076923076923077,
+            "f1": 0.6666666666666666,
+            "question_weighted_support": 65.0
+          },
+          "NO_CHANGE": {
+            "precision": 0.9327217125382263,
+            "recall": 0.9186746987951807,
+            "f1": 0.9256449165402124,
+            "question_weighted_support": 332.0
+          },
+          "HURT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 3.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            46.0,
+            19.0,
+            0.0
+          ],
+          [
+            27.0,
+            305.0,
+            0.0
+          ],
+          [
+            0.0,
+            3.0,
+            0.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            46,
+            19,
+            0
+          ],
+          [
+            27,
+            305,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 332,
+          "HELP": 65,
+          "HURT": 3
+        },
+        "predicted_class_counts": {
+          "HELP": 73,
+          "NO_CHANGE": 327,
+          "HURT": 0
+        },
+        "questions": 400,
+        "rollout_rows": 400,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+        "macro_f1_95pct_ci": [
+          0.49697404410284257,
+          0.5615980409028537
+        ],
+        "log_loss_95pct_ci": [
+          0.1967092132407752,
+          0.3270326359340425
+        ],
+        "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+      },
+      "target_test": {
+        "macro_f1": 0.3899058134185613,
+        "log_loss": 0.2591797840749964,
+        "multiclass_log_loss": 0.2591797840749964,
+        "accuracy": 0.931787175989086,
+        "per_class": {
+          "HELP": {
+            "precision": 0.2222222222222222,
+            "recall": 0.19047619047619047,
+            "f1": 0.20512820512820512,
+            "question_weighted_support": 10.5
+          },
+          "NO_CHANGE": {
+            "precision": 0.9406077348066298,
+            "recall": 0.9898255813953488,
+            "f1": 0.9645892351274787,
+            "question_weighted_support": 688.0
+          },
+          "HURT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 34.5
+          }
+        },
+        "confusion_matrix": [
+          [
+            2.0,
+            8.5,
+            0.0
+          ],
+          [
+            7.0,
+            681.0,
+            0.0
+          ],
+          [
+            0.0,
+            34.5,
+            0.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            4,
+            17,
+            0
+          ],
+          [
+            14,
+            1362,
+            0
+          ],
+          [
+            0,
+            69,
+            0
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 1376,
+          "HURT": 69,
+          "HELP": 21
+        },
+        "predicted_class_counts": {
+          "HELP": 18,
+          "NO_CHANGE": 1448,
+          "HURT": 0
+        },
+        "questions": 733,
+        "rollout_rows": 1466,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+        "macro_f1_95pct_ci": [
+          0.32009456264775416,
+          0.4694414187437738
+        ],
+        "log_loss_95pct_ci": [
+          0.2117949177259502,
+          0.30615011422546606
+        ],
+        "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+      },
+      "selected_on_source_dev": false
+    },
+    "logistic_regression_balanced": {
+      "source_test": {
+        "macro_f1": 0.49938594241237055,
+        "log_loss": 0.7411808081433958,
+        "multiclass_log_loss": 0.7411808081433958,
+        "accuracy": 0.665,
+        "per_class": {
+          "HELP": {
+            "precision": 0.5882352941176471,
+            "recall": 0.9230769230769231,
+            "f1": 0.718562874251497,
+            "question_weighted_support": 65.0
+          },
+          "NO_CHANGE": {
+            "precision": 0.9808612440191388,
+            "recall": 0.6174698795180723,
+            "f1": 0.7578558225508318,
+            "question_weighted_support": 332.0
+          },
+          "HURT": {
+            "precision": 0.011235955056179775,
+            "recall": 0.3333333333333333,
+            "f1": 0.021739130434782608,
+            "question_weighted_support": 3.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            60.0,
+            3.0,
+            2.0
+          ],
+          [
+            41.0,
+            205.0,
+            86.0
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            60,
+            3,
+            2
+          ],
+          [
+            41,
+            205,
+            86
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 332,
+          "HELP": 65,
+          "HURT": 3
+        },
+        "predicted_class_counts": {
+          "HELP": 102,
+          "NO_CHANGE": 209,
+          "HURT": 89
+        },
+        "questions": 400,
+        "rollout_rows": 400,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+        "macro_f1_95pct_ci": [
+          0.46233989459898295,
+          0.5368314521517499
+        ],
+        "log_loss_95pct_ci": [
+          0.646670717368777,
+          0.8434458071673783
+        ],
+        "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+      },
+      "target_test": {
+        "macro_f1": 0.10984385450454513,
+        "log_loss": 1.058338134336316,
+        "multiclass_log_loss": 1.058338134336316,
+        "accuracy": 0.06343792633015007,
+        "per_class": {
+          "HELP": {
+            "precision": 0.16666666666666666,
+            "recall": 0.2857142857142857,
+            "f1": 0.21052631578947367,
+            "question_weighted_support": 10.5
+          },
+          "NO_CHANGE": {
+            "precision": 1.0,
+            "recall": 0.01308139534883721,
+            "f1": 0.02582496413199426,
+            "question_weighted_support": 688.0
+          },
+          "HURT": {
+            "precision": 0.04886685552407932,
+            "recall": 1.0,
+            "f1": 0.09318028359216746,
+            "question_weighted_support": 34.5
+          }
+        },
+        "confusion_matrix": [
+          [
+            3.0,
+            0.0,
+            7.5
+          ],
+          [
+            15.0,
+            9.0,
+            664.0
+          ],
+          [
+            0.0,
+            0.0,
+            34.5
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            6,
+            0,
+            15
+          ],
+          [
+            30,
+            18,
+            1328
+          ],
+          [
+            0,
+            0,
+            69
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 1376,
+          "HURT": 69,
+          "HELP": 21
+        },
+        "predicted_class_counts": {
+          "HELP": 36,
+          "NO_CHANGE": 18,
+          "HURT": 1412
+        },
+        "questions": 733,
+        "rollout_rows": 1466,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+        "macro_f1_95pct_ci": [
+          0.039889158050578265,
+          0.1766624568734354
+        ],
+        "log_loss_95pct_ci": [
+          1.0134587705349636,
+          1.1063252807805433
+        ],
+        "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+      },
+      "selected_on_source_dev": false
+    },
+    "hist_gradient_boosting": {
+      "source_test": {
+        "macro_f1": 0.5455452751326325,
+        "log_loss": 0.27248032872434863,
+        "multiclass_log_loss": 0.27248032872434863,
+        "accuracy": 0.8925,
+        "per_class": {
+          "HELP": {
+            "precision": 0.6811594202898551,
+            "recall": 0.7230769230769231,
+            "f1": 0.7014925373134329,
+            "question_weighted_support": 65.0
+          },
+          "NO_CHANGE": {
+            "precision": 0.9365558912386707,
+            "recall": 0.9337349397590361,
+            "f1": 0.9351432880844646,
+            "question_weighted_support": 332.0
+          },
+          "HURT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 3.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            47.0,
+            18.0,
+            0.0
+          ],
+          [
+            22.0,
+            310.0,
+            0.0
+          ],
+          [
+            0.0,
+            3.0,
+            0.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            47,
+            18,
+            0
+          ],
+          [
+            22,
+            310,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 332,
+          "HELP": 65,
+          "HURT": 3
+        },
+        "predicted_class_counts": {
+          "HELP": 69,
+          "NO_CHANGE": 331,
+          "HURT": 0
+        },
+        "questions": 400,
+        "rollout_rows": 400,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+        "macro_f1_95pct_ci": [
+          0.5096354050356946,
+          0.5757964792666126
+        ],
+        "log_loss_95pct_ci": [
+          0.20881034845198307,
+          0.3487364000677368
+        ],
+        "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+      },
+      "target_test": {
+        "macro_f1": 0.3227773868167957,
+        "log_loss": 0.35539354691662034,
+        "multiclass_log_loss": 0.35539354691662034,
+        "accuracy": 0.9386084583901774,
+        "per_class": {
+          "HELP": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 10.5
+          },
+          "NO_CHANGE": {
+            "precision": 0.9386084583901774,
+            "recall": 1.0,
+            "f1": 0.9683321604503871,
+            "question_weighted_support": 688.0
+          },
+          "HURT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 34.5
+          }
+        },
+        "confusion_matrix": [
+          [
+            0.0,
+            10.5,
+            0.0
+          ],
+          [
+            0.0,
+            688.0,
+            0.0
+          ],
+          [
+            0.0,
+            34.5,
+            0.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            0,
+            21,
+            0
+          ],
+          [
+            0,
+            1376,
+            0
+          ],
+          [
+            0,
+            69,
+            0
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 1376,
+          "HURT": 69,
+          "HELP": 21
+        },
+        "predicted_class_counts": {
+          "HELP": 0,
+          "NO_CHANGE": 1466,
+          "HURT": 0
+        },
+        "questions": 733,
+        "rollout_rows": 1466,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+        "macro_f1_95pct_ci": [
+          0.32021741699161055,
+          0.3251805264383881
+        ],
+        "log_loss_95pct_ci": [
+          0.2776764775465621,
+          0.435794526558241
+        ],
+        "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+      },
+      "selected_on_source_dev": false
+    },
+    "hist_gradient_boosting_balanced": {
+      "source_test": {
+        "macro_f1": 0.541671495718241,
+        "log_loss": 0.4111105137397317,
+        "multiclass_log_loss": 0.4111105137397317,
+        "accuracy": 0.8525,
+        "per_class": {
+          "HELP": {
+            "precision": 0.5882352941176471,
+            "recall": 0.9230769230769231,
+            "f1": 0.718562874251497,
+            "question_weighted_support": 65.0
+          },
+          "NO_CHANGE": {
+            "precision": 0.9756944444444444,
+            "recall": 0.8463855421686747,
+            "f1": 0.9064516129032258,
+            "question_weighted_support": 332.0
+          },
+          "HURT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 3.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            60.0,
+            5.0,
+            0.0
+          ],
+          [
+            41.0,
+            281.0,
+            10.0
+          ],
+          [
+            1.0,
+            2.0,
+            0.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            60,
+            5,
+            0
+          ],
+          [
+            41,
+            281,
+            10
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 332,
+          "HELP": 65,
+          "HURT": 3
+        },
+        "predicted_class_counts": {
+          "HELP": 102,
+          "NO_CHANGE": 288,
+          "HURT": 10
+        },
+        "questions": 400,
+        "rollout_rows": 400,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+        "macro_f1_95pct_ci": [
+          0.5102407118454128,
+          0.5728421070733436
+        ],
+        "log_loss_95pct_ci": [
+          0.3306465617785724,
+          0.4862331038766962
+        ],
+        "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+      },
+      "target_test": {
+        "macro_f1": 0.3936465017420665,
+        "log_loss": 0.32212800637156,
+        "multiclass_log_loss": 0.32212800637156,
+        "accuracy": 0.9154160982264665,
+        "per_class": {
+          "HELP": {
+            "precision": 0.16,
+            "recall": 0.38095238095238093,
+            "f1": 0.22535211267605634,
+            "question_weighted_support": 10.5
+          },
+          "NO_CHANGE": {
+            "precision": 0.942090395480226,
+            "recall": 0.9694767441860465,
+            "f1": 0.9555873925501432,
+            "question_weighted_support": 688.0
+          },
+          "HURT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "question_weighted_support": 34.5
+          }
+        },
+        "confusion_matrix": [
+          [
+            4.0,
+            6.5,
+            0.0
+          ],
+          [
+            21.0,
+            667.0,
+            0.0
+          ],
+          [
+            0.0,
+            34.5,
+            0.0
+          ]
+        ],
+        "row_confusion_matrix": [
+          [
+            8,
+            13,
+            0
+          ],
+          [
+            42,
+            1334,
+            0
+          ],
+          [
+            0,
+            69,
+            0
+          ]
+        ],
+        "label_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "class_counts": {
+          "NO_CHANGE": 1376,
+          "HURT": 69,
+          "HELP": 21
+        },
+        "predicted_class_counts": {
+          "HELP": 50,
+          "NO_CHANGE": 1416,
+          "HURT": 0
+        },
+        "questions": 733,
+        "rollout_rows": 1466,
+        "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+        "macro_f1_95pct_ci": [
+          0.3376281005824456,
+          0.46058390994109366
+        ],
+        "log_loss_95pct_ci": [
+          0.257412526538882,
+          0.38664024446981243
+        ],
+        "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+      },
+      "selected_on_source_dev": true
+    }
+  },
+  "outcome_prevalence_by_partition": {
+    "source_train": {
+      "HELP": 0.13511259382819016,
+      "NO_CHANGE": 0.8523769808173478,
+      "HURT": 0.012510425354462052
+    },
+    "source_development": {
+      "HELP": 0.1175,
+      "NO_CHANGE": 0.8675,
+      "HURT": 0.015
+    },
+    "source_test": {
+      "HELP": 0.1625,
+      "NO_CHANGE": 0.83,
+      "HURT": 0.0075
+    },
+    "target_adaptation_pool": {
+      "HELP": 0.022540983606557378,
+      "NO_CHANGE": 0.8995901639344263,
+      "HURT": 0.0778688524590164
+    },
+    "target_test": {
+      "HELP": 0.01432469304229195,
+      "NO_CHANGE": 0.9386084583901774,
+      "HURT": 0.0470668485675307
+    }
+  },
+  "initial_feature_means_source_vs_adaptation": {
+    "source_train": {
+      "question_log_chars": 4.789940884064374,
+      "question_log_words": 3.24363533338007,
+      "question_numbers": 5.889908256880734,
+      "question_math_symbols": 6.583819849874896,
+      "question_marks": 0.6997497914929107,
+      "initial_log_chars": 5.371280022157648,
+      "initial_log_words": 3.7709251491526747,
+      "initial_unique_word_ratio": 0.6289029594938692,
+      "initial_uncertainty_per_100_words": 0.02415533622413143,
+      "initial_backtracking_per_100_words": 0.07990337164619478,
+      "initial_checking_per_100_words": 0.17636485596343124,
+      "initial_number_count": 31.788990825688074,
+      "initial_paragraph_count": 8.52627189324437,
+      "initial_question_marks": 0.08507089241034195,
+      "initial_log_actual_tokens": 7.611341084088315,
+      "initial_finalizer_used": 0.23436196830692244,
+      "initial_budget_exhausted": 0.23185988323603002,
+      "initial_answer_present": 0.9991659716430359,
+      "initial_completion_unknown": 0.0016680567139282735
+    },
+    "target_adaptation_pool": {
+      "question_log_chars": 5.235469463255159,
+      "question_log_words": 3.537116880212929,
+      "question_numbers": 0.010245901639344262,
+      "question_math_symbols": 0.006147540983606557,
+      "question_marks": 0.9938524590163934,
+      "initial_log_chars": 3.080988136272604,
+      "initial_log_words": 1.6719313016412412,
+      "initial_unique_word_ratio": 0.9614140129414566,
+      "initial_uncertainty_per_100_words": 0.05404537488197267,
+      "initial_backtracking_per_100_words": 0.017508775682840254,
+      "initial_checking_per_100_words": 0.0021310898730840244,
+      "initial_number_count": 0.01639344262295082,
+      "initial_paragraph_count": 1.694672131147541,
+      "initial_question_marks": 0.1413934426229508,
+      "initial_log_actual_tokens": 7.58863186911532,
+      "initial_finalizer_used": 0.05122950819672131,
+      "initial_budget_exhausted": 0.04918032786885246,
+      "initial_answer_present": 1.0,
+      "initial_completion_unknown": 0.0
+    }
+  },
+  "source_predictor_metrics": {
+    "macro_f1": 0.541671495718241,
+    "log_loss": 0.4111105137397317,
+    "multiclass_log_loss": 0.4111105137397317,
+    "accuracy": 0.8525,
+    "per_class": {
+      "HELP": {
+        "precision": 0.5882352941176471,
+        "recall": 0.9230769230769231,
+        "f1": 0.718562874251497,
+        "question_weighted_support": 65.0
+      },
+      "NO_CHANGE": {
+        "precision": 0.9756944444444444,
+        "recall": 0.8463855421686747,
+        "f1": 0.9064516129032258,
+        "question_weighted_support": 332.0
+      },
+      "HURT": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "question_weighted_support": 3.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        60.0,
+        5.0,
+        0.0
+      ],
+      [
+        41.0,
+        281.0,
+        10.0
+      ],
+      [
+        1.0,
+        2.0,
+        0.0
+      ]
+    ],
+    "row_confusion_matrix": [
+      [
+        60,
+        5,
+        0
+      ],
+      [
+        41,
+        281,
+        10
+      ],
+      [
+        1,
+        2,
+        0
+      ]
+    ],
+    "label_order": [
+      "HELP",
+      "NO_CHANGE",
+      "HURT"
+    ],
+    "class_counts": {
+      "NO_CHANGE": 332,
+      "HELP": 65,
+      "HURT": 3
+    },
+    "predicted_class_counts": {
+      "HELP": 102,
+      "NO_CHANGE": 288,
+      "HURT": 10
+    },
+    "questions": 400,
+    "rollout_rows": 400,
+    "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+    "macro_f1_95pct_ci": [
+      0.5102407118454128,
+      0.5728421070733436
+    ],
+    "log_loss_95pct_ci": [
+      0.3306465617785724,
+      0.4862331038766962
+    ],
+    "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+  },
+  "target_predictor_metrics": {
+    "macro_f1": 0.3936465017420665,
+    "log_loss": 0.32212800637156,
+    "multiclass_log_loss": 0.32212800637156,
+    "accuracy": 0.9154160982264665,
+    "per_class": {
+      "HELP": {
+        "precision": 0.16,
+        "recall": 0.38095238095238093,
+        "f1": 0.22535211267605634,
+        "question_weighted_support": 10.5
+      },
+      "NO_CHANGE": {
+        "precision": 0.942090395480226,
+        "recall": 0.9694767441860465,
+        "f1": 0.9555873925501432,
+        "question_weighted_support": 688.0
+      },
+      "HURT": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "question_weighted_support": 34.5
+      }
+    },
+    "confusion_matrix": [
+      [
+        4.0,
+        6.5,
+        0.0
+      ],
+      [
+        21.0,
+        667.0,
+        0.0
+      ],
+      [
+        0.0,
+        34.5,
+        0.0
+      ]
+    ],
+    "row_confusion_matrix": [
+      [
+        8,
+        13,
+        0
+      ],
+      [
+        42,
+        1334,
+        0
+      ],
+      [
+        0,
+        69,
+        0
+      ]
+    ],
+    "label_order": [
+      "HELP",
+      "NO_CHANGE",
+      "HURT"
+    ],
+    "class_counts": {
+      "NO_CHANGE": 1376,
+      "HURT": 69,
+      "HELP": 21
+    },
+    "predicted_class_counts": {
+      "HELP": 50,
+      "NO_CHANGE": 1416,
+      "HURT": 0
+    },
+    "questions": 733,
+    "rollout_rows": 1466,
+    "aggregation": "Each question has weight 1; its outcome rows share that weight.",
+    "macro_f1_95pct_ci": [
+      0.3376281005824456,
+      0.46058390994109366
+    ],
+    "log_loss_95pct_ci": [
+      0.257412526538882,
+      0.38664024446981243
+    ],
+    "uncertainty": "Question bootstrap conditional on this fixed fitted model and test partition."
+  },
+  "demo_adaptation": {
+    "questions": 200,
+    "repeat": 0,
+    "threshold": 0.2949665266580546,
+    "seed": 142,
+    "group_ids": [
+      "01d313c903b35e027f7ab59d2ee7776c7734cd375b144512d856f5a2f754c1c5",
+      "030099a0ad0ae3963a996723ca43905b8a01acb13b534feea04be87b95877d60",
+      "074653f763714010d5081ef5c3df7aebeb1e6d52bbb3a825fc9ef064dafb14a9",
+      "0762b0cd88d9f9f9859ddf2f584a8ffd9e2c663d53fade708b8dfd76af090c7a",
+      "079da25e2cb2583f10462640a95b52dce9538cce3858bf3bc0c79fd523ce2435",
+      "08205d8008fa2b87dba9307c5e785e14500d166f2e588cffdd9873a4336bc2df",
+      "0af14baeff8303b730f348ff0a50bb4e94a298ded26570d557e68d19f0e36b4e",
+      "0b1ae93ffc34d9963af3d14039282661178e72df8eac5b8294e6326d158af9f6",
+      "0c074e87c1e24848cab4364e9ed534f352754a2f895c1a01559de58679c8e4fc",
+      "0c71379bc70067e4cf7140a7fa32daeb7f3add208204038a9de390f18ec4ec51",
+      "0ebf30f6a1ab40f981d311cf2078353a9c871c4cbf6e3dde6b4a68c9dda14400",
+      "117f34abf71c7b306b4cf72618bed5bfa0db58bbe1603f5703809487c6827f41",
+      "135bae52f900611e1f6b1a537563e4a170d24ce62431ceec0ee6b67a16abbb5b",
+      "13f119cd93155a1508ede2f5071266c7bf3f1a01d0079157ff3723b93724a261",
+      "14cd3e0defb9b009fde9efe9e8ff7a0ce779b8850ee7ec72a08a20d25831784d",
+      "164a8c7bb88e2e5f11519397a11f32c07b4e19dc2988d7e5e62dfa76f8cf6390",
+      "171b05d0d2b27962ca60ef753dac94b89f81406ba02a56fd545346dff822cd86",
+      "17d0d9277f15a3b310df0eaace54b46875a8df52ef0365337cbabb40d1077c6b",
+      "1903d5c230d1a8fffce28a7708e1504ed16ad5da2232fd79e8bccd1b5a0d9945",
+      "1b43fd799adc8e8143ff5c68a559148d455d3ea8dd8b2271e8c25de581e6f077",
+      "1c4a059bb05aa12ea0c3b8c1987ef142866fa10d4205603a6646bc4841ed771d",
+      "1db9e5d40a23dae6814c4caf9b19e040a53f996882b5b03f2f52ad714a570496",
+      "1e58bb0b9f7130acb9d25d170cde9ebeaa30c624641c41c000198072c90dd9e5",
+      "1f0d8d36120d9c080f2e28171349286a450caf0622aa808773cc04c8ca26afcf",
+      "2030b4df542861291dbfc4e6ee5d5cd6efe225d1caa74d9e735faf34f963ec98",
+      "20959e92cf8bca6497c5077a81b54c2acec3a7a8241bbc1dcc02cd800cf7f4ca",
+      "23ba0c0117f147c55abd85f9c5cf5ce0b25d168c2e61cfa9ea80ea153eb0e8f5",
+      "259e8282c74c45b58bd848f014a4fff3ea0911e2986b7561b9ca453b8e944433",
+      "269353e061cd62943c692316010fdd63059296d1231d27d38e6aaafcf6598686",
+      "286b1afa2ca986fb9d56e068727b3f50fe616d2f7ea98f58e97dda9d12c00efd",
+      "28b084e9ca567af20db0779fda66b8a54b3f4cd92a75ebeeab2428ee838af4dc",
+      "29e6c8aa0f9128b105dbf0bca8b386585d883da1a5d91e66e42b0d6f83e3a818",
+      "2a224452ae2ef82712a74c5dc6ed7746089b7e1dda608038dc323a6f634d92f8",
+      "2a97fd26baf56c9c073f54833c5ca09e0b9d6345622c1ad4790ee9da1bf27c43",
+      "2b1d2834c5d6972507849ed421212e30e093709928ef6dda4e22629c801ed765",
+      "2b304a53dc0a2ed1f83d69d9d088e2ca6e5072d6db063c76e44955a77dbc21cc",
+      "2de66e2bdedd993e3851876bafb18dd0d73b043b0f0e1942c2aaba85a128d136",
+      "2de99d73ed69365ad3ec38485d76877dec6fa0fde4a333a16a038e9c7dd68756",
+      "2e2cea999652d9cd14458733957b43836c93b09eaf378ad001816401f333fe19",
+      "2e3e560ea8c2c6df8a2047f190b4a78c415b34bf5662a7d6727cd1b144b92ee8",
+      "2fe85d0250f492dff391207595ed83344c955d4b8487ae491201c3fb5eba8e85",
+      "38f2fef2b687de00d6c15d46380149df28c3106e59cccebc97f81413aea269a4",
+      "3b02ac099a4e88428572ee97fe7607a822866cc3043bacbf9acc30cd695bdc72",
+      "3cf7896f31c9754ee189e93b5c2ef07905b7dbc6634ddea77228f32819adbcc6",
+      "3da1740cbbd56e05505dd39dc62f39d51fcada7f6037c2da432c64b313b90b18",
+      "3de425b96e0dec47dc9952559f47ac3c9344560d4a166b8b70d639732705dc6d",
+      "3e190765346be11828b09fa193a179b283a0ed1a919e40fd194adf6dccd93e34",
+      "40a0814b92ec7446d6f592ae95ef3f5d97f1fa756b07937cd8b396977ceeff65",
+      "40da2acf7739033bcdf61a3c8d18637c40b735e94adb07795380b41c74ab818f",
+      "40de190dbd3a48fafe832169699d0bb6c311b68a4f45f9463859b301a4386f2e",
+      "41fa782ad5fdd9907d38bcf5ff39af96be5ede39b15d880233e92e5ba09f6462",
+      "4200f10faae189900f6a43cdc6bd4ee4297c709ecb67b5c6f15932b37217b522",
+      "427ceddefac2ef0d89160b71ba4e0cb118758999bc59e3ecbd8be45853234d0f",
+      "43d449882be7a2976dd9722b8c68edd23cb5c9e0af55bd34461481f7be0731d0",
+      "4820baff1b0cc5d10e3f1cdaad411c545df447220c5190e80691d13b2e5ab1c2",
+      "48715be6df2c4ea83c8c274d7856c5f97edd6b02c69f0d82a297d74c3c287120",
+      "493571b54857e751cf2c7b65ece0d30949a7f9714ddc7de328d0dd9aa38c7f10",
+      "4bb579180a20158e5e842fed19e22e2f519d6e0d1472b98dfc06f2513c89eb88",
+      "4ca97a48925a412a0e9549682b09af3f0c7a157a67476e99c1986434512eed03",
+      "4cb3611b7360a896355d1a8e22d91bb4e630ce3befca6aac5666c2c21d24f514",
+      "4ec895aae02a4e9749205bfe46abaef5937f1e3bd3b437a3639772ec939f8c8d",
+      "50131dc30d325eafde95753419cf78171b1cf25cebeefab4dd5197a2341290c4",
+      "5055768ef4d10f6a1ce37ece688b8f5ef2d147b35e5563e06bc8a58c42757178",
+      "53b6e97333f521826cad34bf241e37bca8912bdd407f4337785077d81d5e12c7",
+      "549bff214bae57a255c2307972988306646eeac3c89608b63503d79aaba752d9",
+      "55301b68d26026bbe32c244094175899ac752bcd6fed996ba42495cf0a5a39a6",
+      "55ac5903268b6c881c3003d5b04d0442b172a94c68340cee10090c5ff5219c45",
+      "564865a6ab7db668b2a901b4034c037b339249385e5911dbb2064bbd4b35a175",
+      "56a62eacdf34563f195935abde23cc66d6cbe823ea42202496bb910c441e67c0",
+      "5867a962b323387c954ccf9eae8fc4b0f1bb3d1aea5087532e0441a3832c458b",
+      "5acb67941e67eecf74d3aa4349708a504eb1a1c92b079ef44b7f14693744d04c",
+      "5c059349a044d77efc104d22efa140b29e15dba79eb276615189985447f9de08",
+      "5dbbe06ed5c6259be796ef3a0f99ca335f9057c57d7d27b30f2bbbb5311e2306",
+      "610f32785c8b5a83e7754b46b1e140ba74afb153c9f8154c0b52dfe5b3e2480f",
+      "65a1cd3b3411072f16ff9857a3b58ec9e1e02fb03a9225b1f00fb06f399e86c5",
+      "668252b78163855b51ec74b4e7f13b7ada80c59d2f974a042c2f07f6eefb64db",
+      "6a9a06323521f30e481883039c8f530317c52ea2eef04fa7b0881f5c1f0701c3",
+      "6a9c2b115fce61006636835c22a5094d889900e92b96ed3b8ec7d1a762e70cbc",
+      "6bda89c8e438ba45e1c4f1b89e295d91887f97f661e039f965669cadc755f412",
+      "6be08810f32fc026dcd956ce1dc967e42905e21a7b5196deb3f00fab8d72ef94",
+      "6d951726cbf4b96c8ef9beaaf5ebe3137683ea335543faf03cd6ab404f826f27",
+      "6ddea02198959f111907fed191692b65400f3130d96dbfa2dc4417a79f16948c",
+      "7127ace6030f36301ee21bc00e792af841986effbefa4517b0e7370208e9a738",
+      "74391d164822d5cf088ce0d3caeda315088d15b8548a57262df72a6a5df9eda7",
+      "75c8214437135e3af5ed6cdf5fa2a9afd50e1e3366c9c3188ee7e281586220f3",
+      "7929198d26409e55b8c9c2f52693026c0c2f89619594c9360a458d90ebcf3d0a",
+      "7958d0b78bf1e6059621188d362ca1ff76d84f71a2f0a8f8452fb317fe85d593",
+      "798345076260548318ec88e11c121d012cfc7dda66d04e33e316f04f75dac618",
+      "798afbba71b82a6f0230763119355f13dc8696843f0c4a5b94bd22153d2b2b67",
+      "7a251bbeb87ed248728fd28e4989853e8e5eddac257e56945b111cc37fee031e",
+      "7ac39d5a930e84161bdf7101080ab6672cb26477064c418fd4fd9d5a699b3b5a",
+      "7b28a822ee89d75f48641eb70213677a3bf27b199d68bd5d09e9da53389f5e99",
+      "7bf4e9b61aa6f390436c6281dd91643161095f2e7836db7624be5eb06b4dc7f2",
+      "7ca8307df0cd4871967b9bd82c22c3209a83c303051d217f1e011ac708cbf64a",
+      "7d261460ed7701b2ae698b33cef5e40ab520e1b6be0d327ab770a59a2b80214f",
+      "7e012870966c2bc4fa58d8565a3a2f9fff5383a5434d9e596d274df1ed065805",
+      "7e0bc7ff5b8ab5d927daab80b397bbae4f48cfd30686d787a7dcc943eccbddc1",
+      "7f0d1d8b8361b523267639833eb8eae3222bc856ce1831b44c7eaa536e933b04",
+      "7f47782e384c7f484246291b6d38e35fffb67276fa726f3e4e1c8c8372316a1c",
+      "7f62a2a52bc7b4ff7604d5a59aaa4d823601693ed40139dcb9eb9012401a291f",
+      "7fd608ecb7c350127b03bcef4046bf9bd37d4e2a7ec558c6183fadea38691c3f",
+      "7fff6d4e4089316dda04eef638c767146374e5f41cbab186850c697afae271a8",
+      "820748b7312d1d617f9aa03afe654344219204eb1d483eb3cb331483857d8fed",
+      "823de6214196cb3473cecf4a41b057f68cecf5a31e6e746c376962674c84acfd",
+      "82c50ae69f9974ee64869696c68f2cbd60a8623f946a71756a7cd567a6d39acd",
+      "85bc980f733129cf1358f770d1ad4b36767d3a65d3a6777c0de0534a761de519",
+      "86010b559bef26fcc654ba86fad40332e1fdc663563781e2decc522366ee40dd",
+      "86d25f74a9955d6628efccc64a1fcd59469f93a1ce5d1c7fac58b54eaa7ec693",
+      "88cfea14b26163837e6f7bec2b89adbd47aab0c146a388e0880f5e3762ce4ba5",
+      "89dba3f0cc8845e3a0c6a153cd9b2ed38100ac2300235db36a7a6ed652546066",
+      "8a524081ee75beae2ad493ecd934e1edada58987204b900623ab5368a21612ea",
+      "8abdd399a42cb94c7dc7d6bcd55db87dbaa8161f203051d327d8d156471b8fa4",
+      "8c12937265ae6a0b5e6671eb397247b48e08d2fe534b642f1e5dc1899bada27b",
+      "8e4d2b0a5a0195c93598f081c537ebdb835c66b5e9a218984a010ff580949723",
+      "912c56eadba600262d528603964bab5f6c41286d1186f43266110684c068c15f",
+      "92c3425984c124822bba398fdf5efebf4d0efbd33f3f8270fe993a4fbeb14c62",
+      "965274e657b959a29af3c34c367d314ba2ddbb40fcd92cfe94fb43334b43ec50",
+      "96c1390545d6bbe305ea17469b97a92a94ca166412aa08963dfc2137f59e842b",
+      "97e5c97049d0859c3c5b57b8a19a2d5622c5d5c617dc02e73707ba6d60ca9f0d",
+      "9b1fa43a463001f356d68e07c3e9e3c40082034abd78258630ccde97ad143b88",
+      "9c87e3bb9d490dae883694912496f0a8ec85bff4c9c0e32ddf99398bf4042090",
+      "9ce28d545304d8d915e7d6a825c1070b2b00ffe07706a317a7ba63c643c158fb",
+      "9d89981cb888d029918588752f5bf31422a051055330f5ccb36130cefde50739",
+      "9ef945662b5de4c489fb7f2c18c88b0584b92f8206fc1bb0255a8c4725acc377",
+      "a016458d968c344051445d8e217ac2ce52666313957714eea06c4575a124c6d1",
+      "a0bc03d6efa586a2cc55c1d3aa49556497cb75745bf452bf51b557097f4c6b4b",
+      "a18581e1eb970ac84d160fc7a7721dda1255af7870b6eeca292377c96a5242db",
+      "a2c20aebfeab5b5e34c6cf7e61f6eaae1cee47e1622a460dcdaf5262f76c4981",
+      "a59d3e624e14ec161f59438631aa76d055c5af4cbc5f0c7dcfb59db4a6a3c9cf",
+      "a7c3d0b2b377b4e1099ae07a8919656901d110a7db61216b8dd3373b20f3ca6f",
+      "a83611738be0a1ad76a7783a91fe63a74d2c17a77b654df4c59759c60423a648",
+      "a8ada0ee05ec29a64180101b80635da96891744d35fd0b50f2184b046812c3fd",
+      "a95157a939602febd07185a1ac7f455b3160c1f6b73874976f31cb25d3498d76",
+      "ab4d0ee22a5667394b1daf21ae594db57c117a82e59894416a1908c375d6b984",
+      "ac00a1405c39b023b92fab6525fa3b3565f58f0b8e634e406370f873a8b957a8",
+      "ad77bbc7bf95808664ac062ae7d8410b5e5a5b863080d80524db6671aefe4f51",
+      "af8fcd4dfbcd3c82faf5587d6054f398888d13d71722c3d553abe8cb5686903a",
+      "af90d34f6b7921bb5bc9b034fb339aee1adf3c20181fa3c131c1f7749263bdb7",
+      "b0073c4cff8bd0916879e9636043b7f2e0d39458d6cbe01db4492cd474ede807",
+      "b3857a460f08a0d6221de287846423dcac0122acf1c15d774393c38d17babde1",
+      "b42aca1ae688fd4ab32aedb93d350787877d1bd33e3e1d2113ac1566a895c33f",
+      "b77a115a4845ce29eb44848361c7572b55b70c46009de9cc2695accf0184b9a6",
+      "ba9650fa5e0d27a1b2a43211a6d1fd72bc54f99dc7836d5c5a5fb477dec1fcdd",
+      "bb19cdb3416e7a552cbfd236e532428525124194f92e301689cbd9d25afd3f4e",
+      "bb4f046430ec86342a2e4d0210b6eb1a4ef1042265faee143f3488d9940edaec",
+      "bd7e708de3dd38e7cb8e9be481f63a72dc2a9474f1b338da73e37a67d7e2eb3a",
+      "bee649c798b6ffcecf0062df2b8a12aaf3cf7cc0e5e3f2466d44d3965aa88baa",
+      "bf6692afacb16f214d0ff8edd18e89bf6e5ee790c170fbf42022965c38dbd991",
+      "c0ab7ca6447173f8500e0ab1c5e59ec5ab4fffea641a4b0ca72a09413bc87716",
+      "c11363a4db81f911901bf04581e7f95591e2254a75d743594b83a38555b76bc9",
+      "c37fbe64bd9d70eb3ecd3f4ca94fb8d751f5188983edac14751f82117647b49a",
+      "c3d4116c4c6ba2b17c0fe4ccb793be29ff3070533b7289f6dba8d80b4fbdb913",
+      "c4789b28568fd4664c30334048482551439ae014defd215297d1a9c3b79a02ef",
+      "c4c18251b5aafdd54907886c1393f1e3df60b9698c4921f4926aa17796d43b6f",
+      "c6238cbda02eed94b4096e23f74028cbb7b45da89ec94a411aa16c6c04b80673",
+      "c67a1f689157b8e3fb66f806b246655d7eccfc1c06b149946c5c0c8d97265148",
+      "ca215e178db69203ab3f7b6044e306d0ba9e369a6599aac27b3ef40143ca2037",
+      "cc373f8afdaa2018a1def7ae4b59d7dc6a41478c19d580495939b69abad371e8",
+      "cd578182d55c621a32c483b119c39f5c2e107059f2a007c41bafb5887601a6d4",
+      "cdb4e446b4dfc342d50fab42949d158b3a838a39470be7a3c202e0ac9e1477c6",
+      "cf16604040e77b87f59e89d060993563619d7b8a41c3ad9a6a96e17c883c71cf",
+      "d05cb2e677beb52c5574f7a26f1d213c9cd19545b7bda57a0788694de25fd2c2",
+      "d10366abc4b26013c3077d8b69c2cf127aed0a678335947b65b023b05d247aad",
+      "d10e63e7660edbba8bc1424eaf4e8109f7dfcf23ec35d7d2bc9dec29b4b36844",
+      "d1ad728eef1b443fa4c71b53c7009724bb32d1c514f2c9a16ec79881163366b1",
+      "d20fb50eb31729747958678c3617ccc3d46de81e31b8f9723bf4ca4bd8e275ff",
+      "d356b8d74f2688d16b751ff172f60841b5adad243db8086650015d8d2657c158",
+      "d3d01b4464f6005192399c3b5e837aba89fecc74f97e6610ebbac917082c01e3",
+      "d56731e3607dee39cc0ed3b78bb216da184ef5a6bbc327b29fe5df27731d4dc3",
+      "d76b7364187ff1247729edcdeefded49dae59af47da442dc9656b9b02d699fa8",
+      "d8d77be0fa07109fe39ea00c40d3023eac2e155ec2c52db0bcad0a5d8f57d7cb",
+      "d93d3eaa21818d000c35471e93f2869c64d567ec2c187abdfcd64c1732e4b8e9",
+      "dda74034c12a3bd6d68b71cfb7a7c98002d99faec35a9ef8fb96fee12215dfeb",
+      "de5a41526fe02f5a99fabee9ef8a276079b2a73c33d692c13c1c902875c95386",
+      "df88d928cc0178c6fa4cabef78344176cdfa5db28f6bec262ec087d9036a56a2",
+      "e2a9540b2e0a929c01d63ce6a656baa43cb92483a8cc92e9261cc597a2be4b4e",
+      "e2bff17edd209981ab787ab569fa7ab16fe9fa86b6c0e6d6192a5b5c7d407d06",
+      "e2da37de692392c3721f9972f130f5cfd1bbeeaeb95a828b5e8d1f25214a6387",
+      "e68435e2dfd979b1b28cb310da8dce08688353d7c905e87c7310a7e2edce1bcb",
+      "e7eefcaa11492926f7e1ecfc7bb4122da063b4f6b9a36f3874ec98635740cebc",
+      "e8866247d36449e95974f5037c3e827502a4558462107dcb258ba0eaae4d1e8f",
+      "ea92e235073f73aefb4132fa33252e38b7120af6fe34c7faca5a24ded72333f5",
+      "ea9ee8475387538592fcf0113cc1011bca080deedc35e0fb6be5a4bf60d948a8",
+      "eace8c3441f35807847962251c0ee6d6ff7c8c28a56b7dfbf3a3c925e3b11184",
+      "eb5ce22d74ef408de16133e402af63e03cc32711e0094600304ea074f3f09851",
+      "ece56d6877b8d5acac4e52899d87492f96b1a9d9395676f572cf86389ff2c675",
+      "ed9fdbb2221f07305caaed0aea7970606570612fc84e6363a8f33f8698e61932",
+      "ee32a28401c8a491a48b6ddf61a6713ac58f36ff1c0352874dc409070cf9789a",
+      "f0652640623955adceb4a5f7c0045f5a5225c007431dcb693bc91f0fe3ceb587",
+      "f2b316d314be71dda402b1470af24edce239663f94459895d27e9aa82234a871",
+      "f6f8fb099ba17bef58db38034b894cb3f3c888ae574fd3e341b71abd1f9cd9e9",
+      "f7d346a348a6f0db94046968563a2606cd30b52ef15b2c739fd21712c65baf59",
+      "f7fe52120da98b9fb021c5e1add3bd71f53b7e5c874308f545411bc29c3fcc54",
+      "f87387fb195a07c3c2098c7d059262fab004963948b1eab0cd39daee320ecec2",
+      "f8e4eace1a6af2a61aef13d135aa192fbf3e562ca9d1d46fa55c48a3c6b1c62c",
+      "f91b20f924892da0cd7e0b2b69a415930c3176472942cded433ac224a3e6a192",
+      "f96fe533625d6617fb7898ea9bcdf3b2ad86c700c7d41b62c7e076f5b9fd4c2c",
+      "fccca57c513f6c7378c5bf3b05028d9b0a7b8f0f60199532bae6fc835b4f5f58",
+      "fe64b7baa7e0da11dfb030824a17e07725eca780e2fbe4669591267a16103a64",
+      "fee5897e0c209da9430f459efe401dd87e4f20b1d3f0d51f12db5c144d87d07f"
+    ]
+  },
+  "adaptation_presentation_rule": "200 questions, repeat 0 fixed in advance; for small custom runs use the smallest feasible requested budget. Never choose a budget/repeat by target-test results.",
+  "metric_unit": "Question-equal weighting in training, development selection, prediction and policy metrics; question bootstrap for uncertainty.",
+  "missing_data_strategy": "No numeric imputation. Published empty completion status is explicitly unknown with a trained indicator; parsed empty answers are explicit absence. Tokens and finalizer flags must be provided.",
+  "completion_unknown_rows": {
+    "source": 2,
+    "target": 0
+  },
+  "runtime_seconds": 5.769275000006019,
+  "environment": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3",
+    "pyarrow": "24.0.0",
+    "matplotlib": "3.10.8",
+    "streamlit": "1.65.0"
+  },
+  "token_accounting": "Realized initial plus selected revision prompt/generation tokens, averaged per question; replay estimates exclude gate overhead, latency, energy and cache pricing.",
+  "decision_objective": "Maximize source-development HELP minus harm_weight*HURT; tie-break by fewer realized revision tokens. No priced compute objective or compute-optimality claim.",
+  "limitations": [
+    "One solver checkpoint, one transfer direction, one partition seed.",
+    "Inherited public correctness labels; answer keys are absent and were not independently rescored.",
+    "Threshold-only adaptation is not probability calibration or LLM fine-tuning.",
+    "Adaptation subsets overlap; their SD measures subset variability, not independent-experiment uncertainty.",
+    "Former public evaluation data are explicitly repartitioned for a new protocol; these are not the original SEVRA benchmark scores.",
+    "Rare HURT source labels and strong source/target class and feature shift limit transfer.",
+    "Published model/action metadata checks cannot establish unreleased prompt and sampling compatibility.",
+    "Skip recheck keeps the initial answer and does not certify correctness."
+  ],
+  "artifact_sha256": {
+    "models/source_gate.joblib": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+    "reports/policy_results.csv": "0dc73b5cc39cef96474cf30b2cdbc0ef881807ee88dbf5fda6353f064f422b81",
+    "reports/target_predictions.csv": "5dd790a55c6560d96605eaf4983ee6333d14efa20bfe618210aff2ff923a8d76",
+    "reports/target_features.csv": "6083c2e6ebb384d88be0abc948ed01104dbe2fe736f872ff168572a3e35fa025",
+    "reports/split_manifest.json": "14a91faf89a1566bc99851fd3161e589d9cf61ac2bc143eb984b9aad63dafff8",
+    "reports/adaptation_summary.csv": "641033a8d01a19a9acfc8cb32b8edcdc90ea630e55aeedc49a749ff33460015d",
+    "reports/adaptation_runs.csv": "1a4d4e85fe84a6ed5c55722d6899f782ec34fdf14b5f783b89214070470e114d",
+    "reports/model_comparison.csv": "a1a5d2101e85fb06cbcc73a8a266b20f991b48afde7b9b00ba401dca9b73f658",
+    "reports/adaptation_curve.png": "5848fe7cd3b27685e52713bd6a47ab9476277cf3e5b6df5e9774f51b435a8eae"
+  }
+}

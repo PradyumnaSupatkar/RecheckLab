@@ -1,0 +1,33 @@
+{
+  "status": "PARTIAL",
+  "phase": "smoke",
+  "session_id": "b0b9799bf3af416b8b5e3c54da5e3cf4",
+  "started_at": "2026-10-21T20:47:42.537522+00:00",
+  "ended_at": "2026-10-21T20:53:49.927209+00:00",
+  "minutes_budget": 480.0,
+  "protocol_hash": "11ebd5c43097e03385c713a10a845d82a9c9453652af0f2610649fe8d0f401b1",
+  "errors": [],
+  "planned_unique_questions": 1500,
+  "command": "scripts/collect_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.2 --minutes 480.0",
+  "elapsed_seconds": 367.3909999999996,
+  "completed_pairs": 4,
+  "completed_unique_questions": 4,
+  "completed_by_partition": {
+    "source_train": 2,
+    "target_adaptation_pool": 2
+  },
+  "class_counts": {
+    "NO_CHANGE": 3,
+    "HELP": 1
+  },
+  "call_events": 16,
+  "successful_calls": 8,
+  "failed_calls": 0,
+  "parse_failures": 3,
+  "remaining_questions": 1496,
+  "measured_pairs_per_hour": 39.91538948618817,
+  "estimated_remaining_hours": 37.47927852533313,
+  "eta_basis": "sum of measured successful call wall times; includes first-call cold load; cache/backend overhead not controlled",
+  "smoke_status": "COMPLETE",
+  "stop_reason": "all selected smoke questions complete"
+}

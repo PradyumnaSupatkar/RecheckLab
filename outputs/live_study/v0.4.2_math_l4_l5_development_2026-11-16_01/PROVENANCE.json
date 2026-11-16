@@ -1,0 +1,32 @@
+{
+  "phase": "development_reliability_gate",
+  "protocol_id": "live-study-v0.4.2-qwen3-4b-instruct-math-numeric",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "gate_artifact_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "question_selection_sha256": "6008b09ac2c719a7682993a438e4f90cc454e8966d9c7ba999f29d7d442ab77f",
+  "trusted_key_sha256": "7fbacceacf3f41be01b724a5f4ad5c473fac25ac61eccfdc621cd8d2e6fbd6c8",
+  "generated_at_local": "2026-11-16T18:12:22+05:30",
+  "files_sha256": {
+    "benchmark_context.py": "3412ae987859a845066a7859d096612bb9bba9697af791a77fc6f95d51890d20",
+    "COLLECTION_STATUS.json": "909dfda6b28ba1457bca66995231af6ccf568ad62c6d48ad941ea0561109ebb8",
+    "CONTEXT_BENCHMARK_MANIFEST.json": "031e85c2b8d6680d17b0e2d4c41dcf758d530d7d82802401b51f17d859ee97b3",
+    "CONTEXT_BENCHMARK_RAW.jsonl": "43efbc8803947a7ac5cf339e9d2d7e6d911545c5721f0ec9c7934ec4e285ff13",
+    "CONTEXT_BENCHMARK_SUMMARY.json": "48962b0f3291dbd8dbddd4a7299e4f3169cdda58ec418d6a3ce23d9393c9b3d0",
+    "DEVELOPMENT_ANALYSIS.md": "bbf16e704d9c1998b381c8b24bcc9ce82c5cb68b1f08603329510c672940cb5e",
+    "DEVELOPMENT_GATE.json": "81d9638d1048a50c72a3be7d0a8ad02092f9825d723abc6221f3c80bc3e9cb2a",
+    "DEVELOPMENT_RESULTS.md": "26cf037c34b8113d93bf040b82597a60c5d228164aee5e0bca353b095f49e5f3",
+    "EXPERIMENT_MANIFEST.json": "2d6a239c5201329c264e3de7d6a163b99f4b7e22d54f82d7480d04341bd30f94",
+    "FINAL_DECISION.json": "9571af5421741231ddeb8e986d5661a2b4f7b3149ce5b6ba08a110b2650c565d",
+    "freeze_v042_protocol.py": "09995a7ae96944d3d9fdf35b5222d13a29679f8eb66f5209c402526aa25801af",
+    "GATE_PREDICTIONS.jsonl": "1e4bf496ba1a3daf0293e18b2397d4044006ea681ac93812f3812bca3a528eff",
+    "MODEL_ERRORS.csv": "2852e3a9dc9b4df0ae97fd6b08992cbb31d05ed583523085ef707a8579ae8aed",
+    "PAIRS.jsonl": "8b272e49e6a3bf9d240156a9acb0ea438f674ccbb740b26e0cc9b60807f67ddb",
+    "PARSER_FAILURES.csv": "366426741afa0d49601552aa265e41e7759e7d001d943ab9b32df51383a06683",
+    "PREPARATION_STATUS.json": "fa0953db16999ea10f41ce939cb063c632e9bcc69d07eb3c65b8af63307b81bd",
+    "PROTOCOL_SELECTION.md": "087dc93fb040453437b1bb800a780097316cf7c26f0e967adb827e286c1a4465",
+    "QUESTION_SELECTION.jsonl": "6008b09ac2c719a7682993a438e4f90cc454e8966d9c7ba999f29d7d442ab77f",
+    "RAW_CALLS.jsonl": "1c8b21e52aafec5e0ddeb16ef0bfcdbb5591a738c594c0e5a46ed9416271bd5b",
+    "run_math_study.py": "9501fa2e22d842fcb4e1be7c6083328134bb1894860ce4fa7c7969ab33103c8c",
+    "TRUSTED_KEYS.jsonl": "7fbacceacf3f41be01b724a5f4ad5c473fac25ac61eccfdc621cd8d2e6fbd6c8"
+  }
+}

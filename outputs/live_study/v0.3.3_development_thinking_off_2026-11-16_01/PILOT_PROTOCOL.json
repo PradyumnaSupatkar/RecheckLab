@@ -1,0 +1,51 @@
+{
+  "development_protocol_id": "dev-only-thinking-off-v1",
+  "base_protocol_hash": "10918ba33eef2eb97f7c10972fe0db1f48e3250684ece28c54e50520fc91462d",
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.40.16",
+  "prompts": {
+    "initial": "Solve the question independently. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or the option letter, as appropriate.",
+    "recheck": "Recheck the saved initial response against the same original question. Keep its answer if justified; change it only if you identify an error. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or option letter.",
+    "initial_messages": "one user: initial prompt + two newlines + original question",
+    "recheck_messages": "same initial user; assistant: full saved initial response; user: recheck prompt"
+  },
+  "generation": {
+    "initial_token_budget": 1024,
+    "recheck_token_budget": 1024,
+    "context_window": 4096,
+    "thinking": false,
+    "temperature": 0.0,
+    "initial_seed": 42,
+    "recheck_seed": 43,
+    "top_k": 1,
+    "top_p": 1.0,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "stop": [
+      "<|im_start|>",
+      "<|im_end|>"
+    ],
+    "stream": false
+  },
+  "parser": {
+    "version": "explicit-final-v1",
+    "numeric": "explicit FINAL marker; finite decimal/fraction; comma/currency normalization",
+    "choice": "explicit FINAL marker; single A-E option letter; optional parentheses/punctuation",
+    "open": "explicit FINAL marker only",
+    "unparseable": "record parsing failure; completed call scored incorrect offline"
+  },
+  "grader": {
+    "version": "decimal-exact-choice-v1",
+    "numeric": "exact Decimal equality; no floating tolerance",
+    "choice": "exact normalized letter equality",
+    "keys": "separate offline file; never in call or feature inputs"
+  },
+  "transport": {
+    "timeout_seconds": 120,
+    "automatic_retries": 0,
+    "explicit_retry_limit": 2,
+    "ambiguous_started_calls": "block resume until operator resolves; never silently repeat",
+    "session_budget": "do not start calls after deadline; bound each call by remaining time"
+  }
+}

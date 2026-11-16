@@ -1,0 +1,7 @@
+﻿example_id,policy,initial_valid,revision_valid,initial_correct,revision_correct,initial_latency,revision_latency,initial_tokens,revision_tokens,revision_reason
+gsm8k:train:1431,A_thinking_off_1024,False,False,False,False,48.40821919999871,50.78196849999949,1133,2230,length
+gsm8k:train:1431,B_thinking_on_2048,False,False,False,False,91.73645559999932,93.1398216000016,2157,2230,length
+gsm8k:train:3947,A_thinking_off_1024,True,True,True,True,23.74474050000208,18.41580370000156,615,1062,stop
+gsm8k:train:3947,B_thinking_on_2048,True,True,True,True,23.54784799999834,18.396298299998307,615,630,stop
+gsm8k:train:519,A_thinking_off_1024,False,True,False,True,44.24812149999707,49.611679800000275,1106,2175,stop
+gsm8k:train:519,B_thinking_on_2048,False,True,False,True,91.49938520000069,61.31525660000261,2130,1556,stop

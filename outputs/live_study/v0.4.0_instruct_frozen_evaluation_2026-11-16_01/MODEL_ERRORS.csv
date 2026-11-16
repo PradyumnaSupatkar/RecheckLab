@@ -1,0 +1,6 @@
+﻿example_id,phase,model_answer,parseable,correct,done_reason
+gsm8k:train:5733,initial,55,True,False,stop
+gsm8k:train:6714,initial,1.5E+2,True,False,stop
+gsm8k:train:6714,revision,1.5E+2,True,False,stop
+gsm8k:train:4353,initial,85,True,False,stop
+gsm8k:train:4353,revision,85,True,False,stop

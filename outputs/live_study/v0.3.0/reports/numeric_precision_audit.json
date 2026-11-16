@@ -1,0 +1,26 @@
+{
+  "audit_version": "frozen-decimal-precision-audit-v1",
+  "status": "COMPLETE",
+  "audited_at_utc": "2026-10-04T19:02:00.543712+00:00",
+  "study_root": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.0",
+  "protocol_hash": "9f3f34ab0d1639c814322c3eee4cd581dd893e98f6d43498d72dd0d2376afcb9",
+  "calls_snapshot_sha256": "ac173a424aa28a7b32dca9d41f5a4eefb3a4582278b689b7bb80dfb5e2373716",
+  "calls_snapshot_bytes": 141608,
+  "incomplete_tail_excluded": false,
+  "successful_numeric_calls_checked": 14,
+  "checked_calls_by_phase": {
+    "initial": 7,
+    "recheck": 7
+  },
+  "status_counts": {
+    "EXACT": 13,
+    "UNPARSEABLE": 1
+  },
+  "precision_loss_calls": 0,
+  "failures": [],
+  "frozen_parser_limitation": "Frozen explicit-final-v1 normalization uses Decimal precision 28. Only exact finite decimal values and fractions exactly representable at that precision are accepted as reliable numeric evidence. This validation does not relabel records; precision-preserving grading needs a new version.",
+  "trusted_keys_read": false,
+  "llm_calls": 0,
+  "recorded_answers_or_labels_changed": false,
+  "command": ".\\.venv\\Scripts\\python.exe scripts\\audit_live_study_precision.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.0"
+}

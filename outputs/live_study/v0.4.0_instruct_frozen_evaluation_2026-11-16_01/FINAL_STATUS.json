@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "evaluation_complete": true,
+  "questions": 40,
+  "calls": 80,
+  "frozen_gate_ood": true,
+  "artifact_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0"
+}

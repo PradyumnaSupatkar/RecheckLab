@@ -1,0 +1,48 @@
+{
+  "seed": 46,
+  "ridge_alpha": 100.0,
+  "penalty_per_1000_tokens": 0.01,
+  "threshold_grid": [
+    0.0,
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    1000000.0
+  ],
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "bootstrap_repeats": 2000,
+  "features": [
+    "question_log_chars",
+    "question_log_words",
+    "question_numbers",
+    "question_math_symbols",
+    "question_marks",
+    "initial_log_chars",
+    "initial_log_words",
+    "initial_unique_word_ratio",
+    "initial_uncertainty_per_100_words",
+    "initial_backtracking_per_100_words",
+    "initial_checking_per_100_words",
+    "initial_number_count",
+    "initial_paragraph_count",
+    "initial_question_marks",
+    "initial_log_actual_tokens",
+    "initial_finalizer_used",
+    "initial_budget_exhausted",
+    "initial_answer_present",
+    "initial_completion_unknown"
+  ],
+  "selection": "inner utility, require empirical accuracy delta >=0 and harm delta <=0; token tie-break then larger margin",
+  "labels_opened": [
+    "source_train",
+    "source_development"
+  ],
+  "validity": "nonempty publisher answer is presence proxy, not verified mathematical validity; numeric syntax sufficient only",
+  "frozen_baseline_warning": "source training is in-sample; development selected frozen model historically",
+  "safety": "margin and empirical constraints are not confidence bounds",
+  "candidate_count": 1,
+  "final_threshold": "training outer-OOF tuning; no unbiased claim for optimized tuning surface"
+}

@@ -1,0 +1,5 @@
+cohort,questions_total,length_questions,stop_questions,unknown_questions,length_action_calls,stop_action_calls,length_call_rate_pct,mean_length_action_tokens_per_question,mean_stop_action_tokens_per_question,length_revision_token_share_question_equal_pct
+MATH source test,400,107,293,0,107,293,26.75000000,4562.25233645,1836.19795222,47.57130175
+MATH500,500,227,273,0,454,546,45.40000000,6057.98678414,1945.17399267,72.14176091
+GSM8K,1319,38,1281,0,76,2562,2.88097043,5240.18421053,1648.16822795,8.61861025
+CommonsenseQA target test,733,25,708,0,50,1416,3.41064120,2675.22000000,2469.35593220,3.68450149

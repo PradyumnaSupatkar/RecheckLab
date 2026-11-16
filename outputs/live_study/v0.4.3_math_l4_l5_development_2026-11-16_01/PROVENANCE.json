@@ -1,0 +1,22 @@
+{
+  "version": "v0.4.3",
+  "phase": "engineering_development",
+  "protocol_id": "live-study-v0.4.3-qwen3-4b-instruct-math-numeric",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "frozen_gate_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "selection_sha256": "6008b09ac2c719a7682993a438e4f90cc454e8966d9c7ba999f29d7d442ab77f",
+  "trusted_keys_sha256": "7fbacceacf3f41be01b724a5f4ad5c473fac25ac61eccfdc621cd8d2e6fbd6c8",
+  "generated_utc": "2026-11-16T13:05:07+00:00",
+  "files_sha256": {
+    "durable_stream.py": "10f7e1ef6519be49417cd11864a0843944f5a483ba4e65ef6677412e4d98465b",
+    "ENGINEERING_VALIDATION.md": "232c8e8981afd4f3e6bc7840a3ca00b1202a31ac69ebad0872d1d37a191bd802",
+    "QUESTION_SELECTION.jsonl": "6008b09ac2c719a7682993a438e4f90cc454e8966d9c7ba999f29d7d442ab77f",
+    "run_eval_v043.py": "0f19da4bcf568d3df621732646e15a816748d95b8729cf8acbfda4a860c03ed7",
+    "run_math_study_reference.py": "9501fa2e22d842fcb4e1be7c6083328134bb1894860ce4fa7c7969ab33103c8c",
+    "test_durable_stream.py": "3ddab2b52fa3eda72ff198b781c644f3e0589fc6f320444ae3b851017c66aef7",
+    "test_v043_recovery.py": "391da57a8c9d7778ba556e37107805535809d8838539450c0be2d02878505d30",
+    "TRUSTED_KEYS.jsonl": "7fbacceacf3f41be01b724a5f4ad5c473fac25ac61eccfdc621cd8d2e6fbd6c8",
+    "V042_DEVELOPMENT_REFERENCE.md": "bbf16e704d9c1998b381c8b24bcc9ce82c5cb68b1f08603329510c672940cb5e",
+    "V043_OPERATIONS.md": "4d1031859b6f773c5ee1c9a06dbd90d09ee85c4d0204389acdc8c8b441fa64a8"
+  }
+}

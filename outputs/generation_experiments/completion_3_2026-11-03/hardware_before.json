@@ -1,0 +1,7 @@
+{
+  "timestamp_utc": "2026-11-03T17:18:18.742803+00:00",
+  "nvidia_smi": "NVIDIA GeForce RTX 3050 Laptop GPU, 4096 MiB, 470 MiB, 3493 MiB, 1 %",
+  "physical_memory_bytes": 16556580864,
+  "available_physical_memory_bytes": 6907973632,
+  "memory_load_pct": 58
+}

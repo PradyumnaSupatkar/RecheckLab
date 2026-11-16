@@ -1,0 +1,18 @@
+{
+  "version": "v0.4.3",
+  "phase": "frozen_evaluation_recovery_workspace",
+  "protocol_id": "live-study-v0.4.3-qwen3-4b-instruct-math-numeric",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "frozen_gate_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "selection_sha256": "8ad6954a982108fe1cb6d797f12a1e8f007145a8bf298833d45a19f67797b923",
+  "trusted_keys_sha256": "a60c87b409e5b8475430bd21746b69ad8e2fd82f0d9783807fb349da07350650",
+  "generated_utc": "2026-11-16T13:05:07+00:00",
+  "files_sha256": {
+    "EXPERIMENT_MANIFEST.json": "e8cfbe50fe2170732c2b03c5d1eb67b5c8bb07b01568caee33d91c7eb79aa83f",
+    "PRESERVATION_CHECK.json": "192d9d6840e4be03704b4fde46cf5fb1c3c6acd3f7e6b382ff1d7838104d50d2",
+    "QUESTION_SELECTION.jsonl": "8ad6954a982108fe1cb6d797f12a1e8f007145a8bf298833d45a19f67797b923",
+    "RECOVERY_STATE.md": "672413344537dcde29ac045d8ad1e641c611e33db22d59027f7bf15b52323902",
+    "STREAM_JOURNAL.jsonl": "2d467f3b86434ab51c5ec04970b58ba623eee428c1439a77f352107a5fdfdda4",
+    "TRUSTED_KEYS.jsonl": "a60c87b409e5b8475430bd21746b69ad8e2fd82f0d9783807fb349da07350650"
+  }
+}

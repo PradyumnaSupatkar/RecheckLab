@@ -1,0 +1,18 @@
+{
+  "decision": "NO_PROTOCOL_QUALIFIED",
+  "reason": "Neither tested candidate demonstrated sufficiently reliable initial final-answer extraction on fresh paired development questions.",
+  "tested_candidates": {
+    "A_thinking_off_1024": {
+      "thinking": false,
+      "num_predict": 1024
+    },
+    "B_thinking_on_2048": {
+      "thinking": true,
+      "num_predict": 2048
+    }
+  },
+  "recommended_next_step": "Prospectively freeze one additional development-only candidate (suggested: thinking disabled with a larger explicit output budget) on new non-overlapping questions; assess extraction, latency and resources before freezing final-evaluation protocol.",
+  "final_30_to_50_question_evaluation_authorized_or_recommended": false,
+  "frozen_gate": "Retain unchanged as OOD transfer policy only; do not describe predictions as protocol validated.",
+  "manuscript_or_historical_records_modified": false
+}

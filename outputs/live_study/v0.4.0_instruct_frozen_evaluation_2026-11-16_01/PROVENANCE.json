@@ -1,0 +1,60 @@
+{
+  "run": "untouched_frozen_evaluation",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "dataset_sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+  "artifact_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "prompt_sha256": {
+    "initial": "bb686ea99531f548c115886f295fd8fc250fddd98a69d2f0385abeb27c4f52df",
+    "revision": "bf630b1485eeb243b097d50a4ea63f6caa74790e0279cacc38e753d3167db8cf"
+  },
+  "question_selection_sha256": "7f2241d8f72a16f1917a79c11f93264b0a937db4332e34890267668c3ea1265e",
+  "trusted_key_sha256": "902512b6e3625530fd8b0be04593a2bf42ec4f5267dc7b53978a68228afd1a1c",
+  "feature_schema": "pre-recheck-v2",
+  "feature_names": [
+    "question_log_chars",
+    "question_log_words",
+    "question_numbers",
+    "question_math_symbols",
+    "question_marks",
+    "initial_log_chars",
+    "initial_log_words",
+    "initial_unique_word_ratio",
+    "initial_uncertainty_per_100_words",
+    "initial_backtracking_per_100_words",
+    "initial_checking_per_100_words",
+    "initial_number_count",
+    "initial_paragraph_count",
+    "initial_question_marks",
+    "initial_log_actual_tokens",
+    "initial_finalizer_used",
+    "initial_budget_exhausted",
+    "initial_answer_present",
+    "initial_completion_unknown"
+  ],
+  "feature_schema_fingerprint": "9e09eba8571dd2b31fb70fe83cb12191ba0051d620324037cc18cf3cae22e4ca",
+  "class_order": [
+    "HELP",
+    "NO_CHANGE",
+    "HURT"
+  ],
+  "output_sha256": {
+    "COLLECTION_STATUS.json": "c712ac83a62c41c13c03996445e1b1722b89c585dbfed129a17ea2b2106d7a8b",
+    "EVALUATION_RESULTS.md": "d2ffaac83995f4834154fc47ddfb601a6be1ed63dfd175309bf5577890b49e31",
+    "EXPERIMENT_MANIFEST.json": "178b53584e85732b7d2aef0fe7cc8ed8a48aa9bb5b270b9b8b7fccddce112e74",
+    "FILE_INTEGRITY.json": "7ea8455a11d745934552bd9cd3ec171d4ab7ee0b66dff5a235ff7ec9b39f7b83",
+    "FINAL_STATUS.json": "c79ca2d85729d330185f70f3324435e06db6e471c743b099d95a42934c9cfd7e",
+    "GATE_OOD_COMPATIBILITY.md": "0ada27e0427476cf13ddbd061a1240dcf3a846f9f819c2c45796336ce1cb8343",
+    "HARDWARE_BENCHMARK.md": "2330e2fdfe9faed6e29e5663ba4cf8099324cda27b25f53d341436fea191b911",
+    "ML_PREDICTIONS.csv": "264dfa30b57e7a95bbde67e4fd79b4975579bdd995cd8176203c1fcf64639c43",
+    "MODEL_ERRORS.csv": "2a3ce4f24bd75f106918d928dbcb7f678018a1127ad2de224b8ef6518838ce43",
+    "PAIRS.jsonl": "039ef167bc510c5799da6d53d948eedd4d2e90cc269fe09b6cf3b2af900f02c4",
+    "PARSER_FAILURES.csv": "cfb719e280a8636545aa70040dbd30ca6f17ad08a1f10b326fde073931bf008a",
+    "POLICY_COMPARISON.csv": "2e6857b12a22b3ffb7e7926a75520cfb1d46f47d84b7126a49e70e79e04f8a89",
+    "PRESERVATION_BASELINE.json": "c101abddaca3f575d7b6d73c60797464d5b25d21af9352284ce11d6feba4a812",
+    "PRESERVATION_CHECK.json": "eff38ad26d146c1a83c460ac0f094aa8d54b25520f34e87796c9a927b9f5a1b3",
+    "QUESTION_LEVEL.csv": "1b90092521e00afc80b489d9f9c2a08cae1758a8d000a79cf999f2148f102d03",
+    "QUESTION_SELECTION.jsonl": "f019c7ba8f70b1460d8f1bdbfaa4b0b1e841af2e7612ee38310bb524dc2450b9",
+    "RAW_CALLS.jsonl": "0aeb112edbca4fe17db8e4d965e296df6bf562e999f80bbedeffee99d7f7e440",
+    "TRUSTED_KEYS.jsonl": "a8732f31a6cf811d141f950a623010616eab836cfed7a90d12cb323029a91b13"
+  }
+}

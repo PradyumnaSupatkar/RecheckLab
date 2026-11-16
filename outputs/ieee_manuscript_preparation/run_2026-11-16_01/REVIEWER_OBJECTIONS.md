@@ -1,0 +1,20 @@
+# Likely reviewer objections and evidence-based responses
+
+| Likely objection | Honest response / manuscript action | Remaining limitation |
+|---|---|---|
+| “This is a re-analysis of SEVRA, not an independent system evaluation.” | State prominently that outcomes are published recorded-response replay; no new LLM calls occurred. Cite pinned release and make the paired-policy reanalysis the scope. | No fresh generation or live execution; claims are bounded to the response library. |
+| “MATH source test is mislabeled as MATH Level 5.” | Correct it everywhere: SEVRA MATH-training holdout. Report MATH500 as a separate published split. | Official benchmark lineage and upstream key grading are not independently reproduced here. |
+| “The gate does not beat the trivial heuristic.” | Report the negative result directly. CSQA decisions match exactly; source-test accuracy ties and cost is marginally higher; external diagnostics also show no accuracy gain. | A learned advantage is not supported; the central paper claim must be cross-domain evaluation, not gate superiority. |
+| “NO_CHANGE-dominated classifier accuracy is misleading.” | Include macro/weighted F1, per-class precision/recall/F1, support, log loss and confusion matrices. Note HURT recall is zero on source/target tests. | Sparse HURT events limit precision and uncertainty; no safety guarantee. |
+| “Two rollouts are not independent questions.” | Aggregate within canonical question hashes; one question receives weight one; bootstrap whole question clusters. Raw rows and question-equivalent counts are both reported. | Two saved rollouts poorly characterize the complete stochastic generation distribution. |
+| “The bootstrap and p-values are post hoc across many comparisons.” | Make comparisons descriptive, report effect sizes/CIs, mark p-values unadjusted, do not call nonsignificant results equivalent. CSQA sparse-event inference is explicitly inconclusive. | These historical test sets have been inspected repeatedly; no confirmatory status. |
+| “Token savings are not latency or energy savings.” | Use “recorded token-cost reduction” or “replay estimate.” Existing timing audit has no per-call latency observations. | No measured latency, throughput, RAM, energy or dollar savings. |
+| “MATH500/GSM8K protocol may differ from the source gate.” | Verify model family/action and exact action-description hash; feature schema validation passes; report no question overlap. | No raw per-split manifest, checkpoint digest, or complete prompts; label external exploratory replay only. |
+| “Upstream grades or extraction may be wrong.” | Preserve published labels and say they are inherited. Do not silently rescore; point to `DATASET_CARD.md` and prior Phase 3 measurement audit. | Gold answer strings and full upstream grading code are not in this local data release. |
+| “The completion rule may just encode truncation artifacts.” | Call it a completion-status baseline and describe its association with HELP/HURT; distinguish association from causation. | Protocol changes can alter stop/length patterns and invalidate the learned gate. |
+| “The oracle inflates attainable accuracy.” | Keep oracle separate, label hindsight and exclude from attainable Pareto frontier. | It is not an inference-time policy. |
+| “What is new enough for IEEE?” | The contribution is a transparent, paired, cross-domain secondary empirical analysis and a clearly negative learned-vs-heuristic finding. Limit novelty claims to this bounded design. | Publication novelty and acceptance are not established; independent protocol-matched data are necessary for a stronger claim. |
+
+## Recommended response to the central weakness
+
+Do not hide the tied ML gate or add another tuned classifier. Position the work as a rigorous empirical audit of whether lightweight learned gating adds value beyond an inexpensive completion rule, while showing the domain-specific behavior of selective replay. Describe selective rechecking as the studied mechanism, not as an established benefit of machine learning. If the venue requires new original data, this evidence alone is insufficient.

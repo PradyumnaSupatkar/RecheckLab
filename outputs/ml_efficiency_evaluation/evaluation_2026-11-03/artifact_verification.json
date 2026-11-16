@@ -1,0 +1,20 @@
+{
+  "artifact_fingerprints": {
+    "models/source_gate.joblib": true,
+    "reports/policy_results.csv": true,
+    "reports/target_predictions.csv": true,
+    "reports/target_features.csv": true,
+    "reports/split_manifest.json": true,
+    "reports/adaptation_summary.csv": true,
+    "reports/adaptation_runs.csv": true,
+    "reports/model_comparison.csv": true,
+    "reports/adaptation_curve.png": true
+  },
+  "model": "hist_gradient_boosting_balanced",
+  "threshold_unchanged": 0.25968145276947807,
+  "new_training": false,
+  "new_threshold_selection": false,
+  "previously_inspected_partitions": true,
+  "python": "3.12.6",
+  "script_sha256": "8d30d0155e54e5cb282a8c283199c3e54ac3b22c71e20d7ddc25c65ea22ce3b8"
+}

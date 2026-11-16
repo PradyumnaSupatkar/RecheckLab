@@ -1,0 +1,56 @@
+{
+  "experiment": "Separate development pilot: completion correction",
+  "created_utc": "2026-11-16T09:27:33.079199+00:00",
+  "questions": 5,
+  "expected_calls": 10,
+  "single_predeclared_change": {
+    "parameter": "thinking",
+    "base": true,
+    "development": false
+  },
+  "all_other_protocol_settings_unchanged": true,
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.40.16",
+  "protocol_hash": "36e714cc6e5dfa4dbf089a30a382ea26c500b8a41694b2d8cb6465e57f2cae67",
+  "base_protocol_hash": "10918ba33eef2eb97f7c10972fe0db1f48e3250684ece28c54e50520fc91462d",
+  "generation": {
+    "initial_token_budget": 1024,
+    "recheck_token_budget": 1024,
+    "context_window": 4096,
+    "thinking": false,
+    "temperature": 0.0,
+    "initial_seed": 42,
+    "recheck_seed": 43,
+    "top_k": 1,
+    "top_p": 1.0,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "stop": [
+      "<|im_start|>",
+      "<|im_end|>"
+    ],
+    "stream": false
+  },
+  "prompts": {
+    "initial": "Solve the question independently. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or the option letter, as appropriate.",
+    "recheck": "Recheck the saved initial response against the same original question. Keep its answer if justified; change it only if you identify an error. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or option letter.",
+    "initial_messages": "one user: initial prompt + two newlines + original question",
+    "recheck_messages": "same initial user; assistant: full saved initial response; user: recheck prompt"
+  },
+  "question_selection_seed": 20261117,
+  "dataset": {
+    "repository": "openai/gsm8k",
+    "revision": "740312add88f781978c0658806c59bc2815b9866",
+    "split": "main/train",
+    "raw_sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d"
+  },
+  "grading": "same explicit FINAL parser and exact Decimal grading as initial pilot; keys separate from requests",
+  "purpose": "development-only answer-completion check, not evaluation evidence; do not merge into initial-pilot policy metrics",
+  "prompt_sha256": {
+    "initial": "15733ecc4e85755d3e91807e90556ad6e98c7c40a71429f1858a450135777960",
+    "recheck": "09043fabaf77046ef273ec9498b68396bfd41158f90b9f8a94d93067355a22a1",
+    "initial_messages": "75645ee9be694d8953deeb2b4c466c097101730c35d020e3ec914d8b1a6ccba2",
+    "recheck_messages": "29043324b3852e0a68bbb5202777664b6c894d46cadd641438603cd8f7e0de05"
+  }
+}

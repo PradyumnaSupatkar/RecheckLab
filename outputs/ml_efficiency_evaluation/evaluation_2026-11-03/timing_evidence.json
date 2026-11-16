@@ -1,0 +1,11 @@
+{
+  "possible_timing_columns": {
+    "source_development": [],
+    "source_test": [],
+    "target_test": []
+  },
+  "historical_offline_experiment_runtime_seconds": 5.769275000006019,
+  "trustworthy_per_call_LLM_timing_available": false,
+  "measured_LLM_latency_savings_seconds": null,
+  "interpretation": "Offline experiment runtime is not LLM latency. Token savings are recorded replay cost proxies."
+}

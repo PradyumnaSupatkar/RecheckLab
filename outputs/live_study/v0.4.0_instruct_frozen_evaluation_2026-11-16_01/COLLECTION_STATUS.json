@@ -1,0 +1,2766 @@
+{
+  "phase": "untouched_frozen_evaluation",
+  "status": "COMPLETE",
+  "calls_completed": 80,
+  "pairs_completed": 40,
+  "resource_samples": [
+    {
+      "example_id": "gsm8k:train:5841",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826217.1370397,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 4.076,
+        "ram_used_percent": 73.6,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2609,
+          "free_mib": 1487,
+          "utilization_percent": 0
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826222.9079273,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 4.057,
+        "ram_used_percent": 73.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2607,
+          "free_mib": 1489,
+          "utilization_percent": 28
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5841",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826222.958465,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 4.056,
+        "ram_used_percent": 73.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2607,
+          "free_mib": 1489,
+          "utilization_percent": 28
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826229.654744,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 4.067,
+        "ram_used_percent": 73.6,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2607,
+          "free_mib": 1489,
+          "utilization_percent": 39
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4323",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826229.702772,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 4.063,
+        "ram_used_percent": 73.6,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2607,
+          "free_mib": 1489,
+          "utilization_percent": 39
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826233.3716354,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 4.015,
+        "ram_used_percent": 74.0,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2609,
+          "free_mib": 1487,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4323",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826233.427471,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 4.01,
+        "ram_used_percent": 74.0,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2609,
+          "free_mib": 1487,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826237.1955426,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 4.009,
+        "ram_used_percent": 74.0,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2607,
+          "free_mib": 1489,
+          "utilization_percent": 29
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4722",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826237.2513907,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 4.007,
+        "ram_used_percent": 74.0,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2607,
+          "free_mib": 1489,
+          "utilization_percent": 29
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826241.6440246,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.988,
+        "ram_used_percent": 74.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4722",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826241.7017229,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.984,
+        "ram_used_percent": 74.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826246.635955,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.979,
+        "ram_used_percent": 74.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:980",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826246.6995647,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.976,
+        "ram_used_percent": 74.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826251.325225,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.933,
+        "ram_used_percent": 74.5,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:980",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826251.3937452,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.929,
+        "ram_used_percent": 74.5,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826255.5946522,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.937,
+        "ram_used_percent": 74.5,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5733",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826255.6516795,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.933,
+        "ram_used_percent": 74.5,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826261.9843507,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.903,
+        "ram_used_percent": 74.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5733",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826262.0404928,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.905,
+        "ram_used_percent": 74.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826267.8458707,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.898,
+        "ram_used_percent": 74.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 26
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:3484",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826267.9037788,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.901,
+        "ram_used_percent": 74.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 26
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826272.9656982,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.839,
+        "ram_used_percent": 75.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:3484",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826273.0217953,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.841,
+        "ram_used_percent": 75.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826277.3508427,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.819,
+        "ram_used_percent": 75.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 27
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:275",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826277.4115562,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.812,
+        "ram_used_percent": 75.3,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 27
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826283.3403528,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.68,
+        "ram_used_percent": 76.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2613,
+          "free_mib": 1483,
+          "utilization_percent": 28
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:275",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826283.3960636,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.666,
+        "ram_used_percent": 76.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2613,
+          "free_mib": 1483,
+          "utilization_percent": 28
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826289.1932864,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.674,
+        "ram_used_percent": 76.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 30
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:7358",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826289.250692,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.675,
+        "ram_used_percent": 76.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 30
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826295.4678783,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.694,
+        "ram_used_percent": 76.0,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:7358",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826295.5213685,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.69,
+        "ram_used_percent": 76.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826301.9543662,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.686,
+        "ram_used_percent": 76.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 26
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4135",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826302.0033371,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.694,
+        "ram_used_percent": 76.0,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 26
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826307.9882698,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.599,
+        "ram_used_percent": 76.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 25
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4135",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826308.0426044,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.586,
+        "ram_used_percent": 76.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 25
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826313.7324698,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.598,
+        "ram_used_percent": 76.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 31
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:6948",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826313.7790165,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.594,
+        "ram_used_percent": 76.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 31
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826317.8799384,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.529,
+        "ram_used_percent": 77.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:6948",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826317.93889,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.52,
+        "ram_used_percent": 77.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826322.053307,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.527,
+        "ram_used_percent": 77.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 25
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4600",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826322.1062675,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.536,
+        "ram_used_percent": 77.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 25
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826327.9654138,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.504,
+        "ram_used_percent": 77.3,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4600",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826328.0146756,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.504,
+        "ram_used_percent": 77.3,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826333.3154857,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.527,
+        "ram_used_percent": 77.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:2675",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826333.3650844,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.529,
+        "ram_used_percent": 77.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826338.062766,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.509,
+        "ram_used_percent": 77.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:2675",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826338.1121106,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.508,
+        "ram_used_percent": 77.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826342.5957813,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.511,
+        "ram_used_percent": 77.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 29
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4301",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826342.6553175,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.507,
+        "ram_used_percent": 77.3,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 29
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826346.34206,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.487,
+        "ram_used_percent": 77.4,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4301",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826346.399911,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.471,
+        "ram_used_percent": 77.5,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826350.2050624,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.455,
+        "ram_used_percent": 77.6,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2613,
+          "free_mib": 1483,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:396",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826350.2672396,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.452,
+        "ram_used_percent": 77.6,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2613,
+          "free_mib": 1483,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826354.934578,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.426,
+        "ram_used_percent": 77.8,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2607,
+          "free_mib": 1489,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:396",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826354.9845173,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.425,
+        "ram_used_percent": 77.8,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2607,
+          "free_mib": 1489,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826360.5118618,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.453,
+        "ram_used_percent": 77.6,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 26
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:6591",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826360.5672812,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.455,
+        "ram_used_percent": 77.6,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 26
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826365.4984243,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.412,
+        "ram_used_percent": 77.9,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:6591",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826365.5652232,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.398,
+        "ram_used_percent": 78.0,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826370.5062046,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.439,
+        "ram_used_percent": 77.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 25
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5021",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826370.5580003,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.441,
+        "ram_used_percent": 77.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 25
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826374.9133456,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.389,
+        "ram_used_percent": 78.0,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 34
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5021",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826374.9679058,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.384,
+        "ram_used_percent": 78.1,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 34
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826379.72672,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.365,
+        "ram_used_percent": 78.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4885",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826379.7889388,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.361,
+        "ram_used_percent": 78.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826386.0957801,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.328,
+        "ram_used_percent": 78.4,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4885",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826386.1620727,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.31,
+        "ram_used_percent": 78.5,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826391.951987,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.316,
+        "ram_used_percent": 78.5,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 39
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4108",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826392.0151067,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.318,
+        "ram_used_percent": 78.5,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 39
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826398.668999,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.281,
+        "ram_used_percent": 78.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4108",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826398.7272863,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.277,
+        "ram_used_percent": 78.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826405.6534667,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.291,
+        "ram_used_percent": 78.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1817",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826405.7164352,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.287,
+        "ram_used_percent": 78.7,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826413.9570193,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.194,
+        "ram_used_percent": 79.3,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2601,
+          "free_mib": 1495,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1817",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826414.013918,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.206,
+        "ram_used_percent": 79.2,
+        "swap_used_gib": 0.749,
+        "swap_percent": 4.3,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2601,
+          "free_mib": 1495,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826421.2424767,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.257,
+        "ram_used_percent": 78.9,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 39
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4240",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826421.3186424,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.254,
+        "ram_used_percent": 78.9,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 39
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826427.9683142,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.197,
+        "ram_used_percent": 79.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 26
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4240",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826428.02464,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.194,
+        "ram_used_percent": 79.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 26
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826437.243937,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.196,
+        "ram_used_percent": 79.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2601,
+          "free_mib": 1495,
+          "utilization_percent": 26
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:533",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826437.3121035,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.195,
+        "ram_used_percent": 79.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2601,
+          "free_mib": 1495,
+          "utilization_percent": 26
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826442.0187876,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.137,
+        "ram_used_percent": 79.7,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:533",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826442.0761244,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.133,
+        "ram_used_percent": 79.7,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826448.309778,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.101,
+        "ram_used_percent": 79.9,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2613,
+          "free_mib": 1483,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:985",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826448.37848,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.081,
+        "ram_used_percent": 80.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2613,
+          "free_mib": 1483,
+          "utilization_percent": 13
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826454.4650562,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.044,
+        "ram_used_percent": 80.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 26
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:985",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826454.521194,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.064,
+        "ram_used_percent": 80.1,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 26
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826460.0688195,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.069,
+        "ram_used_percent": 80.1,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:3013",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826460.1212847,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.069,
+        "ram_used_percent": 80.1,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826463.7748687,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.049,
+        "ram_used_percent": 80.2,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:3013",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826463.8355165,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.044,
+        "ram_used_percent": 80.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826467.5570529,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.04,
+        "ram_used_percent": 80.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 32
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1736",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826467.6240335,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.039,
+        "ram_used_percent": 80.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 32
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826471.233841,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.012,
+        "ram_used_percent": 80.5,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1736",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826471.29387,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.005,
+        "ram_used_percent": 80.5,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826475.6239965,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.027,
+        "ram_used_percent": 80.4,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:2241",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826475.6838117,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 3.024,
+        "ram_used_percent": 80.4,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826481.0820506,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.992,
+        "ram_used_percent": 80.6,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:2241",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826481.1343672,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.988,
+        "ram_used_percent": 80.6,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826486.4707184,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.995,
+        "ram_used_percent": 80.6,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 39
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5802",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826486.5241587,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.991,
+        "ram_used_percent": 80.6,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 39
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826490.9639094,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.936,
+        "ram_used_percent": 81.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5802",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826491.0234113,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.934,
+        "ram_used_percent": 81.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826495.4925897,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.936,
+        "ram_used_percent": 81.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 26
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:3353",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826495.5518637,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.933,
+        "ram_used_percent": 81.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 26
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826499.3968709,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.9,
+        "ram_used_percent": 81.2,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:3353",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826499.445454,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.898,
+        "ram_used_percent": 81.2,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826503.6125388,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.905,
+        "ram_used_percent": 81.2,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5722",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826503.6669521,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.901,
+        "ram_used_percent": 81.2,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826508.2133098,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.881,
+        "ram_used_percent": 81.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 27
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5722",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826508.2846947,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.878,
+        "ram_used_percent": 81.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 27
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826513.2522964,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.879,
+        "ram_used_percent": 81.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 30
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:6108",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826513.3076012,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.875,
+        "ram_used_percent": 81.4,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 30
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826518.382807,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.78,
+        "ram_used_percent": 82.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 27
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:6108",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826518.4380388,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.772,
+        "ram_used_percent": 82.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2607,
+          "free_mib": 1489,
+          "utilization_percent": 27
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826523.5560732,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.782,
+        "ram_used_percent": 82.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1219",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826523.6244683,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.79,
+        "ram_used_percent": 81.9,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826528.1302283,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.764,
+        "ram_used_percent": 82.1,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1219",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826528.189204,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.761,
+        "ram_used_percent": 82.1,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826532.7549653,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.763,
+        "ram_used_percent": 82.1,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 27
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:3480",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826532.8084328,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.758,
+        "ram_used_percent": 82.1,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 27
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826537.5292768,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.71,
+        "ram_used_percent": 82.4,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:3480",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826537.5929227,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.702,
+        "ram_used_percent": 82.5,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826542.3447652,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.709,
+        "ram_used_percent": 82.4,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:6714",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826542.4068148,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.706,
+        "ram_used_percent": 82.4,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826548.4678805,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.716,
+        "ram_used_percent": 82.4,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 27
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:6714",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826548.5290997,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.714,
+        "ram_used_percent": 82.4,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 27
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826556.1986153,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.708,
+        "ram_used_percent": 82.4,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 39
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1129",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826556.2639415,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.71,
+        "ram_used_percent": 82.4,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 39
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826561.1098275,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.65,
+        "ram_used_percent": 82.8,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 28
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1129",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826561.1645076,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.646,
+        "ram_used_percent": 82.8,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2606,
+          "free_mib": 1490,
+          "utilization_percent": 28
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826566.0241818,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.661,
+        "ram_used_percent": 82.7,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1506",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826566.0901177,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.66,
+        "ram_used_percent": 82.7,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826571.4391353,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.625,
+        "ram_used_percent": 83.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1506",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826571.5022998,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.621,
+        "ram_used_percent": 83.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826577.2720761,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.625,
+        "ram_used_percent": 83.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5712",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826577.334549,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.621,
+        "ram_used_percent": 83.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826583.012139,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.516,
+        "ram_used_percent": 83.7,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 34
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5712",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826583.0843978,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.503,
+        "ram_used_percent": 83.8,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 34
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826588.2864206,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.524,
+        "ram_used_percent": 83.6,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5388",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826588.3360999,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.525,
+        "ram_used_percent": 83.6,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 35
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826593.7256753,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.484,
+        "ram_used_percent": 83.9,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:5388",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826593.7796428,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.468,
+        "ram_used_percent": 84.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826599.510392,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.479,
+        "ram_used_percent": 83.9,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:2050",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826599.5792215,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.475,
+        "ram_used_percent": 83.9,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 38
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826604.219691,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.424,
+        "ram_used_percent": 84.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:2050",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826604.273662,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.42,
+        "ram_used_percent": 84.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826608.4230697,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.428,
+        "ram_used_percent": 84.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1663",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826608.4849946,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.421,
+        "ram_used_percent": 84.3,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 37
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826612.7530777,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.399,
+        "ram_used_percent": 84.4,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:1663",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826612.8066077,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.398,
+        "ram_used_percent": 84.5,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 36
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826617.1324759,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.372,
+        "ram_used_percent": 84.6,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2638,
+          "free_mib": 1458,
+          "utilization_percent": 24
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4353",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826617.210667,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.367,
+        "ram_used_percent": 84.6,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2638,
+          "free_mib": 1458,
+          "utilization_percent": 24
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826620.8589551,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.327,
+        "ram_used_percent": 84.9,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2613,
+          "free_mib": 1483,
+          "utilization_percent": 36
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:4353",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826620.9113507,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.317,
+        "ram_used_percent": 85.0,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2613,
+          "free_mib": 1483,
+          "utilization_percent": 12
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826625.4754703,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.339,
+        "ram_used_percent": 84.8,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 28
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:2405",
+      "phase": "initial",
+      "before": {
+        "timestamp_unix": 1794826625.5295737,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.343,
+        "ram_used_percent": 84.8,
+        "swap_used_gib": 0.754,
+        "swap_percent": 4.4,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 28
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826637.8334908,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.624,
+        "ram_used_percent": 83.0,
+        "swap_used_gib": 0.647,
+        "swap_percent": 3.8,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2632,
+          "free_mib": 1464,
+          "utilization_percent": 29
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k:train:2405",
+      "phase": "revision",
+      "before": {
+        "timestamp_unix": 1794826637.8875735,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.627,
+        "ram_used_percent": 83.0,
+        "swap_used_gib": 0.647,
+        "swap_percent": 3.8,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2632,
+          "free_mib": 1464,
+          "utilization_percent": 29
+        }
+      },
+      "after": {
+        "timestamp_unix": 1794826645.5019288,
+        "total_ram_gib": 15.42,
+        "free_ram_gib": 2.637,
+        "ram_used_percent": 82.9,
+        "swap_used_gib": 0.647,
+        "swap_percent": 3.8,
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+          "total_mib": 4096,
+          "used_mib": 2605,
+          "free_mib": 1491,
+          "utilization_percent": 27
+        }
+      }
+    }
+  ],
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "last_call": {
+    "example_id": "gsm8k:train:2405",
+    "phase": "revision",
+    "completion_reason": "stop",
+    "parse_status": "parseable",
+    "failure_type": "none",
+    "tokens": {
+      "prompt_tokens": 327,
+      "output_tokens": 138,
+      "total_tokens": 465
+    },
+    "wall_clock_seconds": 7.562799300001643
+  },
+  "last_pair": {
+    "example_id": "gsm8k:train:2405",
+    "initial_parse_valid": true,
+    "revision_parse_valid": true,
+    "initial_done_reason": "stop",
+    "revision_done_reason": "stop",
+    "outcome": "NO_CHANGE"
+  },
+  "completed_pairs": 40,
+  "final_resource": {
+    "timestamp_unix": 1794826645.560309,
+    "total_ram_gib": 15.42,
+    "free_ram_gib": 2.643,
+    "ram_used_percent": 82.9,
+    "swap_used_gib": 0.647,
+    "swap_percent": 3.8,
+    "gpu": {
+      "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "total_mib": 4096,
+      "used_mib": 2605,
+      "free_mib": 1491,
+      "utilization_percent": 27
+    }
+  }
+}

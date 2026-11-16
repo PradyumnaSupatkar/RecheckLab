@@ -1,0 +1,52 @@
+Recorded-only UI update - 4 October 2026
+
+Changed app.py, README.md, GUIDE_PROGRESS.md and test_streamlit_app.py.
+Added verify_recorded_policies.py and test_recorded_policy_results.py.
+No model training or LLM inference executed; existing experiment data,
+model, thresholds, policy tables and adaptation figure were preserved.
+
+Exactly two tabs: Demo and Results. Demo has one recorded-example
+selector and Should I recheck? button; no Custom input, text fields,
+metadata widgets, radio options or numeric controls. The saved initial
+extraction is read automatically and displayed read-only. Required
+initial tokens/completion/finalizer values come from the selected record.
+Prediction uses the shared feature and decision functions. Revised
+responses and correctness remain hidden until prediction is requested.
+Changing records hides previous predictions/outcomes.
+
+Command: .\.venv\Scripts\python.exe -m unittest discover -s tests -v
+Exit 0: 49 tests passed in 6.928 seconds, including 8 Streamlit/UI checks
+and 3 independent recorded-policy consistency checks. Both Recheck and
+Skip outcomes/probabilities matched their selected evaluation row.
+
+Command: .\.venv\Scripts\python.exe scripts\check_dashboard.py
+Exit 0: temporary Streamlit health and app-shell endpoints HTTP 200.
+Server stopped afterward; interaction was verified with AppTest.
+
+Command: .\.venv\Scripts\python.exe scripts\verify_baseline.py
+Exit 0: all 24 original v0.1/raw files unchanged.
+
+Command: .\.venv\Scripts\python.exe scripts\verify_recorded_policies.py --write-report
+Exit 0: all 5 target policy rows, 25 adaptation runs and their summaries
+match independent recomputation from recorded correctness and tokens.
+Saved features, probabilities, cutoffs and all initial metadata agree.
+
+Completion rule, frozen gate and predeclared adapted gate recheck exactly
+the same 50 rollout rows from 25/733 questions: 0 mismatches. Their
+identical 76.67% accuracy and replay costs are real agreements on this
+test set. The two learned thresholds lie in the same empty score gap.
+
+The table's adapted policy is a single predeclared run (200 adaptation
+questions, first subset). The plot shows mean and SD across 5 repeated
+subsets at each budget. At 200 labels mean accuracy is 76.59%, SD 0.18
+percentage points. No tested budget beats the frozen gate in mean accuracy.
+These findings do not establish an advantage over the completion rule.
+
+Initial answers reuse the public record's saved parser output, including
+44 nonstandard extraction strings. Reparsing with the optional collector
+parser would lose 48 responses, including 4 recorded standard choices.
+Extraction errors are retained honestly; no answer or metadata is invented.
+
+Custom questions require an actual compatible backend with automatic
+initial-response and metadata collection. None is connected to this UI;
+optional real-LLM collection remains the documented separate CLI.

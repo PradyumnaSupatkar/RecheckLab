@@ -1,0 +1,44 @@
+0/1500 pairs | gsm8k:train:3082 | initial
+0/1500 pairs | gsm8k:train:3082 | recheck
+Saved gsm8k:train:3082: NO_CHANGE; actual tokens 515 + 833
+1/1500 pairs | commonsenseqa:train:d6d804699e63c3dbdd5a50f57228e6bf | initial
+1/1500 pairs | commonsenseqa:train:d6d804699e63c3dbdd5a50f57228e6bf | recheck
+Saved commonsenseqa:train:d6d804699e63c3dbdd5a50f57228e6bf: NO_CHANGE; actual tokens 941 + 1375
+2/1500 pairs | gsm8k:train:2184 | initial
+2/1500 pairs | gsm8k:train:2184 | recheck
+Saved gsm8k:train:2184: NO_CHANGE; actual tokens 937 + 1508
+3/1500 pairs | commonsenseqa:train:33f146f78cc4aff35ebea1c6b6a94a1a | initial
+3/1500 pairs | commonsenseqa:train:33f146f78cc4aff35ebea1c6b6a94a1a | recheck
+Saved commonsenseqa:train:33f146f78cc4aff35ebea1c6b6a94a1a: NO_CHANGE; actual tokens 702 + 1383
+{
+  "status": "PARTIAL",
+  "phase": "smoke",
+  "session_id": "edb8916ec3cb4fec8c1bad882d9fbbe9",
+  "started_at": "2026-10-04T18:47:18.835701+00:00",
+  "ended_at": "2026-10-04T18:51:46.761977+00:00",
+  "minutes_budget": 15.0,
+  "protocol_hash": "9f3f34ab0d1639c814322c3eee4cd581dd893e98f6d43498d72dd0d2376afcb9",
+  "errors": [],
+  "planned_unique_questions": 1500,
+  "command": "scripts/collect_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.0 --minutes 15.0",
+  "elapsed_seconds": 267.92200000000594,
+  "completed_pairs": 4,
+  "completed_unique_questions": 4,
+  "completed_by_partition": {
+    "source_train": 2,
+    "target_adaptation_pool": 2
+  },
+  "class_counts": {
+    "NO_CHANGE": 4
+  },
+  "call_events": 16,
+  "successful_calls": 8,
+  "failed_calls": 0,
+  "parse_failures": 0,
+  "remaining_questions": 1496,
+  "measured_pairs_per_hour": 55.105965731708196,
+  "estimated_remaining_hours": 27.147695900721608,
+  "eta_basis": "sum of measured successful call wall times; includes first-call cold load; cache/backend overhead not controlled",
+  "smoke_status": "COMPLETE",
+  "stop_reason": "all selected smoke questions complete"
+}

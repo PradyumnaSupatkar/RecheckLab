@@ -1,0 +1,82 @@
+{
+  "frozen_before_inference": true,
+  "selection_seed": 20261116,
+  "rule": "Uniform seeded permutation among canonical-unique GSM8K main/train questions after excluding all exact canonical group hashes in the fixed v0.3.0-v0.3.2 manifests and v0.2 source/target predictions/prepared partitions and locally cached historical query records. No outcomes, difficulty, or gate decisions used.",
+  "candidate_pool_rows": 7473,
+  "canonical_unique_candidates": 7473,
+  "excluded_overlap_unique_groups": 800,
+  "eligible_unique_groups": 6673,
+  "live_manifest_files": [
+    "outputs\\live_study\\v0.3.0\\questions.jsonl",
+    "outputs\\live_study\\v0.3.1\\questions.jsonl",
+    "outputs\\live_study\\v0.3.2\\questions.jsonl"
+  ],
+  "live_planned_unique_groups": 1500,
+  "recorded_v0_2_and_prepared_groups": 3220,
+  "local_raw_query_groups": 5039,
+  "selected_questions": [
+    {
+      "example_id": "gsm8k:train:1323",
+      "group_id": "f427a9a66d5a8687b48afa6507664bce8bd2b5daa325487e64e7ef62ec3bcc41",
+      "source_split": "train",
+      "source_question_id": "1323"
+    },
+    {
+      "example_id": "gsm8k:train:7421",
+      "group_id": "d0e83f34baff1b7c9ff41ce934deb4b1b2ef0eb5f98d27d380d93ff08c734ae4",
+      "source_split": "train",
+      "source_question_id": "7421"
+    },
+    {
+      "example_id": "gsm8k:train:1580",
+      "group_id": "0caeb2f2e7eb3203242062e1d8eab4c44aa2bcfbc4c20245d9e24457c5b5da91",
+      "source_split": "train",
+      "source_question_id": "1580"
+    },
+    {
+      "example_id": "gsm8k:train:876",
+      "group_id": "1576e0e029ea8dce6d81a7064f7f3dcf27e398894eb13b1c716835d52c7edb9c",
+      "source_split": "train",
+      "source_question_id": "876"
+    },
+    {
+      "example_id": "gsm8k:train:5093",
+      "group_id": "2bb4e3bec1a883e3241ba050b9af1b6b82dad7f8c0d6a1de367857e1b1f467c3",
+      "source_split": "train",
+      "source_question_id": "5093"
+    },
+    {
+      "example_id": "gsm8k:train:551",
+      "group_id": "5c65dcc3d6f75e6a3ca742e8981b9c21199420164d97c178025f05d28ca63c23",
+      "source_split": "train",
+      "source_question_id": "551"
+    },
+    {
+      "example_id": "gsm8k:train:1952",
+      "group_id": "1b86bd84c0c992d0abd5c8c172fe95a649943a04bf97e8e04a4f3219fc1d676c",
+      "source_split": "train",
+      "source_question_id": "1952"
+    },
+    {
+      "example_id": "gsm8k:train:4130",
+      "group_id": "9971baa01784ee6c97be0463097254eeb19c44ada2826309edd3b117f3ded0ff",
+      "source_split": "train",
+      "source_question_id": "4130"
+    }
+  ],
+  "gold_keys_separate_file": "trusted_keys.jsonl",
+  "question_manifest_sha256": "7b3c8716723293521fdb37d12af31ecac80afca25067dafeed5840f19ac8ed01",
+  "trusted_key_sha256": "b60084764541515031205c5d65201905175509ac8b80a3c8f6b7c5c9cee0b33a",
+  "duplicate_audit": {
+    "cross_boundary_overlapping_question_groups": 0,
+    "pools": {
+      "gsm8k_train": {
+        "original_rows": 7473,
+        "retained_unique_questions": 7473,
+        "removed_within_pool_duplicate_rows": 0,
+        "excluded_cross_boundary_overlap_rows": 0
+      }
+    },
+    "exclusion_rule": "Exclude every cross-original-split/domain overlapping group; keep first pinned row for within-split duplicates before seeded selection."
+  }
+}

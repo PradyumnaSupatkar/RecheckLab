@@ -1,0 +1,31 @@
+cohort,questions,rows,duplicate_rollout_groups,max_rollouts_per_question,missing_completion_rows,action_description_hash_matches_frozen,model_matches_frozen,action_matches_frozen
+MATH source development,400.0,401.0,1.0,2.0,0.0,,,
+MATH source test,400.0,400.0,0.0,1.0,0.0,,,
+CommonsenseQA target test,733.0,1466.0,733.0,2.0,0.0,,,
+MATH500,500.0,1000.0,500.0,2.0,0.0,,,
+GSM8K,1319.0,2638.0,1319.0,2.0,0.0,,,
+OVERLAP:MATH source development vs MATH source test,0.0,,,,,,,
+OVERLAP:MATH source development vs CommonsenseQA target test,0.0,,,,,,,
+OVERLAP:MATH source development vs MATH500,0.0,,,,,,,
+OVERLAP:MATH source development vs GSM8K,0.0,,,,,,,
+OVERLAP:MATH source test vs CommonsenseQA target test,0.0,,,,,,,
+OVERLAP:MATH source test vs MATH500,0.0,,,,,,,
+OVERLAP:MATH source test vs GSM8K,0.0,,,,,,,
+OVERLAP:CommonsenseQA target test vs MATH500,0.0,,,,,,,
+OVERLAP:CommonsenseQA target test vs GSM8K,0.0,,,,,,,
+OVERLAP:MATH500 vs GSM8K,0.0,,,,,,,
+OVERLAP:source_train vs MATH source development,0.0,,,,,,,
+OVERLAP:source_train vs MATH source test,0.0,,,,,,,
+OVERLAP:source_train vs CommonsenseQA target test,0.0,,,,,,,
+OVERLAP:source_train vs MATH500,0.0,,,,,,,
+OVERLAP:source_train vs GSM8K,0.0,,,,,,,
+OVERLAP:target_adaptation_pool vs MATH source development,0.0,,,,,,,
+OVERLAP:target_adaptation_pool vs MATH source test,0.0,,,,,,,
+OVERLAP:target_adaptation_pool vs CommonsenseQA target test,0.0,,,,,,,
+OVERLAP:target_adaptation_pool vs MATH500,0.0,,,,,,,
+OVERLAP:target_adaptation_pool vs GSM8K,0.0,,,,,,,
+PROTOCOL:MATH source development,,,,,,True,True,True
+PROTOCOL:MATH source test,,,,,,True,True,True
+PROTOCOL:CommonsenseQA target test,,,,,,True,True,True
+PROTOCOL:MATH500,,,,,,True,True,True
+PROTOCOL:GSM8K,,,,,,True,True,True

@@ -1,0 +1,1312 @@
+{
+  "schema_version": 1,
+  "study_version": "v0.3.1",
+  "overall_status": "PARTIAL",
+  "generated_at": "2026-10-21T20:37:39.635124+00:00",
+  "study_root": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1",
+  "stages": {
+    "implementation": {
+      "status": "IMPLEMENTED",
+      "evidence": "Pinned preparation, shared frozen protocol, durable bounded collection, guarded training/evaluation and diagnostic handoff; execution statuses are separate."
+    },
+    "collection": {
+      "status": "BLOCKED",
+      "reason": "{'error': 'Backend ollama_version changed; create a new protocol version.', 'error_type': 'ValueError', 'traceback': 'Traceback (most recent call last):\\n  File \"C:\\\\Users\\\\Pradyumna\\\\Downloads\\\\RecheckLab_Prototype_v0.1\\\\recheck_transfer\\\\rechecklab\\\\study_collection.py\", line 224, in collect_study\\n    verify_backend(protocol, host)\\n  File \"C:\\\\Users\\\\Pradyumna\\\\Downloads\\\\RecheckLab_Prototype_v0.1\\\\recheck_transfer\\\\rechecklab\\\\study_protocol.py\", line 169, in verify_backend\\n    raise ValueError(f\"Backend {key} changed; create a new protocol version.\")\\nValueError: Backend ollama_version changed; create a new protocol version.\\n'}"
+    },
+    "training_adaptation": {
+      "status": "INCOMPLETE",
+      "reason": "Source training lacks genuine outcome classes: HURT; No fixed source classifier/threshold exists."
+    },
+    "evaluation": {
+      "status": "NOT_RUN",
+      "not_run_reasons": [
+        "Planned source-test, target-test or target-adaptation pairs are incomplete."
+      ]
+    },
+    "live_integration": {
+      "status": "INCOMPLETE",
+      "not_run_reasons": [
+        "Shared live/collection implementation is implemented and tested; no newly trained and independently evaluated study gate exists to activate."
+      ]
+    }
+  },
+  "counts_by_partition": {
+    "source_train": {
+      "domain": "maths",
+      "planned_questions": 600,
+      "manifest_questions": 600,
+      "completed_unique_questions": 11,
+      "completed_pairs": 11,
+      "class_counts": {
+        "HELP": 2,
+        "HURT": 0,
+        "NO_CHANGE": 9
+      }
+    },
+    "source_development": {
+      "domain": "maths",
+      "planned_questions": 200,
+      "manifest_questions": 200,
+      "completed_unique_questions": 11,
+      "completed_pairs": 11,
+      "class_counts": {
+        "HELP": 2,
+        "HURT": 0,
+        "NO_CHANGE": 9
+      }
+    },
+    "source_test": {
+      "domain": "maths",
+      "planned_questions": 200,
+      "manifest_questions": 200,
+      "completed_unique_questions": 10,
+      "completed_pairs": 10,
+      "class_counts": {
+        "HELP": 2,
+        "HURT": 0,
+        "NO_CHANGE": 8
+      }
+    },
+    "target_adaptation_pool": {
+      "domain": "commonsenseqa",
+      "planned_questions": 200,
+      "manifest_questions": 200,
+      "completed_unique_questions": 10,
+      "completed_pairs": 10,
+      "class_counts": {
+        "HELP": 6,
+        "HURT": 0,
+        "NO_CHANGE": 4
+      }
+    },
+    "target_test": {
+      "domain": "commonsenseqa",
+      "planned_questions": 300,
+      "manifest_questions": 300,
+      "completed_unique_questions": 10,
+      "completed_pairs": 10,
+      "class_counts": {
+        "HELP": 8,
+        "HURT": 0,
+        "NO_CHANGE": 2
+      }
+    }
+  },
+  "planned_by_domain": {
+    "commonsenseqa": 500,
+    "maths": 1000
+  },
+  "collection": {
+    "planned_questions": 1500,
+    "manifest_unique_questions": 1500,
+    "completed_unique_questions": 52,
+    "completed_pairs": 52,
+    "raw_pair_rows": 52,
+    "unverified_pair_rows": 0,
+    "pair_audit": {
+      "status": "COMPLETE",
+      "reason": "Training's read-only protocol/manifest/journal/key audit passed; no fitting was performed."
+    },
+    "rejected_pair_rows": 0,
+    "failed_calls": 0,
+    "cancelled_no_request_calls": 0,
+    "resolved_uncertain_calls": 0,
+    "retry_calls": 0,
+    "unfinished_calls": 0,
+    "missing_initial_calls": 1447,
+    "missing_recheck_calls": 1448,
+    "initial_parse_failures": 24,
+    "recheck_parse_failures": 3,
+    "class_counts": {
+      "HELP": 20,
+      "HURT": 0,
+      "NO_CHANGE": 32
+    },
+    "call_accounting": {
+      "successful_calls": 105,
+      "actual_prompt_tokens": 55657,
+      "actual_generated_tokens": 70413,
+      "measured_call_wall_seconds": 3484.659419900012,
+      "timing_treatment": "Measured individual calls include cold load where logged; backend caching is uncontrolled. Policy latency is not measured end to end here."
+    },
+    "recorded_status": {
+      "status": "BLOCKED",
+      "phase": "collection",
+      "session_id": "fa0ed04440004f8a8520fea7abe66155",
+      "started_at": "2026-10-21T20:37:21.654897+00:00",
+      "ended_at": "2026-10-21T20:37:28.243833+00:00",
+      "minutes_budget": 480.0,
+      "protocol_hash": "f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+      "errors": [
+        {
+          "error": "Backend ollama_version changed; create a new protocol version.",
+          "error_type": "ValueError",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\rechecklab\\study_collection.py\", line 224, in collect_study\n    verify_backend(protocol, host)\n  File \"C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\rechecklab\\study_protocol.py\", line 169, in verify_backend\n    raise ValueError(f\"Backend {key} changed; create a new protocol version.\")\nValueError: Backend ollama_version changed; create a new protocol version.\n"
+        }
+      ],
+      "planned_unique_questions": 1500,
+      "command": "scripts/collect_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1 --minutes 480.0",
+      "elapsed_seconds": 6.609000000000378,
+      "completed_pairs": 52,
+      "completed_unique_questions": 52,
+      "completed_by_partition": {
+        "source_train": 11,
+        "target_adaptation_pool": 10,
+        "source_development": 11,
+        "source_test": 10,
+        "target_test": 10
+      },
+      "class_counts": {
+        "NO_CHANGE": 32,
+        "HELP": 20
+      },
+      "call_events": 210,
+      "successful_calls": 105,
+      "failed_calls": 0,
+      "parse_failures": 28,
+      "remaining_questions": 1448,
+      "measured_pairs_per_hour": 53.72117542705838,
+      "estimated_remaining_hours": 26.953989529995816,
+      "eta_basis": "sum of measured successful call wall times; includes first-call cold load; cache/backend overhead not controlled",
+      "stop_reason": "validation/backend/resume blocked"
+    }
+  },
+  "protocol": {
+    "path": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\\protocol.json",
+    "hash": "f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+    "frozen": true,
+    "details": {
+      "protocol_version": "live-study-v0.3.1",
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "backend": {
+        "ollama_version": "0.40.3",
+        "installed_model": {
+          "name": "qwen3:4b",
+          "model": "qwen3:4b",
+          "modified_at": "2026-10-04T22:16:58.0498628+05:30",
+          "size": 2497293931,
+          "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen3",
+            "families": [
+              "qwen3"
+            ],
+            "parameter_size": "4.0B",
+            "quantization_level": "Q4_K_M",
+            "context_length": 262144,
+            "embedding_length": 2560,
+            "runner": "ggml"
+          },
+          "capabilities": [
+            "completion",
+            "tools",
+            "thinking"
+          ]
+        },
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "4.0B",
+          "quantization_level": "Q4_K_M"
+        },
+        "model_info": {
+          "general.architecture": "qwen3",
+          "general.basename": "Qwen3",
+          "general.file_type": 15,
+          "general.finetune": "Thinking",
+          "general.license": "apache-2.0",
+          "general.license.link": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/main/LICENSE",
+          "general.parameter_count": 4022468096,
+          "general.quantization_version": 2,
+          "general.size_label": "4B",
+          "general.tags": [
+            "text-generation"
+          ],
+          "general.type": "model",
+          "general.version": "2507",
+          "qwen3.attention.head_count": 32,
+          "qwen3.attention.head_count_kv": 8,
+          "qwen3.attention.key_length": 128,
+          "qwen3.attention.layer_norm_rms_epsilon": 1e-06,
+          "qwen3.attention.value_length": 128,
+          "qwen3.block_count": 36,
+          "qwen3.context_length": 262144,
+          "qwen3.embedding_length": 2560,
+          "qwen3.feed_forward_length": 9728,
+          "qwen3.rope.freq_base": 5000000,
+          "tokenizer.ggml.add_bos_token": false,
+          "tokenizer.ggml.bos_token_id": 151643,
+          "tokenizer.ggml.eos_token_id": 151645,
+          "tokenizer.ggml.merges": [],
+          "tokenizer.ggml.model": "gpt2",
+          "tokenizer.ggml.padding_token_id": 151643,
+          "tokenizer.ggml.pre": "qwen2",
+          "tokenizer.ggml.token_type": [],
+          "tokenizer.ggml.tokens": []
+        },
+        "supported_thinking": {
+          "values": [
+            true
+          ],
+          "default": true
+        },
+        "template": "{{- $lastUserIdx := -1 -}}\n{{- range $idx, $msg := .Messages -}}\n{{- if eq $msg.Role \"user\" }}{{ $lastUserIdx = $idx }}{{ end -}}\n{{- end }}\n{{- if or .System .Tools }}<|im_start|>system\n{{ if .System }}{{ .System }}\n\n{{ end }}\n{{- if .Tools }}# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end -}}\n<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if (and $.IsThinkSet (and .Thinking (or $last (gt $i $lastUserIdx)))) -}}\n<think>{{ .Thinking }}</think>\n{{ end -}}\n{{ if .Content }}{{ .Content }}{{ end }}\n{{- if .ToolCalls }}\n{{- range .ToolCalls }}\n<tool_call>\n{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n</tool_call>\n{{- end }}\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n<think>\n{{ end }}\n{{- end }}",
+        "parameters": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95",
+        "capabilities": [
+          "completion",
+          "tools",
+          "thinking"
+        ]
+      },
+      "prompts": {
+        "initial": "Solve the question independently. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or the option letter, as appropriate.",
+        "recheck": "Recheck the saved initial response against the same original question. Keep its answer if justified; change it only if you identify an error. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or option letter.",
+        "initial_messages": "one user: initial prompt + two newlines + original question",
+        "recheck_messages": "same initial user; assistant: full saved initial response; user: recheck prompt"
+      },
+      "generation": {
+        "initial_token_budget": 1024,
+        "recheck_token_budget": 1024,
+        "context_window": 4096,
+        "thinking": true,
+        "temperature": 0.0,
+        "initial_seed": 42,
+        "recheck_seed": 43,
+        "top_k": 1,
+        "top_p": 1.0,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "stop": [
+          "<|im_start|>",
+          "<|im_end|>"
+        ],
+        "stream": false
+      },
+      "finalizer": {
+        "enabled": false,
+        "calls": 0
+      },
+      "parser": {
+        "version": "explicit-final-v1",
+        "numeric": "explicit FINAL marker; finite decimal/fraction; comma/currency normalization",
+        "choice": "explicit FINAL marker; single A-E option letter; optional parentheses/punctuation",
+        "open": "explicit FINAL marker only",
+        "unparseable": "record parsing failure; completed call scored incorrect offline"
+      },
+      "grader": {
+        "version": "decimal-exact-choice-v1",
+        "numeric": "exact Decimal equality; no floating tolerance",
+        "choice": "exact normalized letter equality",
+        "keys": "separate offline file; never in call or feature inputs"
+      },
+      "transport": {
+        "timeout_seconds": 120,
+        "automatic_retries": 0,
+        "explicit_retry_limit": 2,
+        "ambiguous_started_calls": "block resume until operator resolves; never silently repeat",
+        "session_budget": "do not start calls after deadline; bound each call by remaining time"
+      },
+      "sampling": "one initial call and one separate recheck per question; offline recheck EVERY question",
+      "runtime_treatment": "no warm-up call; first-call cold load included; backend caching uncontrolled and actual durations logged",
+      "historical_comparison": {
+        "sevra_checkpoint_digest": "unknown",
+        "sevra_prompts": "unknown",
+        "sevra_context": "unknown",
+        "sevra_initial_budget": 4096,
+        "sevra_finalizer_max_tokens": 512,
+        "difference": "new pinned Thinking-2507 local checkpoint, explicit prompts/decoding, 1024-token calls, no finalizer; independent study"
+      },
+      "references": [
+        "https://github.com/ollama/ollama/blob/main/docs/api.md",
+        "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507"
+      ]
+    },
+    "numeric_precision_limitation": "The frozen numeric normalizer uses Python Decimal's default precision 28. Precision-sensitive normalization must be audited; precision-preserving parser/grader changes require a new protocol version."
+  },
+  "smoke": {
+    "recorded_status": {
+      "status": "PARTIAL",
+      "phase": "smoke",
+      "session_id": "c4c5516f4f56463e8c2576a1d9bb150a",
+      "started_at": "2026-10-12T14:12:33.406197+00:00",
+      "ended_at": "2026-10-12T14:17:07.674085+00:00",
+      "minutes_budget": 60.0,
+      "protocol_hash": "f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+      "errors": [],
+      "planned_unique_questions": 1500,
+      "command": "scripts/collect_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1 --minutes 60.0",
+      "elapsed_seconds": 274.2659999999996,
+      "completed_pairs": 4,
+      "completed_unique_questions": 4,
+      "completed_by_partition": {
+        "source_train": 2,
+        "target_adaptation_pool": 2
+      },
+      "class_counts": {
+        "NO_CHANGE": 4
+      },
+      "call_events": 16,
+      "successful_calls": 8,
+      "failed_calls": 0,
+      "parse_failures": 0,
+      "remaining_questions": 1496,
+      "measured_pairs_per_hour": 53.79554232174606,
+      "estimated_remaining_hours": 27.80899560511102,
+      "eta_basis": "sum of measured successful call wall times; includes first-call cold load; cache/backend overhead not controlled",
+      "smoke_status": "COMPLETE",
+      "stop_reason": "all selected smoke questions complete"
+    },
+    "completed_pairs": 4,
+    "protocol_hash": "f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+    "promoted_unique_pairs": 4,
+    "partitions": {
+      "source_train": 2,
+      "target_adaptation_pool": 2
+    },
+    "candidate_protocol_path": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\\candidate_protocol.json",
+    "candidate_protocol": {
+      "protocol_version": "live-study-v0.3.1",
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "backend": {
+        "ollama_version": "0.40.3",
+        "installed_model": {
+          "name": "qwen3:4b",
+          "model": "qwen3:4b",
+          "modified_at": "2026-10-04T22:16:58.0498628+05:30",
+          "size": 2497293931,
+          "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen3",
+            "families": [
+              "qwen3"
+            ],
+            "parameter_size": "4.0B",
+            "quantization_level": "Q4_K_M",
+            "context_length": 262144,
+            "embedding_length": 2560,
+            "runner": "ggml"
+          },
+          "capabilities": [
+            "completion",
+            "tools",
+            "thinking"
+          ]
+        },
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "4.0B",
+          "quantization_level": "Q4_K_M"
+        },
+        "model_info": {
+          "general.architecture": "qwen3",
+          "general.basename": "Qwen3",
+          "general.file_type": 15,
+          "general.finetune": "Thinking",
+          "general.license": "apache-2.0",
+          "general.license.link": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/main/LICENSE",
+          "general.parameter_count": 4022468096,
+          "general.quantization_version": 2,
+          "general.size_label": "4B",
+          "general.tags": [
+            "text-generation"
+          ],
+          "general.type": "model",
+          "general.version": "2507",
+          "qwen3.attention.head_count": 32,
+          "qwen3.attention.head_count_kv": 8,
+          "qwen3.attention.key_length": 128,
+          "qwen3.attention.layer_norm_rms_epsilon": 1e-06,
+          "qwen3.attention.value_length": 128,
+          "qwen3.block_count": 36,
+          "qwen3.context_length": 262144,
+          "qwen3.embedding_length": 2560,
+          "qwen3.feed_forward_length": 9728,
+          "qwen3.rope.freq_base": 5000000,
+          "tokenizer.ggml.add_bos_token": false,
+          "tokenizer.ggml.bos_token_id": 151643,
+          "tokenizer.ggml.eos_token_id": 151645,
+          "tokenizer.ggml.merges": [],
+          "tokenizer.ggml.model": "gpt2",
+          "tokenizer.ggml.padding_token_id": 151643,
+          "tokenizer.ggml.pre": "qwen2",
+          "tokenizer.ggml.token_type": [],
+          "tokenizer.ggml.tokens": []
+        },
+        "supported_thinking": {
+          "values": [
+            true
+          ],
+          "default": true
+        },
+        "template": "{{- $lastUserIdx := -1 -}}\n{{- range $idx, $msg := .Messages -}}\n{{- if eq $msg.Role \"user\" }}{{ $lastUserIdx = $idx }}{{ end -}}\n{{- end }}\n{{- if or .System .Tools }}<|im_start|>system\n{{ if .System }}{{ .System }}\n\n{{ end }}\n{{- if .Tools }}# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end -}}\n<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if (and $.IsThinkSet (and .Thinking (or $last (gt $i $lastUserIdx)))) -}}\n<think>{{ .Thinking }}</think>\n{{ end -}}\n{{ if .Content }}{{ .Content }}{{ end }}\n{{- if .ToolCalls }}\n{{- range .ToolCalls }}\n<tool_call>\n{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n</tool_call>\n{{- end }}\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n<think>\n{{ end }}\n{{- end }}",
+        "parameters": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95",
+        "capabilities": [
+          "completion",
+          "tools",
+          "thinking"
+        ]
+      },
+      "prompts": {
+        "initial": "Solve the question independently. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or the option letter, as appropriate.",
+        "recheck": "Recheck the saved initial response against the same original question. Keep its answer if justified; change it only if you identify an error. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or option letter.",
+        "initial_messages": "one user: initial prompt + two newlines + original question",
+        "recheck_messages": "same initial user; assistant: full saved initial response; user: recheck prompt"
+      },
+      "generation": {
+        "initial_token_budget": 1024,
+        "recheck_token_budget": 1024,
+        "context_window": 4096,
+        "thinking": true,
+        "temperature": 0.0,
+        "initial_seed": 42,
+        "recheck_seed": 43,
+        "top_k": 1,
+        "top_p": 1.0,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "stop": [
+          "<|im_start|>",
+          "<|im_end|>"
+        ],
+        "stream": false
+      },
+      "finalizer": {
+        "enabled": false,
+        "calls": 0
+      },
+      "parser": {
+        "version": "explicit-final-v1",
+        "numeric": "explicit FINAL marker; finite decimal/fraction; comma/currency normalization",
+        "choice": "explicit FINAL marker; single A-E option letter; optional parentheses/punctuation",
+        "open": "explicit FINAL marker only",
+        "unparseable": "record parsing failure; completed call scored incorrect offline"
+      },
+      "grader": {
+        "version": "decimal-exact-choice-v1",
+        "numeric": "exact Decimal equality; no floating tolerance",
+        "choice": "exact normalized letter equality",
+        "keys": "separate offline file; never in call or feature inputs"
+      },
+      "transport": {
+        "timeout_seconds": 120,
+        "automatic_retries": 0,
+        "explicit_retry_limit": 2,
+        "ambiguous_started_calls": "block resume until operator resolves; never silently repeat",
+        "session_budget": "do not start calls after deadline; bound each call by remaining time"
+      },
+      "sampling": "one initial call and one separate recheck per question; offline recheck EVERY question",
+      "runtime_treatment": "no warm-up call; first-call cold load included; backend caching uncontrolled and actual durations logged",
+      "historical_comparison": {
+        "sevra_checkpoint_digest": "unknown",
+        "sevra_prompts": "unknown",
+        "sevra_context": "unknown",
+        "sevra_initial_budget": 4096,
+        "sevra_finalizer_max_tokens": 512,
+        "difference": "new pinned Thinking-2507 local checkpoint, explicit prompts/decoding, 1024-token calls, no finalizer; independent study"
+      },
+      "references": [
+        "https://github.com/ollama/ollama/blob/main/docs/api.md",
+        "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507"
+      ]
+    },
+    "call_accounting": {
+      "successful_calls": 8,
+      "actual_prompt_tokens": 3671,
+      "actual_generated_tokens": 4523,
+      "measured_call_wall_seconds": 267.6801715999991,
+      "timing_treatment": "Measured individual calls include cold load where logged; backend caching is uncontrolled. Policy latency is not measured end to end here."
+    }
+  },
+  "dataset_selection": {
+    "data_schema_version": "live-study-questions-v1",
+    "status": "PREPARED",
+    "seed": 42,
+    "prepared_utc": "2026-10-04T18:45:32.848971+00:00",
+    "planned_total_by_domain": {
+      "maths": 1000,
+      "commonsenseqa": 500
+    },
+    "planned_questions_by_partition": {
+      "source_train": 600,
+      "source_development": 200,
+      "source_test": 200,
+      "target_adaptation_pool": 200,
+      "target_test": 300
+    },
+    "selected_questions_by_partition": {
+      "source_train": 600,
+      "source_development": 200,
+      "source_test": 200,
+      "target_adaptation_pool": 200,
+      "target_test": 300
+    },
+    "manifest_paths": {
+      "questions": "questions.jsonl"
+    },
+    "manifest_sha256": {
+      "questions.jsonl": "187138b45b37856272cfbd72d539825211edb973a4b2a2f23b8adde3df28e962",
+      "trusted_keys.jsonl": "6be57c4dc890e2a8b628da41c300e55352b4f490b81a852f5d26cec8aa41dafb"
+    },
+    "datasets": {
+      "gsm8k": {
+        "repository": "openai/gsm8k",
+        "revision": "740312add88f781978c0658806c59bc2815b9866",
+        "resolved_utc": "2026-10-04T18:45:09.494754+00:00",
+        "files": {
+          "train": {
+            "path": "raw\\gsm8k\\740312add88f781978c0658806c59bc2815b9866\\train.parquet",
+            "source_file": "main/train-00000-of-00001.parquet",
+            "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/train-00000-of-00001.parquet?download=true",
+            "sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+            "bytes": 2306545,
+            "download_attempts": 1
+          },
+          "test": {
+            "path": "raw\\gsm8k\\740312add88f781978c0658806c59bc2815b9866\\test.parquet",
+            "source_file": "main/test-00000-of-00001.parquet",
+            "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/test-00000-of-00001.parquet?download=true",
+            "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+            "bytes": 419088,
+            "download_attempts": 1
+          },
+          "dataset_card": {
+            "path": "raw\\gsm8k\\740312add88f781978c0658806c59bc2815b9866\\dataset_card.md",
+            "source_file": "README.md",
+            "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/README.md?download=true",
+            "sha256": "a17e882503578c9e324560630e31017617714ee025c87cf4fea6fd916895f3c1",
+            "bytes": 7935,
+            "download_attempts": 1
+          }
+        },
+        "license": "MIT",
+        "authors": "Cobbe et al. (2021), Training Verifiers to Solve Math Word Problems",
+        "paper": "https://arxiv.org/abs/2110.14168",
+        "homepage": "https://github.com/openai/grade-school-math",
+        "pinned_dataset_card": "https://huggingface.co/datasets/openai/gsm8k/blob/740312add88f781978c0658806c59bc2815b9866/README.md"
+      },
+      "commonsenseqa": {
+        "repository": "tau/commonsense_qa",
+        "revision": "94630fe30dad47192a8546eb75f094926d47e155",
+        "resolved_utc": "2026-10-04T18:45:22.201171+00:00",
+        "files": {
+          "train": {
+            "path": "raw\\commonsenseqa\\94630fe30dad47192a8546eb75f094926d47e155\\train.parquet",
+            "source_file": "data/train-00000-of-00001.parquet",
+            "url": "https://huggingface.co/datasets/tau/commonsense_qa/resolve/94630fe30dad47192a8546eb75f094926d47e155/data/train-00000-of-00001.parquet?download=true",
+            "sha256": "b0449767ed986bfc2ca52b1244a46ef12f732756727f3cb0a4ab69ac8b3d282b",
+            "bytes": 1247103,
+            "download_attempts": 1
+          },
+          "validation": {
+            "path": "raw\\commonsenseqa\\94630fe30dad47192a8546eb75f094926d47e155\\validation.parquet",
+            "source_file": "data/validation-00000-of-00001.parquet",
+            "url": "https://huggingface.co/datasets/tau/commonsense_qa/resolve/94630fe30dad47192a8546eb75f094926d47e155/data/validation-00000-of-00001.parquet?download=true",
+            "sha256": "bdbd9bf9cc4d2349b24901038b2ab2f58e10e4e507ad2fd425dca55cd3cb6660",
+            "bytes": 160240,
+            "download_attempts": 1
+          },
+          "dataset_card": {
+            "path": "raw\\commonsenseqa\\94630fe30dad47192a8546eb75f094926d47e155\\dataset_card.md",
+            "source_file": "README.md",
+            "url": "https://huggingface.co/datasets/tau/commonsense_qa/resolve/94630fe30dad47192a8546eb75f094926d47e155/README.md?download=true",
+            "sha256": "172917e887dcc013fe0f0bd6aa8c810aea1e2be67d3bc7ff63e9b9d92075cc34",
+            "bytes": 7395,
+            "download_attempts": 1
+          }
+        },
+        "license": "MIT",
+        "authors": "Talmor, Herzig, Lourie and Berant (2019), CommonsenseQA",
+        "paper": "https://aclanthology.org/N19-1421/",
+        "homepage": "https://www.tau-nlp.org/commonsenseqa",
+        "pinned_dataset_card": "https://huggingface.co/datasets/tau/commonsense_qa/blob/94630fe30dad47192a8546eb75f094926d47e155/README.md"
+      }
+    },
+    "question_selection_seeds": {
+      "gsm8k_train": 42,
+      "gsm8k_test": 43,
+      "commonsenseqa_train": 44,
+      "commonsenseqa_validation": 45
+    },
+    "duplicate_overlap_audit": {
+      "cross_boundary_overlapping_question_groups": 0,
+      "pools": {
+        "gsm8k_train": {
+          "original_rows": 7473,
+          "retained_unique_questions": 7473,
+          "removed_within_pool_duplicate_rows": 0,
+          "excluded_cross_boundary_overlap_rows": 0
+        },
+        "gsm8k_test": {
+          "original_rows": 1319,
+          "retained_unique_questions": 1319,
+          "removed_within_pool_duplicate_rows": 0,
+          "excluded_cross_boundary_overlap_rows": 0
+        },
+        "commonsenseqa_train": {
+          "original_rows": 9741,
+          "retained_unique_questions": 9741,
+          "removed_within_pool_duplicate_rows": 0,
+          "excluded_cross_boundary_overlap_rows": 0
+        },
+        "commonsenseqa_validation": {
+          "original_rows": 1221,
+          "retained_unique_questions": 1221,
+          "removed_within_pool_duplicate_rows": 0,
+          "excluded_cross_boundary_overlap_rows": 0
+        }
+      },
+      "exclusion_rule": "Exclude every cross-original-split/domain overlapping group; keep first pinned row for within-split duplicates before seeded selection."
+    },
+    "selection_rule": "Select by seeded permutation of independent canonical question groups before any model outcomes; one initial/recheck pair per selected question.",
+    "canonicalization": "Unicode NFKC, casefold, collapse whitespace; SHA256 of full question including all choice options.",
+    "source_question_ids": "GSM8K has no released question ID: pinned Parquet row offset; CommonsenseQA uses its published id.",
+    "rounding_rule": "Floor maths train=3N/5 and development=N/5; remainder test. Floor target adaptation=2N/5; remainder test.",
+    "benchmark_boundaries": {
+      "source_train": "GSM8K main/train",
+      "source_development": "GSM8K main/train",
+      "source_test": "GSM8K main/test",
+      "target_adaptation_pool": "CommonsenseQA/train",
+      "target_test": "CommonsenseQA/validation"
+    },
+    "repartition_notes": [
+      "GSM8K train is repartitioned into study training/development without using outcomes; its original test remains held out.",
+      "CommonsenseQA labeled training questions supply adaptation only. Labeled validation supplies this study's fixed target test; official test answer keys are withheld and that split is not used.",
+      "This is a new fixed-solver self-rechecking experiment, not reproduction of the original benchmark leaderboard or SEVRA outcomes.",
+      "GSM8K replaces the public pilot's MATH source because its public numeric keys support transparent deterministic offline scoring.",
+      "The planned sample sizes are collection targets and do not guarantee enough rare HURT events or statistical reliability."
+    ],
+    "target_adaptation": {
+      "budgets": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "repeats": 5,
+      "subset_seeds": [
+        142,
+        143,
+        144,
+        145,
+        146
+      ]
+    },
+    "smoke_allowed_partitions": [
+      "source_train",
+      "target_adaptation_pool"
+    ],
+    "question_format_version": "GSM8K original question; CommonsenseQA stem plus labeled A-E options and one-letter response instruction-v1",
+    "key_separation": "Question manifest contains no answers/solutions/correctness. Trusted keys are used offline only and are never passed to model prompts or predictor inputs.",
+    "raw_downloads": "Local raw/ snapshots are provenance caches and must be excluded from diagnostic bundles.",
+    "study_plan_hash": "f308df5645a6c175ac563182f0c240c716b7c3f558e81fc8477fac324581df40"
+  },
+  "data_hashes": {
+    "study_plan.json": "e888ce9e7f06f22ddc5dc35c08061ec675432c5064c1cb36aececff6fcea106a",
+    "questions.jsonl": "187138b45b37856272cfbd72d539825211edb973a4b2a2f23b8adde3df28e962",
+    "trusted_keys.jsonl": "6be57c4dc890e2a8b628da41c300e55352b4f490b81a852f5d26cec8aa41dafb",
+    "protocol.json": "dbd29e235afd6b2f10b633a0f9e28392428c0eb131f9d467993c989d025fa593",
+    "calls.jsonl": "7781ef8b7e52f7932ee3fcc04caae9b96db3a7448ceb8a228ccb8ca1e93b768b",
+    "pairs.jsonl": "c1198a13d0689ed923a2695edbfb9902fba3c7b6dd0170fc767ed79b43af5a6f",
+    "training_status.json": "5ecfa38fbdc18a7e8cdd7584ee13f789ea0bba55fe69837600c7eae0e4fd5eb3",
+    "collection_status.json": "aa6f44c1d2486f354f5c113301422acfbcd1dac247f9b1433d91f680914084ad"
+  },
+  "artifact": {
+    "path": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\\models\\source_gate.joblib",
+    "exists": false,
+    "sha256": null,
+    "size_bytes": null,
+    "active_in_app": false
+  },
+  "training_evidence": {
+    "training": {
+      "status": "INCOMPLETE",
+      "not_run_reasons": [
+        "Source training lacks genuine outcome classes: HURT"
+      ]
+    },
+    "adaptation": {
+      "status": "NOT_RUN",
+      "not_run_reasons": [
+        "No fixed source classifier/threshold exists."
+      ]
+    },
+    "recorded_status": {
+      "schema_version": 1,
+      "updated_at_utc": "2026-10-21T20:37:37.462450+00:00",
+      "status": "INCOMPLETE",
+      "training": {
+        "status": "INCOMPLETE",
+        "not_run_reasons": [
+          "Source training HELP support is 2; at least 5 genuine completed pairs required.",
+          "Source training HURT support is 0; at least 5 genuine completed pairs required."
+        ],
+        "inadequate_classes": {
+          "HELP": 2,
+          "HURT": 0
+        },
+        "source_development_class_counts": {
+          "HELP": 2,
+          "NO_CHANGE": 9,
+          "HURT": 0
+        }
+      },
+      "evaluation": {
+        "status": "NOT_RUN",
+        "not_run_reasons": [
+          "Source predictor fitting has not run."
+        ]
+      },
+      "adaptation": {
+        "status": "NOT_RUN",
+        "not_run_reasons": [
+          "No fixed source classifier/threshold exists."
+        ]
+      },
+      "artifact": null,
+      "probabilities": "Uncalibrated three-class classifier outputs, not correctness probabilities.",
+      "limitations": [
+        "Five genuine source-training examples per outcome class is only an eligibility floor, not evidence of research reliability. Class weights create no new rare events.",
+        "Frozen explicit-final-v1 normalization uses Decimal precision 28. Only exact finite decimal values and fractions exactly representable at that precision are accepted as reliable numeric evidence. This validation does not relabel records; precision-preserving grading needs a new version.",
+        "Policy tokens and reconstructed latency use the successful initial/recheck calls of completed pairs. They exclude failed/retried call work and its unknown token usage; collection elapsed time and failure counts must be reported separately. They are not complete collection cost or measured live end-to-end latency."
+      ],
+      "predeclared": {
+        "class_order": [
+          "HELP",
+          "NO_CHANGE",
+          "HURT"
+        ],
+        "minimum_source_train_per_class": 5,
+        "feature_names": [
+          "question_log_chars",
+          "question_log_words",
+          "question_numbers",
+          "question_math_symbols",
+          "question_marks",
+          "initial_log_chars",
+          "initial_log_words",
+          "initial_unique_word_ratio",
+          "initial_uncertainty_per_100_words",
+          "initial_backtracking_per_100_words",
+          "initial_checking_per_100_words",
+          "initial_number_count",
+          "initial_paragraph_count",
+          "initial_question_marks",
+          "initial_log_actual_tokens",
+          "initial_finalizer_used",
+          "initial_budget_exhausted",
+          "initial_answer_present",
+          "initial_completion_unknown"
+        ],
+        "feature_schema_version": "pre-recheck-v2",
+        "feature_schema_fingerprint": "9e09eba8571dd2b31fb70fe83cb12191ba0051d620324037cc18cf3cae22e4ca",
+        "model_selection_rule": "Fit on source training only. Select the highest question-equal source-development macro-F1; ties (12 decimal places) use lower question-equal multiclass log loss, then the fixed candidate order. No target labels are used for model selection.",
+        "threshold_selection_rule": "Question-equal HELP minus HURT utility on source development only; ties use fewer recorded recheck tokens, then the larger threshold. Strict score > threshold.",
+        "harm_weight": 1.0,
+        "token_penalty": 0.0,
+        "adaptation_budgets": [
+          25,
+          50,
+          100,
+          200
+        ],
+        "adaptation_seeds": [
+          142,
+          143,
+          144,
+          145,
+          146
+        ],
+        "source_seed": 42,
+        "bootstrap_repeats": 600
+      },
+      "model_selection_plan": null,
+      "protocol_hash": "f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+      "protocol_contract": {
+        "model": "qwen3:4b",
+        "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "action": "recheck",
+        "recheck_protocol": "live-study:f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+        "study_protocol_hash": "f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+        "live_study_protocol": {
+          "protocol_version": "live-study-v0.3.1",
+          "model": "qwen3:4b",
+          "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+          "backend": {
+            "ollama_version": "0.40.3",
+            "installed_model": {
+              "name": "qwen3:4b",
+              "model": "qwen3:4b",
+              "modified_at": "2026-10-04T22:16:58.0498628+05:30",
+              "size": 2497293931,
+              "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "qwen3",
+                "families": [
+                  "qwen3"
+                ],
+                "parameter_size": "4.0B",
+                "quantization_level": "Q4_K_M",
+                "context_length": 262144,
+                "embedding_length": 2560,
+                "runner": "ggml"
+              },
+              "capabilities": [
+                "completion",
+                "tools",
+                "thinking"
+              ]
+            },
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "qwen3",
+              "families": [
+                "qwen3"
+              ],
+              "parameter_size": "4.0B",
+              "quantization_level": "Q4_K_M"
+            },
+            "model_info": {
+              "general.architecture": "qwen3",
+              "general.basename": "Qwen3",
+              "general.file_type": 15,
+              "general.finetune": "Thinking",
+              "general.license": "apache-2.0",
+              "general.license.link": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/main/LICENSE",
+              "general.parameter_count": 4022468096,
+              "general.quantization_version": 2,
+              "general.size_label": "4B",
+              "general.tags": [
+                "text-generation"
+              ],
+              "general.type": "model",
+              "general.version": "2507",
+              "qwen3.attention.head_count": 32,
+              "qwen3.attention.head_count_kv": 8,
+              "qwen3.attention.key_length": 128,
+              "qwen3.attention.layer_norm_rms_epsilon": 1e-06,
+              "qwen3.attention.value_length": 128,
+              "qwen3.block_count": 36,
+              "qwen3.context_length": 262144,
+              "qwen3.embedding_length": 2560,
+              "qwen3.feed_forward_length": 9728,
+              "qwen3.rope.freq_base": 5000000,
+              "tokenizer.ggml.add_bos_token": false,
+              "tokenizer.ggml.bos_token_id": 151643,
+              "tokenizer.ggml.eos_token_id": 151645,
+              "tokenizer.ggml.merges": [],
+              "tokenizer.ggml.model": "gpt2",
+              "tokenizer.ggml.padding_token_id": 151643,
+              "tokenizer.ggml.pre": "qwen2",
+              "tokenizer.ggml.token_type": [],
+              "tokenizer.ggml.tokens": []
+            },
+            "supported_thinking": {
+              "values": [
+                true
+              ],
+              "default": true
+            },
+            "template": "{{- $lastUserIdx := -1 -}}\n{{- range $idx, $msg := .Messages -}}\n{{- if eq $msg.Role \"user\" }}{{ $lastUserIdx = $idx }}{{ end -}}\n{{- end }}\n{{- if or .System .Tools }}<|im_start|>system\n{{ if .System }}{{ .System }}\n\n{{ end }}\n{{- if .Tools }}# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end -}}\n<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if (and $.IsThinkSet (and .Thinking (or $last (gt $i $lastUserIdx)))) -}}\n<think>{{ .Thinking }}</think>\n{{ end -}}\n{{ if .Content }}{{ .Content }}{{ end }}\n{{- if .ToolCalls }}\n{{- range .ToolCalls }}\n<tool_call>\n{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n</tool_call>\n{{- end }}\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n<think>\n{{ end }}\n{{- end }}",
+            "parameters": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95",
+            "capabilities": [
+              "completion",
+              "tools",
+              "thinking"
+            ]
+          },
+          "prompts": {
+            "initial": "Solve the question independently. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or the option letter, as appropriate.",
+            "recheck": "Recheck the saved initial response against the same original question. Keep its answer if justified; change it only if you identify an error. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or option letter.",
+            "initial_messages": "one user: initial prompt + two newlines + original question",
+            "recheck_messages": "same initial user; assistant: full saved initial response; user: recheck prompt"
+          },
+          "generation": {
+            "initial_token_budget": 1024,
+            "recheck_token_budget": 1024,
+            "context_window": 4096,
+            "thinking": true,
+            "temperature": 0.0,
+            "initial_seed": 42,
+            "recheck_seed": 43,
+            "top_k": 1,
+            "top_p": 1.0,
+            "min_p": 0.0,
+            "repeat_penalty": 1.0,
+            "stop": [
+              "<|im_start|>",
+              "<|im_end|>"
+            ],
+            "stream": false
+          },
+          "finalizer": {
+            "enabled": false,
+            "calls": 0
+          },
+          "parser": {
+            "version": "explicit-final-v1",
+            "numeric": "explicit FINAL marker; finite decimal/fraction; comma/currency normalization",
+            "choice": "explicit FINAL marker; single A-E option letter; optional parentheses/punctuation",
+            "open": "explicit FINAL marker only",
+            "unparseable": "record parsing failure; completed call scored incorrect offline"
+          },
+          "grader": {
+            "version": "decimal-exact-choice-v1",
+            "numeric": "exact Decimal equality; no floating tolerance",
+            "choice": "exact normalized letter equality",
+            "keys": "separate offline file; never in call or feature inputs"
+          },
+          "transport": {
+            "timeout_seconds": 120,
+            "automatic_retries": 0,
+            "explicit_retry_limit": 2,
+            "ambiguous_started_calls": "block resume until operator resolves; never silently repeat",
+            "session_budget": "do not start calls after deadline; bound each call by remaining time"
+          },
+          "sampling": "one initial call and one separate recheck per question; offline recheck EVERY question",
+          "runtime_treatment": "no warm-up call; first-call cold load included; backend caching uncontrolled and actual durations logged",
+          "historical_comparison": {
+            "sevra_checkpoint_digest": "unknown",
+            "sevra_prompts": "unknown",
+            "sevra_context": "unknown",
+            "sevra_initial_budget": 4096,
+            "sevra_finalizer_max_tokens": 512,
+            "difference": "new pinned Thinking-2507 local checkpoint, explicit prompts/decoding, 1024-token calls, no finalizer; independent study"
+          },
+          "references": [
+            "https://github.com/ollama/ollama/blob/main/docs/api.md",
+            "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507"
+          ]
+        }
+      },
+      "study_plan_hash": "f308df5645a6c175ac563182f0c240c716b7c3f558e81fc8477fac324581df40",
+      "planned_questions_by_partition": {
+        "source_train": 600,
+        "source_development": 200,
+        "source_test": 200,
+        "target_adaptation_pool": 200,
+        "target_test": 300
+      },
+      "completed_questions_by_partition": {
+        "source_train": 11,
+        "source_development": 11,
+        "source_test": 10,
+        "target_adaptation_pool": 10,
+        "target_test": 10
+      },
+      "completed_pairs": 52,
+      "planned_pairs": 1500,
+      "source_train_class_counts": {
+        "HELP": 2,
+        "NO_CHANGE": 9,
+        "HURT": 0
+      },
+      "class_counts_by_partition": {
+        "source_train": {
+          "HELP": 2,
+          "NO_CHANGE": 9,
+          "HURT": 0
+        },
+        "source_development": {
+          "HELP": 2,
+          "NO_CHANGE": 9,
+          "HURT": 0
+        },
+        "source_test": {
+          "HELP": 2,
+          "NO_CHANGE": 8,
+          "HURT": 0
+        },
+        "target_adaptation_pool": {
+          "HELP": 6,
+          "NO_CHANGE": 4,
+          "HURT": 0
+        },
+        "target_test": {
+          "HELP": 8,
+          "NO_CHANGE": 2,
+          "HURT": 0
+        }
+      },
+      "questions_manifest_sha256": "187138b45b37856272cfbd72d539825211edb973a4b2a2f23b8adde3df28e962",
+      "completed_pairs_content_sha256": "570417514e57648fd40f7182320d9d27419393192aead25d2976955c5b3daa28",
+      "numeric_precision_audit": {
+        "successful_call_status_counts": {
+          "EXACT": 55,
+          "UNPARSEABLE": 9,
+          "NOT_APPLICABLE": 41
+        },
+        "affected_precision_loss_calls": 0,
+        "limitation": "Frozen explicit-final-v1 normalization uses Decimal precision 28. Only exact finite decimal values and fractions exactly representable at that precision are accepted as reliable numeric evidence. This validation does not relabel records; precision-preserving grading needs a new version.",
+        "scope": "All successful journal responses, including calls not yet forming a completed pair."
+      }
+    },
+    "source_train_class_counts": {
+      "HELP": 2,
+      "HURT": 0,
+      "NO_CHANGE": 9
+    },
+    "missing_training_classes": [
+      "HURT"
+    ],
+    "implemented_feature_contract": {
+      "feature_names": [
+        "question_log_chars",
+        "question_log_words",
+        "question_numbers",
+        "question_math_symbols",
+        "question_marks",
+        "initial_log_chars",
+        "initial_log_words",
+        "initial_unique_word_ratio",
+        "initial_uncertainty_per_100_words",
+        "initial_backtracking_per_100_words",
+        "initial_checking_per_100_words",
+        "initial_number_count",
+        "initial_paragraph_count",
+        "initial_question_marks",
+        "initial_log_actual_tokens",
+        "initial_finalizer_used",
+        "initial_budget_exhausted",
+        "initial_answer_present",
+        "initial_completion_unknown"
+      ],
+      "feature_schema_version": "pre-recheck-v2",
+      "feature_schema_fingerprint": "9e09eba8571dd2b31fb70fe83cb12191ba0051d620324037cc18cf3cae22e4ca"
+    },
+    "metrics": {},
+    "policy_metrics": [],
+    "policy_action_comparison": {}
+  },
+  "public_pilot_difference": "This independently frozen live protocol has its own exact prompts, parser, model digest and call settings. The installed Qwen3:4b alias is a Thinking 2507 Q4_K_M checkpoint; historical requested thinking=false was not verified as effective. Read this run's protocol for actual thinking, budgets and runtime evidence; no historical setting is inferred as known.",
+  "completion_rule_conclusion": "INCONCLUSIVE: independent planned evaluation has not completed.",
+  "execution": {
+    "started_at": "2026-10-12T14:12:25.570361+00:00",
+    "ended_at": "2026-10-21T20:37:37.773619+00:00",
+    "elapsed_seconds": 800712.203258,
+    "measured_latest_collection_session_seconds": 6.609000000000378,
+    "measured_successful_collection_call_seconds": 3484.659419900012,
+    "timing_basis": "Whole-run elapsed is timestamp difference, ending at report generation while active; session time and summed measured successful-call processing are separate.",
+    "commands": [
+      {
+        "command": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\.venv\\Scripts\\python.exe -u scripts/freeze_live_protocol.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1 --candidate",
+        "started_at": "2026-10-12T14:12:25.684597+00:00",
+        "ended_at": "2026-10-12T14:12:32.703863+00:00",
+        "exit_code": 0,
+        "log": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\\logs\\candidate_20261012T141225.txt"
+      },
+      {
+        "command": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\.venv\\Scripts\\python.exe -u scripts/collect_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1 --minutes 60.0 --smoke 4",
+        "started_at": "2026-10-12T14:12:32.718036+00:00",
+        "ended_at": "2026-10-12T14:17:07.789650+00:00",
+        "exit_code": 0,
+        "log": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\\logs\\smoke_20261012T141232.txt"
+      },
+      {
+        "command": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\.venv\\Scripts\\python.exe -u scripts/freeze_live_protocol.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1",
+        "started_at": "2026-10-12T14:17:07.811519+00:00",
+        "ended_at": "2026-10-12T14:17:15.087021+00:00",
+        "exit_code": 0,
+        "log": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\\logs\\freeze_20261012T141707.txt"
+      },
+      {
+        "command": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\.venv\\Scripts\\python.exe -u scripts/collect_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1 --minutes 55.415116666666684",
+        "started_at": "2026-10-12T14:17:15.106893+00:00",
+        "ended_at": "2026-10-12T15:11:06.901697+00:00",
+        "exit_code": 0,
+        "log": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\\logs\\collection_20261012T141715.txt"
+      },
+      {
+        "command": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\.venv\\Scripts\\python.exe -u scripts/train_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1",
+        "started_at": "2026-10-12T15:11:06.957512+00:00",
+        "ended_at": "2026-10-12T15:11:21.971641+00:00",
+        "exit_code": 0,
+        "log": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\\logs\\training_20261012T151106.txt"
+      },
+      {
+        "command": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\.venv\\Scripts\\python.exe -u scripts/collect_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1 --minutes 480.0",
+        "started_at": "2026-10-21T20:37:20.479202+00:00",
+        "ended_at": "2026-10-21T20:37:28.347517+00:00",
+        "exit_code": 2,
+        "log": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\\logs\\collection_20261021T203720.txt"
+      },
+      {
+        "command": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\.venv\\Scripts\\python.exe -u scripts/train_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1",
+        "started_at": "2026-10-21T20:37:28.369963+00:00",
+        "ended_at": "2026-10-21T20:37:37.751325+00:00",
+        "exit_code": 0,
+        "log": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\\logs\\training_20261021T203728.txt"
+      }
+    ],
+    "tests": [],
+    "hardware": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD"
+    },
+    "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.8.0",
+      "joblib": "1.5.3",
+      "pyarrow": "24.0.0",
+      "matplotlib": "3.10.8",
+      "streamlit": "1.65.0"
+    },
+    "code_version": {
+      "git": "unknown: workspace has no Git metadata",
+      "source_sha256": {
+        "rechecklab/collector.py": "e48331141115b8cfa01190d71e3053a39427236684dafffdb7d409ae40adb090",
+        "rechecklab/data.py": "c837b6899717c39e037d51846e81ffaf603ce8eb55b8550fee63890b7b65f78c",
+        "rechecklab/experiment.py": "bafa4f39ae017af45192c9608d2299859724adac8e7446febe044eb356f6aaaa",
+        "rechecklab/features.py": "f5421202372dee1c28150b27f9c70bac6c1dfaf07b2adebfb9d858c0fda1d276",
+        "rechecklab/live.py": "3ccd4c36861b414bd06fb8ccb71c637939ac8b571782ccfdd0a71d83a9338111",
+        "rechecklab/live_session.py": "7853722aa5f63b8b222c39367e0e67bc307cfc4cb0cc340c168e0070d280a10f",
+        "rechecklab/metrics.py": "b2e37da05615d13624f732b9440bcda037c1e56060509e65689c006dd5e84975",
+        "rechecklab/predictor.py": "4dd088bc315e1aa5b8a2e5690de72e950048a3d41a5bba2316de865bdaa2b7e7",
+        "rechecklab/report.py": "10df4a08ad7fd818a5a88d0e0edfdca23133a8c4b119b2cec9e25f7301c15b41",
+        "rechecklab/study_collection.py": "13a3e847e843863c378bbdeed00478956a0f8d5240dd1e49ed27b7d62b29132a",
+        "rechecklab/study_data.py": "d0f5565cea182d0a05c5b0d554862b1b84b09fe6b1c7329d0bb0b019f5584067",
+        "rechecklab/study_protocol.py": "e8cbef1a77195d0d75c275e2b4cee5330087ec8ded103ceac6c9667deac584fe",
+        "rechecklab/study_report.py": "132528daaa6b554e45fa943d1a24360b6af07e30f1b9cf068866ed447224837b",
+        "rechecklab/study_training.py": "eea0af2a3709c3ce75dbead9e0aee73182830e10569664c03ad38c397f70bb14",
+        "rechecklab/study_validation.py": "e0216e39b8f41d0dacc2df37611ea5913e40737ab888c32dee78598f1c80f0cf",
+        "rechecklab/__init__.py": "c93c035373a85a8201bb605c8db3717cf88d26c61a4c0d5b9dbc6de13ef3eb57",
+        "scripts/audit_live_study_precision.py": "dbd0ec8a64bb7efc85504670ebf64cc66879de6d219bf1c614f3a90ff5f1ea67",
+        "scripts/check_dashboard.py": "53268812a26ef7a83b1fb926ecfdefac03e937fcf3e55ffc078a8dd920f0bcc2",
+        "scripts/check_live_backend.py": "9cbad824d618deb776b75b717b28ebf5946d21ebe60d069af46b2602112623db",
+        "scripts/check_setup.py": "03c31208a32065d87a345f61619a63df5ac5ea8d3c165268bd862fa315b87fcf",
+        "scripts/collect_live_study.py": "6af0d4a1dc10a1b184a4a5d23b3ad1fbffbb9b64240f042a2bc30f8192e96aa9",
+        "scripts/collect_ollama.py": "d825371fb91bb295497cc1cdee87acc7969d4541d3576ce318ca5cb3dea1ce0e",
+        "scripts/download_public_data.py": "45c1a8dfe7f7009ec085b70419abff35b4c1ee8c1c436cb5fe11272a5a7bcf42",
+        "scripts/freeze_live_protocol.py": "793043b2cee18ed75220644121fab818063dfb526721a574243efe4654d7b797",
+        "scripts/prepare_benchmarks.py": "0248ba18e390999ebe5a29f2ddc7265d53458d697648ffc71986e9f8dda3dca5",
+        "scripts/prepare_live_study.py": "c64b2147ffe056e4e929700917972528ee760d6fa21ee8cba3ab175c8293142e",
+        "scripts/report_live_study.py": "8cf5ddeabb0112f5c55c7dc44455b96da2f68b3a3716733cdae8f0464dab82ad",
+        "scripts/run_live_study.py": "0198f46f2b2b3b01c4fa8c3e08902ded19dece81b0d76634ca2efdf386cbf7a2",
+        "scripts/run_public_pilot.py": "d54ea422a1e59e523975e508a434db0943b951dd6d2670b229b1864265e8b625",
+        "scripts/train_live_study.py": "21c4a446a4f1325de2966fa940e24858632e34deb80568feb3977ddcd69d7294",
+        "scripts/verify_baseline.py": "d8352aa6a08a848db0958b4cc9239c6f0ab72650c934ce65a5f95392692c44f9",
+        "scripts/verify_recorded_policies.py": "5a947858deb59bdba615e356e0a57bb00dd1b33c3617221d1f8de8c92b991cb7",
+        "tests/test_artifact_loading.py": "5dded0275dcb8601ad009dccd848192cd9a5e8a88832ed622e7ae1655e7fb7b4",
+        "tests/test_data_validation.py": "ba1e7eb7a35fd11418097f4b2e582e927350af4e092f9d404b70ebe9453f8db9",
+        "tests/test_evaluation_contract.py": "bfcf5778d86ce6acecd1c3b609b05e3cb9322569875aac273c6b26c034320604",
+        "tests/test_live_backend.py": "506a8e14eed9b6fb6030ae56bd004db2c8ba0b50d22e88df2fdf00d3e00cca30",
+        "tests/test_live_cli.py": "afc2086085504c7b0d0b0124a08bc7567341efdb3637f73063763d7c7b4dd82c",
+        "tests/test_live_session.py": "bbf10ee69e2143e20c45c5d77f189bc9001bf7284b4139d6ae791efce17be128",
+        "tests/test_live_ui.py": "01fb68abc44061cf25789e8243810cdc762a325451b4f250590847ce5d3eaac9",
+        "tests/test_prediction_contract.py": "54b02ffa6159aeb798f8914c5015c185da778278d1a044ad3b915ac7e3ae7018",
+        "tests/test_recorded_policy_results.py": "c135743ce7b232a271c248f74bc626b3aabe38ca5d8e4c74a2c1689800287c03",
+        "tests/test_research_safeguards.py": "3a035dbdfb5ad95b894f83b3a072f6f21904e8ca99024d01476b13bbfb82f9fc",
+        "tests/test_streamlit_app.py": "640f3cfe094368a942fbe6a3903936790badb77566a66cc9edab2ffabd3fd958",
+        "tests/test_study_collection.py": "dbd3a843e753ad843753f742e3875c031366bf4192f152d41bb63db171f053ca",
+        "tests/test_study_collection_audit.py": "774184e8f6d4fd1dbc30081ae7b4660f830782debbbba9c168a7b8fbc492a845",
+        "tests/test_study_controller.py": "6c60c36cc6eeb4b9fd6043cb680b235460c4ef82a3bd6d9aa83c984f35ce560a",
+        "tests/test_study_data.py": "f7ff2e9b4fb8310ce4393cd176670f27d25b7dad7333c24c002ea8adc8ed118b",
+        "tests/test_study_report.py": "38a6eb4d0a3f82b68dd74201017a2bc74c06b2a55bc5633d6a36e779967a0e91",
+        "tests/test_study_training.py": "1297aa06b61d67f47662c40d0f149fcbbc71ef94fe3a09ac198e5f1a3f528fa5",
+        "tests/test_study_validation.py": "d4eafc134922cd5f023d368fd606461163e49c2a5cd4eb72f48599f029244895"
+      }
+    },
+    "code_hashes": {},
+    "baseline_preservation": "not yet recorded",
+    "active_processes": [],
+    "attempted_fixes": []
+  },
+  "errors": [],
+  "remaining_work": [
+    "Collect 1448 remaining planned unique pairs using the frozen protocol; recheck every offline question.",
+    "Obtain genuine source-training support for HURT; do not fabricate labels or mine held-out outcomes.",
+    "Run source-only model/threshold selection and reserved target threshold adaptation when class support permits.",
+    "Finish planned held-out collection, then evaluate all policies with paired uncertainty and timing/token accounting.",
+    "Activate a new live predictor only after artifact, protocol, feature schema and completed evaluation agree."
+  ],
+  "resume_commands": [
+    "cd \"C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\"",
+    ".\\.venv\\Scripts\\python.exe scripts\\run_live_study.py --study-root \"C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1\" --minutes 60"
+  ],
+  "collection_eta": {
+    "estimated_remaining_seconds": 97034.36230798493,
+    "description": "Approximately 26.95 hours at this run's measured rate; hardware, failures and warm-up can change it.",
+    "measured_elapsed_seconds": 6.609000000000378,
+    "source": "collection_status / observed completed pairs"
+  },
+  "guide_paragraph": "The new Qwen live study's main journal contains 52 genuine initial/recheck pairs out of 1500 planned questions. Separate functional smoke records contain 4 completed pairs; exact-protocol reuse is tracked separately. Its collection is partial; training/adaptation is incomplete and evaluation is not run. Working generation demonstrates software execution, not that the gate improves on the completion rule. The preserved public replay is reported separately.",
+  "diagnostic_bundle": {
+    "path": "C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\reports\\live_study\\diagnostic_bundle.zip",
+    "max_size_bytes": 10485760,
+    "included_files": [
+      "summaries/data_and_splits.json",
+      "summaries/artifact.json",
+      "examples/real_records.jsonl",
+      "study/protocol.json",
+      "study/protocol_hash.txt",
+      "study/candidate_protocol.json",
+      "study/smoke/protocol.json",
+      "study/smoke/protocol_hash.txt",
+      "study/smoke/collection_status.json",
+      "study/study_plan.json",
+      "study/collection_status.json",
+      "study/training_status.json",
+      "study/run_context.json",
+      "study/logs/candidate_20261012T141225.txt",
+      "study/logs/collection_20261012T141715.txt",
+      "study/logs/collection_20261021T203720.txt",
+      "study/logs/freeze_20261012T141707.txt",
+      "study/logs/smoke_20261012T141232.txt",
+      "study/logs/training_20261012T151106.txt",
+      "study/logs/training_20261021T203728.txt",
+      "source/rechecklab/study_collection.py",
+      "source/rechecklab/study_data.py",
+      "source/rechecklab/study_protocol.py",
+      "source/rechecklab/study_report.py",
+      "source/rechecklab/study_training.py",
+      "source/rechecklab/study_validation.py",
+      "source/scripts/audit_live_study_precision.py",
+      "source/scripts/collect_live_study.py",
+      "source/scripts/prepare_live_study.py",
+      "source/scripts/report_live_study.py",
+      "source/scripts/run_live_study.py",
+      "source/scripts/train_live_study.py",
+      "source/tests/test_study_collection.py",
+      "source/tests/test_study_collection_audit.py",
+      "source/tests/test_study_controller.py",
+      "source/tests/test_study_data.py",
+      "source/tests/test_study_report.py",
+      "source/tests/test_study_training.py",
+      "source/tests/test_study_validation.py",
+      "source/app.py",
+      "source/README.md",
+      "source/DATA_SOURCES.md",
+      "source/scripts/freeze_live_protocol.py",
+      "source/rechecklab/live.py",
+      "source/rechecklab/features.py",
+      "source/rechecklab/predictor.py",
+      "source/rechecklab/collector.py",
+      "source/rechecklab/metrics.py",
+      "source/tests/test_live_backend.py",
+      "source/tests/test_artifact_loading.py",
+      "source/requirements.txt",
+      "source/requirements-core.txt",
+      "CURRENT_STATUS.json",
+      "CURRENT_STATUS.md"
+    ]
+  }
+}

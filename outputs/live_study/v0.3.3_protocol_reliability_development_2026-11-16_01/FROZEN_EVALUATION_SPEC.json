@@ -1,0 +1,40 @@
+{
+  "status": "NOT_READY_FOR_FINAL_EVALUATION",
+  "question_count_target_if_later_qualified": "30-50 fresh independent questions",
+  "exclusions": "source training/development/test, target adaptation/test, prior live planned/evaluated cohorts, both pilot question sets, and every development question",
+  "question_selection": "uniform seeded sample from pinned GSM8K main/train after canonical overlap exclusions; freeze selection before inference; no outcome or gate based selection",
+  "paired_policies": [
+    "never recheck",
+    "always recheck",
+    "completion heuristic",
+    "frozen v0.2 ML gate (OOD transfer only)"
+  ],
+  "gate_features": [
+    "question_log_chars",
+    "question_log_words",
+    "question_numbers",
+    "question_math_symbols",
+    "question_marks",
+    "initial_log_chars",
+    "initial_log_words",
+    "initial_unique_word_ratio",
+    "initial_uncertainty_per_100_words",
+    "initial_backtracking_per_100_words",
+    "initial_checking_per_100_words",
+    "initial_number_count",
+    "initial_paragraph_count",
+    "initial_question_marks",
+    "initial_log_actual_tokens",
+    "initial_finalizer_used",
+    "initial_budget_exhausted",
+    "initial_answer_present",
+    "initial_completion_unknown"
+  ],
+  "gate_schema": "pre-recheck-v2",
+  "gate_threshold": 0.25968145276947807,
+  "gate_score": "p_HELP - p_HURT",
+  "gate_rule": "strictly greater than threshold",
+  "protocol_compatibility": "OOD cross-protocol; artifact expects SEVRA active_verify with unavailable full prompt/checkpoint identity and historical finalizer behavior",
+  "launch_command": null,
+  "launch_blocker": "A generation protocol with adequate prospective initial/revision extraction reliability has not yet been demonstrated."
+}

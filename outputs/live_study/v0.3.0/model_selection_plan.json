@@ -1,0 +1,23 @@
+{
+  "minimum_training_examples_per_class": 5,
+  "seed": 42,
+  "feature_schema": "pre-recheck-v2",
+  "feature_count": 19,
+  "model_selection_rule": "Fit on source training only. Select the highest question-equal source-development macro-F1; ties (12 decimal places) use lower question-equal multiclass log loss, then the fixed candidate order. No target labels are used for model selection.",
+  "threshold_objective": "Source-development HELP minus HURT; tie by fewer actual recheck tokens; strict score > threshold",
+  "adaptation_budgets": [
+    25,
+    50,
+    100,
+    200
+  ],
+  "adaptation_seeds": [
+    142,
+    143,
+    144,
+    145,
+    146
+  ],
+  "probabilities": "uncalibrated estimates",
+  "heldout_rule": "no final evaluation until all planned held-out and adaptation pairs are collected"
+}

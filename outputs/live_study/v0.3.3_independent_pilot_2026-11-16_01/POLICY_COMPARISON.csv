@@ -1,0 +1,5 @@
+﻿policy,status,questions,correct,accuracy,accuracy_ci95_exact,rechecks,recheck_rate,mean_prompt_plus_output_tokens_per_question,mean_generated_tokens_per_question,replayed_latency_seconds_per_question,accuracy_difference_vs_never_pp,paired_bootstrap_ci95_pp_vs_never
+Never recheck,evaluated,8,2,0.25,"[0.03185402624994421, 0.6508557944128242]",0,0.0,948.875,848.125,39.59524017500007,0.0,"[0.0, 0.0]"
+Always recheck,evaluated,8,6,0.75,"[0.3491442055871758, 0.9681459737500557]",8,1.0,2599.0,1494.625,72.50620941249986,50.0,"[12.5, 87.5]"
+Completion heuristic,evaluated,8,5,0.625,"[0.2448632163665516, 0.9147665858627465]",5,0.625,2218.125,1377.375,66.4875279749997,37.5,"[12.5, 75.0]"
+Frozen ML gate,not evaluated: incompatible protocol,0,,,,,,,,,,

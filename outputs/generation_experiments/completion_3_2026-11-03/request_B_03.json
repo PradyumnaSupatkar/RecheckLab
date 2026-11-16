@@ -1,0 +1,25 @@
+{
+  "model": "qwen3:4b",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Solve the multiple-choice question. Avoid unnecessary explanation. Finish with exactly FINAL: X, where X is one A-E letter.\n\nHow would you show someone that you are agreeing with them without getting close or speaking?\n\nOptions:\nA. standing with them\nB. handshake\nC. nod and smile\nD. nodding\nE. shaking hand\n\nAnswer with one option letter (A-E)."
+    }
+  ],
+  "stream": true,
+  "think": true,
+  "options": {
+    "num_ctx": 4096,
+    "num_predict": 2048,
+    "seed": 42,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "stop": [
+      "<|im_start|>",
+      "<|im_end|>"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "ready": true,
+  "status": "experimental",
+  "message": "Ollama is ready with qwen3:4b. Experimental live use: the public checkpoint digest and full prompts are unavailable. This collector uses a 768-token output limit, 4096-token context, thinking=False, and no finalizer; its live behavior has not been evaluated by the replay pilot.",
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "experimental": true,
+  "protocol_match": false,
+  "generation_settings": {
+    "protocol_version": "0.2",
+    "budget": 768,
+    "seed": 42,
+    "temperature": 0.0,
+    "thinking": false,
+    "initial_instruction": "Solve the question. Give a brief explanation, then finish with FINAL: followed by your answer.",
+    "recheck_instruction": "Recheck your previous answer against the question. Keep it if justified; change it only if you identify an error. Give a brief explanation, then finish with FINAL: followed by your answer.",
+    "context_window": 4096,
+    "initial_seed": 42,
+    "recheck_seed": 43,
+    "finalizer_used": false,
+    "recheck_protocol": "ollama:2b42bd6926d463dc8fb818600e82ab1446385be684c9b2346f36d951adddb6d9"
+  },
+  "mismatches": [
+    "The released gate does not contain complete generation prompts and settings.",
+    "The live collector protocol fingerprint differs from the saved recheck protocol.",
+    "The saved action is not the collector's explicit recheck action.",
+    "The saved gate does not identify a checkpoint digest.",
+    "Released context-window settings are unavailable; live explicitly uses 4096 tokens.",
+    "Released initial generation limit 4096 differs from live limit 768.",
+    "Released calls may use a 512-token finalizer; live calls execute no finalizer."
+  ],
+  "protocol_fingerprint": "c420788af69b285fb542bf59bea2b72885f396a019349c34c96793cae1062db4",
+  "installed_models": [
+    "gemma4:latest",
+    "qwen3:4b"
+  ],
+  "live_protocol": {
+    "model": "qwen3:4b",
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "recheck_protocol": "ollama:2b42bd6926d463dc8fb818600e82ab1446385be684c9b2346f36d951adddb6d9",
+    "action": "recheck",
+    "generation_settings": {
+      "protocol_version": "0.2",
+      "budget": 768,
+      "seed": 42,
+      "temperature": 0.0,
+      "thinking": false,
+      "initial_instruction": "Solve the question. Give a brief explanation, then finish with FINAL: followed by your answer.",
+      "recheck_instruction": "Recheck your previous answer against the question. Keep it if justified; change it only if you identify an error. Give a brief explanation, then finish with FINAL: followed by your answer.",
+      "context_window": 4096
+    },
+    "initial_seed": 42,
+    "recheck_seed": 43,
+    "finalizer_used": false
+  },
+  "server_version": "0.35.1"
+}

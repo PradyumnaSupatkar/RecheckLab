@@ -1,0 +1,10 @@
+{
+  "source_development_sha256": "7330ad8eb29e9d583ba962994c1bc35b2ab1187ff546374e637fd680d5cefa3e",
+  "selection_sha256": "52a9d32f8aafbb8ced0bcd34669bbec67d4755cf33f275d36ddf665699ee3b52",
+  "selection_unchanged_after_evaluation": true,
+  "source_development_evaluation_passes": 1,
+  "source_test_evaluated": false,
+  "target_test_evaluated": false,
+  "selected_before_development": true,
+  "runtime_seconds": 14.597931500000414
+}

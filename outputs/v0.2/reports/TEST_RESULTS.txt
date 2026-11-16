@@ -1,0 +1,37 @@
+RecheckLab v0.2 verification - 4 October 2026
+
+Environment: Python 3.12.6; NumPy 2.3.5; pandas 2.2.3;
+scikit-learn 1.8.0; joblib 1.5.3; pyarrow 24.0.0;
+matplotlib 3.10.8; Streamlit 1.65.0.
+
+Command: .\.venv\Scripts\python.exe scripts\run_public_pilot.py --output outputs\v0.2
+Result: exit 0. Seed 42; five subset sequences, seeds 142-146;
+adaptation question budgets 25, 50, 100, 200, 400. Published recorded replay;
+no new LLM inference.
+
+Command: .\.venv\Scripts\python.exe -m unittest discover -s tests -v
+Result: exit 0. Ran 45 tests in 5.837 seconds; OK.
+13 data validation, 5 evaluation boundary/weighting, 11 prediction contract,
+9 original research safeguards, 7 UI/Streamlit checks.
+
+Checks include label transitions, feature/prediction future-field invariance,
+question-group partitions and source/target overlap, target-test isolation,
+question-equal metrics/bootstrap, protocol/checkpoint validation, missing
+metadata, partial datasets, finite class-ordered probabilities, artifact
+fingerprints, recorded feature/probability parity, two-tab app loading,
+main recorded prediction and delayed outcome reveal, selection change,
+and required custom input signals.
+
+Streamlit's bare test imports emit a missing ScriptRunContext warning;
+all AppTest exception/error checks and interactions passed.
+
+Command: .\.venv\Scripts\python.exe scripts\check_dashboard.py
+Result: exit 0. Health and app shell HTTP 200; temporary headless server
+stopped. Main prediction separately verified by AppTest.
+In-app browser unavailable; no browser screenshot/layout claim.
+Generated adaptation PNG was visually inspected.
+
+Command: .\.venv\Scripts\python.exe scripts\verify_baseline.py
+Result: exit 0. All 24 original raw/prepared/model/report files unchanged.
+
+Output directory: outputs/v0.2; shipped v0.1 remains in original folders.

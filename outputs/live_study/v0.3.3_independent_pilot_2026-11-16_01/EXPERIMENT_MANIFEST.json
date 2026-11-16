@@ -1,0 +1,151 @@
+{
+  "experiment": "RecheckLab independent live pilot",
+  "version": "v0.3.3-pilot-2026-11-16-01",
+  "created_utc": "2026-11-16T09:06:09.828189+00:00",
+  "sample_size": 8,
+  "expected_llm_calls": 16,
+  "dataset": {
+    "repository": "openai/gsm8k",
+    "revision": "740312add88f781978c0658806c59bc2815b9866",
+    "split": "main/train",
+    "local_parquet": "outputs\\live_study\\v0.3.0\\raw\\gsm8k\\740312add88f781978c0658806c59bc2815b9866\\train.parquet",
+    "parquet_sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+    "answer_key": "published #### numeric answer; stored separately"
+  },
+  "model": {
+    "name": "qwen3:4b",
+    "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "ollama_version": "0.40.16"
+  },
+  "protocol": {
+    "protocol_version": "live-study-v0.3.2",
+    "protocol_hash": "10918ba33eef2eb97f7c10972fe0db1f48e3250684ece28c54e50520fc91462d",
+    "prompts": {
+      "initial": "Solve the question independently. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or the option letter, as appropriate.",
+      "recheck": "Recheck the saved initial response against the same original question. Keep its answer if justified; change it only if you identify an error. Give a brief explanation. Finish with FINAL: followed by only the numeric answer or option letter.",
+      "initial_messages": "one user: initial prompt + two newlines + original question",
+      "recheck_messages": "same initial user; assistant: full saved initial response; user: recheck prompt"
+    },
+    "generation": {
+      "initial_token_budget": 1024,
+      "recheck_token_budget": 1024,
+      "context_window": 4096,
+      "thinking": true,
+      "temperature": 0.0,
+      "initial_seed": 42,
+      "recheck_seed": 43,
+      "top_k": 1,
+      "top_p": 1.0,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "stop": [
+        "<|im_start|>",
+        "<|im_end|>"
+      ],
+      "stream": false
+    },
+    "parser": {
+      "version": "explicit-final-v1",
+      "numeric": "explicit FINAL marker; finite decimal/fraction; comma/currency normalization",
+      "choice": "explicit FINAL marker; single A-E option letter; optional parentheses/punctuation",
+      "open": "explicit FINAL marker only",
+      "unparseable": "record parsing failure; completed call scored incorrect offline"
+    },
+    "grader": {
+      "version": "decimal-exact-choice-v1",
+      "numeric": "exact Decimal equality; no floating tolerance",
+      "choice": "exact normalized letter equality",
+      "keys": "separate offline file; never in call or feature inputs"
+    },
+    "transport": {
+      "timeout_seconds": 120,
+      "automatic_retries": 0,
+      "explicit_retry_limit": 2,
+      "ambiguous_started_calls": "block resume until operator resolves; never silently repeat",
+      "session_budget": "do not start calls after deadline; bound each call by remaining time"
+    }
+  },
+  "policies": {
+    "never_recheck": "retain initial answer",
+    "always_recheck": "take the single unconditional revision",
+    "completion_heuristic": "take revision iff initial done_reason is length",
+    "frozen_ml_gate": "NOT APPLIED: protocol contract mismatch; see PROTOCOL_COMPATIBILITY.md"
+  },
+  "outcomes": [
+    "HELP",
+    "HURT",
+    "NO_CHANGE"
+  ],
+  "analysis": "question-level accuracy and paired policy differences with 95% question-resampling bootstrap intervals; descriptive only, no significance/generalization claims",
+  "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.3.2",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.8.0",
+    "pyarrow": "24.0.0",
+    "joblib": "1.5.3"
+  },
+  "hardware_baseline": {
+    "cpu": "AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD",
+    "logical_processors": 16,
+    "user_reported_total_ram_gb": 16,
+    "available_ram_bytes": 3134980096,
+    "gpu_nvidia_smi": "NVIDIA GeForce RTX 3050 Laptop GPU, 4096 MiB, 3617 MiB, 0 %",
+    "ollama_loaded_models": []
+  },
+  "frozen_gate": {
+    "artifact": "outputs/v0.2/models/source_gate.joblib",
+    "sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+    "threshold": 0.25968145276947807,
+    "harm_weight": 1.0,
+    "feature_count": 19,
+    "feature_schema_version": "pre-recheck-v2",
+    "feature_schema_fingerprint": "9e09eba8571dd2b31fb70fe83cb12191ba0051d620324037cc18cf3cae22e4ca",
+    "protocol": {
+      "model": "qwen3:4b",
+      "recheck_protocol": "sevra:10411137fcaa02b3bd549a2285b43ffe315417f6:active_verify",
+      "action": "active_verify",
+      "action_description_sha256": "4287d7497331d675de415d1540fabdd67a61ea526457506a8b7856ef5d726dd9",
+      "published_generation_settings": {
+        "dataset_revision": "10411137fcaa02b3bd549a2285b43ffe315417f6",
+        "base_generation_limit": 4096,
+        "finalizer_max_tokens": 512,
+        "finalizer": "non-reasoning final answer when needed",
+        "protocol_evidence": "Pinned public dataset card; complete prompts/checkpoint digest not released"
+      },
+      "identity_validation_limit": "Public release identifies model family and action, but omits the checkpoint digest and full prompts."
+    },
+    "feature_names": [
+      "question_log_chars",
+      "question_log_words",
+      "question_numbers",
+      "question_math_symbols",
+      "question_marks",
+      "initial_log_chars",
+      "initial_log_words",
+      "initial_unique_word_ratio",
+      "initial_uncertainty_per_100_words",
+      "initial_backtracking_per_100_words",
+      "initial_checking_per_100_words",
+      "initial_number_count",
+      "initial_paragraph_count",
+      "initial_question_marks",
+      "initial_log_actual_tokens",
+      "initial_finalizer_used",
+      "initial_budget_exhausted",
+      "initial_answer_present",
+      "initial_completion_unknown"
+    ],
+    "score_definition": "p_HELP - harm_weight * p_HURT; decide recheck iff score > threshold",
+    "threshold_comparison": "strict greater-than"
+  },
+  "previous_live_manifest_groups": 1500,
+  "overlap_exclusion_count": 800,
+  "selection_manifest_sha256": "1b5f7db2861789e712c46bad95a455c29f003592e06c2cdea4fbf83479f13cba",
+  "prompt_sha256": {
+    "initial": "15733ecc4e85755d3e91807e90556ad6e98c7c40a71429f1858a450135777960",
+    "recheck": "09043fabaf77046ef273ec9498b68396bfd41158f90b9f8a94d93067355a22a1",
+    "initial_messages": "75645ee9be694d8953deeb2b4c466c097101730c35d020e3ec914d8b1a6ccba2",
+    "recheck_messages": "29043324b3852e0a68bbb5202777664b6c894d46cadd641438603cd8f7e0de05"
+  }
+}

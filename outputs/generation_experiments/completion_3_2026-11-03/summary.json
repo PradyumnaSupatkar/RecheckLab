@@ -1,0 +1,61 @@
+{
+  "status": "COMPLETE",
+  "problem": null,
+  "condition_C_skipped_reason": null,
+  "conditions": [
+    {
+      "condition": "A",
+      "sample_questions": 3,
+      "planned_questions": 3,
+      "source": "archived reference, Ollama 0.40.13",
+      "valid_FINAL_answers": 1,
+      "correct_answers_diagnostic": 1,
+      "length_completions": 2,
+      "generated_tokens_total": 5641,
+      "actual_tokens_total": 5914,
+      "average_generated_tokens": 1880.3333333333333,
+      "average_actual_tokens": 1971.3333333333333,
+      "average_latency_seconds": 98.04902490000192,
+      "ram_observation_method": "archived post-call snapshots",
+      "lowest_available_ram_gib": 1.2849044799804688
+    },
+    {
+      "condition": "B",
+      "sample_questions": 3,
+      "planned_questions": 3,
+      "source": "new, Ollama frozen in protocol",
+      "valid_FINAL_answers": 1,
+      "correct_answers_diagnostic": 1,
+      "length_completions": 2,
+      "generated_tokens_total": 5609,
+      "actual_tokens_total": 5873,
+      "average_generated_tokens": 1869.6666666666667,
+      "average_actual_tokens": 1957.6666666666667,
+      "average_latency_seconds": 86.3741054000008,
+      "ram_observation_method": "0.5-second monitoring during inference",
+      "lowest_available_ram_gib": 4.286708831787109
+    },
+    {
+      "condition": "C",
+      "sample_questions": 3,
+      "planned_questions": 3,
+      "source": "new, Ollama frozen in protocol",
+      "valid_FINAL_answers": 3,
+      "correct_answers_diagnostic": 2,
+      "length_completions": 0,
+      "generated_tokens_total": 6418,
+      "actual_tokens_total": 6682,
+      "average_generated_tokens": 2139.3333333333335,
+      "average_actual_tokens": 2227.3333333333335,
+      "average_latency_seconds": 95.43901020000096,
+      "ram_observation_method": "0.5-second monitoring during inference",
+      "lowest_available_ram_gib": 4.101490020751953
+    }
+  ],
+  "new_calls_completed": 6,
+  "minimum_monitored_ram_gib": 4.101490020751953,
+  "diagnostic_only": "Three deliberately selected completion-stress questions; no accuracy conclusion.",
+  "reference_caveat": "A is archived on Ollama 0.40.13/nonstream; B and C share the current frozen backend/streaming. A-to-B differences cannot isolate prompt effects from backend changes.",
+  "no_rechecks_no_finalizers_no_retries_no_downloads": true,
+  "gate_and_streamlit_unchanged": true
+}

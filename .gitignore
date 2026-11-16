@@ -17,26 +17,10 @@ __pycache__/
 *.key
 
 # Local datasets and generated data
-data/raw/
-data/prepared/
-*.parquet
-*.feather
-*.arrow
-*.pkl
-*.pickle
-*.joblib
-*.pt
-*.pth
-*.ckpt
-*.safetensors
 
 # Model weights and local model stores
-models/
-**/models/
 
 # Experiment outputs, logs, and generated reports/artifacts
-outputs/
-reports/
 *.log
 *.tmp
 *.bak
@@ -53,6 +37,5 @@ data/*_keys.jsonl
 
 
 # All locally stored benchmark and evaluation data
-data/
 !data/.gitkeep
 

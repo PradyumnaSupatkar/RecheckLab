@@ -1,0 +1,22 @@
+{
+  "train": {
+    "rows": 8000,
+    "examples": 2000,
+    "actions": "accept: 2,000, active_verify: 2,000, continue: 2,000, critique_repair: 2,000"
+  },
+  "math500": {
+    "rows": 1500,
+    "examples": 500,
+    "actions": "accept: 500, active_verify: 1,000"
+  },
+  "gsm8k": {
+    "rows": 3957,
+    "examples": 1319,
+    "actions": "accept: 1,319, active_verify: 2,638"
+  },
+  "commonsenseqa": {
+    "rows": 3663,
+    "examples": 1221,
+    "actions": "accept: 1,221, active_verify: 2,442"
+  }
+}

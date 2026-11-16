@@ -1,0 +1,44 @@
+{
+  "status": "FROZEN_BEFORE_V0.4.2_INFERENCE",
+  "model": {
+    "name": "qwen3:4b-instruct",
+    "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+    "size_bytes": 2497293803,
+    "family": "qwen3",
+    "quantization": "Q4_K_M",
+    "fine_tune": "Instruct",
+    "version": "2507",
+    "architecture_context_length": 262144,
+    "ollama": "0.40.16"
+  },
+  "dev_question_count": 10,
+  "eval_question_count": 60,
+  "development_question_selection_sha256": "6008b09ac2c719a7682993a438e4f90cc454e8966d9c7ba999f29d7d442ab77f",
+  "evaluation_question_selection_sha256": "8ad6954a982108fe1cb6d797f12a1e8f007145a8bf298833d45a19f67797b923",
+  "development_trusted_keys_sha256": "7fbacceacf3f41be01b724a5f4ad5c473fac25ac61eccfdc621cd8d2e6fbd6c8",
+  "evaluation_trusted_keys_sha256": "a60c87b409e5b8475430bd21746b69ad8e2fd82f0d9783807fb349da07350650",
+  "frozen_gate_sha256": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "prior_evaluation_untouched": true,
+  "prior_evaluation_files": [
+    "EXPERIMENT_MANIFEST.json",
+    "QUESTION_SELECTION.jsonl",
+    "TRUSTED_KEYS.jsonl"
+  ],
+  "context_benchmark_calls": 8,
+  "evaluation_inference_started": false,
+  "final_protocol": {
+    "num_predict": -1,
+    "num_ctx": 8192,
+    "temperature": 0.0,
+    "top_k": 1,
+    "top_p": 1.0,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "think": "omitted",
+    "stop": "model defaults; no stop override",
+    "stream": true,
+    "watchdog_seconds": 2700,
+    "idle_read_timeout_seconds": 120,
+    "retries": 0
+  }
+}

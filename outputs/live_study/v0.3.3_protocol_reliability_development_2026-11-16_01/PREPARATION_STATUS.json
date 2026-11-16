@@ -1,0 +1,11 @@
+{
+  "phase": "frozen before inference",
+  "questions": 3,
+  "eligible_count": 6661,
+  "excluded_group_count": 4732,
+  "selection_seed": 20261118,
+  "question_manifest_sha256": "9b00689eb957edc520f6273e079f3e488732aaa234ce928709b4ba49c17c4f40",
+  "trusted_keys_sha256": "2daef08448f07efb92df3280dac1d0c48cbee9c0a7ba0a4c817c8744fecf4f0b",
+  "calls_planned": 12,
+  "inference_started": false
+}

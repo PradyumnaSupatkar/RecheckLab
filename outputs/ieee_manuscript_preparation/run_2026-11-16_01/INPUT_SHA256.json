@@ -1,0 +1,11 @@
+{
+  "outputs\\v0.2\\models\\source_gate.joblib": "9a92e4e9a91d1a05e0ead0dd638f434838e9b944e406ff01fa3d82ae91e3c439",
+  "outputs\\ml_efficiency_evaluation\\evaluation_2026-11-03\\analysis_predictions.csv": "30e58c816b8efdbd2e4230bf70d2d4d3d4bcd525989ac94e7f7caa9c94e4b1a1",
+  "outputs\\v0.2\\data\\prepared\\source_development.parquet": "7330ad8eb29e9d583ba962994c1bc35b2ab1187ff546374e637fd680d5cefa3e",
+  "outputs\\v0.2\\data\\prepared\\source_test.parquet": "0a698dbf818c101adde346d4327a7f8c0fa701a778bebe53490eedb5cf210c2c",
+  "outputs\\v0.2\\data\\prepared\\target_test.parquet": "d611eb4374d7937fbce642f015e8a866d20d73dd2561f70fc4f01b0946758809",
+  "data\\raw\\math500.parquet": "12d2a7b9ccfece28f6e4a2975467a672a2ccd4e6c833fe49a99a92b033c963b4",
+  "data\\raw\\gsm8k.parquet": "24d00be06386d4b97d2ecad4d6607f119eea2891a0dc3a1f889f057a704350ec",
+  "data\\raw\\DATASET_CARD.md": "7b984d97e86ce235259c02b30da0323400ea193faf39b11f0ea0471b02da72e5",
+  "data\\raw\\release_manifest.json": "95f6f59ce9f3dd8604e4da21899d16b341056ae5575942846115ecd63682d9b4"
+}

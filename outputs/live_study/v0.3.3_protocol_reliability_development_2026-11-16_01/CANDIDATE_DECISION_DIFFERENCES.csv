@@ -1,0 +1,4 @@
+﻿example_id,A_gate_recheck,B_gate_recheck,gate_disagreement,A_completion_recheck,B_completion_recheck,completion_disagreement
+gsm8k:train:1431,False,False,False,True,True,False
+gsm8k:train:3947,False,False,False,False,False,False
+gsm8k:train:519,False,True,True,True,True,False

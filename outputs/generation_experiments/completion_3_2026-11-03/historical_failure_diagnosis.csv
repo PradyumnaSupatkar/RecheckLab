@@ -1,0 +1,8 @@
+call_id,question_id,configuration,completion_reason,generated_tokens,thinking_chars,visible_chars,parser_result_unchanged,diagnosis
+03_initial,7bd956e1cc5d9c6443092e7f1353338e,initial,length,2048,8475,0,,output cap before any visible answer; consistent with still thinking
+03_A,7bd956e1cc5d9c6443092e7f1353338e,A,length,2048,8696,0,,output cap before any visible answer; consistent with still thinking
+03_B,7bd956e1cc5d9c6443092e7f1353338e,B,length,2048,8530,0,,output cap before any visible answer; consistent with still thinking
+03_C,7bd956e1cc5d9c6443092e7f1353338e,C,length,2048,8287,389,,visible option analysis truncated before FINAL; had left thinking channel
+05_initial,c7c882f1e2c36b665a323b7287648628,initial,length,2048,9144,0,,output cap before any visible answer; consistent with still thinking
+05_B,c7c882f1e2c36b665a323b7287648628,B,length,2048,9368,0,,output cap before any visible answer; consistent with still thinking
+05_C,c7c882f1e2c36b665a323b7287648628,C,length,2048,9158,0,,output cap before any visible answer; consistent with still thinking

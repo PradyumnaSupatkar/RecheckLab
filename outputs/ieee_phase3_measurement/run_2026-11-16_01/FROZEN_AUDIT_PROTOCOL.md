@@ -1,0 +1,10 @@
+# Measurement audit v1 ? frozen before aggregate non-training analysis
+Scope: existing active_verify replay only. No grade changes, model training or rule selection.
+Unit: canonical normalized query; each rollout weight 1 / number of recorded rollouts for that question within partition. Uniform-rollout expectation, never best rollout.
+Primary descriptive precedence: stable published correct/wrong; HELP on seven already reviewed source-training IDs marked representation-recovery SUSPECT; remaining HELP with base_done_reason=length marked truncation-associated unresolved; remaining HELP with empty extracted answer marked missing-answer unresolved; other HELP unresolved. HURT with revision length marked truncation-associated unresolved; other HURT unresolved. These are observable audit buckets, not causal semantic annotations.
+Normative adjudication taxonomy and uncertainty rules will be documented separately; no causal label is assigned by string occurrence alone.
+Strict subset proxy C: base_done_reason=stop, nonempty base_answer, a nonempty single-line FINAL (ANSWER) marker found in the last nonempty response line. This is an observable syntactic proxy, NOT verified mathematical validity; also report stop/nonempty and length subgroups. Rule case-insensitive; markdown decoration allowed at the end. Do not optimize against grades. Finalizers separately flagged.
+A: frozen original booleans. B: no automated regrading of mathematics without trusted keys and adjudication; bounded training evidence only. D: causal interpretation unresolved, no invented semantic labels.
+Seven diagnostic IDs: 253,572,1203,1226,1355,1373,1494, source_train only. These were selected by prior Phase2 completion/HELP analysis, not a representative manual sample.
+Uncertainty: deterministic seed 20261116, 2000 paired question-bootstrap resamples for original always-minus-never accuracy. Intervals measure question sampling uncertainty, not grader validity or model-population variation.
+Other partitions are previously exposed descriptive audits. No method tuning or independent-confirmation claim. Raw MATH500/GSM8K remain separately labelled from v0.2 source/target.

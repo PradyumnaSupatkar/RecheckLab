@@ -1,0 +1,41 @@
+{
+  "status": "BLOCKED",
+  "phase": "collection",
+  "session_id": "fa0ed04440004f8a8520fea7abe66155",
+  "started_at": "2026-10-21T20:37:21.654897+00:00",
+  "ended_at": "2026-10-21T20:37:28.243833+00:00",
+  "minutes_budget": 480.0,
+  "protocol_hash": "f681ebe34456957cffb95d2cea9d42e860db510306d82eccc1f6f5fb7baf4e4e",
+  "errors": [
+    {
+      "error": "Backend ollama_version changed; create a new protocol version.",
+      "error_type": "ValueError",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\rechecklab\\study_collection.py\", line 224, in collect_study\n    verify_backend(protocol, host)\n  File \"C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\rechecklab\\study_protocol.py\", line 169, in verify_backend\n    raise ValueError(f\"Backend {key} changed; create a new protocol version.\")\nValueError: Backend ollama_version changed; create a new protocol version.\n"
+    }
+  ],
+  "planned_unique_questions": 1500,
+  "command": "scripts/collect_live_study.py --study-root C:\\Users\\Pradyumna\\Downloads\\RecheckLab_Prototype_v0.1\\recheck_transfer\\outputs\\live_study\\v0.3.1 --minutes 480.0",
+  "elapsed_seconds": 6.609000000000378,
+  "completed_pairs": 52,
+  "completed_unique_questions": 52,
+  "completed_by_partition": {
+    "source_train": 11,
+    "target_adaptation_pool": 10,
+    "source_development": 11,
+    "source_test": 10,
+    "target_test": 10
+  },
+  "class_counts": {
+    "NO_CHANGE": 32,
+    "HELP": 20
+  },
+  "call_events": 210,
+  "successful_calls": 105,
+  "failed_calls": 0,
+  "parse_failures": 28,
+  "remaining_questions": 1448,
+  "measured_pairs_per_hour": 53.72117542705838,
+  "estimated_remaining_hours": 26.953989529995816,
+  "eta_basis": "sum of measured successful call wall times; includes first-call cold load; cache/backend overhead not controlled",
+  "stop_reason": "validation/backend/resume blocked"
+}

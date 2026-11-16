@@ -1,0 +1,169 @@
+{
+  "verification": "Independent read-only replay audit; no new training or LLM inference.",
+  "questions": 733,
+  "rollout_rows": 1466,
+  "model": "hist_gradient_boosting_balanced",
+  "thresholds": {
+    "frozen": 0.25968145276947807,
+    "adapted": 0.2949665266580546,
+    "adaptation_questions": 200,
+    "repeat": 0
+  },
+  "decision_vectors": {
+    "completion_vs_frozen_mismatching_rows": 0,
+    "frozen_vs_selected_adapted_mismatching_rows": 0,
+    "rechecked_rows": 50,
+    "rechecked_questions": 25,
+    "skipped_rows": 1416
+  },
+  "score_boundary": {
+    "maximum_skipped_score": 0.004591798431332851,
+    "minimum_rechecked_score": 0.48804913864383914,
+    "frozen_and_adapted_inside_same_empty_gap": true,
+    "explanation": "Strict score > threshold: different cutoffs produce the same target decisions when no target score lies between them."
+  },
+  "independently_recomputed_target_policies": {
+    "Keep initial answer": {
+      "questions": 733,
+      "rollout_rows": 1466,
+      "accuracy_pct": 76.12551159618009,
+      "harmful_flip_pct_of_all_questions": 0.0,
+      "helpful_fix_pct_of_all_questions": 0.0,
+      "harm_pct_of_initially_correct": 0.0,
+      "recovery_pct_of_initially_wrong": 0.0,
+      "recheck_pct": 0.0,
+      "average_total_tokens": 2243.6043656207366,
+      "average_extra_tokens": 0.0,
+      "saved_extra_tokens_pct": 100.0,
+      "saved_total_tokens_pct": 52.465823724368256
+    },
+    "Always recheck": {
+      "questions": 733,
+      "rollout_rows": 1466,
+      "accuracy_pct": 72.8512960436562,
+      "harmful_flip_pct_of_all_questions": 4.7066848567530695,
+      "helpful_fix_pct_of_all_questions": 1.4324693042291952,
+      "harm_pct_of_initially_correct": 6.182795698924731,
+      "recovery_pct_of_initially_wrong": 6.0,
+      "recheck_pct": 100.0,
+      "average_total_tokens": 4719.981582537517,
+      "average_extra_tokens": 2476.3772169167805,
+      "saved_extra_tokens_pct": 0.0,
+      "saved_total_tokens_pct": 0.0
+    },
+    "Completion rule": {
+      "questions": 733,
+      "rollout_rows": 1466,
+      "accuracy_pct": 76.67121418826738,
+      "harmful_flip_pct_of_all_questions": 0.0,
+      "helpful_fix_pct_of_all_questions": 0.5457025920873124,
+      "harm_pct_of_initially_correct": 0.0,
+      "recovery_pct_of_initially_wrong": 2.2857142857142856,
+      "recheck_pct": 3.4106412005457027,
+      "average_total_tokens": 2334.8465211459757,
+      "average_extra_tokens": 91.24215552523874,
+      "saved_extra_tokens_pct": 96.31549850717654,
+      "saved_total_tokens_pct": 50.53271966602178
+    },
+    "Frozen source gate": {
+      "questions": 733,
+      "rollout_rows": 1466,
+      "accuracy_pct": 76.67121418826738,
+      "harmful_flip_pct_of_all_questions": 0.0,
+      "helpful_fix_pct_of_all_questions": 0.5457025920873124,
+      "harm_pct_of_initially_correct": 0.0,
+      "recovery_pct_of_initially_wrong": 2.2857142857142856,
+      "recheck_pct": 3.4106412005457027,
+      "average_total_tokens": 2334.8465211459757,
+      "average_extra_tokens": 91.24215552523874,
+      "saved_extra_tokens_pct": 96.31549850717654,
+      "saved_total_tokens_pct": 50.53271966602178
+    },
+    "Threshold-adapted gate (200 questions)": {
+      "questions": 733,
+      "rollout_rows": 1466,
+      "accuracy_pct": 76.67121418826738,
+      "harmful_flip_pct_of_all_questions": 0.0,
+      "helpful_fix_pct_of_all_questions": 0.5457025920873124,
+      "harm_pct_of_initially_correct": 0.0,
+      "recovery_pct_of_initially_wrong": 2.2857142857142856,
+      "recheck_pct": 3.4106412005457027,
+      "average_total_tokens": 2334.8465211459757,
+      "average_extra_tokens": 91.24215552523874,
+      "saved_extra_tokens_pct": 96.31549850717654,
+      "saved_total_tokens_pct": 50.53271966602178
+    }
+  },
+  "selected_adaptation_vs_budget_average": {
+    "selected_single_run_accuracy_pct": 76.67121418826738,
+    "budget_mean_accuracy_pct": 76.58935879945429,
+    "budget_accuracy_sd_percentage_points": 0.1830342137107593,
+    "budget_mean_harmful_flip_pct": 0.0818553888130968,
+    "budget_mean_recheck_pct": 4.965893587994543,
+    "budget_mean_tokens": 2377.654160982265,
+    "repeats": 5,
+    "interpretation": "The policy table is the predeclared single subset; the curve averages all subsets. Subset SD is not a confidence interval."
+  },
+  "answer_fidelity": {
+    "base_answer_python_types": {
+      "str": 1466
+    },
+    "base_answer_values": {
+      "D": 320,
+      "C": 298,
+      "E": 294,
+      "B": 258,
+      "A": 252,
+      "<answer>\"": 10,
+      "<answer>.\"": 4,
+      "A\"": 2,
+      "B.showisthecorrectanswer": 2,
+      "B.appearsuddenlybecausewhenyouhailacaritappearssuddenlysothecarwasappearingsuddenly": 2,
+      "E\"stumblebum\"thenitwouldbe\"at": 2,
+      "whatactiontotake": 2,
+      "Dbecausethepuzzleassumestheadultisfemaleduetothereflexivepronoun.Butthequestionsays\"theadult\"soit'sambiguous": 2,
+      "theoperahouse.\"Butthechoiceis\"opera\"whichmightrefertotheoperahouse": 2,
+      "C.bland": 2,
+      "'thelibrary'becauselibrarieshavebooksincludingtelephonebooks.\"": 2,
+      "<answer>\"soIneedtooutputtheletter": 2,
+      "\"eyes\"becauseyouneedeyestosee": 2,
+      "it'sinvalidasit'snotapossibleeffectofnature": 2,
+      "\"makingfriendswasnopersonalconflict\"makessensebecauseitmeansitwasn'tapersonalconflict": 2,
+      "often\"video\"(meaningavideogamesessionoralongvideo)": 2,
+      "\"eatcake\"duetothehomophoneorwordplay": 2
+    },
+    "released_standard_choice_rows": 1422,
+    "released_nonstandard_answer_text_rows": 44,
+    "exact_initial_fields_match_prepared_vs_csv": {
+      "query": true,
+      "base_response": true,
+      "base_answer": true,
+      "base_actual_tokens": true,
+      "base_done_reason": true,
+      "base_finalizer_used": true
+    },
+    "collector_choice_parser_matches_released_base_answer_rows": 1418,
+    "collector_choice_parser_cannot_parse_rows": 48,
+    "released_standard_choices_lost_by_collector_parser_rows": 4,
+    "recommendation": "Display and reuse each record's existing parsed base_answer. The optional collector parser targets its own FINAL: protocol; reparsing public responses can discard or change valid recorded answers."
+  },
+  "checks": {
+    "canonical_groups_match_questions": true,
+    "saved_probabilities_match_model": true,
+    "saved_scores_match_model": true,
+    "saved_frozen_decisions_match": true,
+    "all_target_policy_metrics_match": true,
+    "target_policy_metric_checks": {
+      "Keep initial answer": true,
+      "Always recheck": true,
+      "Completion rule": true,
+      "Frozen source gate": true,
+      "Threshold-adapted gate (200 questions)": true
+    },
+    "adaptation_runs_checked": 25,
+    "adaptation_metric_mismatches": [],
+    "adaptation_summary_matches_all_runs": true,
+    "selected_threshold_matches_bundle_and_run": true,
+    "evaluation_features_match_prepared_initial_record": true
+  }
+}
